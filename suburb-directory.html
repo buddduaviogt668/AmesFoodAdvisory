@@ -25,10 +25,10 @@
     --navy-deep:   #131E28;
     --navy-mid:    #243548;
     --navy-lift:   #2E4460;
-    --amber:       #E8913A;
-    --amber-light: #F0A855;
-    --amber-pale:  #FDF3E7;
-    --amber-dim:   #C4741E;
+    --amber:       #D4751F;
+    --amber-light: #D4751F;
+    --amber-pale:  #FEF3E8;
+    --amber-dim:   #B05E10;
     --stone:       #F5F1EB;
     --stone-mid:   #EDE7DE;
     --stone-dark:  #DDD4C6;
@@ -44,7 +44,7 @@
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(28,43,58,0.96); backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(232,145,58,0.15);
+    border-bottom: 1px solid rgba(212,117,31,0.15);
     padding: 0 2rem; height: 66px;
     display: flex; align-items: center; justify-content: space-between;
   }
@@ -62,7 +62,7 @@
   }
   .page-header::before {
     content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 70% at 85% 40%, rgba(232,145,58,0.08) 0%, transparent 65%);
+    background: radial-gradient(ellipse 60% 70% at 85% 40%, rgba(212,117,31,0.08) 0%, transparent 65%);
   }
   .page-header-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
   .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem; }
@@ -95,7 +95,7 @@
     transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
     display: block;
   }
-  .suburb-card:hover { border-color: var(--amber); box-shadow: 0 4px 20px rgba(232,145,58,0.12); transform: translateY(-2px); }
+  .suburb-card:hover { border-color: var(--amber); box-shadow: 0 4px 20px rgba(212,117,31,0.12); transform: translateY(-2px); }
   .suburb-card-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 500; color: var(--navy); margin-bottom: 0.35rem; }
   .suburb-card-council { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.6rem; }
   .suburb-card-desc { font-size: 0.865rem; color: var(--ink-soft); line-height: 1.6; }
@@ -105,7 +105,7 @@
 
   /* Special brewery card */
   .suburb-card.brewery {
-    background: var(--navy); border-color: rgba(232,145,58,0.3);
+    background: var(--navy); border-color: rgba(212,117,31,0.3);
   }
   .brewery .suburb-card-name { color: var(--white); }
   .brewery .suburb-card-desc { color: rgba(255,255,255,0.55); }
@@ -145,7 +145,7 @@
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">AMES <span>Food Advisory</span></a>
+  <a href="/" class="nav-logo"><span style="font-size:1.1em;font-weight:800;letter-spacing:0.02em;">AMES</span>&thinsp;<span style="font-size:0.85em;font-weight:400;letter-spacing:0.06em;opacity:0.9;">Food Advisory</span></a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
     <li><a href="/food-safety-training-sydney">Training</a></li>
@@ -318,7 +318,7 @@
 </div>
 
 <footer><div class="footer-inner">
-  <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
+  <a href="/" class="footer-logo"><span style="font-weight:800;">AMES</span>&thinsp;<span style="font-size:0.85em;font-weight:400;letter-spacing:0.04em;opacity:0.8;">Food Advisory</span></a>
   <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
   <div class="footer-links">
     <a href="/#services">Services</a>
