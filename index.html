@@ -559,16 +559,14 @@
   .process-desc { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.65; font-weight: 300; }
   .process-badge { display: inline-flex; margin-top: 1rem; background: var(--amber-pale); border: 1px solid var(--border-amber); color: var(--amber-dim); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.2rem 0.7rem; border-radius: 4px; }
 
-  /* ── TESTIMONIALS ── */
-  .testimonials-section { background: var(--navy); }
-  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .testimonial-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(212,117,31,0.12); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem; transition: border-color 0.2s; }
-  .testimonial-card:hover { border-color: rgba(212,117,31,0.3); }
-  .testimonial-stars { color: var(--amber); font-size: 0.9rem; letter-spacing: 2px; }
-  .testimonial-quote { font-family: 'Playfair Display', serif; font-size: 1.02rem; font-style: italic; font-weight: 400; color: rgba(255,255,255,0.85); line-height: 1.6; flex: 1; }
-  .testimonial-attribution { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.25rem; }
-  .testimonial-name { font-size: 0.84rem; font-weight: 600; color: var(--white); margin-bottom: 0.2rem; }
-  .testimonial-role { font-size: 0.76rem; color: rgba(255,255,255,0.38); font-weight: 300; }
+  /* ── CREDENTIALS & TRUST SIGNALS ── */
+  .credentials-section { background: var(--navy); }
+  .credentials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .credential-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(212,117,31,0.12); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; gap: 1.2rem; transition: border-color 0.2s, background 0.2s; }
+  .credential-card:hover { border-color: rgba(212,117,31,0.3); background: rgba(212,117,31,0.05); }
+  .credential-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .credential-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--white); font-family: 'Inter', sans-serif; line-height: 1.4; }
+  .credential-card p { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; font-weight: 300; }
 
   /* ── INDUSTRY SECTORS ── */
   .sectors-section { background: var(--stone-mid); }
@@ -891,37 +889,32 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials-section">
+<!-- CREDENTIALS & TRUST SIGNALS -->
+<section class="credentials-section">
   <div class="container">
-    <div class="section-eyebrow" style="color:var(--amber);">Client outcomes</div>
-    <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3.2vw,2.6rem); font-weight:400; line-height:1.18; color:var(--white); margin-bottom:1.25rem;">What businesses say <em style="font-style:italic; color:var(--amber);">after working with us.</em></h2>
-    <p style="font-size:0.95rem; color:rgba(255,255,255,0.45); max-width:560px; line-height:1.7; font-weight:300;">Real outcomes from NSW food businesses who needed practical, honest food safety support — not expensive jargon.</p>
-    <div class="testimonials-grid">
-      <div class="testimonial-card fade-up">
-        <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-quote">"We opened our cafe knowing exactly what the council inspector would look for. The food safety plan and staff training AMES delivered meant we passed our first inspection without a single issue."</div>
-        <div class="testimonial-attribution">
-          <div class="testimonial-name">Nguyen T.</div>
-          <div class="testimonial-role">Cafe owner · Inner West, Sydney</div>
-        </div>
+    <div class="section-eyebrow" style="color:var(--amber);">Why businesses trust AMES</div>
+    <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3.2vw,2.6rem); font-weight:400; line-height:1.18; color:var(--white); margin-bottom:1.25rem;">Built on <em style="font-style:italic; color:var(--amber);">real expertise.</em></h2>
+    <p style="font-size:0.95rem; color:rgba(255,255,255,0.45); max-width:560px; line-height:1.7; font-weight:300;">More than a decade in food safety — from national manufacturing to RTO instruction to on-site compliance auditing.</p>
+    <div class="credentials-grid">
+      <div class="credential-card fade-up">
+        <div class="credential-icon">🏭</div>
+        <h3>11+ Years at Arnotts</h3>
+        <p>National food manufacturer. HACCP implementation, compliance scaling, multi-site operations.</p>
       </div>
-      <div class="testimonial-card fade-up fade-up-delay-1">
-        <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-quote">"After a council notice we didn't know where to start. AMES came on-site within days, identified every gap, and had us fully compliant before the follow-up inspection. Honest, fast and thorough."</div>
-        <div class="testimonial-attribution">
-          <div class="testimonial-name">David K.</div>
-          <div class="testimonial-role">Small food manufacturer · Western Sydney</div>
-        </div>
+      <div class="credential-card fade-up fade-up-delay-1">
+        <div class="credential-icon">📚</div>
+        <h3>TAFE NSW Accredited Trainer</h3>
+        <p>Food Safety Supervisor &amp; Advanced Food Handling instructor. Current credentials with NSW RTO authority.</p>
       </div>
-      <div class="testimonial-card fade-up fade-up-delay-2">
-        <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-quote">"The HACCP documentation and allergen management system they built for us passed Coles supplier verification. Quality at the level of a big consultancy — without the big firm price."</div>
-        <div class="testimonial-attribution">
-          <div class="testimonial-name">Maria S.</div>
-          <div class="testimonial-role">Food producer · Parramatta</div>
-        </div>
+      <div class="credential-card fade-up fade-up-delay-2">
+        <div class="credential-icon">✓</div>
+        <h3>Dual-Accredited Consultant</h3>
+        <p>HACCP specialist, NSW Food Act 2003 compliance, council audit preparation, Standard 3.2.2A implementation.</p>
       </div>
+    </div>
+    <div style="margin-top:2.5rem; padding-top:2.5rem; border-top:1px solid rgba(255,255,255,0.08); text-align:center;">
+      <p style="font-size:0.9rem; color:rgba(255,255,255,0.5); margin-bottom:1rem;">Real client testimonials coming soon.</p>
+      <p style="font-size:0.85rem; color:rgba(255,255,255,0.35);">Once we start working with NSW food businesses, we'll feature their genuine outcomes here — not placeholder quotes.</p>
     </div>
   </div>
 </section>
