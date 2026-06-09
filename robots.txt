@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /free-compliance-checklist-nsw
+Disallow: /free-restaurant-sop-template
+Disallow: /free-audit-readiness-checklist
+
+Sitemap: https://www.amesfoodadvisory.com.au/sitemap.xml
