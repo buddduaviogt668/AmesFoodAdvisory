@@ -15,7 +15,8 @@
 <meta property="og:title" content="Food Safety Consultant Minto | Western Sydney | AMES Food Advisory">
 <meta property="og:description" content="Local food safety and HACCP consultant for Minto. {types} compliance support. {council} audit preparation and inspection readiness.">
 <meta property="og:url" content="https://www.amesfoodadvisory.com.au/food-safety-consultant-minto">
-<meta property="og:site_name" content="AMES Food Advisory">
+  <meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
+  <meta property="og:site_name" content="AMES Food Advisory">
 <meta property="og:locale" content="en_AU">
 <script type="application/ld+json">
 {
@@ -85,8 +86,10 @@
     padding: 0 2rem; height: 66px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 0.01em; }
-  .nav-logo span { color: var(--amber); font-size: 0.82em; font-weight: 400; letter-spacing: 0.08em; opacity: 0.9; }
+  .nav-logo { display: flex; flex-direction: column; gap: 1px; text-decoration: none; }
+  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1; }
+  .nav-logo-adv { color: var(--amber); font-style: italic; }
+  .nav-logo-tag { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.32); font-family: 'Inter', sans-serif; line-height: 1; }
   .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
   .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
   .nav-links a:hover { color: var(--amber); }
@@ -451,11 +454,18 @@
     h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
   }
 </style>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">AMES <span>Food Advisory</span></a>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+    <span class="nav-logo-tag">NSW&nbsp;&nbsp;·&nbsp;&nbsp;HACCP&nbsp;&nbsp;·&nbsp;&nbsp;Food Safety Consulting</span>
+  </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
     <li><a href="/food-safety-training-sydney">Training</a></li>
