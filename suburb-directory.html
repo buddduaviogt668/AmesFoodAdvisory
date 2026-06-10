@@ -10,37 +10,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "AMES Food Advisory",
-  "url": "https://www.amesfoodadvisory.com.au",
-  "areaServed": ["Sydney","Parramatta","Marrickville","Chatswood","Blacktown","Liverpool","Penrith","Campbelltown","Newcastle","Wollongong","Alexandria","Mascot","Botany","Newtown","Leichhardt","Surry Hills","Hornsby"]
-}
-</script>
 <style>
   :root {
     --navy:        #1C2B3A;
     --navy-deep:   #131E28;
-    --navy-mid:    #243548;
-    --navy-lift:   #2E4460;
     --amber:       #D4751F;
-    --amber-light: #D4751F;
     --amber-pale:  #FEF3E8;
-    --amber-dim:   #B05E10;
     --stone:       #F5F1EB;
-    --stone-mid:   #EDE7DE;
-    --stone-dark:  #DDD4C6;
-    --ink:         #1A1C1E;
     --ink-mid:     #3C4048;
     --ink-soft:    #6B7280;
+    --border:      #DDD4C6;
     --white:       #FFFFFF;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; background: var(--stone); color: var(--ink); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
-
+  body { font-family: 'Inter', sans-serif; background: var(--stone); color: var(--ink-mid); font-size: 16px; line-height: 1.6; }
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(28,43,58,0.96); backdrop-filter: blur(14px);
@@ -49,101 +32,42 @@
     display: flex; align-items: center; justify-content: space-between;
   }
   .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--white); text-decoration: none; }
-  .nav-logo span { color: var(--amber); font-size: 0.82em; font-weight: 400; letter-spacing: 0.08em; opacity: 0.9; }
+  .nav-logo span { color: var(--amber); font-size: 0.82em; font-weight: 400; }
   .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--white); }
-  .nav-cta { background: var(--amber) !important; color: var(--navy) !important; padding: 0.5rem 1.3rem !important; border-radius: 6px !important; font-weight: 600 !important; }
-  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
-
-  .page-header {
-    background: var(--navy-deep); padding: 8rem 2rem 4rem;
-    position: relative; overflow: hidden;
+  .nav-links a { text-decoration: none; font-size: 0.855rem; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--amber); }
+  .nav-cta { background: var(--amber); color: var(--navy-deep) !important; padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .page-hero {
+    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: var(--white); padding: 120px 2rem 60px; margin-top: 66px; text-align: center;
   }
-  .page-header::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 70% at 85% 40%, rgba(212,117,31,0.08) 0%, transparent 65%);
+  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+  .page-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto; }
+  section { padding: 4rem 2rem; }
+  .region-section { border-top: 2px solid var(--border); padding-top: 3rem; margin-bottom: 1rem; }
+  .region-title {
+    font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy-deep);
+    margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid var(--amber); display: inline-block;
   }
-  .page-header-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
-  .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-bottom: 1.2rem; }
-  .breadcrumb a { color: var(--amber); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .breadcrumb span { margin: 0 0.4rem; }
-  .page-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--white); margin-bottom: 1rem; }
-  .page-header h1 em { font-style: italic; color: var(--amber); }
-  .page-header-sub { font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 620px; font-weight: 300; line-height: 1.75; }
-
-  .dir-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem 6rem; }
-
-  .dir-intro { max-width: 740px; margin-bottom: 3.5rem; }
-  .dir-intro p { font-size: 1.05rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1rem; }
-
-  .region-section { margin-bottom: 3.5rem; }
-  .region-label {
-    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--amber); margin-bottom: 1.25rem;
-    display: flex; align-items: center; gap: 0.7rem;
-  }
-  .region-label::after { content: ''; flex: 1; height: 1px; background: var(--stone-dark); }
-
-  .suburb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
-
+  .suburbs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
   .suburb-card {
-    background: var(--white); border: 1px solid var(--stone-dark);
-    border-radius: 10px; padding: 1.5rem 1.75rem;
-    text-decoration: none; color: inherit;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-    display: block;
+    background: var(--white); border: 1px solid #E5DDD0; border-radius: 8px;
+    padding: 1.5rem; text-decoration: none; color: inherit; transition: all 0.2s; display: block;
   }
-  .suburb-card:hover { border-color: var(--amber); box-shadow: 0 4px 20px rgba(212,117,31,0.12); transform: translateY(-2px); }
-  .suburb-card-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 500; color: var(--navy); margin-bottom: 0.35rem; }
-  .suburb-card-council { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.6rem; }
-  .suburb-card-desc { font-size: 0.865rem; color: var(--ink-soft); line-height: 1.6; }
-  .suburb-card-arrow { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; }
-  .suburb-card-link { font-size: 0.8rem; font-weight: 600; color: var(--amber); }
-  .suburb-card-link::after { content: ' →'; }
-
-  /* Special brewery card */
-  .suburb-card.brewery {
-    background: var(--navy); border-color: rgba(212,117,31,0.3);
-  }
-  .brewery .suburb-card-name { color: var(--white); }
-  .brewery .suburb-card-desc { color: rgba(255,255,255,0.55); }
-  .brewery .suburb-card-link { color: var(--amber); }
-
-  .dir-cta {
-    background: var(--navy); border-radius: 12px; padding: 3rem 2.5rem;
-    text-align: center; margin-top: 3rem;
-  }
-  .dir-cta h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--white); margin-bottom: 0.75rem; }
-  .dir-cta p { color: rgba(255,255,255,0.55); font-size: 0.95rem; margin-bottom: 1.75rem; }
-  .btn-primary {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    background: var(--amber); color: var(--navy-deep);
-    padding: 0.9rem 1.8rem; border-radius: 6px;
-    font-weight: 600; font-size: 0.9rem;
-    text-decoration: none; transition: background 0.2s, transform 0.15s;
-  }
-  .btn-primary:hover { background: var(--amber-light); transform: translateY(-1px); }
-
-  footer { background: var(--navy-deep); padding: 2rem; margin-top: 0; }
-  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-  .footer-logo { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); text-decoration: none; }
-  .footer-logo span { color: var(--amber); }
-  .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
-  .footer-links { display: flex; gap: 1.5rem; }
-  .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.45); text-decoration: none; }
-  .footer-links a:hover { color: var(--white); }
-
-  @media (max-width: 680px) {
+  .suburb-card:hover { border-color: var(--amber); box-shadow: 0 4px 12px rgba(28,43,58,0.1); transform: translateY(-2px); }
+  .suburb-card-name { font-weight: 600; color: var(--navy-deep); margin-bottom: 0.5rem; font-size: 1rem; }
+  .suburb-card-desc { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; }
+  footer { background: var(--navy-deep); border-top: 1px solid rgba(212,117,31,0.12); padding: 2.5rem 2rem; text-align: center; color: rgba(255,255,255,0.35); font-size: 0.85rem; }
+  footer p + p { margin-top: 0.5rem; }
+  @media(max-width: 768px) {
     .nav-links { display: none; }
-    .suburb-grid { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; text-align: center; }
+    .suburbs-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    section { padding: 2rem 1rem; }
   }
 </style>
 </head>
 <body>
-
 <nav>
   <a href="/" class="nav-logo">AMES <span>Food Advisory</span></a>
   <ul class="nav-links">
@@ -157,176 +81,366 @@
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book a Call</a></li>
   </ul>
 </nav>
-
-<div class="page-header">
-  <div class="page-header-inner">
-    <div class="breadcrumb"><a href="/">Home</a><span>›</span>Service Areas</div>
-    <h1>Food Safety Consulting Across <em>Greater Sydney</em></h1>
-    <p class="page-header-sub">AMES Food Advisory works on-site with food businesses across Sydney, the Hunter Valley, and the Illawarra. Select your area below to find out how we can help your specific location and local council requirements.</p>
+<div class="page-hero">
+  <div class="container">
+    <h1>AMES Food Advisory — Serving 80+ Sydney Suburbs</h1>
+    <p>Local food safety consulting and HACCP compliance support across Greater Sydney and NSW. Find your suburb below.</p>
   </div>
 </div>
-
-<div class="dir-body">
-
-  <div class="dir-intro">
-    <p>Every local council in NSW has its own food safety inspection regime, audit frequency, and documentation expectations. Whether you're in Parramatta's commercial hub, Newtown's food strip, or Blacktown's industrial food precinct, AMES Food Advisory knows the local environment and what inspectors are looking for.</p>
-    <p>We travel to your site for assessments, audits, and training — no remote-only consultancies.</p>
+<section>
+  <div class="container">
+<div class="region-section">
+  <h2 class="region-title">Inner West</h2>
+  <div class="suburbs-grid">
+    <a href="/food-safety-consultant-alexandria" class="suburb-card">
+      <div class="suburb-card-name">Alexandria</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-annandale" class="suburb-card">
+      <div class="suburb-card-name">Annandale</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-balmain" class="suburb-card">
+      <div class="suburb-card-name">Balmain</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-darling-point" class="suburb-card">
+      <div class="suburb-card-name">Darling Point</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-enmore" class="suburb-card">
+      <div class="suburb-card-name">Enmore</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-five-dock" class="suburb-card">
+      <div class="suburb-card-name">Five Dock</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-glebe" class="suburb-card">
+      <div class="suburb-card-name">Glebe</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-haberfield" class="suburb-card">
+      <div class="suburb-card-name">Haberfield</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-leichhardt" class="suburb-card">
+      <div class="suburb-card-name">Leichhardt</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-lilyfield" class="suburb-card">
+      <div class="suburb-card-name">Lilyfield</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-marrickville" class="suburb-card">
+      <div class="suburb-card-name">Marrickville</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-newtown" class="suburb-card">
+      <div class="suburb-card-name">Newtown</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-petersham" class="suburb-card">
+      <div class="suburb-card-name">Petersham</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-redfern" class="suburb-card">
+      <div class="suburb-card-name">Redfern</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-rozelle" class="suburb-card">
+      <div class="suburb-card-name">Rozelle</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-st-peters" class="suburb-card">
+      <div class="suburb-card-name">St Peters</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-stanmore" class="suburb-card">
+      <div class="suburb-card-name">Stanmore</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-summer-hill" class="suburb-card">
+      <div class="suburb-card-name">Summer Hill</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-surry-hills" class="suburb-card">
+      <div class="suburb-card-name">Surry Hills</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-ultimo" class="suburb-card">
+      <div class="suburb-card-name">Ultimo</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
   </div>
-
-  <!-- Inner West -->
-  <div class="region-section">
-    <div class="region-label">Inner West</div>
-    <div class="suburb-grid">
-      <a href="/food-safety-consultant-marrickville" class="suburb-card">
-        <div class="suburb-card-name">Marrickville</div>
-        <div class="suburb-card-council">Inner West Council</div>
-        <div class="suburb-card-desc">Sydney's craft brewery and creative food precinct. HACCP plans, taproom compliance, and Standard 3.2.2A for the Marrickville food cluster.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-marrickville-breweries" class="suburb-card brewery">
-        <div class="suburb-card-name">Marrickville Breweries &amp; Distilleries</div>
-        <div class="suburb-card-council">Specialist Page · Inner West Council</div>
-        <div class="suburb-card-desc">Dedicated compliance service for craft breweries, distilleries, and taprooms across the Inner West — from Young Henrys territory to Grifter and beyond.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View brewery services</span></div>
-      </a>
-      <a href="/food-safety-consultant-newtown" class="suburb-card">
-        <div class="suburb-card-name">Newtown</div>
-        <div class="suburb-card-council">Inner West Council</div>
-        <div class="suburb-card-desc">King Street's dense café and restaurant strip. Food safety systems, council-ready documentation, and FSS compliance for Newtown hospitality businesses.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-leichhardt" class="suburb-card">
-        <div class="suburb-card-name">Leichhardt</div>
-        <div class="suburb-card-council">Inner West Council</div>
-        <div class="suburb-card-desc">Norton Street café and trattoria precinct. Food safety and HACCP consulting for small food businesses and Italian-cuisine hospitality operators.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Eastern Suburbs & City Fringe -->
-  <div class="region-section">
-    <div class="region-label">Eastern Suburbs &amp; City Fringe</div>
-    <div class="suburb-grid">
-      <a href="/food-safety-consultant-surry-hills" class="suburb-card">
-        <div class="suburb-card-name">Surry Hills</div>
-        <div class="suburb-card-council">City of Sydney Council</div>
-        <div class="suburb-card-desc">Crown Street café strip, small-batch producers, and event caterers. Food safety compliance in one of Sydney's most food-dense inner-city suburbs.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-alexandria" class="suburb-card">
-        <div class="suburb-card-name">Alexandria</div>
-        <div class="suburb-card-council">City of Sydney Council</div>
-        <div class="suburb-card-desc">Food manufacturing, cold chain logistics, and the Alexandria/Rosebery food precinct. HACCP, SOP writing, and third-party audit prep for manufacturers.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-mascot" class="suburb-card">
-        <div class="suburb-card-name">Mascot</div>
-        <div class="suburb-card-council">City of Sydney / Bayside Council</div>
-        <div class="suburb-card-desc">Airport-adjacent food distribution and logistics operators. Cold chain documentation, HACCP plans, and supplier audit programs near Sydney Airport.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-botany" class="suburb-card">
-        <div class="suburb-card-name">Botany</div>
-        <div class="suburb-card-council">Bayside Council</div>
-        <div class="suburb-card-desc">Industrial food operations near Port Botany. Food safety management systems and council audit preparation for food manufacturers and importers.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Western Sydney -->
-  <div class="region-section">
-    <div class="region-label">Western Sydney</div>
-    <div class="suburb-grid">
-      <a href="/food-safety-consultant-parramatta" class="suburb-card">
-        <div class="suburb-card-name">Parramatta</div>
-        <div class="suburb-card-council">City of Parramatta Council</div>
-        <div class="suburb-card-desc">Western Sydney's commercial and hospitality hub. Church Street dining, Westfield food courts, and manufacturer clients in the Parramatta CBD.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-blacktown" class="suburb-card">
-        <div class="suburb-card-name">Blacktown</div>
-        <div class="suburb-card-council">Blacktown City Council</div>
-        <div class="suburb-card-desc">One of Sydney's largest local government areas with a diverse food manufacturing and hospitality sector. Multicultural food businesses and industrial food producers.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-penrith" class="suburb-card">
-        <div class="suburb-card-name">Penrith</div>
-        <div class="suburb-card-council">Penrith City Council</div>
-        <div class="suburb-card-desc">Western Sydney's gateway. Food safety consulting for the Penrith CBD hospitality strip, Panthers precinct food operators, and Nepean River tourism businesses.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-liverpool" class="suburb-card">
-        <div class="suburb-card-name">Liverpool</div>
-        <div class="suburb-card-council">Liverpool City Council</div>
-        <div class="suburb-card-desc">South-west Sydney's commercial centre. Food safety systems for Liverpool CBD food businesses, Westfield operators, and the growing hospitality precinct.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-campbelltown" class="suburb-card">
-        <div class="suburb-card-name">Campbelltown</div>
-        <div class="suburb-card-council">Campbelltown City Council</div>
-        <div class="suburb-card-desc">Macarthur region food businesses, food manufacturing near Narellan Road industrial estates, and cafés serving the growing south-west Sydney corridor.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- North Shore -->
-  <div class="region-section">
-    <div class="region-label">North Shore &amp; Northern Suburbs</div>
-    <div class="suburb-grid">
-      <a href="/food-safety-consultant-chatswood" class="suburb-card">
-        <div class="suburb-card-name">Chatswood</div>
-        <div class="suburb-card-council">Willoughby City Council</div>
-        <div class="suburb-card-desc">Asian food precinct, Westfield Chatswood food court operators, and high-turnover hospitality businesses on Victoria Avenue. HACCP and council compliance.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-hornsby" class="suburb-card">
-        <div class="suburb-card-name">Hornsby</div>
-        <div class="suburb-card-council">Hornsby Shire Council</div>
-        <div class="suburb-card-desc">Upper North Shore food businesses, Hornsby Westfield operators, and cafés serving the Pacific Highway and Pennant Hills Road corridors.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Regional NSW -->
-  <div class="region-section">
-    <div class="region-label">Regional NSW</div>
-    <div class="suburb-grid">
-      <a href="/food-safety-consultant-newcastle" class="suburb-card">
-        <div class="suburb-card-name">Newcastle</div>
-        <div class="suburb-card-council">City of Newcastle Council</div>
-        <div class="suburb-card-desc">Hunter Valley food and beverage sector, Newcastle CBD hospitality strip, and the growing craft food and drink scene across the Hunter region.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-      <a href="/food-safety-consultant-wollongong" class="suburb-card">
-        <div class="suburb-card-name">Wollongong</div>
-        <div class="suburb-card-council">Wollongong City Council</div>
-        <div class="suburb-card-desc">Illawarra food businesses, Wollongong CBD hospitality operators, and coastal food manufacturers from Wollongong to Shellharbour.</div>
-        <div class="suburb-card-arrow"><span class="suburb-card-link">View services</span></div>
-      </a>
-    </div>
-  </div>
-
-  <div class="dir-cta">
-    <h2>Don't see your suburb?</h2>
-    <p>AMES Food Advisory serves all of Greater Sydney and travels across NSW. If your suburb isn't listed, get in touch — we cover anywhere we can reach.</p>
-    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Get in touch ↗</a>
-  </div>
-
 </div>
-
-<footer><div class="footer-inner">
-  <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
-  <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
-  <div class="footer-links">
-    <a href="/#services">Services</a>
-    <a href="/suburb-directory">Locations</a>
-    <a href="/#about">About</a>
-    <a href="/#contact">Contact</a>
+<div class="region-section">
+  <h2 class="region-title">North Shore</h2>
+  <div class="suburbs-grid">
+    <a href="/food-safety-consultant-artarmon" class="suburb-card">
+      <div class="suburb-card-name">Artarmon</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-avalon" class="suburb-card">
+      <div class="suburb-card-name">Avalon</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-beacon-hill" class="suburb-card">
+      <div class="suburb-card-name">Beacon Hill</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-chatswood" class="suburb-card">
+      <div class="suburb-card-name">Chatswood</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-crows-nest" class="suburb-card">
+      <div class="suburb-card-name">Crows Nest</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-cremorne" class="suburb-card">
+      <div class="suburb-card-name">Cremorne</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-greenwich" class="suburb-card">
+      <div class="suburb-card-name">Greenwich</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-hornsby" class="suburb-card">
+      <div class="suburb-card-name">Hornsby</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-mosman" class="suburb-card">
+      <div class="suburb-card-name">Mosman</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-neutral-bay" class="suburb-card">
+      <div class="suburb-card-name">Neutral Bay</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-north-ryde" class="suburb-card">
+      <div class="suburb-card-name">North Ryde</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-northbridge" class="suburb-card">
+      <div class="suburb-card-name">Northbridge</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-ryde" class="suburb-card">
+      <div class="suburb-card-name">Ryde</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-seaforth" class="suburb-card">
+      <div class="suburb-card-name">Seaforth</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-st-leonards" class="suburb-card">
+      <div class="suburb-card-name">St Leonards</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-strathfield" class="suburb-card">
+      <div class="suburb-card-name">Strathfield</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-turramurra" class="suburb-card">
+      <div class="suburb-card-name">Turramurra</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-wahroonga" class="suburb-card">
+      <div class="suburb-card-name">Wahroonga</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-willoughby" class="suburb-card">
+      <div class="suburb-card-name">Willoughby</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-wollstonecraft" class="suburb-card">
+      <div class="suburb-card-name">Wollstonecraft</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
   </div>
-</div></footer>
+</div>
+<div class="region-section">
+  <h2 class="region-title">South Sydney & Sutherland</h2>
+  <div class="suburbs-grid">
+    <a href="/food-safety-consultant-bexley" class="suburb-card">
+      <div class="suburb-card-name">Bexley</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-bondi" class="suburb-card">
+      <div class="suburb-card-name">Bondi</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-botany" class="suburb-card">
+      <div class="suburb-card-name">Botany</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-bronte" class="suburb-card">
+      <div class="suburb-card-name">Bronte</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-coogee" class="suburb-card">
+      <div class="suburb-card-name">Coogee</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-cronulla" class="suburb-card">
+      <div class="suburb-card-name">Cronulla</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-double-bay" class="suburb-card">
+      <div class="suburb-card-name">Double Bay</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-eastlakes" class="suburb-card">
+      <div class="suburb-card-name">Eastlakes</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-kareena" class="suburb-card">
+      <div class="suburb-card-name">Kareena</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-kingsford" class="suburb-card">
+      <div class="suburb-card-name">Kingsford</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-kurnell" class="suburb-card">
+      <div class="suburb-card-name">Kurnell</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-maroubra" class="suburb-card">
+      <div class="suburb-card-name">Maroubra</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-mascot" class="suburb-card">
+      <div class="suburb-card-name">Mascot</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-miranda" class="suburb-card">
+      <div class="suburb-card-name">Miranda</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-pagewood" class="suburb-card">
+      <div class="suburb-card-name">Pagewood</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-randwick" class="suburb-card">
+      <div class="suburb-card-name">Randwick</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-rose-bay" class="suburb-card">
+      <div class="suburb-card-name">Rose Bay</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-wooloomooloo" class="suburb-card">
+      <div class="suburb-card-name">Wooloomooloo</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-zetland" class="suburb-card">
+      <div class="suburb-card-name">Zetland</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+  </div>
+</div>
+<div class="region-section">
+  <h2 class="region-title">Western Sydney</h2>
+  <div class="suburbs-grid">
+    <a href="/food-safety-consultant-blacktown" class="suburb-card">
+      <div class="suburb-card-name">Blacktown</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-cabramatta" class="suburb-card">
+      <div class="suburb-card-name">Cabramatta</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-campbelltown" class="suburb-card">
+      <div class="suburb-card-name">Campbelltown</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-castle-hill" class="suburb-card">
+      <div class="suburb-card-name">Castle Hill</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-epping" class="suburb-card">
+      <div class="suburb-card-name">Epping</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-fairfield" class="suburb-card">
+      <div class="suburb-card-name">Fairfield</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-glenmore-park" class="suburb-card">
+      <div class="suburb-card-name">Glenmore Park</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-greenacre" class="suburb-card">
+      <div class="suburb-card-name">Greenacre</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-guildford" class="suburb-card">
+      <div class="suburb-card-name">Guildford</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-kellyville" class="suburb-card">
+      <div class="suburb-card-name">Kellyville</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-liverpool" class="suburb-card">
+      <div class="suburb-card-name">Liverpool</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-merrylands" class="suburb-card">
+      <div class="suburb-card-name">Merrylands</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-minto" class="suburb-card">
+      <div class="suburb-card-name">Minto</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-mulgoa" class="suburb-card">
+      <div class="suburb-card-name">Mulgoa</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-oakdale" class="suburb-card">
+      <div class="suburb-card-name">Oakdale</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-panania" class="suburb-card">
+      <div class="suburb-card-name">Panania</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-parramatta" class="suburb-card">
+      <div class="suburb-card-name">Parramatta</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-penrith" class="suburb-card">
+      <div class="suburb-card-name">Penrith</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-tahmoor" class="suburb-card">
+      <div class="suburb-card-name">Tahmoor</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+    <a href="/food-safety-consultant-wollongong" class="suburb-card">
+      <div class="suburb-card-name">Wollongong</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+  </div>
+</div>
+<div class="region-section">
+  <h2 class="region-title">Newcastle & Hunter</h2>
+  <div class="suburbs-grid">
+    <a href="/food-safety-consultant-newcastle" class="suburb-card">
+      <div class="suburb-card-name">Newcastle</div>
+      <div class="suburb-card-desc">Food safety consulting &amp; council audit prep</div>
+    </a>
+  </div>
+</div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 AMES Food Advisory. Serving all of NSW with expert food safety consulting and HACCP compliance.</p>
+    <p>hello@amesfoodadvisory.com.au</p>
+  </div>
+</footer>
 </body>
 </html>
