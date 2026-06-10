@@ -441,7 +441,7 @@ module.exports = [
     "eyebrow": "Client Focus 04",
     "h1": "Compliance Systems for <em>Food Manufacturers</em>",
     "sub": "Corporate food manufacturing requires advanced quality assurance structures. Having managed large-scale quality systems for over 11 years at Arnotts, we provide the expertise needed to pass retail audits.",
-    "introText": "We guide your internal teams through BRCGS, SQF, Coles, and Woolworths manufacturing standards.",
+    "introText": "We guide your internal teams through SQF, Coles, and Woolworths manufacturing standards.",
     "includes": [
       { "icon": "🏭", "title": "GFSI Audit Prep", "desc": "Gap analysis and audit readiness preparation for SQF, BRC, and FSSC 22000 schemes." },
       { "icon": "📦", "title": "Supplier Risk Programs", "desc": "Developing supplier verification protocols, raw material specifications, and allergen profiles." }
@@ -455,7 +455,7 @@ module.exports = [
       { "title": "Retailer Gap Analysis", "desc": "Running dummy audits against Woolworths Quality Assurance (WQA) or Coles standards to address compliance gaps." }
     ],
     "faqs": [
-      { "q": "What are GFSI schemes?", "a": "Global Food Safety Initiative (GFSI) schemes include BRCGS, SQF, and FSSC 22000. They are internationally recognized standards that demonstrate a manufacturer operates to the highest food safety level, which is a requirement for major supermarkets." }
+      { "q": "What are GFSI schemes?", "a": "Global Food Safety Initiative (GFSI) schemes include SQF, and FSSC 22000. They are internationally recognized standards that demonstrate a manufacturer operates to the highest food safety level, which is a requirement for major supermarkets." }
     ],
     "related": [
       { "title": "Lab Skills Training", "desc": "Train factory lab staff in microbial validation.", "url": "/lab-skills-training" }
