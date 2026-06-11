@@ -85,7 +85,7 @@
     background: rgba(28,43,58,0.96);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(212,117,31,0.15);
-    padding: 0 2rem; height: 66px;
+    padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
   }
   .nav-logo { display: flex; flex-direction: column; gap: 3px; text-decoration: none; justify-content: center; }
@@ -303,6 +303,24 @@
     .step { flex-direction: column; gap: 0.75rem; }
     .step-num { font-size: 1.6rem; width: auto; }
   }
+  .nav-links > li { position: relative; }
+  .nav-links > li > a { padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem; }
+  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+  .nav-drop {
+    position: absolute; top: 100%; left: 0; min-width: 210px;
+    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0; opacity: 0; visibility: hidden;
+    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+  }
+  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-drop a {
+    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+  }
+  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
 </style>
 
 <script type="application/ld+json">
@@ -347,17 +365,59 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;&nbsp;·&nbsp;&nbsp;HACCP&nbsp;&nbsp;·&nbsp;&nbsp;Food Safety Consulting</span>
   </a>
   <ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/internal-auditing-services">Auditing</a></li>
-    <li><a href="/food-business-startup-package">Start-Up Package</a></li>
-    <li><a href="/pricing">Pricing</a></li>
-    <li><a href="/free-resources">Free Resources</a></li>
-    <li><a href="/suburb-directory">Locations</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book a Call</a></li>
+    <li>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/haccp-plan-development">HACCP Plan Development</a>
+        <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+        <a href="/food-safety-training-sydney">Staff Training</a>
+        <a href="/sop-writing-food-businesses">SOP Writing</a>
+        <a href="/internal-auditing-services">Compliance Readiness</a>
+        <div class="drop-divider"></div>
+        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+        <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+        <a href="/food-business-startup-package">Start-Up Package</a>
+      </div>
+    </li>
+    <li>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/food-safety-training-sydney">Food Safety Training</a>
+        <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+        <a href="/food-industry-workers-training">Industry Workers</a>
+        <a href="/online-food-safety-courses">Online Courses</a>
+        <a href="/lab-skills-training">Lab Skills</a>
+        <div class="drop-divider"></div>
+        <a href="/rto-resource-development">RTO Resource Development</a>
+      </div>
+    </li>
+    <li>
+      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/blog/haccp">HACCP Deep-Dive</a>
+        <a href="/blog">All Articles</a>
+        <div class="drop-divider"></div>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+      </div>
+    </li>
+    <li>
+      <a href="/pricing">Pricing</a>
+    </li>
+    <li>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/suburb-directory">All Sydney</a>
+        <a href="/food-safety-consultant-surry-hills">CBD</a>
+        <a href="/food-safety-consultant-marrickville">Inner West</a>
+        <a href="/food-safety-consultant-parramatta">Parramatta</a>
+        <a href="/food-safety-consultant-chatswood">North Shore</a>
+      </div>
+    </li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
 
