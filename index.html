@@ -617,7 +617,60 @@
     .process-grid { grid-template-columns: 1fr 1fr; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .sectors-grid { grid-template-columns: 1fr 1fr; }
-    .resources-grid { grid-template-columns: 1fr; }
+    /* ── FAQ STYLING ── */
+  .faq-list { display: flex; flex-direction: column; gap: 0; }
+  .faq-item {
+    border-bottom: 1px solid rgba(13, 22, 32, 0.08);
+    padding: 2rem 0;
+    transition: background 0.2s;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item:hover { background: rgba(13, 22, 32, 0.02); }
+  
+  .faq-q {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    padding: 0.75rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: color 0.2s;
+    user-select: none;
+  }
+  .faq-q:hover { color: var(--amber); }
+  .faq-q::after {
+    content: '▼';
+    font-size: 0.65rem;
+    opacity: 0.4;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  
+  .faq-item.open .faq-q::after { transform: rotate(180deg); opacity: 1; }
+  
+  .faq-a {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 700px;
+    padding: 1.5rem 0 0 0;
+    margin-top: 0.75rem;
+    border-top: 2px solid rgba(232, 145, 58, 0.15);
+    display: none;
+  }
+  
+  .faq-item.open .faq-a { display: block; animation: slideDown 0.3s ease; }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .resources-grid { grid-template-columns: 1fr; }
   }
 </style>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -1537,6 +1590,24 @@ function resetChecker() {
 }
 
 loadQ();
+
+// ── FAQ ACCORDION ──
+document.querySelectorAll('.faq-q').forEach(question => {
+  question.addEventListener('click', function() {
+    const item = this.parentElement;
+    const isOpen = item.classList.contains('open');
+    
+    // Close all other FAQ items
+    document.querySelectorAll('.faq-item').forEach(el => {
+      el.classList.remove('open');
+    });
+    
+    // Toggle current item
+    if (!isOpen) {
+      item.classList.add('open');
+    }
+  });
+});
 
 function handleSubmit(e) {
   e.preventDefault();
