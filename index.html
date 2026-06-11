@@ -114,10 +114,10 @@
     padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; }
+  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; flex-direction: column; align-items: flex-start; gap: 1px; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
   .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { display: none; }
+  .nav-logo-tag { font-size: 0.50rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.35); font-family: 'Inter', sans-serif; line-height: 1; }
   .nav-links { display: flex; gap: 0; align-items: center; list-style: none; }
   .nav-links > li { position: relative; }
   .nav-links > li > a {
@@ -631,6 +631,7 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li>
@@ -1424,7 +1425,7 @@
   <div class="footer-inner">
     <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;Food Safety</span>
+    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
     <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
     <div class="footer-links">
