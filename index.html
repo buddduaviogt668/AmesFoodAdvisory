@@ -621,24 +621,26 @@
   .faq-list { display: flex; flex-direction: column; gap: 0; }
   .faq-item {
     border-bottom: 1px solid rgba(13, 22, 32, 0.08);
-    padding: 2rem 0;
+    padding: 3.5rem 0;
     transition: background 0.2s;
   }
-  .faq-item:last-child { border-bottom: none; }
-  .faq-item:hover { background: rgba(13, 22, 32, 0.02); }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .faq-item:hover { background: rgba(13, 22, 32, 0.01); }
   
   .faq-q {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--navy);
     cursor: pointer;
-    padding: 0.75rem 0;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
     transition: color 0.2s;
     user-select: none;
+    line-height: 1.5;
   }
   .faq-q:hover { color: var(--amber); }
   .faq-q::after {
@@ -647,18 +649,19 @@
     opacity: 0.4;
     flex-shrink: 0;
     transition: transform 0.2s;
+    margin-top: 0.3rem;
   }
   
   .faq-item.open .faq-q::after { transform: rotate(180deg); opacity: 1; }
   
   .faq-a {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     color: var(--ink-soft);
-    line-height: 1.75;
+    line-height: 1.85;
     font-weight: 300;
-    max-width: 700px;
-    padding: 1.5rem 0 0 0;
-    margin-top: 0.75rem;
+    max-width: 720px;
+    padding: 2rem 0 0 0;
+    margin-top: 1.25rem;
     border-top: 2px solid rgba(232, 145, 58, 0.15);
     display: none;
   }
@@ -666,7 +669,7 @@
   .faq-item.open .faq-a { display: block; animation: slideDown 0.3s ease; }
   
   @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
+    from { opacity: 0; transform: translateY(-15px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
@@ -696,7 +699,6 @@
         <a href="/sop-writing-food-businesses">SOP Writing</a>
         <a href="/internal-auditing-services">Compliance Readiness</a>
         <div class="drop-divider"></div>
-        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
         <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
         <a href="/food-business-startup-package">Start-Up Package</a>
       </div>
@@ -998,7 +1000,7 @@
       <div class="process-step fade-up fade-up-delay-1">
         <div class="process-num">02</div>
         <div class="process-title">Gap Analysis & Scoping</div>
-        <div class="process-desc">We assess your current systems against applicable standards — NSW Food Act, HACCP, or GFSI schemes — and prepare a clear scope of work with a fixed-fee quote.</div>
+        <div class="process-desc">We assess your current systems against applicable standards — NSW Food Act and HACCP compliance — and prepare a clear scope of work with a fixed-fee quote.</div>
         <div class="process-badge">Fixed-fee quote</div>
       </div>
       <div class="process-step fade-up fade-up-delay-2">
@@ -1232,7 +1234,7 @@
       <div class="faq-item">
         <div class="faq-q">How do I prepare for a third-party food safety audit?</div>
         <div class="faq-a">
-          Third-party food safety audits under GFSI schemes such as SQF, BRCGS, or FSSC 22000 require a fully validated HACCP program, documented supplier verification, physical contamination controls, and extensive staff competency records. With 11+ years of corporate QA experience at The Arnott's Group, we conduct deep-dive gap analyses and build the documentation and verification systems required to pass these audits.
+          Third-party food safety audits assess your HACCP program, documented procedures, supplier verification, and staff competency. Whether it's a council audit, a retailer requirement, or a compliance assessment, the foundation is the same: solid documentation, clear SOPs, and evidence that your team understands food safety. We help you prepare by identifying gaps, strengthening documentation, and ensuring your team is audit-ready.
         </div>
       </div>
     </div>
@@ -1254,7 +1256,7 @@
         <div class="credentials-list">
           <div class="cred-row">
             <div class="cred-row-icon">🏭</div>
-            <div class="cred-row-text"><strong>11+ years</strong> — Quality & food safety at Arnotts (Snack Brands Australia)</div>
+            <div class="cred-row-text"><strong>11+ years</strong> — Quality & food safety at Arnotts (The Arnotts Group)</div>
           </div>
           <div class="cred-row">
             <div class="cred-row-icon">📋</div>
@@ -1298,6 +1300,44 @@
           <div class="why-row"><span>◆</span><span>Practical, plain-English advice — no jargon</span></div>
           <div class="why-row"><span>◆</span><span>Honest about what you need — and what you don't</span></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANN-MARIE'S EXPERIENCE -->
+<section style="background: var(--white); padding: 5rem 2rem;">
+  <div class="container" style="max-width: 820px;">
+    <div class="section-eyebrow">Professional Background</div>
+    <h2 class="display">Deep expertise across <em>food industry roles.</em></h2>
+    
+    <div style="margin-top: 3rem;">
+      <div style="margin-bottom: 3rem; padding: 2rem; background: rgba(232, 145, 58, 0.06); border-left: 4px solid var(--amber); border-radius: 4px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 1rem;">Experienced Food Technologist</h3>
+        <p style="font-size: 0.98rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1rem;">With over 20 years in the consumer goods and food industry, Ann-Marie brings hands-on expertise across quality assurance, food safety systems, laboratory operations, and regulatory compliance. Her background spans:</p>
+        <ul style="font-size: 0.95rem; color: var(--ink-mid); line-height: 1.8; margin-left: 1.5rem;">
+          <li>Quality Assurance & Systems Management — 15+ years in manufacturing QA roles</li>
+          <li>Laboratory Skills — Diplom in Laboratory Technology, specialising in food & environmental testing</li>
+          <li>Sensory Evaluation & Food Science — Advanced expertise in product testing and validation</li>
+          <li>HACCP & GMP — Deep knowledge of food safety standards and compliance requirements</li>
+          <li>Training & Mentoring — Passionate about bridging industry and education</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 3rem; padding: 2rem; background: rgba(13, 22, 32, 0.02); border-radius: 4px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 1rem;">Education & Credentials</h3>
+        <p style="font-size: 0.98rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1rem;"><strong>Formal Qualifications:</strong></p>
+        <ul style="font-size: 0.95rem; color: var(--ink-mid); line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+          <li>Diploma of Laboratory Technology (Biological & Environmental Testing, Food Testing)</li>
+          <li>TAE Certificate IV — Training & Assessment (nationally accredited)</li>
+          <li>TAFE NSW Instructor — Food Science & Technology (current)</li>
+        </ul>
+        <p style="font-size: 0.98rem; color: var(--ink-mid); line-height: 1.8;"><strong>Current Role:</strong> Teaching food technology and mentoring the next generation of food professionals through TAFE NSW, bringing real-world industry experience into the classroom.</p>
+      </div>
+
+      <div style="padding: 2rem; background: rgba(232, 145, 58, 0.04); border-radius: 4px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 1rem;">Why It Matters</h3>
+        <p style="font-size: 0.98rem; color: var(--ink-mid); line-height: 1.8;">This combination — over two decades of hands-on QA experience in fast-moving manufacturing, formal laboratory credentials, and current teaching experience — means AMES Food Advisory isn't built on theory. It's built on real problems solved in real kitchens, real production lines, and real regulatory audits. And the ability to teach that knowledge means you get expertise explained in plain language, not consultant jargon.</p>
       </div>
     </div>
   </div>
