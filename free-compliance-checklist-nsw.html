@@ -174,6 +174,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/lead-gate.css">
 </head>
 <body>
 <nav>
@@ -249,7 +250,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
     <h1>NSW Food Business <em>Compliance Checklist</em></h1>
     <p class="lm-hero-sub">47 essential checkpoints covering the NSW Food Act 2003, FSANZ Food Standards Code, and NSW Food Authority audit readiness. Tick off each item — then fix the gaps.</p>
     <div class="lm-actions">
-      <button class="btn-print" onclick="window.print()">&#9113; Print / Save as PDF</button>
+      <button class="btn-print" onclick="showLeadGate('print', document.title)">&#9113; Print / Save as PDF</button>
       <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="btn-back">Talk to an expert &rarr;</a>
     </div>
   </div>
@@ -386,5 +387,6 @@ document.addEventListener('click',function(e){
 });
 updateProgress();
 </script>
+<script src="/assets/lead-gate.js"></script>
 </body>
 </html>
