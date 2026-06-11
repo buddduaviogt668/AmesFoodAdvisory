@@ -1,0 +1,10 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy background -->
+  <rect width="256" height="256" fill="#0D1620"/>
+  
+  <!-- "A" mark for favicon -->
+  <text x="128" y="180" font-family="'Playfair Display', serif" font-size="180" font-weight="700" fill="#E8913A" text-anchor="middle" letter-spacing="2">A</text>
+  
+  <!-- Small tagline at bottom -->
+  <text x="128" y="240" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" fill-opacity="0.4" text-anchor="middle" letter-spacing="1">AMES</text>
+</svg>

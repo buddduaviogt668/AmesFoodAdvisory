@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy circle background -->
+  <circle cx="100" cy="100" r="95" fill="#0D1620"/>
+  
+  <!-- AMES text (centered) -->
+  <text x="100" y="85" font-family="'Playfair Display', serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">AMES</text>
+  
+  <!-- Tagline abbreviated -->
+  <text x="100" y="125" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#E8913A" text-anchor="middle" letter-spacing="1.5">HACCP</text>
+  
+  <!-- NSW badge -->
+  <text x="100" y="145" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#FFFFFF" fill-opacity="0.5" text-anchor="middle" letter-spacing="1">NSW</text>
+</svg>
