@@ -379,7 +379,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
     <div class="contact-form-card">
       <h3>Send us a message</h3>
       <p>Prefer to write? Fill in the form below and we'll get back to you within one business day.</p>
-      <form name="contact" method="POST" action="/#contact-thanks">
+      <form name="contact" method="POST" action="https://formspree.io/f/xqabpngv" id="contact-form">
         <div class="form-group">
           <label class="form-label" for="name">Your name *</label>
           <input class="form-input" type="text" id="name" name="name" required placeholder="e.g. Sarah Chen">
@@ -425,7 +425,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
           <label class="form-label" for="message">Message</label>
           <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your food safety situation — what you need, any upcoming audits or inspections, and any specific concerns."></textarea>
         </div>
+        <input type="hidden" name="_subject" value="New enquiry from AMES Food Advisory website">
+        <input type="hidden" name="_next" value="https://www.amesfoodadvisory.com.au/contact">
         <button type="submit" class="form-submit">Send Message →</button>
+        <p id="form-status" style="margin-top:0.75rem;font-size:0.83rem;text-align:center;display:none;"></p>
       </form>
     </div>
   </div>
@@ -446,5 +449,38 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/xqabpngv', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(r){ return r.json(); }).then(function(res){
+      if(res.ok){
+        form.reset();
+        btn.style.display = 'none';
+        status.style.display = 'block';
+        status.style.color = '#1C6B3A';
+        status.textContent = '✓ Message sent — we'll be in touch within one business day.';
+      } else { throw new Error('failed'); }
+    }).catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Send Message →';
+      status.style.display = 'block';
+      status.style.color = '#B91C1C';
+      status.textContent = 'Something went wrong. Please email ames.food.adv@gmail.com directly.';
+    });
+  });
+})();
+</script>
 </body>
 </html>
