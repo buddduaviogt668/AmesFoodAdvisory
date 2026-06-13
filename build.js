@@ -64,7 +64,7 @@ function head(title, desc, keywords, slug, sname, sdesc) {
     "name": "AMES Food Advisory",
     "url": "https://www.amesfoodadvisory.com.au",
     "telephone": "+61400000000",
-    "email": "hello@amesfoodadvisory.com.au",
+    "email": "ames.food.adv@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sydney",
