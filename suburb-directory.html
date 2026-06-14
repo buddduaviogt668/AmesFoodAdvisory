@@ -262,6 +262,22 @@
   }
   .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
   .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
+
+/* ── HAMBURGER MOBILE MENU ─────────────────────────────── */
+.ham-btn{display:none;flex-direction:column;justify-content:space-between;width:26px;height:19px;background:none;border:none;cursor:pointer;padding:0;margin-left:auto;}
+.ham-btn span{display:block;width:100%;height:2px;background:rgba(255,255,255,0.85);border-radius:2px;transition:all 0.25s ease;}
+.ham-btn.open span:nth-child(1){transform:translateY(8.5px) rotate(45deg);}
+.ham-btn.open span:nth-child(2){opacity:0;}
+.ham-btn.open span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg);}
+.mob-nav{display:none;position:fixed;top:56px;left:0;right:0;bottom:0;background:rgba(14,22,30,0.98);z-index:9998;overflow-y:auto;padding:1rem 0 3rem;}
+.mob-nav.open{display:block;}
+.mob-nav a{display:block;padding:0.85rem 1.5rem;color:rgba(255,255,255,0.80);font-size:0.95rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.05);font-family:'Inter',sans-serif;transition:color 0.15s,background 0.15s;}
+.mob-nav a:hover{color:#E8913A;background:rgba(232,145,58,0.06);}
+.mob-nav .mob-section{padding:0.55rem 1.5rem 0.25rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.28);font-family:'Inter',sans-serif;margin-top:0.5rem;}
+.mob-nav .mob-cta{background:#E8913A!important;color:#fff!important;margin:1.2rem 1.5rem 0;border-radius:6px;text-align:center;font-weight:600;border-bottom:none!important;}
+.mob-nav .mob-cta:hover{background:#d47a25!important;}
+@media(max-width:900px){.ham-btn{display:flex;}.nav-links{display:none!important;}}
+
 </style>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -395,6 +411,38 @@
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
+  <button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mob-nav" id="mobNav">
+    <span class="mob-section">Services</span>
+    <a href="/haccp-plan-development">HACCP Plan Development</a>
+    <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+    <a href="/food-safety-training-sydney">Staff Training</a>
+    <a href="/sop-writing-food-businesses">SOP Writing</a>
+    <a href="/internal-auditing-services">Compliance Readiness</a>
+    <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+    <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+    <a href="/food-business-startup-package">Start-Up Package</a>
+    <span class="mob-section">Training</span>
+    <a href="/food-safety-training-sydney">Food Safety Training</a>
+    <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+    <a href="/food-industry-workers-training">Industry Workers</a>
+    <a href="/online-food-safety-courses">Online Courses</a>
+    <a href="/lab-skills-training">Lab Skills</a>
+    <a href="/rto-resource-development">RTO Resource Development</a>
+    <span class="mob-section">Resources</span>
+    <a href="/blog">Blog</a>
+    <a href="/blog/haccp">HACCP Deep-Dive</a>
+    <a href="/free-resources">Free Resources</a>
+    <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+    <a href="/resource-hub">Resource Hub</a>
+    <span class="mob-section">Company</span>
+    <a href="/pricing">Pricing</a>
+    <a href="/suburb-directory">All Sydney Locations</a>
+    <a href="/#about">About</a>
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book a Free Call</a>
+  </div>
 
 <div class="page-hero">
   <div class="page-hero-inner">
@@ -1129,6 +1177,26 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
   }, { threshold: 0.08 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+<script>
+function toggleMobNav(btn){
+  btn.classList.toggle('open');
+  var nav=document.getElementById('mobNav');
+  nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+document.addEventListener('click',function(e){
+  var nav=document.getElementById('mobNav');
+  var btn=document.querySelector('.ham-btn');
+  if(nav && btn && nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)){
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+  }
+});
 </script>
 </body>
 </html>
