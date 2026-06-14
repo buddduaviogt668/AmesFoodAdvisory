@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Food Safety Blog | AMES Food Advisory — NSW HACCP & Compliance Guides</title>
-<meta name="description" content="Practical food safety guides for NSW food businesses. HACCP plans, NSW Food Authority audit prep, allergen management, and compliance resources from an Arnott's-background specialist.">
+<meta name="description" content="Practical food safety guides for NSW food businesses. HACCP plans, NSW Food Authority audit prep, allergen management, SOP writing, and startup compliance from an Arnott's-background specialist.">
 <link rel="canonical" href="https://www.amesfoodadvisory.com.au/blog">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -15,9 +15,9 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}body{font-family:'Inter',sans-serif;background:var(--stone);color:var(--ink-mid);}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,117,31,0.15);padding:0 2rem;height:66px;display:flex;align-items:center;justify-content:space-between;}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#fff;text-decoration:none;}.nav-logo span{color:var(--amber);}
-.nav-links{display:flex;gap:1.75rem;align-items:center;list-style:none;}.nav-links a{text-decoration:none;font-size:0.855rem;color:rgba(255,255,255,0.6);}.nav-links a:hover{color:#fff;}
+.nav-links{display:flex;gap:1.75rem;align-items:center;list-style:none;}.nav-links a{text-decoration:none;font-size:0.855rem;color:rgba(255,255,255,0.6);transition:color 0.2s;}.nav-links a:hover{color:#fff;}
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.5rem 1.3rem!important;border-radius:6px!important;font-weight:600!important;}
-.hero{background:var(--navy-deep);padding:8rem 2rem 4rem;text-align:center;}
+.hero{background:var(--navy-deep);padding:8rem 2rem 4rem;text-align:center;margin-top:66px;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);color:#fff;font-weight:400;margin-bottom:1rem;}
 .hero h1 em{font-style:italic;color:var(--amber);}
 .hero p{color:rgba(255,255,255,0.55);font-size:1rem;max-width:560px;margin:0 auto;line-height:1.7;}
@@ -25,7 +25,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.9
 .series-header{display:flex;align-items:center;gap:1rem;margin-bottom:2rem;}
 .series-header h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:400;color:var(--navy);}
 .series-tag{background:var(--amber);color:#fff;font-size:0.7rem;font-weight:700;padding:0.25rem 0.7rem;border-radius:20px;letter-spacing:0.08em;text-transform:uppercase;}
-.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin-bottom:4rem;}
+.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;}
 .article-card{background:#fff;border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;text-decoration:none;display:block;transition:border-color 0.2s,transform 0.15s,box-shadow 0.2s;}
 .article-card:hover{border-color:rgba(212,117,31,0.4);transform:translateY(-2px);box-shadow:0 6px 20px rgba(28,43,58,0.08);}
 .art-num{font-size:0.7rem;font-weight:700;color:var(--amber);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;}
@@ -36,76 +36,8 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
 @media(max-width:768px){.nav-links{display:none;}.article-grid{grid-template-columns:1fr;}}
 </style>
-<script type="application/ld+json" id="org-schema">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AMES Food Advisory",
-  "url": "https://www.amesfoodadvisory.com.au",
-  "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
-  "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
-  "sameAs": [
-    "https://www.linkedin.com/company/ames-food-advisory",
-    "https://www.facebook.com/amesfoodadvisory",
-    "https://www.instagram.com/amesfoodadvisory"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "telephone": "+61-2-XXXX-XXXX",
-    "email": "ames.food.adv@gmail.com"
-  },
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "New South Wales",
-      "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
-    }
-  ],
-  "knowsAbout": [
-    "HACCP Plan Development",
-    "Food Safety Consulting",
-    "Staff Training",
-    "Internal Auditing",
-    "SOP Writing",
-    "Compliance Readiness",
-    "Food Safety Supervisor Certification"
-  ]
-}
-</script>
-<script type="application/ld+json" id="localbusiness-schema">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "AMES Food Advisory",
-  "image": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
-  "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
-  "url": "https://www.amesfoodadvisory.com.au",
-  "telephone": "+61-2-XXXX-XXXX",
-  "email": "ames.food.adv@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Sydney",
-    "addressLocality": "Sydney",
-    "addressRegion": "NSW",
-    "postalCode": "2000",
-    "addressCountry": "AU"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "-33.8688",
-    "longitude": "151.2093"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/ames-food-advisory",
-    "https://www.facebook.com/amesfoodadvisory"
-  ],
-  "priceRange": "$$",
-  "areaServed": {
-    "@type": "State",
-    "name": "New South Wales"
-  }
-}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"AMES Food Advisory Blog","url":"https://www.amesfoodadvisory.com.au/blog","description":"Food safety blog covering HACCP, SOPs, startup guidance, training, and allergen management for NSW food businesses"}
 </script>
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
@@ -131,33 +63,127 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
+
 <div class="hero">
-  <h1>Food Safety <em>Guides & Resources</em></h1>
-  <p>Practical, NSW-specific food safety guidance written by an Arnott's-background specialist. HACCP, compliance, NSW Food Authority inspection prep, and more.</p>
+  <h1>Food Safety <em>Blog</em></h1>
+  <p>Practical guides covering HACCP planning, SOP writing, compliance startup, staff training, and allergen management for NSW food businesses.</p>
 </div>
-<div class="blog-layout">
+
+<div class="blog-layout" style="margin-bottom: 4rem;">
   <div class="series-header">
     <h2>HACCP Deep-Dive Series</h2>
+    <span class="series-tag">14 Articles</span>
+  </div>
+  <div class="article-grid">
+    <a href="/blog/haccp/allergen-management-haccp-nsw-2024.html" class="article-card"><div class="art-num">Article 01</div><div class="art-title">Allergen Management in HACCP: NSW Requirements After the 2021 Code Changes</div><div class="art-desc">The 2021 FSANZ allergen amendments changed everything for NSW food businesses. Sesame is now a major...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/ccps-critical-control-points-explained.html" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Critical Control Points Explained: NSW Food Service Examples</div><div class="art-desc">What are Critical Control Points? Real examples from Sydney cafes, restaurants, and caterers with co...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/food-safety-program-requirements-nsw.html" class="article-card"><div class="art-num">Article 03</div><div class="art-title">Food Safety Program Requirements in NSW: What Class 1 and 2 Businesses Must Have</div><div class="art-desc">A complete guide to NSW Food Safety Program requirements under Standard 3.2.1 — what must be include...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-aged-care-hospitals-class1.html" class="article-card"><div class="art-num">Article 04</div><div class="art-title">HACCP for Aged Care and Hospitals: NSW Class 1 Food Safety Requirements</div><div class="art-desc">Class 1 food businesses in NSW — hospitals, aged care, nursing homes — face the strictest food safet...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-caterers-events-nsw.html" class="article-card"><div class="art-num">Article 05</div><div class="art-title">HACCP for NSW Caterers and Event Food: Compliance Challenges</div><div class="art-desc">Catering presents unique HACCP challenges — transport, temporary facilities, the 4-hour rule at scal...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-common-mistakes-nsw.html" class="article-card"><div class="art-num">Article 06</div><div class="art-title">The 10 Most Common HACCP Mistakes in NSW Food Businesses</div><div class="art-desc">Based on auditing NSW food businesses across Sydney, these are the HACCP failures that come up repea...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-for-cafes-sydney.html" class="article-card"><div class="art-num">Article 07</div><div class="art-title">HACCP for Sydney Cafes: What You Actually Need</div><div class="art-desc">A practical HACCP guide written specifically for Sydney cafe operators — what CCPs apply, what recor...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-prerequisite-programs-explained.html" class="article-card"><div class="art-num">Article 08</div><div class="art-title">Prerequisite Programs for HACCP: The Foundation NSW Food Businesses Need</div><div class="art-desc">Prerequisite Programs are the foundation of every HACCP system. This guide explains what PRPs are re...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-record-keeping-what-to-keep.html" class="article-card"><div class="art-num">Article 09</div><div class="art-title">HACCP Record-Keeping: What NSW Food Businesses Must Document</div><div class="art-desc">A practical guide to HACCP record-keeping requirements for NSW food businesses — what records are re...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-review-annual-requirements.html" class="article-card"><div class="art-num">Article 10</div><div class="art-title">When to Review Your HACCP Plan: NSW Annual Requirements and Triggers</div><div class="art-desc">Standard 3.2.1 requires annual HACCP review as a minimum. This guide explains what triggers an immed...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/haccp-verification-validation-difference.html" class="article-card"><div class="art-num">Article 11</div><div class="art-title">HACCP Verification vs Validation: What NSW Food Businesses Get Wrong</div><div class="art-desc">Verification and validation are the most commonly confused HACCP concepts. This guide explains the d...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/how-to-write-haccp-plan-nsw.html" class="article-card"><div class="art-num">Article 12</div><div class="art-title">How to Write a HACCP Plan Step by Step for an NSW Food Business</div><div class="art-desc">Step-by-step guide to writing a HACCP plan for an NSW food business — from the five preliminary step...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/temperature-control-food-safety-nsw.html" class="article-card"><div class="art-num">Article 13</div><div class="art-title">Temperature Control in Food Safety: The NSW Guide to Critical Limits</div><div class="art-desc">Temperature control is the cornerstone of food safety in NSW. This guide covers every critical tempe...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/haccp/what-is-haccp-nsw.html" class="article-card"><div class="art-num">Article 14</div><div class="art-title">What Is HACCP? The Complete NSW Guide</div><div class="art-desc">A plain-English guide to HACCP for NSW food businesses — what it is, why it matters, who needs it, a...</div><div class="art-cta">Read article →</div></a>
+  </div>
+</div>
+<div class="blog-layout" style="margin-bottom: 4rem;">
+  <div class="series-header">
+    <h2>SOP & Documentation Series</h2>
     <span class="series-tag">15 Articles</span>
   </div>
   <div class="article-grid">
-    <a href="/blog/haccp/what-is-haccp-nsw" class="article-card"><div class="art-num">Article 01</div><div class="art-title">What Is HACCP? The Complete NSW Guide</div><div class="art-desc">A plain-English guide to HACCP for NSW food businesses — what it is, why it matters, and what NSW Food Authority inspectors look for.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/ccps-critical-control-points-explained" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Critical Control Points Explained with NSW Examples</div><div class="art-desc">Real CCP examples from Sydney cafes, restaurants, and caterers with correct critical limits and practical monitoring procedures.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/food-safety-program-requirements-nsw" class="article-card"><div class="art-num">Article 03</div><div class="art-title">Food Safety Program Requirements in NSW</div><div class="art-desc">What the law requires under Standard 3.2.1 — all eight required elements, who needs one, and what NSW Food Authority inspectors look for.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/temperature-control-food-safety-nsw" class="article-card"><div class="art-num">Article 04</div><div class="art-title">Temperature Control in Food Safety: The NSW Critical Limits Guide</div><div class="art-desc">Every critical temperature limit under the Food Standards Code with practical monitoring guidance.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/allergen-management-haccp-nsw-2024" class="article-card"><div class="art-num">Article 05</div><div class="art-title">Allergen Management in HACCP: NSW Requirements Post-2021</div><div class="art-desc">The 2021 FSANZ amendments changed everything. Sesame is now a major allergen. Is your HACCP plan current?</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-record-keeping-what-to-keep" class="article-card"><div class="art-num">Article 06</div><div class="art-title">HACCP Record-Keeping: What NSW Businesses Must Document</div><div class="art-desc">What records are required, how long to keep them, digital vs paper, and what NSW Food Authority inspectors actually look for.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-common-mistakes-nsw" class="article-card"><div class="art-num">Article 07</div><div class="art-title">The 10 Most Common HACCP Mistakes in NSW Food Businesses</div><div class="art-desc">The same failures come up in audit after audit. Find out if your business is making these mistakes before your NSW Food Authority inspectors does.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-for-cafes-sydney" class="article-card"><div class="art-num">Article 08</div><div class="art-title">HACCP for Sydney Cafes: What You Actually Need</div><div class="art-desc">Written specifically for Sydney cafe operators — the specific hazards, practical monitoring procedures, and what your NSW Food Authority NSW Food Authority inspectors will look for.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-food-manufacturers-nsw-retailer-requirements" class="article-card"><div class="art-num">Article 09</div><div class="art-title">HACCP for NSW Food Manufacturers: What Retailers Actually Require</div><div class="art-desc">What Australian retailers actually require from food manufacturers — written from real QA experience inside national food manufacturing.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-prerequisite-programs-explained" class="article-card"><div class="art-num">Article 10</div><div class="art-title">Prerequisite Programs for HACCP: The Foundation NSW Businesses Need</div><div class="art-desc">PRPs are the most common area of weakness in NSW food business audits — and they are the easiest to fix.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-review-annual-requirements" class="article-card"><div class="art-num">Article 11</div><div class="art-title">When to Review Your HACCP Plan: NSW Requirements and Triggers</div><div class="art-desc">Most NSW businesses miss the changes that require an immediate review. Here is exactly what to watch for.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-caterers-events-nsw" class="article-card"><div class="art-num">Article 12</div><div class="art-title">HACCP for NSW Caterers and Event Food: Unique Challenges</div><div class="art-desc">Transport, temporary facilities, the 4-hour rule at scale — the specific compliance obligations NSW caterers need to understand.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-aged-care-hospitals-class1" class="article-card"><div class="art-num">Article 13</div><div class="art-title">HACCP for Aged Care and Hospitals: NSW Class 1 Requirements</div><div class="art-desc">The highest-risk classification in NSW food law. What makes Class 1 HACCP different from Class 2.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/haccp-verification-validation-difference" class="article-card"><div class="art-num">Article 14</div><div class="art-title">HACCP Verification vs Validation: What NSW Businesses Get Wrong</div><div class="art-desc">Routinely confused — even in professionally written Food Safety Programs. The distinction matters critically for food safety audits and a compliant food safety program.</div><div class="art-cta">Read article →</div></a>
-    <a href="/blog/haccp/how-to-write-haccp-plan-nsw" class="article-card"><div class="art-num">Article 15</div><div class="art-title">How to Write a HACCP Plan Step by Step for NSW</div><div class="art-desc">From the five preliminary steps through to the full seven-principle documentation and implementation.</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/common-failures-in-record-keeping.html" class="article-card"><div class="art-num">Article 01</div><div class="art-title">Common Failures in Record Keeping</div><div class="art-desc">Read our comprehensive guide on Common Failures in Record Keeping as part of our SOP & Documentation...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/creating-a-supplier-approval-sop.html" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Creating a Supplier Approval SOP</div><div class="art-desc">Read our comprehensive guide on Creating a Supplier Approval SOP as part of our SOP & Documentation ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/digital-vs-paper-sops-which-is-better.html" class="article-card"><div class="art-num">Article 03</div><div class="art-title">Digital vs Paper SOPs Which is Better</div><div class="art-desc">Read our comprehensive guide on Digital vs Paper SOPs Which is Better as part of our SOP & Documenta...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/documenting-temperature-controls-step-by-step.html" class="article-card"><div class="art-num">Article 04</div><div class="art-title">Documenting Temperature Controls Step-by-Step</div><div class="art-desc">Read our comprehensive guide on Documenting Temperature Controls Step-by-Step as part of our SOP & D...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/how-ames-customizes-sops-for-your-business.html" class="article-card"><div class="art-num">Article 05</div><div class="art-title">How AMES Customizes SOPs for Your Business</div><div class="art-desc">Read our comprehensive guide on How AMES Customizes SOPs for Your Business as part of our SOP & Docu...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/how-to-train-staff-on-new-sops-effectively.html" class="article-card"><div class="art-num">Article 06</div><div class="art-title">How to Train Staff on New SOPs Effectively</div><div class="art-desc">Read our comprehensive guide on How to Train Staff on New SOPs Effectively as part of our SOP & Docu...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/how-to-write-a-cleaning-sop-that-passes-audits.html" class="article-card"><div class="art-num">Article 07</div><div class="art-title">How to Write a Cleaning SOP that Passes Audits</div><div class="art-desc">Read our comprehensive guide on How to Write a Cleaning SOP that Passes Audits as part of our SOP & ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/pest-control-documentation-for-nsw-businesses.html" class="article-card"><div class="art-num">Article 08</div><div class="art-title">Pest Control Documentation for NSW Businesses</div><div class="art-desc">Read our comprehensive guide on Pest Control Documentation for NSW Businesses as part of our SOP & D...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/sops-for-food-trucks-simplifying-compliance.html" class="article-card"><div class="art-num">Article 09</div><div class="art-title">SOPs for Food Trucks Simplifying Compliance</div><div class="art-desc">Read our comprehensive guide on SOPs for Food Trucks Simplifying Compliance as part of our SOP & Doc...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/streamlining-morning-kitchen-prep-with-sops.html" class="article-card"><div class="art-num">Article 10</div><div class="art-title">Streamlining Morning Kitchen Prep with SOPs</div><div class="art-desc">Read our comprehensive guide on Streamlining Morning Kitchen Prep with SOPs as part of our SOP & Doc...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/the-anatomy-of-a-perfect-food-safety-sop.html" class="article-card"><div class="art-num">Article 11</div><div class="art-title">The Anatomy of a Perfect Food Safety SOP</div><div class="art-desc">Read our comprehensive guide on The Anatomy of a Perfect Food Safety SOP as part of our SOP & Docume...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/the-role-of-sops-in-passing-council-inspections.html" class="article-card"><div class="art-num">Article 12</div><div class="art-title">The Role of SOPs in Passing Council Inspections</div><div class="art-desc">Read our comprehensive guide on The Role of SOPs in Passing Council Inspections as part of our SOP &...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/the-ultimate-guide-to-sop-writing-for-food-businesses.html" class="article-card"><div class="art-num">Article 13</div><div class="art-title">The Ultimate Guide to SOP Writing for Food Businesses</div><div class="art-desc">Read our comprehensive guide on The Ultimate Guide to SOP Writing for Food Businesses as part of our...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/translating-haccp-plans-into-daily-sops.html" class="article-card"><div class="art-num">Article 14</div><div class="art-title">Translating HACCP Plans into Daily SOPs</div><div class="art-desc">Read our comprehensive guide on Translating HACCP Plans into Daily SOPs as part of our SOP & Documen...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/sop/why-your-cafe-needs-standard-operating-procedures.html" class="article-card"><div class="art-num">Article 15</div><div class="art-title">Why Your Cafe Needs Standard Operating Procedures</div><div class="art-desc">Read our comprehensive guide on Why Your Cafe Needs Standard Operating Procedures as part of our SOP...</div><div class="art-cta">Read article →</div></a>
   </div>
 </div>
+<div class="blog-layout" style="margin-bottom: 4rem;">
+  <div class="series-header">
+    <h2>Start-Up Series</h2>
+    <span class="series-tag">15 Articles</span>
+  </div>
+  <div class="article-grid">
+    <a href="/blog/startup/budgeting-for-food-safety-compliance.html" class="article-card"><div class="art-num">Article 01</div><div class="art-title">Budgeting for Food Safety Compliance</div><div class="art-desc">Read our comprehensive guide on Budgeting for Food Safety Compliance as part of our Startup Complian...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/choosing-pest-control-and-waste-management-partners.html" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Choosing Pest Control and Waste Management Partners</div><div class="art-desc">Read our comprehensive guide on Choosing Pest Control and Waste Management Partners as part of our S...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/common-pitfalls-for-first-time-restaurant-owners.html" class="article-card"><div class="art-num">Article 03</div><div class="art-title">Common Pitfalls for First-Time Restaurant Owners</div><div class="art-desc">Read our comprehensive guide on Common Pitfalls for First-Time Restaurant Owners as part of our Star...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/essential-food-safety-steps-before-opening.html" class="article-card"><div class="art-num">Article 04</div><div class="art-title">Essential Food Safety Steps Before Opening</div><div class="art-desc">Read our comprehensive guide on Essential Food Safety Steps Before Opening as part of our Startup Co...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/how-to-design-a-compliant-commercial-kitchen.html" class="article-card"><div class="art-num">Article 05</div><div class="art-title">How to Design a Compliant Commercial Kitchen</div><div class="art-desc">Read our comprehensive guide on How to Design a Compliant Commercial Kitchen as part of our Startup ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/how-to-handle-your-first-council-health-inspection.html" class="article-card"><div class="art-num">Article 06</div><div class="art-title">How to Handle Your First Council Health Inspection</div><div class="art-desc">Read our comprehensive guide on How to Handle Your First Council Health Inspection as part of our St...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/navigating-council-approvals-for-new-premises.html" class="article-card"><div class="art-num">Article 07</div><div class="art-title">Navigating Council Approvals for New Premises</div><div class="art-desc">Read our comprehensive guide on Navigating Council Approvals for New Premises as part of our Startup...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/securing-your-fss-certificate-before-launch.html" class="article-card"><div class="art-num">Article 08</div><div class="art-title">Securing Your FSS Certificate Before Launch</div><div class="art-desc">Read our comprehensive guide on Securing Your FSS Certificate Before Launch as part of our Startup C...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/setting-up-your-first-haccp-plan.html" class="article-card"><div class="art-num">Article 09</div><div class="art-title">Setting Up Your First HACCP Plan</div><div class="art-desc">Read our comprehensive guide on Setting Up Your First HACCP Plan as part of our Startup Compliance S...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/sourcing-compliant-ingredients-what-startups-need.html" class="article-card"><div class="art-num">Article 10</div><div class="art-title">Sourcing Compliant Ingredients What Startups Need</div><div class="art-desc">Read our comprehensive guide on Sourcing Compliant Ingredients What Startups Need as part of our Sta...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/the-ames-food-advisory-startup-package-explained.html" class="article-card"><div class="art-num">Article 11</div><div class="art-title">The AMES Food Advisory Startup Package Explained</div><div class="art-desc">Read our comprehensive guide on The AMES Food Advisory Startup Package Explained as part of our Star...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/the-complete-startup-checklist-for-nsw.html" class="article-card"><div class="art-num">Article 12</div><div class="art-title">The Complete Startup Checklist for NSW</div><div class="art-desc">Read our comprehensive guide on The Complete Startup Checklist for NSW as part of our Startup Compli...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/understanding-nsw-food-authority-licensing.html" class="article-card"><div class="art-num">Article 13</div><div class="art-title">Understanding NSW Food Authority Licensing</div><div class="art-desc">Read our comprehensive guide on Understanding NSW Food Authority Licensing as part of our Startup Co...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/why-expert-advice-is-crucial-for-startups.html" class="article-card"><div class="art-num">Article 14</div><div class="art-title">Why Expert Advice is Crucial for Startups</div><div class="art-desc">Read our comprehensive guide on Why Expert Advice is Crucial for Startups as part of our Startup Com...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/startup/writing-your-first-food-safety-program.html" class="article-card"><div class="art-num">Article 15</div><div class="art-title">Writing Your First Food Safety Program</div><div class="art-desc">Read our comprehensive guide on Writing Your First Food Safety Program as part of our Startup Compli...</div><div class="art-cta">Read article →</div></a>
+  </div>
+</div>
+<div class="blog-layout" style="margin-bottom: 4rem;">
+  <div class="series-header">
+    <h2>Training & Competency Series</h2>
+    <span class="series-tag">15 Articles</span>
+  </div>
+  <div class="article-grid">
+    <a href="/blog/training/creating-a-training-matrix-for-your-bakery.html" class="article-card"><div class="art-num">Article 01</div><div class="art-title">Creating a Training Matrix for Your Bakery</div><div class="art-desc">Read our comprehensive guide on Creating a Training Matrix for Your Bakery as part of our Training S...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/food-safety-supervisor-vs-food-handler.html" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Food Safety Supervisor vs Food Handler</div><div class="art-desc">Read our comprehensive guide on Food Safety Supervisor vs Food Handler as part of our Training Serie...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/how-ames-transforms-your-teams-hygiene-standards.html" class="article-card"><div class="art-num">Article 03</div><div class="art-title">How AMES Transforms Your Teams Hygiene Standards</div><div class="art-desc">Read our comprehensive guide on How AMES Transforms Your Teams Hygiene Standards as part of our Trai...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/how-to-document-staff-training-for-nsw-audits.html" class="article-card"><div class="art-num">Article 04</div><div class="art-title">How to Document Staff Training for NSW Audits</div><div class="art-desc">Read our comprehensive guide on How to Document Staff Training for NSW Audits as part of our Trainin...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/how-to-meet-nsw-food-authority-training-requirements.html" class="article-card"><div class="art-num">Article 05</div><div class="art-title">How to Meet NSW Food Authority Training Requirements</div><div class="art-desc">Read our comprehensive guide on How to Meet NSW Food Authority Training Requirements as part of our ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/implementing-a-continuous-training-culture.html" class="article-card"><div class="art-num">Article 06</div><div class="art-title">Implementing a Continuous Training Culture</div><div class="art-desc">Read our comprehensive guide on Implementing a Continuous Training Culture as part of our Training S...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/navigating-food-safety-compliance-with-expert-training.html" class="article-card"><div class="art-num">Article 07</div><div class="art-title">Navigating Food Safety Compliance with Expert Training</div><div class="art-desc">Read our comprehensive guide on Navigating Food Safety Compliance with Expert Training as part of ou...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/online-vs-in-person-food-safety-training.html" class="article-card"><div class="art-num">Article 08</div><div class="art-title">Online vs In-Person Food Safety Training</div><div class="art-desc">Read our comprehensive guide on Online vs In-Person Food Safety Training as part of our Training Ser...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/refresher-courses-when-should-staff-be-retrained.html" class="article-card"><div class="art-num">Article 09</div><div class="art-title">Refresher Courses When Should Staff Be Retrained</div><div class="art-desc">Read our comprehensive guide on Refresher Courses When Should Staff Be Retrained as part of our Trai...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/the-role-of-tafe-qualified-trainers-in-food-safety.html" class="article-card"><div class="art-num">Article 10</div><div class="art-title">The Role of TAFE-Qualified Trainers in Food Safety</div><div class="art-desc">Read our comprehensive guide on The Role of TAFE-Qualified Trainers in Food Safety as part of our Tr...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/the-true-cost-of-inadequate-food-safety-training.html" class="article-card"><div class="art-num">Article 11</div><div class="art-title">The True Cost of Inadequate Food Safety Training</div><div class="art-desc">Read our comprehensive guide on The True Cost of Inadequate Food Safety Training as part of our Trai...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/top-5-mistakes-in-food-handler-training.html" class="article-card"><div class="art-num">Article 12</div><div class="art-title">Top 5 Mistakes in Food Handler Training</div><div class="art-desc">Read our comprehensive guide on Top 5 Mistakes in Food Handler Training as part of our Training Seri...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/training-for-multicultural-kitchen-teams.html" class="article-card"><div class="art-num">Article 13</div><div class="art-title">Training for Multicultural Kitchen Teams</div><div class="art-desc">Read our comprehensive guide on Training for Multicultural Kitchen Teams as part of our Training Ser...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/why-food-safety-training-is-critical-for-sydney-cafes.html" class="article-card"><div class="art-num">Article 14</div><div class="art-title">Why Food Safety Training is Critical for Sydney Cafes</div><div class="art-desc">Read our comprehensive guide on Why Food Safety Training is Critical for Sydney Cafes as part of our...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/training/why-the-arnotts-group-methodology-works-for-small-cafes.html" class="article-card"><div class="art-num">Article 15</div><div class="art-title">Why The Arnotts Group Methodology Works for Small Cafes</div><div class="art-desc">Read our comprehensive guide on Why The Arnotts Group Methodology Works for Small Cafes as part of o...</div><div class="art-cta">Read article →</div></a>
+  </div>
+</div>
+<div class="blog-layout" style="margin-bottom: 4rem;">
+  <div class="series-header">
+    <h2>Allergen Management Series</h2>
+    <span class="series-tag">15 Articles</span>
+  </div>
+  <div class="article-grid">
+    <a href="/blog/allergens/building-customer-trust-through-allergen-practices.html" class="article-card"><div class="art-num">Article 01</div><div class="art-title">Building Customer Trust Through Allergen Practices</div><div class="art-desc">Read our comprehensive guide on Building Customer Trust Through Allergen Practices as part of our Re...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/cleaning-protocols-for-allergen-free-preparation.html" class="article-card"><div class="art-num">Article 02</div><div class="art-title">Cleaning Protocols for Allergen-Free Preparation</div><div class="art-desc">Read our comprehensive guide on Cleaning Protocols for Allergen-Free Preparation as part of our Reca...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/cross-contamination-prevention-strategies.html" class="article-card"><div class="art-num">Article 03</div><div class="art-title">Cross-Contamination Prevention Strategies</div><div class="art-desc">Read our comprehensive guide on Cross-Contamination Prevention Strategies as part of our Recall & Al...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/designing-an-allergen-matrix-for-your-menu.html" class="article-card"><div class="art-num">Article 04</div><div class="art-title">Designing an Allergen Matrix for Your Menu</div><div class="art-desc">Read our comprehensive guide on Designing an Allergen Matrix for Your Menu as part of our Recall & A...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/gluten-free-vs-gluten-friendly-legal-requirements.html" class="article-card"><div class="art-num">Article 05</div><div class="art-title">Gluten-Free vs Gluten-Friendly Legal Requirements</div><div class="art-desc">Read our comprehensive guide on Gluten-Free vs Gluten-Friendly Legal Requirements as part of our Rec...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/how-to-conduct-a-mock-product-recall.html" class="article-card"><div class="art-num">Article 06</div><div class="art-title">How to Conduct a Mock Product Recall</div><div class="art-desc">Read our comprehensive guide on How to Conduct a Mock Product Recall as part of our Recall & Allerge...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/how-to-handle-a-mandatory-product-recall-in-nsw.html" class="article-card"><div class="art-num">Article 07</div><div class="art-title">How to Handle a Mandatory Product Recall in NSW</div><div class="art-desc">Read our comprehensive guide on How to Handle a Mandatory Product Recall in NSW as part of our Recal...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/labeling-requirements-for-packaged-foods-in-cafes.html" class="article-card"><div class="art-num">Article 08</div><div class="art-title">Labeling Requirements for Packaged Foods in Cafes</div><div class="art-desc">Read our comprehensive guide on Labeling Requirements for Packaged Foods in Cafes as part of our Rec...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/mastering-allergen-management-in-a-commercial-kitchen.html" class="article-card"><div class="art-num">Article 09</div><div class="art-title">Mastering Allergen Management in a Commercial Kitchen</div><div class="art-desc">Read our comprehensive guide on Mastering Allergen Management in a Commercial Kitchen as part of our...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/staff-training-for-severe-food-allergies.html" class="article-card"><div class="art-num">Article 10</div><div class="art-title">Staff Training for Severe Food Allergies</div><div class="art-desc">Read our comprehensive guide on Staff Training for Severe Food Allergies as part of our Recall & All...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/the-ames-approach-to-allergen-risk-assessment.html" class="article-card"><div class="art-num">Article 11</div><div class="art-title">The AMES Approach to Allergen Risk Assessment</div><div class="art-desc">Read our comprehensive guide on The AMES Approach to Allergen Risk Assessment as part of our Recall ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/the-cost-of-getting-allergen-management-wrong.html" class="article-card"><div class="art-num">Article 12</div><div class="art-title">The Cost of Getting Allergen Management Wrong</div><div class="art-desc">Read our comprehensive guide on The Cost of Getting Allergen Management Wrong as part of our Recall ...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/the-new-nsw-guidelines-on-allergen-declarations.html" class="article-card"><div class="art-num">Article 13</div><div class="art-title">The New NSW Guidelines on Allergen Declarations</div><div class="art-desc">Read our comprehensive guide on The New NSW Guidelines on Allergen Declarations as part of our Recal...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/traceability-knowing-where-your-ingredients-come-from.html" class="article-card"><div class="art-num">Article 14</div><div class="art-title">Traceability Knowing Where Your Ingredients Come From</div><div class="art-desc">Read our comprehensive guide on Traceability Knowing Where Your Ingredients Come From as part of our...</div><div class="art-cta">Read article →</div></a>
+    <a href="/blog/allergens/what-to-do-if-a-customer-has-an-allergic-reaction.html" class="article-card"><div class="art-num">Article 15</div><div class="art-title">What to Do If a Customer Has an Allergic Reaction</div><div class="art-desc">Read our comprehensive guide on What to Do If a Customer Has an Allergic Reaction as part of our Rec...</div><div class="art-cta">Read article →</div></a>
+  </div>
+</div>
+
 <footer><div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div></footer>
 </body>
 </html>
