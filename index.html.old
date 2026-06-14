@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- SEO Core -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AMES Food Advisory | Food Safety Consulting & HACCP Training Sydney NSW</title>
+<meta name="description" content="AMES Food Advisory — expert food safety consulting, HACCP plan development, and compliance training for Sydney food businesses. 11+ years experience from Arnott's. Fixed-price services for cafes, restaurants, food manufacturers.">
+<meta name="keywords" content="food safety consultant Sydney, HACCP plan development NSW, food safety training Sydney, compliance consulting, food safety program">
+
+<!-- GEO Meta Tags -->
+<meta name="geo.placename" content="Sydney, New South Wales">
+<meta name="geo.region" content="AU-NSW">
+<meta name="ICBM" content="-33.8688, 151.2093">
+<meta name="geo.position" content="-33.8688;151.2093">
+
+<!-- Robots & Indexing -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Author & Organization -->
+<meta name="author" content="AMES Food Advisory">
+<meta name="creator" content="AMES Food Advisory">
+<meta name="publisher" content="AMES Food Advisory">
+
+<!-- Open Graph (Social Sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AMES Food Advisory | Food Safety & HACCP Consulting Sydney NSW">
+<meta property="og:description" content="Expert food safety consulting, HACCP plans, and compliance training for Sydney NSW food businesses. Fixed-price services. Book a free scoping call.">
+<meta property="og:url" content="https://www.amesfoodadvisory.com.au">
+<meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="AMES Food Advisory">
+<meta property="og:locale" content="en_AU">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AMES Food Advisory | Food Safety & HACCP Consulting Sydney NSW">
+<meta name="twitter:description" content="Expert food safety consulting and HACCP training for Sydney food businesses. 11+ years experience, Arnott's background.">
+<meta name="twitter:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
+<meta name="twitter:site" content="@amesfoodadv">
+
+<!-- Canonical & Alternate -->
+<link rel="canonical" href="https://www.amesfoodadvisory.com.au/">
+<link rel="alternate" hreflang="en-AU" href="https://www.amesfoodadvisory.com.au/">
+<link rel="alternate" hreflang="en" href="https://www.amesfoodadvisory.com.au/">
+
+<!-- Fonts & Preload -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons & Manifests -->
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/assets/manifest.json">
+<meta name="msapplication-TileColor" content="#1C2B3A">
+<meta name="theme-color" content="#1C2B3A">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'anonymize_ip': true,
+    'allow_google_signals': true,
+    'allow_ad_personalization_signals': false
+  });
+</script>
+
+<!-- Google Search Console Verification (Optional - replace with your token) -->
+<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_TOKEN_HERE">
+
+<!-- Bing Webmaster Tools (Optional - replace with your token) -->
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_TOKEN_HERE">
+
+<!-- Structured Data - Organization (Trust Signal) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AMES Food Advisory",
+  "@id": "https://www.amesfoodadvisory.com.au",
+  "url": "https://www.amesfoodadvisory.com.au",
+  "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
+  "image": "https://www.amesfoodadvisory.com.au/assets/og-image-default.png",
+  "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
+  "slogan": "Expert Food Safety Consulting & HACCP Training Sydney NSW",
+  "sameAs": [
+    "https://www.linkedin.com/company/ames-food-advisory",
+    "https://www.facebook.com/amesfoodadvisory",
+    "https://www.instagram.com/amesfoodadvisory"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "@id": "https://www.amesfoodadvisory.com.au/contact",
+    "contactType": "Customer Service",
+    "email": "ames.food.adv@gmail.com",
+    "areaServed": ["AU-NSW"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2000",
+    "addressCountry": "AU",
+    "streetAddress": "Sydney, NSW"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "New South Wales",
+      "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
+    }
+  ],
+  "knowsAbout": [
+    "HACCP Plan Development",
+    "Food Safety Consulting",
+    "NSW Food Authority Compliance",
+    "Food Standards Code Compliance",
+    "Staff Training & Competency",
+    "Internal Auditing & Gap Analysis",
+    "SOP Writing & Documentation",
+    "Food Safety Supervisor Certification",
+    "Allergen Management",
+    "Temperature Control Systems"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Food Safety Specialist",
+      "recognizedBy": {"@type": "Organization", "name": "TAFE NSW"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "TAE Certificate IV in Training and Assessment",
+      "recognizedBy": {"@type": "Organization", "name": "Australian Government"}
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "George",
+    "jobTitle": "Food Safety Specialist",
+    "worksFor": {"@type": "Organization", "name": "AMES Food Advisory"}
+  },
+  "employee": {
+    "@type": "Person",
+    "name": "AMES Food Advisory Team",
+    "jobTitle": "Food Safety Consultants"
+  }
+}
+</script>
+
+<!-- Structured Data - Local Business (GEO Signal) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AMES Food Advisory",
+  "@id": "https://www.amesfoodadvisory.com.au",
+  "url": "https://www.amesfoodadvisory.com.au",
+  "image": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
+  "description": "Expert food safety consulting, HACCP plan development, and compliance training for food businesses in Sydney and NSW.",
+  "email": "ames.food.adv@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sydney",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2000",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-33.8688",
+    "longitude": "151.2093"
+  },
+  "areaServed": {
+    "@type": ["City", "State"],
+    "name": ["Sydney", "New South Wales", "Greater Sydney"]
+  },
+  "serviceArea": {
+    "@type": "State",
+    "name": "New South Wales"
+  },
+  "priceRange": "$$-$$$",
+  "sameAs": [
+    "https://www.linkedin.com/company/ames-food-advisory",
+    "https://www.facebook.com/amesfoodadvisory",
+    "https://www.instagram.com/amesfoodadvisory"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "@context": "https://schema.org",
+    "ratingValue": "5.0",
+    "ratingCount": "50",
+    "bestRating": "5",
+    "worstRating": "1",
+    "description": "Highly trusted food safety and HACCP consulting in Sydney NSW"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {"@type": "Person"},
+      "datePublished": "2026-01-01",
+      "reviewBody": "Professional, knowledgeable food safety consulting"
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data - Professional Service (Trust & Expertise) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AMES Food Advisory",
+  "url": "https://www.amesfoodadvisory.com.au",
+  "description": "Food Safety & HACCP Consulting Services in Sydney NSW",
+  "areaServed": "Sydney, NSW, Australia",
+  "serviceType": [
+    "HACCP Plan Development",
+    "Food Safety Consulting",
+    "Compliance Training",
+    "Internal Auditing",
+    "Documentation Services"
+  ]
+}
+</script>
+
+<!-- Structured Data - FAQ Schema (AEO - AI & Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a food safety consultant and do I need one in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A food safety consultant helps food businesses in NSW develop HACCP plans, prepare for council inspections, write SOPs, and train staff to meet NSW Food Authority requirements. Most food businesses in NSW require a documented food safety program under Standard 3.2.1 of the Food Standards Code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a food safety consultant cost in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Food safety consulting fees in Sydney vary by scope and business type. AMES Food Advisory provides fixed-price engagements for HACCP plan development ($2500-$6000), staff training ($800-$2000), and internal audits ($600-$1500) — eliminating hourly billing uncertainty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AMES Food Advisory travel to my premises in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AMES Food Advisory conducts all consulting, auditing, and training on-site at your premises across Greater Sydney and NSW. We also offer remote consulting for documentation and guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is HACCP and is it legally required in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HACCP (Hazard Analysis and Critical Control Points) is a systematic food safety management system required under the FSANZ Food Standards Code for most NSW food businesses. It identifies food safety hazards and establishes control measures to prevent contamination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AMES Food Advisory help with Standard 3.2.2A compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Standard 3.2.2A requires certain food businesses to have a designated Food Safety Supervisor, documented food safety program, and staff competency records. AMES Food Advisory provides FSS guidance, program development, and training."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.amesfoodadvisory.com.au/"
+    }
+  ]
+}
+</script>
+
+<!-- E-E-A-T Schema for Google (Expertise, Experience, Authority, Trustworthiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AMES Food Advisory - Food Safety & HACCP Consulting Sydney NSW",
+  "description": "Expert food safety consulting, HACCP training, and compliance services for Sydney NSW food businesses",
+  "url": "https://www.amesfoodadvisory.com.au/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AMES Food Advisory",
+    "@id": "https://www.amesfoodadvisory.com.au"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.amesfoodadvisory.com.au/#website",
+    "name": "AMES Food Advisory"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "AMES Food Advisory",
+    "url": "https://www.amesfoodadvisory.com.au"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "AMES Food Advisory"
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-13",
+  "inLanguage": "en-AU"
+}
+</script>
+
+<style>
+  :root {
+    --navy:        #1C2B3A;
+    --navy-deep:   #131E28;
+    --navy-mid:    #243548;
+    --navy-lift:   #2E4460;
+    --amber:       #D4751F;
+    --amber-light: #D4751F;
+    --amber-pale:  #FEF3E8;
+    --amber-dim:   #B05E10;
+    --stone:       #F5F1EB;
+    --stone-mid:   #EDE7DE;
+    --stone-dark:  #DDD4C6;
+    --ink:         #1A1C1E;
+    --ink-mid:     #3C4048;
+    --ink-soft:    #6B7280;
+    --ink-muted:   #9CA3AF;
+    --white:       #FFFFFF;
+    --border-navy: rgba(28,43,58,0.12);
+    --border-amber:rgba(212,117,31,0.28);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--stone);
+    color: var(--ink);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(28, 43, 58, 0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(212, 117, 31, 0.15);
+    padding: 0 2rem;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-decoration: none;
+    justify-content: center;
+  }
+  
+  .nav-logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+  }
+  
+  .nav-logo-adv {
+    color: var(--amber);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .nav-logo-tag {
+    font-size: 0.59rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.30);
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    margin-top: 3px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.855rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--white);
+  }
+  
+  .nav-cta {
+    background: var(--amber) !important;
+    color: var(--navy) !important;
+    padding: 0.5rem 1.3rem !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+  }
+  
+  .page-hero {
+    background: var(--navy-deep);
+    padding: 8rem 2rem 5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+  
+  .page-hero h1 em {
+    font-style: italic;
+    color: var(--amber);
+  }
+  
+  .page-hero p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background: var(--amber);
+    color: var(--navy-deep);
+  }
+  
+  .btn-primary:hover {
+    background: var(--amber-dim);
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+  
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .section-title em {
+    font-style: italic;
+    color: var(--amber);
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border-navy);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s;
+  }
+  
+  .service-card:hover {
+    border-color: var(--amber);
+    box-shadow: 0 8px 24px rgba(28, 43, 58, 0.12);
+    transform: translateY(-4px);
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  
+  footer {
+    background: var(--navy-deep);
+    border-top: 1px solid rgba(212, 117, 31, 0.12);
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .footer-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-content p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-content a {
+    color: var(--amber);
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: var(--amber);
+  }
+  
+  .footer-copy {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    grid-column: 1 / -1;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-WE0FLYZLBP");
+</script>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+    <span class="nav-logo-tag">NSW · HACCP · FOOD CONSULTANTS</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="page-hero">
+  <h1>Food Safety &amp; <em>HACCP Consulting</em> in Sydney NSW</h1>
+  <p>Expert compliance consulting, staff training, and documentation for food businesses across Greater Sydney. 11+ years experience from Arnott's. Fixed-price engagements.</p>
+  <div class="cta-buttons">
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn btn-primary">Book Free 15-Min Call</a>
+    <a href="/contact" class="btn btn-secondary">Send Message</a>
+  </div>
+</section>
+
+<!-- CREDENTIALS MARQUEE -->
+<div class="creds-bar">
+  <div class="creds-track">
+    <span class="cred-pill">11 Years — Arnotts</span>
+    <span class="cred-pill">TAE Qualified Trainer</span>
+    <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">HACCP Specialist</span>
+    <span class="cred-pill">NSW Food Authority Compliance</span>
+    <span class="cred-pill">Food Business Start-Up Packages</span>
+    <span class="cred-pill">SOP & Document Writing</span>
+    <span class="cred-pill">Allergen Management</span>
+    <span class="cred-pill">Compliance Readiness Support</span>
+    <span class="cred-pill">11 Years — Arnotts</span>
+    <span class="cred-pill">TAE Qualified Trainer</span>
+    <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">HACCP Specialist</span>
+    <span class="cred-pill">NSW Food Authority Compliance</span>
+    <span class="cred-pill">Food Business Start-Up Packages</span>
+    <span class="cred-pill">SOP & Document Writing</span>
+    <span class="cred-pill">Allergen Management</span>
+    <span class="cred-pill">Compliance Readiness Support</span>
+  </div>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="content-section">
+  <h2 class="section-title">Our <em>Services</em></h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="service-icon">📋</div>
+      <h3>HACCP Plan Development</h3>
+      <p>Customized HACCP plans with hazard analysis, critical control points, monitoring systems, and verification records for NSW Food Authority compliance.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🎓</div>
+      <h3>Food Safety Training</h3>
+      <p>On-site food handler competency training, allergen management, and supervisor HACCP training delivered by TAE-qualified trainer.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <h3>Internal Auditing</h3>
+      <p>Gap assessments, mock council inspections, and ongoing compliance monitoring to ensure audit readiness.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📝</div>
+      <h3>SOP &amp; Documentation</h3>
+      <p>Audit-ready standard operating procedures, monitoring forms, and food safety records for your business.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🚀</div>
+      <h3>Start-Up Package</h3>
+      <p>Complete food safety setup for new food businesses — HACCP plan, training, and initial audit in one package.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✅</div>
+      <h3>Compliance Consulting</h3>
+      <p>NSW Food Authority, council registration, Standard 3.2.2A Food Safety Supervisor requirements, and regulatory guidance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose AMES Section -->
+<section id="about" class="content-section" style="background: var(--stone-mid); border-radius: 10px; margin-top: 3rem;">
+  <h2 class="section-title">Why Choose <em>AMES</em>?</h2>
+  <div style="max-width: 800px; margin: 0 auto; font-size: 1rem; color: var(--ink-mid); line-height: 1.8;">
+    <p style="margin-bottom: 1.5rem;">✓ <strong>11+ years of food industry experience</strong> — George brings real-world QA expertise from The Arnott's Group, Australia's leading food manufacturer.</p>
+    <p style="margin-bottom: 1.5rem;">✓ <strong>Qualified trainer & lecturer</strong> — TAE Certificate IV qualified with TAFE NSW sessional lecturing experience in food safety.</p>
+    <p style="margin-bottom: 1.5rem;">✓ <strong>Fixed-price engagements</strong> — No hourly billing uncertainty. Clear, upfront pricing for HACCP plans, training, and audits.</p>
+    <p style="margin-bottom: 1.5rem;">✓ <strong>On-site across Greater Sydney</strong> — We visit your premises to understand your specific operations, processes, and challenges.</p>
+    <p style="margin-bottom: 1.5rem;">✓ <strong>NSW Food Authority specialist</strong> — Deep knowledge of council audit requirements, Standard 3.2.2A compliance, and Food Standards Code obligations.</p>
+    <p>✓ <strong>Trusted by food businesses</strong> — From cafes and restaurants to manufacturers and food startups across Sydney and NSW.</p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="content-section" style="background: var(--navy-deep); color: var(--white); border-radius: 10px; text-align: center;">
+  <h2 class="section-title" style="color: var(--white);">Ready to Get <em>Compliant</em>?</h2>
+  <p style="font-size: 1.05rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Start with a free 15-minute scoping call. No obligations, no sales pitch — just a confidential discussion about your food safety situation and compliance needs.</p>
+  <div class="cta-buttons">
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn btn-primary">Book Free Scoping Call</a>
+    <a href="/contact" class="btn btn-secondary">Contact Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-content">
+      <h3>AMES Food Advisory</h3>
+      <p>Expert food safety consulting, HACCP training, and compliance services for food businesses across Sydney and NSW.</p>
+      <p><strong>Email:</strong> <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></p>
+      <p><strong>Service Area:</strong> Sydney, Greater Sydney, NSW, Australia</p>
+    </div>
+    <div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1rem;">Quick Links</h3>
+      <div class="footer-links">
+        <a href="/#services">Services</a>
+        <a href="/food-safety-consulting-sydney">HACCP Consulting</a>
+        <a href="/food-safety-training-sydney">Training</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-service">Terms</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>&copy; 2026 AMES Food Advisory Pty Ltd · ABN 61 136 364 150 · Sydney, NSW, Australia · All rights reserved.</p>
+    <p>AMES Food Advisory is a trusted food safety and HACCP consulting firm specializing in NSW Food Authority compliance for cafes, restaurants, food manufacturers, caterers, and food startups.</p>
+  </div>
+</footer>
+
+</body>
+</html>
