@@ -581,6 +581,44 @@
   }
 
   /* ── CHECKER ── */
+  /* ── FAQ ACCORDION ── */
+  .faq-list { margin-top: 0.5rem; }
+  .faq-item {
+    border-bottom: 1px solid var(--border-navy);
+  }
+  .faq-item:first-child { border-top: 1px solid var(--border-navy); }
+  .faq-btn {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; background: none; border: none; cursor: pointer;
+    padding: 1.35rem 0; gap: 1.5rem; text-align: left;
+  }
+  .faq-btn:hover .faq-q { color: var(--amber); }
+  .faq-q {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.01rem; font-weight: 600; line-height: 1.45;
+    color: var(--navy); transition: color 0.2s;
+  }
+  .faq-icon {
+    flex-shrink: 0; width: 28px; height: 28px;
+    border: 1.5px solid var(--border-navy); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s, border-color 0.2s, transform 0.3s;
+  }
+  .faq-icon svg { width: 11px; height: 11px; fill: none; stroke: var(--ink-mid); stroke-width: 2; transition: stroke 0.2s; }
+  .faq-item.open .faq-icon { background: var(--amber); border-color: var(--amber); transform: rotate(45deg); }
+  .faq-item.open .faq-icon svg { stroke: var(--navy-deep); }
+  .faq-item.open .faq-q { color: var(--amber); }
+  .faq-a-wrap {
+    display: grid; grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .faq-item.open .faq-a-wrap { grid-template-rows: 1fr; }
+  .faq-a-inner { overflow: hidden; }
+  .faq-a {
+    padding-bottom: 1.4rem;
+    font-size: 0.95rem; color: var(--ink-soft); line-height: 1.78; font-weight: 300;
+  }
+
   .checker { background: var(--stone-mid); }
   .checker-wrap { max-width: 740px; margin: 0 auto; }
   .checker-card {
@@ -1433,28 +1471,32 @@
     
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">How do I register a new food business with the NSW Food Authority?</div>
-        <div class="faq-a">
-          In New South Wales, retail food businesses — cafes, restaurants, retail bakeries — must notify the NSW Food Authority before operating. Non-retail food businesses such as food manufacturers, wholesalers, egg producers, and dairy processors must apply for a licence directly with the NSW Food Authority. We guide you through classifying your business, preparing the necessary documentation, and submitting compliance-ready applications to prevent launch delays.
-        </div>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span class="faq-q">How do I register a new food business with the NSW Food Authority?</span>
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+        </button>
+        <div class="faq-a-wrap"><div class="faq-a-inner"><div class="faq-a">In New South Wales, retail food businesses — cafes, restaurants, retail bakeries — must notify the NSW Food Authority before operating. Non-retail food businesses such as food manufacturers, wholesalers, egg producers, and dairy processors must apply for a licence directly with the NSW Food Authority. We guide you through classifying your business, preparing the necessary documentation, and submitting compliance-ready applications to prevent launch delays.</div></div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What is required to pass a NSW Food Authority audit?</div>
-        <div class="faq-a">
-          A NSW Food Authority audit assesses compliance across three core areas: structural requirements (kitchen surfaces, handwashing facilities, and ventilation), operational processes (safe food temperatures, clean storage, and allergen separation), and thorough record-keeping (daily temperature sheets, sanitising logs, and supplier approvals). Our pre-audit gap assessments are designed to catch and fix physical or documentation gaps before an inspector arrives.
-        </div>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span class="faq-q">What is required to pass a NSW Food Authority audit?</span>
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+        </button>
+        <div class="faq-a-wrap"><div class="faq-a-inner"><div class="faq-a">A NSW Food Authority audit assesses compliance across three core areas: structural requirements (kitchen surfaces, handwashing facilities, and ventilation), operational processes (safe food temperatures, clean storage, and allergen separation), and thorough record-keeping (daily temperature sheets, sanitising logs, and supplier approvals). Our pre-audit gap assessments are designed to catch and fix physical or documentation gaps before an inspector arrives.</div></div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Do I need a certified Food Safety Supervisor (FSS) on-site at all times?</div>
-        <div class="faq-a">
-          Under Standard 3.2.2A of the Food Standards Code, most food service businesses that process and sell ready-to-eat, potentially hazardous foods must appoint at least one trained Food Safety Supervisor. The FSS does not need to be physically present at all times, but must be reasonably available to supervise food handling operations and maintain the food safety program. We help you select, train, and document the right person for the role.
-        </div>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span class="faq-q">Do I need a certified Food Safety Supervisor (FSS) on-site at all times?</span>
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+        </button>
+        <div class="faq-a-wrap"><div class="faq-a-inner"><div class="faq-a">Under Standard 3.2.2A of the Food Standards Code, most food service businesses that process and sell ready-to-eat, potentially hazardous foods must appoint at least one trained Food Safety Supervisor. The FSS does not need to be physically present at all times, but must be reasonably available to supervise food handling operations and maintain the food safety program. We help you select, train, and document the right person for the role.</div></div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I prepare for a third-party food safety audit?</div>
-        <div class="faq-a">
-          Third-party food safety audits under GFSI schemes such as SQF, BRCGS, or FSSC 22000 require a fully validated HACCP program, documented supplier verification, physical contamination controls, and extensive staff competency records. With 11+ years of corporate QA experience at The Arnott's Group, we conduct deep-dive gap analyses and build the documentation and verification systems required to pass these audits.
-        </div>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span class="faq-q">How do I prepare for a third-party food safety audit?</span>
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+        </button>
+        <div class="faq-a-wrap"><div class="faq-a-inner"><div class="faq-a">Third-party food safety audits under GFSI schemes such as SQF, BRCGS, or FSSC 22000 require a fully validated HACCP program, documented supplier verification, physical contamination controls, and extensive staff competency records. With 11+ years of corporate QA experience at The Arnott's Group, we conduct deep-dive gap analyses and build the documentation and verification systems required to pass these audits.</div></div></div>
       </div>
     </div>
   </div>
@@ -1641,21 +1683,7 @@
           <div class="contact-detail-icon">📧</div>
           <div>
             <div class="contact-detail-title">Email</div>
-            <div class="contact-detail-value"><a href="mailto:hello@amesfoodadvisory.com.au">hello@amesfoodadvisory.com.au</a></div>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📞</div>
-          <div>
-            <div class="contact-detail-title">Phone</div>
-            <div class="contact-detail-value"><a href="tel:+61400000000">04XX XXX XXX</a></div>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">💼</div>
-          <div>
-            <div class="contact-detail-title">LinkedIn</div>
-            <div class="contact-detail-value"><a href="#">linkedin.com/in/yourprofile</a></div>
+            <div class="contact-detail-value"><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
           </div>
         </div>
         <div class="service-areas">
@@ -1905,6 +1933,21 @@ document.addEventListener('click',function(e){
       ctObs.observe(el);
     });
   }
+
+  /* ── FAQ accordion ── */
+  window.toggleFaq = function(btn){
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    /* Close all others */
+    document.querySelectorAll('.faq-item.open').forEach(function(el){
+      el.classList.remove('open');
+      el.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  };
 
   /* ── Smooth scroll for hero scroll indicator ── */
   var heroScroll = document.querySelector('.hero-scroll');
