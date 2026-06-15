@@ -176,21 +176,68 @@
      VISUAL UPGRADE — CINEMATIC FOOD BACKGROUNDS & EFFECTS
   ════════════════════════════════════════════════════════ */
 
-  /* Hero cinematic photo background — slow Ken Burns pan */
-  .hero-cinema {
-    position: absolute; inset: -6%;
-    background-image:
-      linear-gradient(160deg, rgba(10,18,28,0.94) 0%, rgba(24,40,58,0.78) 45%, rgba(12,20,30,0.92) 100%),
-      url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80&auto=format&fit=crop');
-    background-size: cover; background-position: center 38%;
-    animation: cinemaKB 34s ease-in-out infinite alternate;
-    will-change: transform; z-index: 0;
+  /* ─── HERO SLIDESHOW (4 kitchen photos crossfade with per-slide Ken Burns) ─── */
+  .hero-slideshow {
+    position: absolute; inset: 0; z-index: 0; overflow: hidden;
   }
-  @keyframes cinemaKB {
-    0%   { transform: scale(1.00) translate(0%,   0%);    }
-    30%  { transform: scale(1.07) translate(-1.2%,-0.5%); }
-    65%  { transform: scale(1.04) translate(0.9%, -1.1%); }
-    100% { transform: scale(1.09) translate(-0.6%, 0.6%); }
+  .hero-slide {
+    position: absolute; inset: -8%;
+    background-size: cover; background-position: center;
+    opacity: 0;
+    animation: heroSlideCycle 32s ease-in-out infinite;
+    will-change: opacity, transform;
+  }
+  .hero-slide:nth-child(1) { animation-delay:  0s;   background-position: center 38%; }
+  .hero-slide:nth-child(2) { animation-delay: -8s;   background-position: center 30%; }
+  .hero-slide:nth-child(3) { animation-delay: -16s;  background-position: center 45%; }
+  .hero-slide:nth-child(4) { animation-delay: -24s;  background-position: center 35%; }
+  @keyframes heroSlideCycle {
+    0%   { opacity: 0;   transform: scale(1.14) translate( 2.0%,  1.2%); }
+    6%   { opacity: 1; }
+    24%  { opacity: 1;   transform: scale(1.04) translate( 0.0%,  0.0%); }
+    30%  { opacity: 0;   transform: scale(0.99) translate(-1.0%, -0.6%); }
+    100% { opacity: 0;   transform: scale(1.14) translate( 2.0%,  1.2%); }
+  }
+  /* Dark overlay above the photos */
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(
+      160deg,
+      rgba(9,17,27,0.93)  0%,
+      rgba(22,38,56,0.75) 45%,
+      rgba(9,17,27,0.90)  100%
+    );
+  }
+  /* Moving light ray effect — simulates light catching steam/surfaces */
+  .hero-light-ray {
+    position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(
+      105deg,
+      transparent 30%,
+      rgba(212,117,31,0.06) 50%,
+      transparent 70%
+    );
+    background-size: 300% 100%;
+    animation: lightRaySweep 18s ease-in-out infinite;
+  }
+  @keyframes lightRaySweep {
+    0%,100% { background-position: 0% 0%; }
+    50%     { background-position: 100% 0%; }
+  }
+  /* Film-grain texture overlay */
+  .hero-grain {
+    position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+    animation: grainShift 0.8s steps(1) infinite;
+  }
+  @keyframes grainShift {
+    0%  { transform: translate(0,0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -1px); }
+    60% { transform: translate(-1px, 2px); }
+    80% { transform: translate(2px, 0px); }
+    100%{ transform: translate(0,0); }
   }
 
   /* Ambient light orbs */
@@ -897,7 +944,16 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-cinema" aria-hidden="true"></div>
+  <!-- Cinematic slideshow: 4 kitchen photos crossfade with per-slide Ken Burns zoom -->
+  <div class="hero-slideshow" aria-hidden="true">
+    <div class="hero-slide" data-src-desktop="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=82&auto=format&fit=crop" data-src-mobile="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=820&q=75&auto=format&fit=crop"></div>
+    <div class="hero-slide" data-src-desktop="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1920&q=82&auto=format&fit=crop" data-src-mobile="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=820&q=75&auto=format&fit=crop"></div>
+    <div class="hero-slide" data-src-desktop="https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=1920&q=82&auto=format&fit=crop" data-src-mobile="https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=820&q=75&auto=format&fit=crop"></div>
+    <div class="hero-slide" data-src-desktop="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=82&auto=format&fit=crop" data-src-mobile="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=820&q=75&auto=format&fit=crop"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-light-ray"></div>
+    <div class="hero-grain"></div>
+  </div>
   <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
@@ -1860,9 +1916,55 @@ document.addEventListener('click',function(e){
     });
   }
 
-  /* ── Preload hero image eagerly ── */
-  var img = new Image();
-  img.src = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80&auto=format&fit=crop';
+  /* ── Set responsive background images for hero slides ── */
+  (function(){
+    var isMobile = window.matchMedia('(max-width: 768px)').matches;
+    document.querySelectorAll('.hero-slide').forEach(function(slide){
+      var src = isMobile ? slide.dataset.srcMobile : slide.dataset.srcDesktop;
+      if(src) slide.style.backgroundImage = "url('" + src + "')";
+    });
+  })();
+
+  /* ── Parallax scroll on hero slideshow ── */
+  var heroSlideshow = document.querySelector('.hero-slideshow');
+  if(heroSlideshow && window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
+    var ticking = false;
+    var lastScrollY = 0;
+    function applyParallax(){
+      /* Shift the slideshow upward at 30% of scroll speed — creates depth */
+      var offset = Math.min(lastScrollY * 0.30, 180);
+      heroSlideshow.style.transform = 'translateY(' + offset + 'px)';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function(){
+      lastScrollY = window.pageYOffset;
+      if(!ticking){ requestAnimationFrame(applyParallax); ticking = true; }
+    }, { passive: true });
+  }
+
+  /* ── Section photo-bg parallax ── */
+  var sectionBgs = document.querySelectorAll('.section-photo-bg');
+  if(sectionBgs.length && window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
+    var secTick = false;
+    window.addEventListener('scroll', function(){
+      if(!secTick){
+        requestAnimationFrame(function(){
+          var scrollY = window.pageYOffset;
+          sectionBgs.forEach(function(bg){
+            var parent = bg.parentElement;
+            var rect = parent.getBoundingClientRect();
+            if(rect.bottom > 0 && rect.top < window.innerHeight){
+              /* Subtle 15% parallax for sections */
+              var rel = (scrollY - (parent.offsetTop - window.innerHeight * 0.5));
+              bg.style.transform = 'translateY(' + (rel * 0.12) + 'px)';
+            }
+          });
+          secTick = false;
+        });
+        secTick = true;
+      }
+    }, { passive: true });
+  }
 
 })();
 </script>
