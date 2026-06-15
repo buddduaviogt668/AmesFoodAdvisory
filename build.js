@@ -548,6 +548,25 @@ function buildPage(p) {
       }))
     };
 
+    const breadcrumb_schema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.amesfoodadvisory.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": p.sname,
+          "item": `https://www.amesfoodadvisory.com.au/${p.slug}`
+        }
+      ]
+    };
+
     let includesHtml = '';
     if (p.includes && p.includes.length) {
       includesHtml = `<div class="includes-grid">` + p.includes.map(inc => `
@@ -648,6 +667,9 @@ function buildPage(p) {
     const htmlContent = `
 ${head(p.title, p.desc, p.kw, p.slug, p.sname, p.sdesc)}
 ${SHARED_CSS}
+<script type="application/ld+json">
+${JSON.stringify(breadcrumb_schema, null, 2)}
+</script>
 <script type="application/ld+json">
 ${JSON.stringify(faq_schema, null, 2)}
 </script>
