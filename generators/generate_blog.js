@@ -22,6 +22,10 @@ function getBaseHTML(title, desc, kw, ogTitle, ogUrl, schemaData, heroEyebrow, h
 <meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
 <meta property="og:site_name" content="AMES Food Advisory">
 <meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${ogTitle}">
+<meta name="twitter:description" content="${desc}">
+<meta name="twitter:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
 <script type="application/ld+json">
 ${JSON.stringify(schemaData, null, 2)}
 </script>
