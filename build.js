@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+﻿?const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = __dirname; // build directly in the same folder
@@ -229,7 +229,7 @@ const SHARED_CSS = `
     white-space: nowrap; padding: 0 2rem;
     border-right: 1px solid rgba(28,43,58,0.18);
   }
-  .cred-pill::before { content: 'â—†'; font-size: 0.5rem; }
+  .cred-pill::before { content: '◆'; font-size: 0.5rem; }
 
   section { padding: 5rem 2rem; }
   .container { max-width: 1100px; margin: 0 auto; width: 100%; }
@@ -488,7 +488,7 @@ const CREDS = `
 const FOOTER = `
 <footer><div class="footer-inner">
   <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
-  <div class="footer-copy">Â© 2026 AMES Food Advisory Â· Sydney, NSW</div>
+  <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
   <div class="footer-links">
     <a href="/#services">Services</a>
     <a href="/#about">About</a>
@@ -678,12 +678,12 @@ ${JSON.stringify(faq_schema, null, 2)}
 ${NAV}
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="/">Home</a><span>â€º</span>${p.sname}</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span>${p.sname}</div>
     <div class="page-eyebrow">${p.eyebrow || 'Service Offering'}</div>
     <h1>${p.h1}</h1>
     <p class="page-hero-sub">${p.sub}</p>
     <div class="hero-actions">
-      <a href="/#contact" class="btn-primary">Book a free consultation â†—</a>
+      <a href="/#contact" class="btn-primary">Book a free consultation ↗</a>
       <a href="/#services" class="btn-outline">All services</a>
     </div>
   </div>
@@ -737,7 +737,7 @@ ${faqsHtml}
     <h2>Need clear, actionable <em>food safety</em> advice?</h2>
     <p>We work directly with your business to construct robust quality structures, training platforms, and audit preparedness tools.</p>
     <div class="cta-strip-actions">
-      <a href="/#contact" class="btn-primary">Arrange a free consultation call â†—</a>
+      <a href="/#contact" class="btn-primary">Arrange a free consultation call ↗</a>
       <a href="tel:+61400000000" class="btn-outline">Speak with a specialist</a>
     </div>
   </div>
@@ -754,7 +754,7 @@ ${JS}
     console.log(`Successfully generated: ${p.file}`);
 }
 
-// â”€â”€ DATA DEFINITIONS â”€â”€
+// ── DATA DEFINITIONS ──
 const data = require('./pages_data.js');
 
 data.forEach(p => {

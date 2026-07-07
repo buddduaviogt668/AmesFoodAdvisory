@@ -1,6 +1,6 @@
-﻿# AMES Food Advisory
+﻿?# AMES Food Advisory
 
-> Food safety consulting, HACCP planning, training, and auditing for NSW food businesses â€” based in Sydney, Australia.
+> Food safety consulting, HACCP planning, training, and auditing for NSW food businesses — based in Sydney, Australia.
 
 AMES Food Advisory is a food safety consultancy serving food businesses across Sydney and NSW. Services include Food Safety Program (FSP) development, HACCP plans, Food Safety Supervisor (FSS) training, internal auditing, and start-up compliance packages.
 
@@ -9,7 +9,7 @@ AMES Food Advisory is a food safety consultancy serving food businesses across S
 - [HACCP & Food Safety Consulting](/food-safety-consulting-sydney): Food Safety Program writing, hazard analysis, HACCP plan development, regulatory compliance gap analysis.
 - [Food Safety Training](/food-safety-training-sydney): NSW Food Authority approved Food Safety Supervisor courses, food handler training, team workshops.
 - [Internal Auditing](/internal-auditing-services): pre-audit inspections, supplier readiness audits, third-party certification preparation.
-- [Food Business Start-Up Package](/food-business-startup-package): End-to-end compliance setup for new food businesses â€” council notification, FSP, HACCP, SOP suite, training.
+- [Food Business Start-Up Package](/food-business-startup-package): End-to-end compliance setup for new food businesses — council notification, FSP, HACCP, SOP suite, training.
 - [Suburb Directory](/suburb-directory): Service coverage across Sydney metro and surrounds.
 
 ## Free Resources
@@ -21,6 +21,6 @@ AMES Food Advisory is a food safety consultancy serving food businesses across S
 
 ## About
 
-George Skarmoutsos â€” 11+ years in food manufacturing (Arnott's), TAFE NSW accredited trainer, dual-accredited food safety consultant. Sydney, NSW, Australia.
+George Skarmoutsos — 11+ years in food manufacturing (Arnott's), TAFE NSW accredited trainer, dual-accredited food safety consultant. Sydney, NSW, Australia.
 
 Contact: george@amesfoodadvisory.com.au

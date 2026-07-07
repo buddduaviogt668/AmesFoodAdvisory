@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+﻿?const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -113,7 +113,7 @@ ${JSON.stringify(schemaData, null, 2)}
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">Services</a></li>
@@ -140,9 +140,9 @@ ${bodyContent}
   <div class="footer-inner">
     <a href="/" class="footer-logo">
       <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-      <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+      <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
     </a>
-    <div class="footer-copy">Â© 2026 AMES Food Advisory. Serving all of NSW.</div>
+    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
@@ -207,7 +207,7 @@ councils.forEach(council => {
     <div class="cta-box">
       <h3>Book a Preparation Audit Today</h3>
       <p>Let's make sure your next ${council} inspection goes perfectly. We'll identify the gaps and fix them.</p>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book a Free Scoping Call â†—</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book a Free Scoping Call ↗</a>
     </div>
   </div>
   `;
@@ -253,7 +253,7 @@ industries.forEach(ind => {
     <p>At AMES Food Advisory, we understand that a system built for a massive commercial factory won't work for your operation, and a generic cafe template won't cover your specific risks. You need bespoke, scalable solutions.</p>
 
     <h2>The Arnott's Standard, Scaled for You</h2>
-    <p>Our principal brings over a decade of Tier-1 manufacturing Quality Assurance experienceâ€”gained at The Arnott's Groupâ€”directly to your business. This means we build systems that are robust enough to pass any audit, but practical enough that your staff will actually follow them.</p>
+    <p>Our principal brings over a decade of Tier-1 manufacturing Quality Assurance experience—gained at The Arnott's Group—directly to your business. This means we build systems that are robust enough to pass any audit, but practical enough that your staff will actually follow them.</p>
 
     <p>We provide comprehensive support for ${ind} including:</p>
     <ul>
@@ -266,7 +266,7 @@ industries.forEach(ind => {
     <div class="cta-box">
       <h3>Need Help with Your Compliance?</h3>
       <p>Whether you are launching a new venture in the ${ind} space or upgrading an existing operation, we can streamline your compliance.</p>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Discuss Your Needs Today â†—</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Discuss Your Needs Today ↗</a>
     </div>
   </div>
   `;
@@ -320,7 +320,7 @@ resources.forEach(res => {
     <div class="cta-box" style="border-color: var(--navy); background: rgba(28,43,58,0.03);">
       <h3>Get Your Free Copy</h3>
       <p>Click below to request your free copy of the ${res}. If you need help customizing a full suite of documentation for your specific venue, let us know during your scoping call!</p>
-      <a href="mailto:ames.food.adv@gmail.com?subject=Request Free Resource: ${res}" class="btn-primary" style="background: var(--navy); color: var(--white);">Email Us for the Download â†—</a>
+      <a href="mailto:ames.food.adv@gmail.com?subject=Request Free Resource: ${res}" class="btn-primary" style="background: var(--navy); color: var(--white);">Email Us for the Download ↗</a>
     </div>
 
     <p style="font-size: 0.9rem; color: var(--ink-soft); margin-top: 2rem;"><em>Disclaimer: This template is a generic guide provided for educational purposes. It does not replace the need for a customized, business-specific food safety program or HACCP plan developed by a qualified professional.</em></p>

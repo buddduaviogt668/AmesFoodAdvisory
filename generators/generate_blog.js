@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+﻿?const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -110,7 +110,7 @@ ${JSON.stringify(schemaData, null, 2)}
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">Services</a></li>
@@ -137,9 +137,9 @@ ${bodyContent}
   <div class="footer-inner">
     <a href="/" class="footer-logo">
       <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-      <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+      <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
     </a>
-    <div class="footer-copy">Â© 2026 AMES Food Advisory. Serving all of NSW.</div>
+    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
@@ -280,7 +280,7 @@ seriesList.forEach(series => {
 
     const bodyContent = `
     <div class="content-area">
-      <p>Welcome to the latest entry in our <strong>${series.seriesName}</strong>. Today, we are discussing <strong>${title}</strong>â€”a critical topic for any food business aiming for strict compliance with NSW Food Authority standards.</p>
+      <p>Welcome to the latest entry in our <strong>${series.seriesName}</strong>. Today, we are discussing <strong>${title}</strong>—a critical topic for any food business aiming for strict compliance with NSW Food Authority standards.</p>
       
       <h2>Why This Matters for Your Business</h2>
       <p>Food safety isn't just about passing your local council audit; it's about protecting your brand, your customers, and your bottom line. At <a href="/">AMES Food Advisory</a>, we leverage over 11 years of Tier-1 manufacturing experience (including time at The Arnott's Group) to bring corporate-level rigor to small and medium businesses.</p>
@@ -299,7 +299,7 @@ seriesList.forEach(series => {
       <div class="cta-box">
         <h3>Need Expert Help?</h3>
         <p>AMES Food Advisory specialises in <strong>${series.serviceName}</strong>. We can take the guesswork out of compliance so you can focus on running your business.</p>
-        <a href="${series.serviceLink}" class="btn-primary">Learn More About Our Services â†—</a>
+        <a href="${series.serviceLink}" class="btn-primary">Learn More About Our Services ↗</a>
       </div>
       
       <p><em>Ready to secure your business? <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book a free 15-minute scoping call</a> with our experts today.</em></p>
