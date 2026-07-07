@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -349,7 +349,7 @@ ${JSON.stringify(schemaData, null, 2)}
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">Services</a></li>
@@ -368,7 +368,7 @@ ${JSON.stringify(schemaData, null, 2)}
     <h1>${heroTitle}</h1>
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation â†—</a>
       <a href="/pricing" class="btn-outline">View pricing</a>
     </div>
   </div>
@@ -391,9 +391,9 @@ ${bodyContent}
   <div class="footer-inner">
     <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
   </a>
-    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW. Confidential &amp; ethical food safety consulting.</div>
+    <div class="footer-copy">Â© 2026 AMES Food Advisory. Serving all of NSW. Confidential &amp; ethical food safety consulting.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
@@ -522,19 +522,19 @@ suburbs.forEach(sub => {
       <p class="body-lead">Navigating the local council regulations around ${sub.landmark} requires more than just generic templates. AMES Food Advisory brings 11+ years of Tier-1 manufacturing experience (including The Arnott's Group) and real-world TAFE NSW lecturing expertise directly to the food businesses of ${sub.name}.</p>
       
       <p style="margin-bottom: 2rem; color: var(--ink-mid); max-width: 800px; line-height: 1.8;">
-        Whether you run a fast-paced cafe, an artisanal bakery, or a massive commercial kitchen, our customized systems are designed specifically for the ${sub.region} landscape. We do not operate as an RTO; rather, we provide highly specialized consulting, SOP writing, and bespoke internal training that physically prepares your team for NSW Food Authority and local council inspections.
+        Whether you run a fast-paced cafe, an artisanal bakery, or a massive commercial kitchen, our customized systems are designed specifically for the ${sub.region} landscape. We do not operate as an RTO; rather, we provide highly specialized consulting, SOP writing, and bespoke internal training that physically prepares your team for NSW Food Authority and local NSW Food Authority audits.
       </p>
 
       <div class="includes-grid">
           <div class="include-item">
-            <div class="include-icon">🏛</div>
+            <div class="include-icon">ðŸ›</div>
             <div>
               <div class="include-title">NSW Food Authority Audit Prep</div>
               <div class="include-desc">Mock inspections and gap analysis reports aligned to inspection criteria to ensure your ${sub.name} business passes without stress.</div>
             </div>
           </div>
           <div class="include-item">
-            <div class="include-icon">📋</div>
+            <div class="include-icon">ðŸ“‹</div>
             <div>
               <div class="include-title">Bespoke HACCP Programs</div>
               <div class="include-desc">Custom food safety programs built specifically for the operational flows of your kitchen in the ${sub.region}.</div>
@@ -555,42 +555,42 @@ suburbs.forEach(sub => {
           <div class="hub-card-cat">Training Guide</div>
           <div class="hub-card-title">Why Food Safety Training is Critical for Sydney Cafes</div>
           <div class="hub-card-desc">Understand exactly what the NSW Food Authority requires from your staff and how to meet it.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
         
         <a href="/blog/sop/the-ultimate-guide-to-sop-writing-for-food-businesses" class="hub-card">
           <div class="hub-card-cat">SOP Guide</div>
           <div class="hub-card-title">The Ultimate Guide to SOP Writing</div>
           <div class="hub-card-desc">Learn how to document temperature controls, cleaning protocols, and daily prep.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
         
         <a href="/blog/startup/the-complete-startup-checklist-for-nsw" class="hub-card">
           <div class="hub-card-cat">Startup Guide</div>
           <div class="hub-card-title">The Complete Startup Checklist for NSW</div>
           <div class="hub-card-desc">Opening a new venue near ${sub.landmark}? Don't miss these critical compliance steps.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
         
         <a href="/blog/allergens/mastering-allergen-management-in-a-commercial-kitchen" class="hub-card">
           <div class="hub-card-cat">Allergen Safety</div>
           <div class="hub-card-title">Mastering Allergen Management</div>
           <div class="hub-card-desc">Protect your customers and your business with airtight cross-contamination prevention.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
 
         <a href="/case-studies/case-study-1" class="hub-card">
           <div class="hub-card-cat">Case Study</div>
           <div class="hub-card-title">Audit Turnaround in the Inner West</div>
           <div class="hub-card-desc">How we helped a local bakery go from a warning notice to a 5-star rating in 14 days.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
 
         <a href="/faq/faq-1" class="hub-card">
           <div class="hub-card-cat">FAQ</div>
-          <div class="hub-card-title">Local Council Inspections</div>
+          <div class="hub-card-title">Local NSW Food Authority audits</div>
           <div class="hub-card-desc">Everything you need to know about unannounced health inspections in ${sub.name}.</div>
-          <div class="hub-card-link">Read Article ↗</div>
+          <div class="hub-card-link">Read Article â†—</div>
         </a>
       </div>
     </div>

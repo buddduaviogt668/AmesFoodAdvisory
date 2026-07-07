@@ -1,5 +1,5 @@
-module.exports = [
-  // ── TIER 1: SERVICE PAGES ──
+﻿module.exports = [
+  // â”€â”€ TIER 1: SERVICE PAGES â”€â”€
   {
     "file": "food-safety-consulting-sydney.html",
     "slug": "food-safety-consulting-sydney",
@@ -10,31 +10,31 @@ module.exports = [
     "sdesc": "HACCP plan development, food safety program design, hazard analysis and regulatory compliance consulting for food businesses across Sydney and NSW.",
     "eyebrow": "Service 01",
     "h1": "Food Safety &amp; <em>HACCP Consulting</em>",
-    "sub": "A properly built HACCP plan isn't just a compliance document — it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.",
+    "sub": "A properly built HACCP plan isn't just a compliance document â€” it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.",
     "introText": "Our food safety consulting is completely tailored to your business operations. We build systems that satisfy both regulatory auditors and your staff.",
     "includes": [
-      { "icon": "📋", "title": "HACCP Plan Development", "desc": "Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification — built for your specific operation and food type." },
-      { "icon": "🔍", "title": "Hazard Analysis", "desc": "Biological, chemical, physical, and allergen hazard identification for your specific products, processes, and supply chain." },
-      { "icon": "📊", "title": "Food Safety Program Design", "desc": "End-to-end food safety management system design compliant with the Australia New Zealand Food Standards Code." },
-      { "icon": "📌", "title": "CCP & OPRP Documentation", "desc": "Critical control point and operational prerequisite program documentation with monitoring forms, corrective action procedures, and records." },
-      { "icon": "✅", "title": "Regulatory Compliance Guidance", "desc": "Plain-English advice on NSW Food Authority obligations, council registration requirements, and third-party audit standards." },
-      { "icon": "🔁", "title": "Annual Review Service", "desc": "Scheduled review and update of your HACCP plan as your menu, processes, or supply chain change — retainer available." }
+      { "icon": "ðŸ“‹", "title": "HACCP Plan Development", "desc": "Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification â€” built for your specific operation and food type." },
+      { "icon": "ðŸ”", "title": "Hazard Analysis", "desc": "Biological, chemical, physical, and allergen hazard identification for your specific products, processes, and supply chain." },
+      { "icon": "ðŸ“Š", "title": "Food Safety Program Design", "desc": "End-to-end food safety management system design compliant with the Australia New Zealand Food Standards Code." },
+      { "icon": "ðŸ“Œ", "title": "CCP & OPRP Documentation", "desc": "Critical control point and operational prerequisite program documentation with monitoring forms, corrective action procedures, and records." },
+      { "icon": "âœ…", "title": "Regulatory Compliance Guidance", "desc": "Plain-English advice on NSW Food Authority obligations, council registration requirements, and third-party audit standards." },
+      { "icon": "ðŸ”", "title": "Annual Review Service", "desc": "Scheduled review and update of your HACCP plan as your menu, processes, or supply chain change â€” retainer available." }
     ],
     "who_title": "Who is this for?",
     "who": [
       { "title": "Food manufacturers & producers", "desc": "Any business processing, manufacturing, or packaging food in NSW that requires a documented food safety program." },
       { "title": "Cafes, restaurants & food service", "desc": "Food businesses seeking HACCP-based food safety plans to satisfy council requirements and third-party auditors." },
-      { "title": "New food businesses", "desc": "Start-ups that need a food safety program built correctly from day one — before the council inspection, not after." }
+      { "title": "New food businesses", "desc": "Start-ups that need a food safety program built correctly from day one â€” before the audit, not after." }
     ],
     "steps": [
       { "title": "Discovery call", "desc": "We discuss your operation, food types, processes, and current compliance situation. Free, no obligation." },
-      { "title": "Site visit or remote briefing", "desc": "We map your full production process — ingredients in, product out — identifying every potential hazard point." },
+      { "title": "Site visit or remote briefing", "desc": "We map your full production process â€” ingredients in, product out â€” identifying every potential hazard point." },
       { "title": "Hazard analysis", "desc": "Every biological, chemical, physical, and allergen hazard is assessed for likelihood and severity specific to your operation." }
     ],
     "faqs": [
       { "q": "Do I legally need a HACCP plan for my food business in NSW?", "a": "Most food businesses in NSW are required to have a food safety program under Standard 3.2.1 of the Australia New Zealand Food Standards Code. The type of program required depends on your business classification. AMES Food Advisory can advise on exactly what applies to your operation." },
-      { "q": "How long does it take to develop a HACCP plan?", "a": "A straightforward HACCP plan for a small food business typically takes 2–4 weeks from initial briefing to final document. We provide a clear timeline at the discovery stage." },
-      { "q": "Can you help if my business already has a HACCP plan that needs updating?", "a": "Absolutely. We review existing plans regularly — identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance." }
+      { "q": "How long does it take to develop a HACCP plan?", "a": "A straightforward HACCP plan for a small food business typically takes 2â€“4 weeks from initial briefing to final document. We provide a clear timeline at the discovery stage." },
+      { "q": "Can you help if my business already has a HACCP plan that needs updating?", "a": "Absolutely. We review existing plans regularly â€” identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance." }
     ],
     "related": [
       { "title": "Internal Auditing", "desc": "Gap analysis, mock inspections, and ongoing compliance monitoring.", "url": "/internal-auditing-services" },
@@ -54,9 +54,9 @@ module.exports = [
     "sub": "A robust HACCP plan is mandatory for compliance and critical for commercial viability. We design, draft, and implement tailored HACCP plans that seamlessly fit your daily operations.",
     "introText": "We provide end-to-end HACCP development, mapping processes from raw materials to distribution, ensuring full compliance with Food Standards Code 3.2.1.",
     "includes": [
-      { "icon": "📊", "title": "Process Mapping", "desc": "Step-by-step documentation of food flows and processes to locate and control safety hazards." },
-      { "icon": "🎯", "title": "Critical Control Points", "desc": "Setting scientific critical limits (temperature, pH, water activity) to prevent microbial risks." },
-      { "icon": "📝", "title": "Verification Systems", "desc": "Detailed record-keeping logs and audit-ready verification protocols for ongoing assurance." }
+      { "icon": "ðŸ“Š", "title": "Process Mapping", "desc": "Step-by-step documentation of food flows and processes to locate and control safety hazards." },
+      { "icon": "ðŸŽ¯", "title": "Critical Control Points", "desc": "Setting scientific critical limits (temperature, pH, water activity) to prevent microbial risks." },
+      { "icon": "ðŸ“", "title": "Verification Systems", "desc": "Detailed record-keeping logs and audit-ready verification protocols for ongoing assurance." }
     ],
     "who": [
       { "title": "Food Manufacturers", "desc": "Businesses producing goods for retail chains (Coles, Woolworths, Aldi) requiring SQF, ISO, or basic HACCP certification." },
@@ -87,9 +87,9 @@ module.exports = [
     "sub": "Generic online courses don't change behavior on the line. We deliver hands-on, engaging training built around your actual facility, products, and operational SOPs.",
     "introText": "All training is designed and delivered by a TAE-qualified corporate trainer and TAFE NSW sessional lecturer, bridging classroom theory with real-world QA experience.",
     "includes": [
-      { "icon": "🎓", "title": "Food Handler Competency", "desc": "Hygiene, temperature control, allergen awareness, and cross-contamination prevention." },
-      { "icon": "⚠️", "title": "Allergen Management", "desc": "Specific workshops detailing allergen segregation, cleaning verification, and warning labels." },
-      { "icon": "📈", "title": "Supervisor & HACCP Training", "desc": "Empowering supervisors to monitor CCPs, verify logs, and lead audits on the floor." }
+      { "icon": "ðŸŽ“", "title": "Food Handler Competency", "desc": "Hygiene, temperature control, allergen awareness, and cross-contamination prevention." },
+      { "icon": "âš ï¸", "title": "Allergen Management", "desc": "Specific workshops detailing allergen segregation, cleaning verification, and warning labels." },
+      { "icon": "ðŸ“ˆ", "title": "Supervisor & HACCP Training", "desc": "Empowering supervisors to monitor CCPs, verify logs, and lead audits on the floor." }
     ],
     "who": [
       { "title": "QA & Quality Teams", "desc": "Upskilling junior technicians in laboratory, testing, and documentation standards." },
@@ -117,12 +117,12 @@ module.exports = [
     "sdesc": "Independent internal audit service for food businesses including gap analysis, pre-audit readiness checks, corrective action support and ongoing compliance monitoring across Sydney and NSW.",
     "eyebrow": "Service 03",
     "h1": "Internal Food Safety <em>Auditing</em>",
-    "sub": "Most small food businesses fail audits not because they're unsafe — but because their documentation doesn't reflect what they actually do. AMES Food Advisory audits your operation through the eyes of a council officer or third-party auditor, then helps you fix what it finds.",
+    "sub": "Most small food businesses fail audits not because they're unsafe â€” but because their documentation doesn't reflect what they actually do. AMES Food Advisory audits your operation through the eyes of a council officer or third-party auditor, then helps you fix what it finds.",
     "introText": "We provide a thorough, stress-free mock audit service to identify regulatory risks before official inspectors or buyers walk in.",
     "includes": [
-      { "icon": "🔍", "title": "Gap Analysis Audit", "desc": "Systematic review of your food safety program, records and practices against the Australia New Zealand Food Standards Code and relevant audit standards." },
-      { "icon": "📋", "title": "Pre-Audit Readiness Check", "desc": "Structured walkthrough of your premises, documentation and team knowledge before an upcoming council inspection or third-party audit." },
-      { "icon": "🛠", "title": "Corrective Action Support", "desc": "Prioritised corrective action report with practical, step-by-step guidance on closing every gap identified — not just a list of problems." }
+      { "icon": "ðŸ”", "title": "Gap Analysis Audit", "desc": "Systematic review of your food safety program, records and practices against the Australia New Zealand Food Standards Code and relevant audit standards." },
+      { "icon": "ðŸ“‹", "title": "Pre-Audit Readiness Check", "desc": "Structured walkthrough of your premises, documentation and team knowledge before an upcoming NSW Food Authority audit or third-party audit." },
+      { "icon": "ðŸ› ", "title": "Corrective Action Support", "desc": "Prioritised corrective action report with practical, step-by-step guidance on closing every gap identified â€” not just a list of problems." }
     ],
     "who": [
       { "title": "Manufacturers approaching audits", "desc": "Perfect preparation for BRC, SQF, WQA, or state authority audits." },
@@ -153,8 +153,8 @@ module.exports = [
     "sub": "Poorly written SOPs are the most common audit failure in small food businesses. We write clear, custom procedures that your staff can actually follow and auditors can easily verify.",
     "introText": "Our custom SOPs cover cleaning, pest control, personal hygiene, calibration, and product recalls, customized to your facility's physical layout.",
     "includes": [
-      { "icon": "📄", "title": "Standard Operating Procedures", "desc": "Custom SOPs written for your specific operation — cleaning, temperature control, allergen management, pest control, and more." },
-      { "icon": "🌡", "title": "Monitoring Forms", "desc": "Practical logs for temperature checks, cleaning verification, receiving, and equipment calibration." }
+      { "icon": "ðŸ“„", "title": "Standard Operating Procedures", "desc": "Custom SOPs written for your specific operation â€” cleaning, temperature control, allergen management, pest control, and more." },
+      { "icon": "ðŸŒ¡", "title": "Monitoring Forms", "desc": "Practical logs for temperature checks, cleaning verification, receiving, and equipment calibration." }
     ],
     "who": [
       { "title": "Startups & Scaleups", "desc": "New ventures needing formal documents to secure food authority licenses." },
@@ -176,18 +176,18 @@ module.exports = [
     "file": "food-business-startup-package.html",
     "slug": "food-business-startup-package",
     "title": "Food Business Start-Up Package Sydney NSW | AMES Food Advisory",
-    "desc": "Complete food business compliance setup for new food businesses across Sydney and NSW. HACCP plan, SOPs, staff training, council audit prep — one package, one expert.",
+    "desc": "Complete food business compliance setup for new food businesses across Sydney and NSW. HACCP plan, SOPs, staff training, council audit prep â€” one package, one expert.",
     "kw": "food business start up NSW, food business compliance Sydney, new food business help NSW, food business setup Sydney, food startup consultant NSW, council food audit Sydney",
     "sname": "Food Business Start-Up Package",
-    "sdesc": "Complete compliance setup for new food businesses — licensing, HACCP plan, SOPs, staff training and council audit preparation in one engagement across Sydney and NSW.",
+    "sdesc": "Complete compliance setup for new food businesses â€” licensing, HACCP plan, SOPs, staff training and council audit preparation in one engagement across Sydney and NSW.",
     "eyebrow": "Service 05",
     "h1": "The Food Business <em>Start-Up Package</em>",
-    "sub": "Opening a food business in NSW involves council registration, food safety laws, staff training obligations, and an audit — all before you've served your first customer. We wrap all of it into one stress-free package.",
+    "sub": "Opening a food business in NSW involves council registration, food safety laws, staff training obligations, and an audit â€” all before you've served your first customer. We wrap all of it into one stress-free package.",
     "introText": "We handle the regulatory paperwork, write the food safety program, supply daily logs, train your kitchen team, and run a mock audit so you pass your first inspection.",
     "includes": [
-      { "icon": "🏛", "title": "Regulatory Setup", "desc": "Assistance with council registration, NSW Food Authority classifications, and food license filing." },
-      { "icon": "📋", "title": "HACCP & SOP Setup", "desc": "Custom-designed food safety plan and daily logs tailored to your menu and equipment." },
-      { "icon": "🎓", "title": "On-Site Staff Induction", "desc": "Practical, on-site food handling and hygiene training for your newly hired team." }
+      { "icon": "ðŸ›", "title": "Regulatory Setup", "desc": "Assistance with council registration, NSW Food Authority classifications, and food license filing." },
+      { "icon": "ðŸ“‹", "title": "HACCP & SOP Setup", "desc": "Custom-designed food safety plan and daily logs tailored to your menu and equipment." },
+      { "icon": "ðŸŽ“", "title": "On-Site Staff Induction", "desc": "Practical, on-site food handling and hygiene training for your newly hired team." }
     ],
     "who": [
       { "title": "New Cafes & Restaurants", "desc": "Hospitality founders who want to open fast without council-enforced compliance delays." },
@@ -199,7 +199,7 @@ module.exports = [
     ],
     "faqs": [
       { "q": "What is the most common mistake new food startups make?", "a": "Failing to check if the kitchen fit-out matches AS 4674 (Design, construction and fit-out of food premises). Fixing plumbing or zoning errors post-construction is incredibly expensive." },
-      { "q": "Does this package guarantee we pass our council inspection?", "a": "We prepare your documents, train your staff, and audit your structure. If you follow the plan and maintain the logs we build, you will satisfy all council requirements." }
+      { "q": "Does this package guarantee we meet NSW Food Authority requirements?", "a": "We prepare your documents, train your staff, and audit your structure. If you follow the plan and maintain the logs we build, you will satisfy all council requirements." }
     ],
     "related": [
       { "title": "Food Safety Training", "desc": "Ongoing employee refresher training.", "url": "/food-safety-training-sydney" }
@@ -218,9 +218,9 @@ module.exports = [
     "sub": "Bring testing in-house and gain confidence in your QA results. We train your technicians in sample preparation, microbial plating, water activity, and sensory profiling.",
     "introText": "Our training is delivered on-site at your facility, using your actual instruments, reagents, and product profiles to ensure direct practical relevance.",
     "includes": [
-      { "icon": "🔬", "title": "Microbial Testing Techniques", "desc": "Aseptic technique, dilution series, plate inoculation, incubation, and colony counting." },
-      { "icon": "🧪", "title": "Analytical Testing", "desc": "Training on refractometers (Brix), pH meters, moisture analyzers, and water activity instruments." },
-      { "icon": "👃", "title": "Sensory Panel Calibration", "desc": "Developing structured sensory panels, difference tests, and flavor profile standards." }
+      { "icon": "ðŸ”¬", "title": "Microbial Testing Techniques", "desc": "Aseptic technique, dilution series, plate inoculation, incubation, and colony counting." },
+      { "icon": "ðŸ§ª", "title": "Analytical Testing", "desc": "Training on refractometers (Brix), pH meters, moisture analyzers, and water activity instruments." },
+      { "icon": "ðŸ‘ƒ", "title": "Sensory Panel Calibration", "desc": "Developing structured sensory panels, difference tests, and flavor profile standards." }
     ],
     "who": [
       { "title": "In-house Lab Teams", "desc": "QA technicians needing practical confidence and consistency in routine sample processing." },
@@ -251,8 +251,8 @@ module.exports = [
     "sub": "Training packages demand absolute precision. We write learning materials, mapping documents, and practical assessments that satisfy both ASQA standards and industry realities.",
     "introText": "All materials are built with direct insight from current TAFE NSW sessional lecturing, combining VET design requirements with extensive corporate QA context.",
     "includes": [
-      { "icon": "📚", "title": "Unit Mapping", "desc": "Detailed mapping matrices linking learning tasks and assessments directly to training package performance criteria." },
-      { "icon": "✍️", "title": "Assessment Tool Design", "desc": "Knowledge questions, practical observation checklists, and portfolio guidelines tailored to student capabilities." }
+      { "icon": "ðŸ“š", "title": "Unit Mapping", "desc": "Detailed mapping matrices linking learning tasks and assessments directly to training package performance criteria." },
+      { "icon": "âœï¸", "title": "Assessment Tool Design", "desc": "Knowledge questions, practical observation checklists, and portfolio guidelines tailored to student capabilities." }
     ],
     "who": [
       { "title": "Registered Training Organisations", "desc": "Providers requiring audit-ready compliance materials for food processing, retail, or hospitality qualifications." },
@@ -277,14 +277,14 @@ module.exports = [
     "desc": "Self-paced online food safety short courses for food industry professionals and businesses across NSW. HACCP fundamentals, allergen management, audit preparation. Launching 2026.",
     "kw": "online food safety course NSW, HACCP online course Australia, food safety short course Sydney, allergen management course online, food safety CPD NSW",
     "sname": "Online Food Safety Short Courses",
-    "sdesc": "Self-paced online professional development courses in food safety for food industry professionals across NSW — HACCP fundamentals, allergen management, food safety programs and audit preparation.",
+    "sdesc": "Self-paced online professional development courses in food safety for food industry professionals across NSW â€” HACCP fundamentals, allergen management, food safety programs and audit preparation.",
     "eyebrow": "Service 08",
     "h1": "Online Food Safety <em>Short Courses</em>",
-    "sub": "Industry-accurate, self-paced professional development for food industry workers and business owners — built by someone who's worked across the entire food supply chain. No generic content, no filler. Courses launching in 2026.",
+    "sub": "Industry-accurate, self-paced professional development for food industry workers and business owners â€” built by someone who's worked across the entire food supply chain. No generic content, no filler. Courses launching in 2026.",
     "introText": "Our upcoming e-learning platform will deliver short, highly practical courses tailored for professional development and team training.",
     "includes": [
-      { "icon": "📋", "title": "HACCP Fundamentals", "desc": "A practical introduction to HACCP principles — the seven steps, hazard analysis, CCP identification and how to build and maintain a HACCP plan." },
-      { "icon": "⚠️", "title": "Allergen Management Essentials", "desc": "The 14 major allergens, cross-contact risks, supplier management, labelling requirements and emergency response — for food handlers, supervisors and business owners." }
+      { "icon": "ðŸ“‹", "title": "HACCP Fundamentals", "desc": "A practical introduction to HACCP principles â€” the seven steps, hazard analysis, CCP identification and how to build and maintain a HACCP plan." },
+      { "icon": "âš ï¸", "title": "Allergen Management Essentials", "desc": "The 14 major allergens, cross-contact risks, supplier management, labelling requirements and emergency response â€” for food handlers, supervisors and business owners." }
     ],
     "who": [
       { "title": "Remote operations", "desc": "Businesses in regional NSW needing consistent training solutions without on-site travel costs." },
@@ -313,9 +313,9 @@ module.exports = [
     "sub": "Small food manufacturers often lack the in-house expertise to design and run a rigorous product sampling program. AMES Food Advisory designs your testing framework, supports incoming goods inspection, and bridges the gap between your production floor and the laboratory.",
     "introText": "We construct sampling protocols, shelf-life studies, and sensory testing grids, and act as your expert liaison with NATA-accredited laboratories.",
     "includes": [
-      { "icon": "📊", "title": "Sampling Program Design", "desc": "Determining testing parameters (micro, chemical, nutritional) and frequencies based on risk." },
-      { "icon": "🧪", "title": "Lab Liaison", "desc": "Organizing testing with NATA-accredited facilities, interpreting reports, and defining specifications." },
-      { "icon": "📅", "title": "Shelf-Life Study Design", "desc": "Testing temperature, moisture, and micro counts over time to scientifically define expiry dates." }
+      { "icon": "ðŸ“Š", "title": "Sampling Program Design", "desc": "Determining testing parameters (micro, chemical, nutritional) and frequencies based on risk." },
+      { "icon": "ðŸ§ª", "title": "Lab Liaison", "desc": "Organizing testing with NATA-accredited facilities, interpreting reports, and defining specifications." },
+      { "icon": "ðŸ“…", "title": "Shelf-Life Study Design", "desc": "Testing temperature, moisture, and micro counts over time to scientifically define expiry dates." }
     ],
     "who": [
       { "title": "Artisan Producers", "desc": "Startups launching packaged foods into retail channels requiring validated nutritional and shelf-life data." },
@@ -334,7 +334,7 @@ module.exports = [
     ]
   },
 
-  // ── TIER 2: CLIENT TYPE PAGES ──
+  // â”€â”€ TIER 2: CLIENT TYPE PAGES â”€â”€
   {
     "file": "food-safety-small-business.html",
     "slug": "food-safety-small-business",
@@ -348,9 +348,9 @@ module.exports = [
     "sub": "Small food businesses face the exact same regulations as multinational manufacturers, but without the corporate budgets. We design clear, compliant systems that keep you safe without burying your team in paperwork.",
     "introText": "We simplify food safety laws into basic daily checklists, audit-ready files, and simple staff habits.",
     "includes": [
-      { "icon": "📋", "title": "Practical Daily Logs", "desc": "Simple temperature sheets, cleaning logs, and receiving checklists that take minutes to fill." },
-      { "icon": "🎓", "title": "Targeted Staff Briefings", "desc": "Short, clear kitchen-side briefings on hygiene, cross-contamination, and allergen control." },
-      { "icon": "📞", "title": "Ongoing Helpline Support", "desc": "Access to expert advice when a council inspector raises a question or when you alter your menu." }
+      { "icon": "ðŸ“‹", "title": "Practical Daily Logs", "desc": "Simple temperature sheets, cleaning logs, and receiving checklists that take minutes to fill." },
+      { "icon": "ðŸŽ“", "title": "Targeted Staff Briefings", "desc": "Short, clear kitchen-side briefings on hygiene, cross-contamination, and allergen control." },
+      { "icon": "ðŸ“ž", "title": "Ongoing Helpline Support", "desc": "Access to expert advice when a NSW Food Authority auditor raises a question or when you alter your menu." }
     ],
     "who": [
       { "title": "Independent Cafes & Bakeries", "desc": "Protecting your brand and local customers from council fines and food health issues." },
@@ -362,7 +362,7 @@ module.exports = [
     ],
     "faqs": [
       { "q": "Do I need a Food Safety Supervisor (FSS) for my cafe or shop?", "a": "Yes, under NSW regulations, most retail food businesses serving ready-to-eat food require at least one certified Food Safety Supervisor who holds a valid FSS certificate from an approved training provider." },
-      { "q": "What happens if a council inspector issues an Improvement Notice?", "a": "Don't panic. An Improvement Notice lists issues that must be fixed within a set time frame. We can help you document and implement the required fixes, and verify the changes with the council officer." }
+      { "q": "What happens if a NSW Food Authority auditor issues an Improvement Notice?", "a": "Don't panic. An Improvement Notice lists issues that must be fixed within a set time frame. We can help you document and implement the required fixes, and verify the changes with the regulatory officer." }
     ],
     "related": [
       { "title": "SOP Writing", "desc": "Get clean standard operating procedures.", "url": "/sop-writing-food-businesses" }
@@ -381,8 +381,8 @@ module.exports = [
     "sub": "Scale your brand with confidence. We advise new food startups on kitchen design parameters, raw material specifications, label validation, and HACCP programs before launch.",
     "introText": "We prevent expensive layout mistakes and packaging reprints by checking compliance at the prototype stage.",
     "includes": [
-      { "icon": "📐", "title": "Kitchen Design Advisory", "desc": "Checking workflows, surface choices, and washing facilities against AS 4674 parameters." },
-      { "icon": "🏷️", "title": "Label & Allergen Review", "desc": "Verifying nutrition panels, ingredient lists, and allergen declarations against FSANZ Standard 1.2.3." }
+      { "icon": "ðŸ“", "title": "Kitchen Design Advisory", "desc": "Checking workflows, surface choices, and washing facilities against AS 4674 parameters." },
+      { "icon": "ðŸ·ï¸", "title": "Label & Allergen Review", "desc": "Verifying nutrition panels, ingredient lists, and allergen declarations against FSANZ Standard 1.2.3." }
     ],
     "who": [
       { "title": "Packaged Food Brands", "desc": "Building commercial-grade files to present to distributors and retail chains." },
@@ -412,8 +412,8 @@ module.exports = [
     "sub": "High staff turnover and fast shift paces make hospitality compliance difficult. We implement practical training, clear color-coded guides, and digital logging systems that work in hot, busy kitchens.",
     "introText": "We help you avoid council penalties, customer reviews about food sickness, and audit failures, keeping your kitchen's reputation spotless.",
     "includes": [
-      { "icon": "🧹", "title": "Cleaning Schedules", "desc": "Laminated, clear daily and weekly sanitizing guides that are easy for dishwashers and line cooks to follow." },
-      { "icon": "🧪", "title": "Allergen Segregation", "desc": "Physical segregation systems and cross-contact guides to manage dietary customer requests safely." }
+      { "icon": "ðŸ§¹", "title": "Cleaning Schedules", "desc": "Laminated, clear daily and weekly sanitizing guides that are easy for dishwashers and line cooks to follow." },
+      { "icon": "ðŸ§ª", "title": "Allergen Segregation", "desc": "Physical segregation systems and cross-contact guides to manage dietary customer requests safely." }
     ],
     "who": [
       { "title": "Bustling Cafes", "desc": "Maintaining consistency in milk temperatures, egg handling, and sandwich prep spaces." },
@@ -443,8 +443,8 @@ module.exports = [
     "sub": "Corporate food manufacturing requires advanced quality assurance structures. Having managed large-scale quality systems for over 11 years at Arnotts, we provide the expertise needed to pass retail audits.",
     "introText": "We guide your internal teams through SQF, Coles, and Woolworths manufacturing standards.",
     "includes": [
-      { "icon": "🏭", "title": "GFSI Audit Prep", "desc": "Gap analysis and audit readiness preparation for SQF, BRC, and FSSC 22000 schemes." },
-      { "icon": "📦", "title": "Supplier Risk Programs", "desc": "Developing supplier verification protocols, raw material specifications, and allergen profiles." }
+      { "icon": "ðŸ­", "title": "GFSI Audit Prep", "desc": "Gap analysis and audit readiness preparation for SQF, BRC, and FSSC 22000 schemes." },
+      { "icon": "ðŸ“¦", "title": "Supplier Risk Programs", "desc": "Developing supplier verification protocols, raw material specifications, and allergen profiles." }
     ],
     "who": [
       { "title": "Commercial Bakeries & Food Plants", "desc": "Scaling operations requiring robust hazard assessments for high-output machinery." },
@@ -474,8 +474,8 @@ module.exports = [
     "sub": "VET compliance demands absolute accuracy. We develop training content, learner guides, and practical observation tools mapped directly to SIT and FDF training packages.",
     "introText": "Our resources are designed by active sessional lecturer team members inside TAFE NSW, ensuring complete compliance with ASQA parameters.",
     "includes": [
-      { "icon": "📘", "title": "Mapped Learner Guides", "desc": "Comprehensive texts detailing food science, hazard control, and safety laws mapped to performance indicators." },
-      { "icon": "📝", "title": "Practical Checklists", "desc": "Detailed observation guides for assessors during food preparation and lab testing trials." }
+      { "icon": "ðŸ“˜", "title": "Mapped Learner Guides", "desc": "Comprehensive texts detailing food science, hazard control, and safety laws mapped to performance indicators." },
+      { "icon": "ðŸ“", "title": "Practical Checklists", "desc": "Detailed observation guides for assessors during food preparation and lab testing trials." }
     ],
     "who": [
       { "title": "Public & Private RTOs", "desc": "Providers requiring high-quality learning resources to protect their registration status." }
@@ -503,8 +503,8 @@ module.exports = [
     "sub": "Quality systems only succeed if they are executed on the floor. We train your production teams in GMP, correct logging, sanitizing rules, and allergen management.",
     "introText": "Our plain-English training courses convert complex scientific guidelines into clear, repeatable habits on the production line.",
     "includes": [
-      { "icon": "🧼", "title": "GMP & Handwashing", "desc": "Visual, hands-on training to establish strong personal hygiene standards and prevent microbial contamination." },
-      { "icon": "⏱️", "title": "Logging CCPs Correctly", "desc": "Teaching operators why log times matter and how to record variations correctly." }
+      { "icon": "ðŸ§¼", "title": "GMP & Handwashing", "desc": "Visual, hands-on training to establish strong personal hygiene standards and prevent microbial contamination." },
+      { "icon": "â±ï¸", "title": "Logging CCPs Correctly", "desc": "Teaching operators why log times matter and how to record variations correctly." }
     ],
     "who": [
       { "title": "Line Workers & Operators", "desc": "Upskilling seasonal or contract staff to minimize packaging errors and contamination risk." }
@@ -520,7 +520,7 @@ module.exports = [
     ]
   },
 
-  // ── TIER 3: SUBURB PAGES ──
+  // â”€â”€ TIER 3: SUBURB PAGES â”€â”€
   // We generate 15 Suburb pages. These target local searches like "food safety consultant Parramatta"
   // Suburbs: Parramatta, Blacktown, Liverpool, Mascot, Alexandria, Botany, Surry Hills, Newtown, Leichhardt, Chatswood, Hornsby, Penrith, Campbelltown, Newcastle, Wollongong.
   {
@@ -534,10 +534,10 @@ module.exports = [
     "eyebrow": "Local Expert: Parramatta",
     "h1": "Food Safety &amp; HACCP Consultant <em>Parramatta</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Parramatta. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "As Western Sydney's commercial center grows, local food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "As Western Sydney's commercial center grows, local food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Parramatta Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Parramatta environmental health inspections." },
-      { "icon": "📋", "title": "Custom HACCP Documentation", "desc": "Customized food safety plans mapping critical control points for local manufacturers and caterers." }
+      { "icon": "ðŸ›", "title": "Parramatta Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Parramatta environmental health inspections." },
+      { "icon": "ðŸ“‹", "title": "Custom HACCP Documentation", "desc": "Customized food safety plans mapping critical control points for local manufacturers and caterers." }
     ],
     "who": [
       { "title": "Western Sydney Manufacturers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." },
@@ -567,7 +567,7 @@ module.exports = [
     "sub": "Guiding Blacktown's food production, packaging, and logistics facilities through complex food safety audits. We construct custom, compliant QA files and deliver on-site staff training.",
     "introText": "We support Blacktown's industrial and retail food sectors, delivering practical compliance services that help you pass regulatory and retail audits.",
     "includes": [
-      { "icon": "🏭", "title": "Industrial Factory QA", "desc": "Advanced QA setups, CCP monitoring procedures, and product recall plans for local manufacturers." }
+      { "icon": "ðŸ­", "title": "Industrial Factory QA", "desc": "Advanced QA setups, CCP monitoring procedures, and product recall plans for local manufacturers." }
     ],
     "who": [
       { "title": "Food Packaging & Logistics Centers", "desc": "Logistics and transport hubs requiring certified temperature control and transport hygiene plans." }
@@ -593,9 +593,9 @@ module.exports = [
     "eyebrow": "Local Expert: Liverpool",
     "h1": "Food Safety &amp; HACCP Consultant <em>Liverpool</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Liverpool. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Liverpool food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Liverpool food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Liverpool Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Liverpool City Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Liverpool Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Liverpool City Council environmental health inspections." }
     ],
     "who": [
       { "title": "Southwest Sydney Manufacturers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -621,9 +621,9 @@ module.exports = [
     "eyebrow": "Local Expert: Mascot",
     "h1": "Food Safety &amp; HACCP Consultant <em>Mascot</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Mascot. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Mascot food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Mascot food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Mascot Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Bayside Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Mascot Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Bayside Council environmental health inspections." }
     ],
     "who": [
       { "title": "South Sydney Manufacturers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -649,9 +649,9 @@ module.exports = [
     "eyebrow": "Local Expert: Alexandria",
     "h1": "Food Safety &amp; HACCP Consultant <em>Alexandria</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Alexandria. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Alexandria food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Alexandria food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "City of Sydney Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Sydney environmental health inspections." }
+      { "icon": "ðŸ›", "title": "City of Sydney Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Sydney environmental health inspections." }
     ],
     "who": [
       { "title": "Alexandria Food Production Facilities", "desc": "Catering operations, dark kitchens, and small manufacturers needing custom HACCP plans." }
@@ -677,9 +677,9 @@ module.exports = [
     "eyebrow": "Local Expert: Botany",
     "h1": "Food Safety &amp; HACCP Consultant <em>Botany</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Botany. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Botany food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Botany food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Botany Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Bayside Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Botany Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Bayside Council environmental health inspections." }
     ],
     "who": [
       { "title": "Botany Manufacturers & Importers", "desc": "Importers and manufacturers requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -701,13 +701,13 @@ module.exports = [
     "desc": "Local food safety and HACCP consultant in Surry Hills. Custom food safety plans, City of Sydney council audit prep, and training for cafes and restaurants.",
     "kw": "food safety consultant Surry Hills, cafe food safety Surry Hills, City of Sydney food compliance, restaurant HACCP Surry Hills",
     "sname": "Surry Hills Food Safety Services",
-    "sdesc": "Local food safety consulting, kitchen audits, and council inspection preparation for cafes and restaurants in Surry Hills and Sydney CBD.",
+    "sdesc": "Local food safety consulting, kitchen audits, and regulatory audit preparation for cafes and restaurants in Surry Hills and Sydney CBD.",
     "eyebrow": "Local Expert: Surry Hills",
     "h1": "Food Safety &amp; HACCP Consultant <em>Surry Hills</em>",
     "sub": "Specialist food safety support for Surry Hills' high-density cafe and restaurant dining strip. We deliver custom, City of Sydney council-ready food safety programs, kitchen inspections, and staff training.",
-    "introText": "Surry Hills food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Surry Hills food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "City of Sydney Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Sydney environmental health inspections." }
+      { "icon": "ðŸ›", "title": "City of Sydney Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Sydney environmental health inspections." }
     ],
     "who": [
       { "title": "Surry Hills Cafes & Bars", "desc": "Local dining venues needing custom cleaning schedules and allergen registers." }
@@ -729,13 +729,13 @@ module.exports = [
     "desc": "Local food safety and HACCP consultant in Newtown. Custom food safety plans, Inner West Council audit prep, and training for cafes and restaurants.",
     "kw": "food safety consultant Newtown, cafe food safety Newtown, Inner West Council food compliance, restaurant HACCP Newtown",
     "sname": "Newtown Food Safety Services",
-    "sdesc": "Local food safety consulting, kitchen audits, and council inspection preparation for cafes and restaurants in Newtown and Inner West.",
+    "sdesc": "Local food safety consulting, kitchen audits, and regulatory audit preparation for cafes and restaurants in Newtown and Inner West.",
     "eyebrow": "Local Expert: Newtown",
     "h1": "Food Safety &amp; HACCP Consultant <em>Newtown</em>",
     "sub": "Specialist food safety support for Newtown's high-density cafe and restaurant dining strip. We deliver custom, Inner West Council-ready food safety programs, kitchen inspections, and staff training.",
-    "introText": "Newtown food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Newtown food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Inner West Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Inner West Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Inner West Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Inner West Council environmental health inspections." }
     ],
     "who": [
       { "title": "Newtown Cafes & Restaurants", "desc": "Local dining venues needing custom cleaning schedules and allergen registers." }
@@ -757,13 +757,13 @@ module.exports = [
     "desc": "Local food safety and HACCP consultant in Leichhardt. Custom food safety plans, Inner West Council audit prep, and training for cafes and restaurants.",
     "kw": "food safety consultant Leichhardt, cafe food safety Leichhardt, Inner West Council food compliance, restaurant HACCP Leichhardt",
     "sname": "Leichhardt Food Safety Services",
-    "sdesc": "Local food safety consulting, kitchen audits, and council inspection preparation for cafes and restaurants in Leichhardt and Inner West.",
+    "sdesc": "Local food safety consulting, kitchen audits, and regulatory audit preparation for cafes and restaurants in Leichhardt and Inner West.",
     "eyebrow": "Local Expert: Leichhardt",
     "h1": "Food Safety &amp; HACCP Consultant <em>Leichhardt</em>",
     "sub": "Specialist food safety support for Leichhardt's high-density cafe and restaurant dining strip. We deliver custom, Inner West Council-ready food safety programs, kitchen inspections, and staff training.",
-    "introText": "Leichhardt food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Leichhardt food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Inner West Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Inner West Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Inner West Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Inner West Council environmental health inspections." }
     ],
     "who": [
       { "title": "Leichhardt Cafes & Restaurants", "desc": "Local dining venues needing custom cleaning schedules and allergen registers." }
@@ -789,9 +789,9 @@ module.exports = [
     "eyebrow": "Local Expert: Chatswood",
     "h1": "Food Safety &amp; HACCP Consultant <em>Chatswood</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Chatswood. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Chatswood food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Chatswood food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Willoughby Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Willoughby City Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Willoughby Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Willoughby City Council environmental health inspections." }
     ],
     "who": [
       { "title": "Chatswood Retail & Dining Venues", "desc": "Local restaurants, cafes, and retail food handlers needing FSS support." }
@@ -817,9 +817,9 @@ module.exports = [
     "eyebrow": "Local Expert: Hornsby",
     "h1": "Food Safety &amp; HACCP Consultant <em>Hornsby</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Hornsby. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Hornsby food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Hornsby food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Hornsby Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Hornsby Shire Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Hornsby Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Hornsby Shire Council environmental health inspections." }
     ],
     "who": [
       { "title": "Hornsby Food Premises", "desc": "Local cafes, restaurants, and bakeries needing custom food safety plans." }
@@ -845,9 +845,9 @@ module.exports = [
     "eyebrow": "Local Expert: Penrith",
     "h1": "Food Safety &amp; HACCP Consultant <em>Penrith</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Penrith. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Penrith food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Penrith food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Penrith Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Penrith City Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Penrith Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Penrith City Council environmental health inspections." }
     ],
     "who": [
       { "title": "Penrith Food Processors", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -873,9 +873,9 @@ module.exports = [
     "eyebrow": "Local Expert: Campbelltown",
     "h1": "Food Safety &amp; HACCP Consultant <em>Campbelltown</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Campbelltown. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Campbelltown food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Campbelltown food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Campbelltown Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Campbelltown City Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Campbelltown Council Prep", "desc": "Specialist support to prepare your kitchen and documentation for Campbelltown City Council environmental health inspections." }
     ],
     "who": [
       { "title": "Macarthur Food Producers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -901,9 +901,9 @@ module.exports = [
     "eyebrow": "Local Expert: Newcastle",
     "h1": "Food Safety &amp; HACCP Consultant <em>Newcastle</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Newcastle. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Newcastle food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Newcastle food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Newcastle Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Newcastle environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Newcastle Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for City of Newcastle environmental health inspections." }
     ],
     "who": [
       { "title": "Hunter Region Manufacturers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -929,9 +929,9 @@ module.exports = [
     "eyebrow": "Local Expert: Wollongong",
     "h1": "Food Safety &amp; HACCP Consultant <em>Wollongong</em>",
     "sub": "Supporting local food manufacturers, cafes, and distributors in Wollongong. We deliver custom, council-ready food safety programs and HACCP plans tailored to your specific business classification.",
-    "introText": "Wollongong food businesses face regular council inspections. We make sure your documentation is complete and compliant.",
+    "introText": "Wollongong food businesses need regular compliance support. We make sure your documentation is complete and compliant.",
     "includes": [
-      { "icon": "🏛", "title": "Wollongong Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Wollongong City Council environmental health inspections." }
+      { "icon": "ðŸ›", "title": "Wollongong Council Audit Prep", "desc": "Specialist support to prepare your kitchen and documentation for Wollongong City Council environmental health inspections." }
     ],
     "who": [
       { "title": "Illawarra Food Manufacturers", "desc": "Factory operations requiring SQF, Woolworths, or general HACCP compliance schemes." }
@@ -947,7 +947,7 @@ module.exports = [
     ]
   },
 
-  // ── NICHE: BREWERIES & DISTILLERIES ──
+  // â”€â”€ NICHE: BREWERIES & DISTILLERIES â”€â”€
   {
     "file": "food-safety-marrickville-breweries.html",
     "slug": "food-safety-marrickville-breweries",
@@ -958,29 +958,29 @@ module.exports = [
     "sdesc": "Food safety compliance, HACCP plan development, Standard 3.2.2A, and Inner West Council audit preparation for craft breweries and distilleries across Marrickville and the Inner West.",
     "eyebrow": "Niche Specialist: Craft Producers",
     "h1": "Food Safety for <em>Breweries &amp; Distilleries</em>",
-    "sub": "Scaling your craft brewery or distillery into taprooms, bars, and retail channels triggers real food safety obligations. From FSS registration to council-ready records, AMES Food Advisory makes sure your operation is compliant — so you can focus on the craft.",
-    "introText": "We work specifically with the Inner West's growing craft beverage scene — from small-batch gin distilleries to multi-tap breweries — delivering practical, no-nonsense compliance that fits the pace of a production facility.",
+    "sub": "Scaling your craft brewery or distillery into taprooms, bars, and retail channels triggers real food safety obligations. From FSS registration to council-ready records, AMES Food Advisory makes sure your operation is compliant â€” so you can focus on the craft.",
+    "introText": "We work specifically with the Inner West's growing craft beverage scene â€” from small-batch gin distilleries to multi-tap breweries â€” delivering practical, no-nonsense compliance that fits the pace of a production facility.",
     "includes": [
-      { "icon": "🍺", "title": "Taproom Compliance", "desc": "Full food safety setup for taprooms and cellar doors, including food handling systems, temperature controls, and council registration documentation." },
-      { "icon": "📋", "title": "Standard 3.2.2A Implementation", "desc": "Food Safety Supervisor registration, staff training records, and all required documentation under the 2023 federal regulation." },
-      { "icon": "🏛", "title": "Inner West Council Audit Prep", "desc": "Mock Environmental Health Officer inspections, gap analysis, and corrective action reports tailored to Inner West Council requirements." },
-      { "icon": "🏷️", "title": "Labelling & Allergen Review", "desc": "Review of product labels, ingredient declarations, and allergen warnings to satisfy FSANZ and retail distributor requirements." },
-      { "icon": "📊", "title": "HACCP for Beverage Production", "desc": "Custom HACCP plans covering raw ingredients, filtration, pasteurisation (where applicable), packaging, and distribution." },
-      { "icon": "🔬", "title": "Shelf-Life & Testing Liaison", "desc": "Connecting you with NATA-accredited labs for microbiological and chemical validation of products intended for retail." }
+      { "icon": "ðŸº", "title": "Taproom Compliance", "desc": "Full food safety setup for taprooms and cellar doors, including food handling systems, temperature controls, and council registration documentation." },
+      { "icon": "ðŸ“‹", "title": "Standard 3.2.2A Implementation", "desc": "Food Safety Supervisor registration, staff training records, and all required documentation under the 2023 federal regulation." },
+      { "icon": "ðŸ›", "title": "Inner West Council Audit Prep", "desc": "Mock Environmental Health Officer inspections, gap analysis, and corrective action reports tailored to Inner West Council requirements." },
+      { "icon": "ðŸ·ï¸", "title": "Labelling & Allergen Review", "desc": "Review of product labels, ingredient declarations, and allergen warnings to satisfy FSANZ and retail distributor requirements." },
+      { "icon": "ðŸ“Š", "title": "HACCP for Beverage Production", "desc": "Custom HACCP plans covering raw ingredients, filtration, pasteurisation (where applicable), packaging, and distribution." },
+      { "icon": "ðŸ”¬", "title": "Shelf-Life & Testing Liaison", "desc": "Connecting you with NATA-accredited labs for microbiological and chemical validation of products intended for retail." }
     ],
     "who_title": "Who is this designed for?",
     "who": [
       { "title": "Craft Breweries", "desc": "From nano-breweries running taprooms in Marrickville to mid-scale operations distributing to venues across Sydney, we handle your compliance from floor to fridge." },
-      { "title": "Gin & Spirit Distilleries", "desc": "Distilleries serving cocktails and food platters at their cellar door, or moving into retail bottle shops, need council-ready food safety documentation — we write it." },
+      { "title": "Gin & Spirit Distilleries", "desc": "Distilleries serving cocktails and food platters at their cellar door, or moving into retail bottle shops, need council-ready food safety documentation â€” we write it." },
       { "title": "Scaling Producers", "desc": "Craft brands ready to supply restaurant groups or independent bottle shops, where buyers expect documented food safety programs and HACCP plans." }
     ],
     "steps": [
-      { "title": "Free Compliance Review", "desc": "A no-obligation 20-minute call to understand your setup — taproom size, production volume, staff count, and any upcoming council visits." },
+      { "title": "Free Compliance Review", "desc": "A no-obligation 20-minute call to understand your setup â€” taproom size, production volume, staff count, and any upcoming council visits." },
       { "title": "On-Site Gap Analysis", "desc": "We visit your Marrickville (or surrounds) facility to audit your current practices, documentation, and physical food handling setup against NSW Food Act 2003 requirements." },
       { "title": "Documentation & Training", "desc": "We deliver your custom HACCP plan, Standard 3.2.2A records, SOP manuals, and run your staff through a practical training session." }
     ],
     "faqs": [
-      { "q": "Do breweries and distilleries in NSW need a food safety program?", "a": "If your taproom or cellar door serves food — even shared platters, bar snacks, or packaged goods — you are classified as a food business under the NSW Food Act 2003 and must comply with Standard 3.2.2A, including appointing a certified Food Safety Supervisor." },
+      { "q": "Do breweries and distilleries in NSW need a food safety program?", "a": "If your taproom or cellar door serves food â€” even shared platters, bar snacks, or packaged goods â€” you are classified as a food business under the NSW Food Act 2003 and must comply with Standard 3.2.2A, including appointing a certified Food Safety Supervisor." },
       { "q": "Does Standard 3.2.2A apply to my craft brewery's taproom?", "a": "Yes. Standard 3.2.2A (in force from December 2023) applies to any food business that handles unpackaged, potentially hazardous, ready-to-eat food. Most taprooms serving food fall squarely into this category and must have a Food Safety Supervisor, maintain training records, and document their food handling processes." },
       { "q": "What does Inner West Council look for when inspecting a brewery taproom?", "a": "Inner West Council EHOs check food handling practices, temperature records, cleaning and sanitisation schedules, food handler training evidence, and physical premises compliance. Having a documented food safety program and trained staff significantly reduces the risk of improvement notices or fines." },
       { "q": "Can you help us if we want to sell our product in bottle shops or bars?", "a": "Yes. We can help you develop the HACCP plan and food safety documentation that wholesale buyers and distributors expect to see. We also liaise with NATA-accredited labs if product testing is required for retail entry." }
@@ -992,7 +992,7 @@ module.exports = [
     ]
   },
 
-  // ── SUBURB: MARRICKVILLE ──
+  // â”€â”€ SUBURB: MARRICKVILLE â”€â”€
   {
     "file": "food-safety-consultant-marrickville.html",
     "slug": "food-safety-consultant-marrickville",
@@ -1003,24 +1003,24 @@ module.exports = [
     "sdesc": "Local food safety consulting, HACCP plans, and Inner West Council audit preparation for cafes, restaurants, breweries, and food manufacturers in Marrickville and surrounds.",
     "eyebrow": "Local Expert: Marrickville & Inner West",
     "h1": "Food Safety Consultant <em>Marrickville &amp; Inner West</em>",
-    "sub": "Marrickville's food scene is one of Sydney's most dynamic — and most closely watched by Inner West Council EHOs. Whether you run a buzzing cafe on Illawarra Road, a craft brewery on Sydenham Road, or a food production facility in the industrial precinct, we ensure your compliance is airtight.",
-    "introText": "We serve the full spectrum of Inner West food businesses — from heritage bakeries to modern distilleries — with practical, no-jargon food safety programs and council audit support.",
+    "sub": "Marrickville's food scene is one of Sydney's most dynamic â€” and most closely watched by Inner West Council EHOs. Whether you run a buzzing cafe on Illawarra Road, a craft brewery on Sydenham Road, or a food production facility in the industrial precinct, we ensure your compliance is airtight.",
+    "introText": "We serve the full spectrum of Inner West food businesses â€” from heritage bakeries to modern distilleries â€” with practical, no-jargon food safety programs and council audit support.",
     "includes": [
-      { "icon": "🏛", "title": "Inner West Council Audit Prep", "desc": "Mock EHO inspections and gap analysis reports aligned to Inner West Council's Food Premises Assessment Report (FPAR) criteria." },
-      { "icon": "🍺", "title": "Brewery & Distillery Compliance", "desc": "Standard 3.2.2A implementation, FSS registration, and HACCP plans for Marrickville's craft beverage producers." },
-      { "icon": "📋", "title": "HACCP & Food Safety Programs", "desc": "Custom food safety programs for cafes, restaurants, manufacturers, and food producers in the Inner West LGA." }
+      { "icon": "ðŸ›", "title": "Inner West Council Audit Prep", "desc": "Mock EHO inspections and gap analysis reports aligned to Inner West Council's Food Premises Assessment Report (FPAR) criteria." },
+      { "icon": "ðŸº", "title": "Brewery & Distillery Compliance", "desc": "Standard 3.2.2A implementation, FSS registration, and HACCP plans for Marrickville's craft beverage producers." },
+      { "icon": "ðŸ“‹", "title": "HACCP & Food Safety Programs", "desc": "Custom food safety programs for cafes, restaurants, manufacturers, and food producers in the Inner West LGA." }
     ],
     "who": [
       { "title": "Inner West Cafes & Restaurants", "desc": "Busy hospitality venues on Marrickville Road, King Street Newtown, and Enmore Road needing fast, compliant food safety setups." },
-      { "title": "Craft Breweries & Distilleries", "desc": "The Inner West's booming craft beverage scene — from taproom snacks to full kitchen menus, we handle the compliance." },
+      { "title": "Craft Breweries & Distilleries", "desc": "The Inner West's booming craft beverage scene â€” from taproom snacks to full kitchen menus, we handle the compliance." },
       { "title": "Food Manufacturers & Producers", "desc": "Light industrial operations in Marrickville, Sydenham, and St Peters requiring HACCP plans and documentation." }
     ],
     "steps": [
-      { "title": "Local Consultation", "desc": "We come to your Marrickville premises for an initial walkthrough and compliance review — no travel fees within the Inner West." },
+      { "title": "Local Consultation", "desc": "We come to your Marrickville premises for an initial walkthrough and compliance review â€” no travel fees within the Inner West." },
       { "title": "Custom Program Delivery", "desc": "Tailored food safety documentation, daily logs, and staff training delivered within your timeline." }
     ],
     "faqs": [
-      { "q": "How often does Inner West Council inspect food businesses?", "a": "Inner West Council typically inspects food businesses one to three times per year depending on their risk classification. High-risk businesses (those handling unpackaged ready-to-eat food) are inspected most frequently. We ensure you are always inspection-ready." },
+      { "q": "the NSW Food Authority audits food businesses?", "a": "Inner West Council typically inspects food businesses one to three times per year depending on their risk classification. High-risk businesses (those handling unpackaged ready-to-eat food) are inspected most frequently. We ensure you are always inspection-ready." },
       { "q": "Can you help a Marrickville brewery comply with Standard 3.2.2A?", "a": "Absolutely. Standard 3.2.2A is the federal standard that came into force in December 2023 requiring food businesses to have a Food Safety Supervisor and trained staff. Most Marrickville taprooms and food-serving venues fall under this requirement. We handle the full implementation." }
     ],
     "related": [

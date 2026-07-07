@@ -1,0 +1,13 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light background -->
+  <rect width="800" height="400" fill="#F5F3F0"/>
+  
+  <!-- AMES text -->
+  <text x="400" y="180" font-family="'Playfair Display', serif" font-size="120" font-weight="700" fill="#1C2B3A" letter-spacing="4" text-anchor="middle">AMES</text>
+  
+  <!-- Food Advisory text -->
+  <text x="400" y="260" font-family="'Playfair Display', serif" font-size="56" font-weight="400" fill="#D4751F" font-style="italic" text-anchor="middle">Food Advisory</text>
+  
+  <!-- Tagline -->
+  <text x="400" y="340" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="#1C2B3A" fill-opacity="0.4" letter-spacing="4" text-anchor="middle">NSW · HACCP · FOOD CONSULTANTS</text>
+</svg>

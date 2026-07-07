@@ -1,0 +1,784 @@
+ames-food-advisory (1).html
+html
+
+
+Claude finished the response foodtech-site.html html Claude finished the responseYou said: i want to build this website but for the minute i want to take out the retailer specification altogetherpasted_content.txt Text · 4.50 KB Business Launch Strategy: Food Technology & Training Expert
+
+pasted
+
+so we were working on the seo, the hero on the homepage, should we call it Ames Food Advisory or just Ames Advisory.  i need to start building out all the pages meaning the suburb pages. the pages for the 9 offerings, the 9 offerings plus suburb, the Small food businesses, Food startups, Cafes & restaurants, Food manufacturers, RTOs, Food industry workers, if these need pages and suburb specific pages whatever that is the strongest for SEO
+
+12:01 AM
+
+Check the current HTML file
+Check the current HTML file
+Good, I've got the full picture of where the site is at. Let me answer your questions properly then map out the full SEO page architecture.
+
+AMES Food Advisory vs AMES Advisory — on the homepage hero
+
+Keep AMES Food Advisory everywhere on this site. The reasoning from the chat about "AMES Advisory being more scalable long-term" is correct in theory, but it's irrelevant right now. The website domain is amesfoodadvisory.com.au — Google is already reading "food advisory" as a keyword signal. Stripping it from the hero H1 weakens that. Lock in the full name across the entire site, and revisit in 3 years when the brand has authority of its own.
+
+The full SEO page architecture
+
+Here's the honest answer on what actually moves the needle vs what's busywork:
+
+Tier 1 — Build these first (highest search intent, direct conversions)
+
+These are the pages people are actively Googling right now:
+
+The 9 service pages, each targeting a specific high-intent keyword:
+
+/food-safety-consulting-sydney — HACCP plans, food safety consultant Sydney
+/haccp-plan-development — HACCP plan Sydney/NSW
+/food-safety-training-sydney — food safety training Sydney
+/internal-auditing-services — internal food auditor Sydney/NSW
+/sop-writing-food-businesses — SOP writing food safety
+/food-business-startup-package — food business start up NSW/Sydney
+/lab-skills-training — food laboratory skills training NSW
+/rto-resource-development — RTO training resources food safety
+/sampling-inspection-services — food sampling inspection Sydney
+Each page needs: unique H1 with keyword, 400-600 words of real content, FAQ schema (3-5 questions people actually ask), local business schema, and a clear CTA. Not thin pages — Google will ignore them.
+
+Tier 2 — Client type pages (medium priority, good for long-tail)
+
+These capture people searching "food safety consultant for [my type of business]":
+
+/food-safety-small-business — small food business compliance NSW
+/food-startup-consultant — food startup help Sydney
+/cafe-restaurant-food-safety — cafe food safety compliance Sydney / restaurant HACCP Sydney
+/food-manufacturer-consulting — food manufacturer compliance NSW / HACCP manufacturing
+/rto-food-technology-resources — RTO food technology training resources
+/food-industry-workers-training — food industry worker training Sydney
+These pages convert well because the visitor recognises themselves immediately. They need a "this is for you if..." section, the relevant services listed, and ideally a testimonial or case study in that vertical.
+
+Tier 3 — Suburb pages (high volume, but build after Tier 1 and 2)
+
+The suburb pages work exactly like your SAC suburb pages — they capture hyper-local searches like "food safety consultant Parramatta" or "HACCP consultant Penrith." The difference is her clients aren't necessarily in the same suburb as her (unlike a trades business), so you prioritise suburbs where food businesses actually concentrate.
+
+Top priority suburbs for food businesses in Sydney:
+
+Parramatta, Blacktown, Liverpool (Western Sydney food manufacturing belt)
+Mascot, Alexandria, Botany (industrial food precinct)
+Surry Hills, Newtown, Leichhardt (cafe/restaurant density)
+Chatswood, Hornsby, Penrith, Campbelltown (outer metro growth corridors)
+Newcastle, Wollongong (regional expansion, worth 2-3 pages each)
+Each suburb page is: /food-safety-consultant-parramatta, 300-500 words, mentions the suburb naturally 4-6 times, links back to the 2-3 most relevant service pages, and uses suburb-specific schema.
+
+The service + suburb combinations
+
+These are low competition, high specificity. Examples:
+
+/haccp-consultant-parramatta
+/food-safety-training-western-sydney
+/cafe-food-safety-surry-hills
+Only build these once Tier 1 and 2 are done and indexed. They have lower individual volume but almost zero competition — someone searching that exact phrase is ready to hire.
+
+Build order I'd recommend:
+
+The 9 service pages — these are the money pages
+The 6 client type pages — these close the gap on who she helps
+Top 10-12 suburb pages — pure local SEO capture
+Service + suburb combos — long-tail domination
+That's roughly 27-30 pages total. Done properly, that's a site that dominates NSW food safety search in 12-18 months.
+
+Want me to start building them? I'd suggest starting with the 9 service pages — I can build all 9 as properly structured HTML files with correct schema, meta, headings, and content, consistent with the design already in the homepage. Say the word.
+
+LETS DO IT
+
+12:06 AM
+Let me read the skill and the existing site properly before building anything.
+
+
+Viewed 4 files
+Viewed 4 files
+Good — I have everything I need. Now I'll build all 9 service pages as properly structured, pixel-matched HTML files.
+
+
+Ran 4 commands
+Ran 4 commands
+
+Create output directory for all service pages
+
+Script
+
+Running command
+
+Script
+
+Run page builder script
+
+Script
+
+Write and run page builder
+bash
+
+cat > /tmp/bp.py << 'PYEOF'
+import os, json
+
+OUTPUT_DIR = "/mnt/user-data/outputs/ames-service-pages"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def head(title, desc, keywords, slug, schema_name, schema_desc):
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta name="keywords" content="{keywords}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="AMES Food Advisory">
+<link rel="canonical" href="https://www.amesfoodadvisory.com.au/{slug}">
+<meta name="geo.region" content="AU-NSW">
+<meta name="geo.placename" content="Sydney, New South Wales">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="https://www.amesfoodadvisory.com.au/{slug}">
+<meta property="og:site_name" content="AMES Food Advisory">
+<meta property="og:locale" content="en_AU">
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{schema_name}",
+  "description": "{schema_desc}",
+  "provider": {{
+    "@type": "LocalBusiness",
+    "name": "AMES Food Advisory",
+    "url": "https://www.amesfoodadvisory.com.au",
+    "telephone": "+61400000000",
+    "email": "hello@amesfoodadvisory.com.au",
+    "address": {{
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }},
+    "areaServed": "New South Wales"
+  }},
+  "serviceType": "{schema_name}"
+}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+"""
+
+SHARED_CSS = """<style>
+  :root {
+    --navy:#1C2B3A;--navy-deep:#131E28;--navy-mid:#243548;--navy-lift:#2E4460;
+    --amber:#E8913A;--amber-light:#F0A855;--amber-pale:#FDF3E7;--amber-dim:#C4741E;
+    --stone:#F5F1EB;--stone-mid:#EDE7DE;--stone-dark:#DDD4C6;
+    --ink:#1A1C1E;--ink-mid:#3C4048;--ink-soft:#6B7280;--ink-muted:#9CA3AF;
+    --white:#FFFFFF;--border-navy:rgba(28,43,58,0.12);--border-amber:rgba(232,145,58,0.28);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;background:var(--stone);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,145,58,0.15);padding:0 2rem;height:66px;display:flex;align-items:center;justify-content:space-between}
+  .nav-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white);text-decoration:none;letter-spacing:.01em}
+  .nav-logo span{color:var(--amber)}
+  .nav-links{display:flex;gap:2rem;align-items:center;list-style:none}
+  .nav-links a{text-decoration:none;font-size:.855rem;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:.01em;transition:color .2s}
+  .nav-links a:hover{color:var(--white)}
+  .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:.5rem 1.3rem!important;border-radius:6px!important;font-weight:600!important;transition:background .2s!important}
+  .nav-cta:hover{background:var(--amber-light)!important;color:var(--navy)!important}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px}
+  .page-hero{background:var(--navy-deep);padding:9rem 2rem 5rem;position:relative;overflow:hidden}
+  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 90% 50%,rgba(232,145,58,.09) 0%,transparent 65%),radial-gradient(ellipse 40% 60% at 0% 80%,rgba(44,68,96,.5) 0%,transparent 60%)}
+  .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);opacity:.35}
+  .page-hero-inner{position:relative;z-index:1;max-width:820px;margin:0 auto}
+  .breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.74rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
+  .breadcrumb a{color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s}
+  .breadcrumb a:hover{color:var(--amber)}
+  .breadcrumb span{color:rgba(255,255,255,.2)}
+  .page-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1.25rem}
+  .page-eyebrow::before{content:'';width:28px;height:1px;background:var(--amber)}
+  .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:400;line-height:1.15;letter-spacing:-.01em;color:var(--white);margin-bottom:1.25rem}
+  .page-hero h1 em{font-style:italic;color:var(--amber)}
+  .page-hero-sub{font-size:1.05rem;color:rgba(255,255,255,.55);max-width:640px;line-height:1.78;margin-bottom:2.5rem;font-weight:300}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--amber);color:var(--navy-deep);padding:.9rem 1.8rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}
+  .btn-primary:hover{background:var(--amber-light);transform:translateY(-1px)}
+  .btn-outline{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);padding:.9rem 1.8rem;border-radius:6px;font-weight:400;font-size:.9rem;text-decoration:none;border:1px solid rgba(255,255,255,.22);cursor:pointer;transition:border-color .2s,background .2s}
+  .btn-outline:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
+  .creds-bar{background:var(--amber);padding:0;overflow:hidden}
+  .creds-track{display:flex;align-items:center;animation:marquee 32s linear infinite;width:max-content;padding:.8rem 0}
+  .creds-bar:hover .creds-track{animation-play-state:paused}
+  @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  .cred-pill{display:inline-flex;align-items:center;gap:.4rem;font-size:.76rem;font-weight:600;color:var(--navy-deep);white-space:nowrap;padding:0 2rem;border-right:1px solid rgba(28,43,58,.18)}
+  .cred-pill::before{content:'◆';font-size:.5rem}
+  section{padding:5rem 2rem}
+  .container{max-width:1100px;margin:0 auto;width:100%}
+  .section-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem}
+  .section-eyebrow::before{content:'';width:20px;height:2px;background:var(--amber);border-radius:1px}
+  h2.display{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:400;line-height:1.18;color:var(--navy);margin-bottom:1.25rem}
+  h2.display em{font-style:italic;color:var(--amber-dim)}
+  h2.display-light{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:400;line-height:1.18;color:var(--white);margin-bottom:1.25rem}
+  h2.display-light em{font-style:italic;color:var(--amber)}
+  .body-lead{font-size:1.05rem;color:var(--ink-mid);line-height:1.8;font-weight:300;max-width:680px;margin-bottom:2rem}
+  .includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2.5rem 0}
+  .include-item{display:flex;align-items:flex-start;gap:.9rem;background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.25rem 1.35rem;transition:border-color .2s,box-shadow .2s}
+  .include-item:hover{border-color:var(--border-amber);box-shadow:0 4px 16px rgba(28,43,58,.06)}
+  .include-icon{width:32px;height:32px;border-radius:7px;background:var(--amber-pale);color:var(--amber-dim);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;margin-top:1px}
+  .include-title{font-size:.9rem;font-weight:600;color:var(--navy);margin-bottom:.25rem}
+  .include-desc{font-size:.82rem;color:var(--ink-soft);line-height:1.55;font-weight:300}
+  .who-section{background:var(--navy)}
+  .who-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-top:2.5rem}
+  .who-card{background:rgba(255,255,255,.05);border:1px solid rgba(232,145,58,.15);border-radius:10px;padding:1.5rem;transition:border-color .2s}
+  .who-card:hover{border-color:rgba(232,145,58,.35)}
+  .who-card-title{font-size:.88rem;font-weight:600;color:var(--white);margin-bottom:.5rem}
+  .who-card-desc{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.6;font-weight:300}
+  .steps{display:flex;flex-direction:column;gap:0;margin-top:2.5rem}
+  .step{display:flex;gap:2rem;align-items:flex-start;padding:1.75rem 0;border-bottom:1px solid var(--border-navy)}
+  .step:last-child{border-bottom:none}
+  .step-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:500;color:var(--amber);line-height:1;flex-shrink:0;width:48px}
+  .step-title{font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+  .step-desc{font-size:.88rem;color:var(--ink-soft);line-height:1.65;font-weight:300}
+  .faq-list{margin-top:2.5rem}
+  .faq-item{border-bottom:1px solid var(--border-navy);padding:1.5rem 0}
+  .faq-item:first-child{border-top:1px solid var(--border-navy)}
+  .faq-q{font-size:.97rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none}
+  .faq-q::after{content:'+';color:var(--amber);font-size:1.3rem;font-weight:300;flex-shrink:0;transition:transform .2s}
+  .faq-item.open .faq-q::after{transform:rotate(45deg)}
+  .faq-a{font-size:.88rem;color:var(--ink-soft);line-height:1.75;font-weight:300;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .2s}
+  .faq-item.open .faq-a{max-height:400px;padding-top:.85rem}
+  .cta-strip{background:var(--navy-deep);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
+  .cta-strip::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(232,145,58,.08) 0%,transparent 70%)}
+  .cta-strip-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
+  .cta-strip h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);color:var(--white);font-weight:400;margin-bottom:1rem;line-height:1.2}
+  .cta-strip h2 em{font-style:italic;color:var(--amber)}
+  .cta-strip p{color:rgba(255,255,255,.5);font-size:.95rem;margin-bottom:2rem;font-weight:300;line-height:1.7}
+  .cta-strip-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+  .related-card{background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;text-decoration:none;display:block;transition:border-color .2s,box-shadow .2s,transform .15s}
+  .related-card:hover{border-color:var(--border-amber);box-shadow:0 6px 20px rgba(28,43,58,.08);transform:translateY(-2px)}
+  .related-num{font-size:.7rem;font-weight:600;color:var(--amber);letter-spacing:.1em;margin-bottom:.6rem}
+  .related-title{font-size:.93rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+  .related-desc{font-size:.8rem;color:var(--ink-soft);line-height:1.55;font-weight:300}
+  footer{background:var(--navy-deep);border-top:1px solid rgba(232,145,58,.12);padding:2.5rem 2rem}
+  .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white);text-decoration:none}
+  .footer-logo span{color:var(--amber)}
+  .footer-copy{font-size:.76rem;color:rgba(255,255,255,.28)}
+  .footer-links{display:flex;gap:1.5rem}
+  .footer-links a{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:none;transition:color .2s}
+  .footer-links a:hover{color:var(--amber)}
+  .fade-up{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+  .fade-up.visible{opacity:1;transform:translateY(0)}
+  .fade-up-delay-1{transition-delay:.1s}
+  .fade-up-delay-2{transition-delay:.2s}
+  @media(max-width:768px){
+    .nav-links{display:none}
+    .nav-hamburger{display:flex}
+    .includes-grid{grid-template-columns:1fr}
+    .who-grid{grid-template-columns:1fr 1fr}
+    .related-grid{grid-template-columns:1fr 1fr}
+    .step{flex-direction:column;gap:.75rem}
+    .step-num{font-size:1.6rem;width:auto}
+  }
+  @media(max-width:480px){
+    .who-grid,.related-grid{grid-template-columns:1fr}
+  }
+</style>"""
+
+NAV = """<nav>
+  <a href="/" class="nav-logo">AMES <span>Food Advisory</span></a>
+  <ul class="nav-links">
+    <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
+    <li><a href="/food-safety-training-sydney">Training</a></li>
+    <li><a href="/internal-auditing-services">Auditing</a></li>
+    <li><a href="/food-business-startup-package">Start-Up Package</a></li>
+    <li><a href="/#services">All Services</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>"""
+
+CREDS = """<div class="creds-bar"><div class="creds-track">
+<span class="cred-pill">11+ Years Industry Experience</span>
+<span class="cred-pill">Arnotts &amp; Kellogg's Background</span>
+<span class="cred-pill">TAE-Qualified Trainer</span>
+<span class="cred-pill">TAFE NSW Sessional Lecturer</span>
+<span class="cred-pill">HACCP Specialist</span>
+<span class="cred-pill">NSW Food Authority Compliance</span>
+<span class="cred-pill">Food Technology Degree</span>
+<span class="cred-pill">Serving All of NSW</span>
+<span class="cred-pill">11+ Years Industry Experience</span>
+<span class="cred-pill">Arnotts &amp; Kellogg's Background</span>
+<span class="cred-pill">TAE-Qualified Trainer</span>
+<span class="cred-pill">TAFE NSW Sessional Lecturer</span>
+<span class="cred-pill">HACCP Specialist</span>
+<span class="cred-pill">NSW Food Authority Compliance</span>
+<span class="cred-pill">Food Technology Degree</span>
+<span class="cred-pill">Serving All of NSW</span>
+</div></div>"""
+
+FOOTER = """<footer><div class="footer-inner">
+  <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
+  <div class="footer-copy">© 2026 AMES Food Advisory · ABN XX XXX XXX XXX · Sydney, NSW</div>
+  <div class="footer-links">
+    <a href="/#services">Services</a>
+    <a href="/#about">About</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</div></footer>"""
+
+JS = """<script>
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+function toggleMenu(){const l=document.querySelector('.nav-links');l.style.display=l.style.display==='flex'?'':(l.style.cssText='display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(19,30,40,.98);padding:1.5rem 2rem;gap:1.2rem;z-index:99;');}
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const it=q.closest('.faq-item');const was=it.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!was)it.classList.add('open');});});
+</script>"""
+
+# ── PAGE DEFINITIONS ──
+
+PAGES = [
+{
+"file":"food-safety-consulting-sydney.html","slug":"food-safety-consulting-sydney",
+"title":"HACCP Plan & Food Safety Consulting Sydney | AMES Food Advisory",
+"desc":"Expert HACCP plan development and food safety consulting across Sydney and NSW. 11+ years industry experience, Arnotts background. AMES Food Advisory.",
+"kw":"food safety consultant Sydney, HACCP consultant NSW, HACCP plan Sydney, food safety consulting Sydney, food safety program NSW",
+"sname":"Food Safety & HACCP Consulting","sdesc":"HACCP plan development, food safety program design, hazard analysis and regulatory compliance consulting for food businesses across Sydney and NSW.",
+"eyebrow":"Service 01","h1":"Food Safety &amp; <em>HACCP Consulting</em>",
+"sub":"A properly built HACCP plan isn't just a compliance document — it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.",
+"includes":[
+("📋","HACCP Plan Development","Full hazard analysis, CCP identification, critical limits, monitoring procedures and verification — built for your specific operation and food type."),
+("🔍","Hazard Analysis","Biological, chemical, physical and allergen hazard identification for your specific products, processes and supply chain."),
+("📊","Food Safety Program Design","End-to-end food safety management system design compliant with the Australia New Zealand Food Standards Code."),
+("📌","CCP & OPRP Documentation","Critical control point and operational prerequisite program documentation with monitoring forms, corrective action procedures and records."),
+("✅","Regulatory Compliance Guidance","Plain-English advice on NSW Food Authority obligations, council registration requirements and third-party audit standards."),
+("🔁","Annual Review Service","Scheduled review and update of your HACCP plan as your menu, processes or supply chain change — retainer available."),
+],
+"who_title":"Who is this for?",
+"who":[
+("Food manufacturers & producers","Any business processing, manufacturing or packaging food in NSW that requires a documented food safety program."),
+("Cafes, restaurants & food service","Food businesses seeking HACCP-based food safety plans to satisfy council requirements and third-party auditors."),
+("New food businesses","Start-ups that need a food safety program built correctly from day one — before the council inspection, not after."),
+("Existing businesses reviewing compliance","Operations with outdated or gap-filled food safety documentation needing a professional review and rebuild."),
+("Businesses facing audit","Businesses preparing for NSW Food Authority inspections, third-party audits or retailer supply audits."),
+("Home-based & cottage food producers","Home kitchen businesses that need to understand their legal obligations and document their food safety controls."),
+],
+"steps":[
+("Discovery call","We discuss your operation, food types, processes and current compliance situation. Free, no obligation."),
+("Site visit or remote briefing","We map your full production process — ingredients in, product out — identifying every potential hazard point."),
+("Hazard analysis","Every biological, chemical, physical and allergen hazard is assessed for likelihood and severity specific to your operation."),
+("HACCP plan development","CCPs are identified, critical limits set, monitoring procedures designed, and all documentation prepared in audit-ready format."),
+("Walkthrough & handover","We walk you and your team through the completed plan so everyone understands how to implement and maintain it."),
+("Ongoing support","Available for verification visits, annual reviews, corrective action support and as your operation grows or changes."),
+],
+"faqs":[
+("Do I legally need a HACCP plan for my food business in NSW?","Most food businesses in NSW are required to have a food safety program under Standard 3.2.1 of the Australia New Zealand Food Standards Code. The type of program required depends on your business classification. AMES Food Advisory can advise on exactly what applies to your operation."),
+("How long does it take to develop a HACCP plan?","A straightforward HACCP plan for a small food business typically takes 2–4 weeks from initial briefing to final document. More complex manufacturing operations may take longer. We provide a clear timeline at the discovery stage."),
+("Can you help if my business already has a HACCP plan that needs updating?","Absolutely. We review existing plans regularly — identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance."),
+("Do you offer ongoing support after the plan is complete?","Yes. We offer annual review retainers, ad-hoc support for corrective actions, and are available to assist with third-party audits and council inspections."),
+("Can you work with food businesses outside Sydney?","Yes — AMES Food Advisory services all of NSW. Many clients are in Newcastle, Wollongong, the Central Coast and regional areas. Remote consulting is available where a site visit isn't required."),
+],
+"related":[("/internal-auditing-services","02","Internal Auditing","Gap analysis, mock inspections and ongoing compliance monitoring."),("/sop-writing-food-businesses","04","SOP & Documentation","Audit-ready SOPs, monitoring forms and food safety records."),("/food-business-startup-package","05","Start-Up Package","Complete compliance setup for new food businesses.")],
+},
+{
+"file":"internal-auditing-services.html","slug":"internal-auditing-services",
+"title":"Internal Food Safety Auditing Sydney NSW | AMES Food Advisory",
+"desc":"Independent internal food safety auditing for small businesses across Sydney and NSW. Gap analysis, mock inspections, corrective action support. AMES Food Advisory.",
+"kw":"internal food auditor Sydney, food safety audit NSW, food safety gap analysis Sydney, internal audit food business NSW, food safety compliance audit Sydney",
+"sname":"Internal Food Safety Auditing","sdesc":"Independent internal audit service for food businesses including gap analysis, pre-audit readiness checks, corrective action support and ongoing compliance monitoring across Sydney and NSW.",
+"eyebrow":"Service 02","h1":"Internal Food Safety <em>Auditing</em>",
+"sub":"Most small food businesses fail audits not because they're unsafe — but because their documentation doesn't reflect what they actually do. AMES Food Advisory audits your operation through the eyes of a council officer or third-party auditor, then helps you fix what it finds.",
+"includes":[
+("🔍","Gap Analysis Audit","Systematic review of your food safety program, records and practices against the Australia New Zealand Food Standards Code and relevant audit standards."),
+("📋","Pre-Audit Readiness Check","Structured walkthrough of your premises, documentation and team knowledge before an upcoming council inspection or third-party audit."),
+("🛠","Corrective Action Support","Prioritised corrective action report with practical, step-by-step guidance on closing every gap identified — not just a list of problems."),
+("📁","Documentation Review","Line-by-line review of your food safety program, SOPs, monitoring records and training logs to identify gaps and outdated controls."),
+("🔄","Ongoing Compliance Monitoring","Scheduled quarterly or bi-annual audits to keep your system current as your operation, staff and products evolve. Retainer available."),
+("📊","Audit Report & Evidence Pack","Formal written audit report with findings, risk ratings, corrective actions and a summary evidence pack suitable for sharing with council or auditors."),
+],
+"who_title":"Who needs an internal auditor?",
+"who":[
+("Small food manufacturers","Producers who need an independent check of their food safety system before a third-party or retailer supply audit."),
+("Cafes & restaurants","Food service businesses wanting to know where they stand before a council inspection arrives unannounced."),
+("Multi-site food businesses","Operations needing consistent audit standards across locations without the cost of a full-time food safety manager."),
+("Businesses with audit non-conformances","Operations that received corrective action requests from their last audit and need help closing them out properly."),
+("Growing businesses","Food businesses expanding into new products or markets who need to verify their food safety system scales with them."),
+("Businesses with staff turnover","Operations where key food safety knowledge has walked out the door and needs to be rebuilt and re-documented."),
+],
+"steps":[
+("Scope the audit","We agree on exactly what's being audited — premises, documentation, staff practices, records — and set the audit date."),
+("On-site or remote audit","We conduct the audit against your relevant standard, documenting findings, observations and evidence throughout."),
+("Debrief & preliminary findings","Immediate walkthrough of key findings on the day so nothing comes as a surprise in the report."),
+("Written audit report","Formal report delivered within 5 business days — findings categorised by risk, with corrective actions and recommended timelines."),
+("Corrective action support","We're available to help implement corrective actions, update documentation and verify closure before your next inspection."),
+],
+"faqs":[
+("What's the difference between an internal audit and a council inspection?","A council inspection is conducted by an environmental health officer with enforcement powers. An internal audit is a proactive review you commission yourself to identify and fix gaps before the regulator arrives. An internal auditor works for you, not the council."),
+("How often should a food business be internally audited?","For most small food businesses, one thorough internal audit per year is the minimum. Higher-risk operations or those supplying to major retailers typically benefit from quarterly audits."),
+("Can you audit a food business remotely?","Documentation audits and food safety program reviews can be conducted remotely. Premises audits require an on-site visit. We service all of NSW."),
+("What happens if you find serious non-conformances?","We tell you clearly, in plain language, exactly what the issue is, what the risk is, and what needs to be done. Our job is to help you fix it — not just report it."),
+("Do you provide a written report I can share with council?","Yes. Every audit includes a formal written report with findings, risk ratings and corrective actions in a format that demonstrates due diligence to regulatory authorities."),
+],
+"related":[("/food-safety-consulting-sydney","01","HACCP & Consulting","Build or rebuild your food safety program from the ground up."),("/sop-writing-food-businesses","04","SOP & Documentation","Fill documentation gaps identified in the audit with audit-ready SOPs."),("/food-safety-training-sydney","03","Food Safety Training","Address staff knowledge gaps found during the audit.")],
+},
+{
+"file":"food-safety-training-sydney.html","slug":"food-safety-training-sydney",
+"title":"Food Safety Training Sydney NSW | AMES Food Advisory",
+"desc":"On-site food safety training for businesses across Sydney and NSW. HACCP, allergen management, GMP, food handler competency. TAE-qualified trainer, 11+ years industry experience.",
+"kw":"food safety training Sydney, HACCP training NSW, food handler training Sydney, allergen training NSW, food industry training Sydney, on-site food safety training NSW",
+"sname":"Food Industry Training","sdesc":"Tailored on-site food safety training for food businesses across Sydney and NSW — HACCP, GMP, allergen management, food handler competency and food safety awareness.",
+"eyebrow":"Service 03","h1":"Food Safety Training <em>That Sticks</em>",
+"sub":"Generic online food safety courses don't change behaviour on the floor. AMES Food Advisory delivers tailored, on-site training built around your actual products, processes and team — delivered by a TAE-qualified trainer who's worked inside some of Australia's largest food manufacturers.",
+"includes":[
+("🎓","Food Safety Awareness Training","Foundation-level training for all food handling staff — hygiene, temperature control, cross-contamination, allergen awareness and personal responsibility."),
+("📋","HACCP Training for Supervisors","Deeper training for supervisors and team leaders — understanding the HACCP system, monitoring critical control points and completing records correctly."),
+("⚠️","Allergen Management Training","Practical allergen awareness training covering the 14 major allergens, cross-contact risks, supplier management, labelling obligations and emergency response."),
+("🏭","GMP & Hygiene Training","Good Manufacturing Practice training for production environments — personal hygiene, cleaning and sanitising, pest awareness, visitor control and zoning."),
+("📝","Record Keeping & Documentation","Practical training on completing temperature logs, cleaning records, corrective action forms and other food safety records correctly and consistently."),
+("🔬","Custom Topic Workshops","Bespoke training sessions on any food safety topic relevant to your operation — developed and delivered specifically for your team and processes."),
+],
+"who_title":"Who is this training for?",
+"who":[
+("New food handling staff","Induction training that sets clear expectations from day one — food safety, hygiene, allergen awareness and your business-specific requirements."),
+("Established teams needing a refresh","Businesses where food safety practices have drifted or where a recent audit identified staff knowledge as a gap."),
+("Supervisors and team leaders","Staff responsible for monitoring CCPs, completing records and managing food safety on the floor."),
+("Cafes & food service teams","Hospitality businesses that want practical, relevant training without the cost and irrelevance of a generic off-site course."),
+("Food manufacturers","Production staff and QA teams who need specific GMP, allergen and HACCP training aligned with their operation."),
+("Businesses with new menu or processes","Operations introducing new products, allergens or processes that require updated staff training before going live."),
+],
+"steps":[
+("Understand your operation","We learn about your food type, team size, current training level, and any specific gaps or incidents that prompted the training need."),
+("Develop custom content","Training content is built around your actual products, processes, kitchen or factory layout — not a generic presentation."),
+("On-site delivery","Training delivered at your premises on a schedule that suits your operation — early morning, split sessions, or staged across shifts."),
+("Assessment & documentation","Competency assessments completed where required. Attendance records and training logs provided for your file."),
+("Follow-up & reinforcement","We can provide toolbox talk resources, posters and quick reference guides to reinforce key messages after the session."),
+],
+"faqs":[
+("Is your food safety training accredited?","AMES Food Advisory delivers professional development and workplace training. Some programs align with units from the SIT and FDF training packages. Where formal Statement of Attainment is required, we can advise on the appropriate RTO pathway."),
+("How long does a typical food safety training session take?","A standard food safety awareness session runs 2–3 hours. HACCP supervisor training typically runs a full day. Allergen management workshops are usually 2 hours. All sessions can be adapted to your team size and operational constraints."),
+("Can you train staff who don't speak English as a first language?","Yes. We adapt delivery style, use visual materials, and where necessary work with your bilingual staff to ensure training is genuinely understood — not just sat through."),
+("Do you provide training records I can use as audit evidence?","Yes. Every training session includes an attendance register and a written training summary suitable for inclusion in your food safety records and audit evidence file."),
+("Can you deliver training at multiple sites?","Yes — we service all of NSW. For businesses with multiple locations, we can design a consistent training program and deliver it across all sites."),
+],
+"related":[("/food-safety-consulting-sydney","01","HACCP & Consulting","Build the food safety system your team will be trained to operate."),("/internal-auditing-services","02","Internal Auditing","Audit your operation to identify exactly what training gaps exist."),("/lab-skills-training","06","Lab Skills Training","Specialist laboratory and testing skills for QA teams.")],
+},
+{
+"file":"sop-writing-food-businesses.html","slug":"sop-writing-food-businesses",
+"title":"Food Safety SOP Writing & Documentation Sydney NSW | AMES Food Advisory",
+"desc":"Custom food safety SOP writing and documentation for food businesses across Sydney and NSW. Audit-ready standard operating procedures, monitoring forms and food safety records.",
+"kw":"food safety SOP writing Sydney, SOP writing food businesses NSW, food safety documentation Sydney, standard operating procedures food NSW, HACCP documentation Sydney",
+"sname":"Food Safety SOP & Documentation Writing","sdesc":"Custom food safety SOP writing, standard operating procedures, monitoring forms, corrective action records and audit-ready documentation for food businesses across Sydney and NSW.",
+"eyebrow":"Service 04","h1":"Food Safety SOPs &amp; <em>Documentation</em>",
+"sub":"Poorly written SOPs are the most common audit failure in small food businesses. AMES Food Advisory writes food safety documentation that your team can actually follow, your auditor can verify, and your council officer can approve — built from 11+ years of real operational experience.",
+"includes":[
+("📄","Standard Operating Procedures","Custom SOPs written for your specific operation — cleaning and sanitising, temperature control, allergen management, pest control, supplier approval, waste management and more."),
+("🌡","Monitoring & Record Templates","Temperature logs, cleaning checklists, corrective action forms, receiving records, calibration logs and CCP monitoring records — formatted for daily use."),
+("📋","Food Safety Plan Documentation","Complete food safety plan documentation including hazard analysis tables, HACCP charts, CCP summaries and control measure records."),
+("⚠️","Allergen Register & Controls","Product allergen register, cross-contact control procedures, supplier allergen declaration templates and allergen cleaning verification records."),
+("🏭","GMP & Hygiene Procedures","Good Manufacturing Practice documentation — personal hygiene policy, visitor procedures, glass and hard plastic policy, zoning rules and environmental hygiene SOPs."),
+("📁","Full Documentation Audits","Review of your existing documentation library — identifying gaps, contradictions, outdated procedures and records that don't meet current audit requirements."),
+],
+"who_title":"Who needs food safety documentation?",
+"who":[
+("New food businesses","Businesses opening that need a complete set of food safety documents ready before their first council inspection."),
+("Businesses with a documentation gap","Operations that have a HACCP plan but are missing the supporting SOPs and records that auditors check."),
+("Businesses after an audit non-conformance","Food businesses that received a documentation-related finding from their last council or third-party audit."),
+("Businesses changing menu or processes","Operations updating their product range, introducing new allergens, or changing food handling processes that require updated SOPs."),
+("Businesses buying an existing food business","New owners of an existing food business who need to review, update and re-own all food safety documentation."),
+("RTOs and training organisations","RTOs delivering food-related training that need food safety documentation resources for student assessment activities."),
+],
+"steps":[
+("Documentation scoping","We identify every SOP, form and record your operation requires based on your food type, processes and relevant audit standard."),
+("Gap assessment","If you have existing documentation, we audit it first — identifying what to keep, update and replace."),
+("Drafting","Documents are written using plain language, your business name and terminology — not generic templates dropped with a logo."),
+("Review & revision","You review every document. We revise based on your operational feedback until every SOP reflects how your business actually works."),
+("Final package delivery","Delivered as editable Word files and PDFs, organised into a logical file structure ready for implementation."),
+],
+"faqs":[
+("Why can't I just download free SOP templates from the internet?","Generic templates describe a generic operation — not yours. Auditors and council officers can identify templated documentation immediately. An SOP that doesn't match your actual process is worse than no SOP — it's evidence you don't understand your own food safety system."),
+("How many SOPs does a typical small food business need?","Most small food businesses need between 8 and 20 SOPs depending on complexity. A simple cafe might need 10. A small food manufacturer might need 18–25. We scope this at the beginning so there are no surprises."),
+("Are the documents editable so I can update them myself in future?","Yes. All documents are delivered as editable Microsoft Word files as well as PDFs. We build them so you can maintain them yourself going forward."),
+("Can you match the format to our existing documentation?","Yes — where you have existing documentation that works well, we can match the style and format for consistency across your document set."),
+("Do you offer a review-only service for existing documents?","Yes. We can conduct a documentation audit of your existing SOP library, deliver a gap report with recommendations, and then write only what's missing or needs replacement."),
+],
+"related":[("/food-safety-consulting-sydney","01","HACCP & Consulting","Build the HACCP plan your SOPs will support."),("/internal-auditing-services","02","Internal Auditing","Identify exactly which SOPs and records are missing or inadequate."),("/food-business-startup-package","05","Start-Up Package","Full documentation included in the complete start-up package.")],
+},
+{
+"file":"food-business-startup-package.html","slug":"food-business-startup-package",
+"title":"Food Business Start-Up Package Sydney NSW | AMES Food Advisory",
+"desc":"Complete food business compliance setup for new food businesses across Sydney and NSW. HACCP plan, SOPs, staff training, council audit prep — one package, one expert.",
+"kw":"food business start up NSW, food business compliance Sydney, new food business help NSW, food business setup Sydney, food startup consultant NSW, council food audit Sydney",
+"sname":"Food Business Start-Up Package","sdesc":"Complete compliance setup for new food businesses — licensing, HACCP plan, SOPs, staff training and council audit preparation in one engagement across Sydney and NSW.",
+"eyebrow":"Service 05 · Most Popular","h1":"The Food Business <em>Start-Up Package</em>",
+"sub":"Opening a food business in NSW involves council registration, food safety laws, staff training obligations, and an audit — all before you've served your first customer. AMES Food Advisory wraps all of it into one engagement, so you open with confidence, not compliance debt.",
+"includes":[
+("🏛","Licensing & Regulatory Requirements","NSW Food Authority obligations, council registration process, food business classification, high-risk food handling requirements — all explained in plain English."),
+("📋","Custom Food Safety Plan","HACCP-based food safety plan built for your specific food type and operation — not a template. Fully documented and audit-ready."),
+("📄","SOPs & Record Templates","Complete set of standard operating procedures and monitoring forms — temperature logs, cleaning schedules, allergen records, supplier approval and corrective action forms."),
+("🎓","Staff Food Safety Training","On-site food safety training delivered to your whole team — food handling, personal hygiene, allergen awareness and your business-specific procedures."),
+("🔍","Council Audit Preparation","Mock inspection walkthrough of your premises, documentation review and corrective action checklist — so nothing surprises you when council arrives."),
+("📞","Post-Launch Support","Direct access to AMES Food Advisory for questions in the first 90 days after opening — because compliance questions don't stop when the doors open."),
+],
+"who_title":"This package is built for",
+"who":[
+("Cafe & restaurant owners","New food service businesses that need a complete, council-ready food safety system before opening day."),
+("Food truck & market stall operators","Mobile food businesses navigating council requirements across multiple LGAs in Greater Sydney and NSW."),
+("Home-based food producers","Cottage food businesses that need to understand their legal obligations and document their food safety controls from the start."),
+("Catering businesses","New catering operations needing a portable, flexible food safety system covering on-site and off-site food production."),
+("Small food manufacturers","Start-up food manufacturers needing a full HACCP-based food safety program before commencing production."),
+("Food business buyers","People buying an existing food business who need to review, update and re-own all compliance before trading."),
+],
+"steps":[
+("Initial consultation","We learn about your business concept, food type, premises, launch timeline and current compliance knowledge. Free, no obligation."),
+("Regulatory mapping","We identify every applicable standard, council requirement and food safety obligation relevant to your specific business classification."),
+("Food safety plan development","Your custom HACCP-based food safety plan is developed — hazard analysis, CCPs, monitoring procedures and all supporting documentation."),
+("SOP & records package","Complete set of SOPs and monitoring forms built for your operation and ready to implement on day one."),
+("Staff training delivery","On-site training session delivered to your team before opening — food safety, hygiene, allergens and your specific procedures."),
+("Council audit prep & handover","Mock inspection walkthrough, final documentation review, and a clear briefing on what council will look for and how to handle it."),
+],
+"faqs":[
+("When should I engage AMES Food Advisory — before or after signing the lease?","Ideally before you sign or as early as possible in the fit-out phase. Some compliance requirements affect the physical setup of your kitchen — ventilation, handwashing facilities, zoning. Getting advice early avoids expensive rectifications later."),
+("How long does the start-up package take to complete?","Most start-up packages are completed within 3–5 weeks from initial consultation to final handover. If you have a firm opening date, we work to your timeline."),
+("Does the package include the council registration application?","We guide you through the registration process and ensure your documentation meets council requirements. The registration application is lodged by you — but we'll make sure it's right before you submit."),
+("Is this package available for food businesses outside Sydney?","Yes — AMES Food Advisory services all of NSW. The regulatory requirements are largely consistent across NSW under the Food Act 2003 and the Food Standards Code, with some variation by local council."),
+("What if I already have some of this in place — can I buy parts of the package?","Yes. The package components can be purchased individually — HACCP plan only, documentation only, training only, or audit prep only. We'll recommend the right scope based on what you already have."),
+],
+"related":[("/food-safety-consulting-sydney","01","HACCP & Consulting","Ongoing HACCP support and food safety program management."),("/sop-writing-food-businesses","04","SOP & Documentation","Additional SOPs as your menu or processes evolve."),("/food-safety-training-sydney","03","Food Safety Training","Refresher training as your team grows and changes.")],
+},
+{
+"file":"lab-skills-training.html","slug":"lab-skills-training",
+"title":"Food Lab Skills Training Sydney NSW | AMES Food Advisory",
+"desc":"Practical food laboratory skills training for QA teams and food industry workers across Sydney and NSW. Microbiological, chemical, sensory and physical testing techniques.",
+"kw":"food lab skills training Sydney, food laboratory training NSW, QA training food industry Sydney, food testing training NSW, sensory evaluation training Sydney",
+"sname":"Food Laboratory Skills Training","sdesc":"Practical food laboratory skills training for QA teams and production staff — microbiological, chemical, sensory and physical testing techniques for food industry workers across Sydney and NSW.",
+"eyebrow":"Service 06","h1":"Food Lab Skills <em>Training</em>",
+"sub":"Most food science graduates and QA team members have the theory but lack hands-on confidence with real testing techniques. AMES Food Advisory delivers practical lab skills training built around the techniques that actually matter on the floor of a food production facility.",
+"includes":[
+("🔬","Microbiological Testing Techniques","Aseptic sampling, plating techniques, culture interpretation, colony counting and result recording — practical skills for QA teams running routine microbial monitoring."),
+("⚗️","Chemical & Physical Testing","pH measurement, water activity, titration, viscosity, moisture content and other routine physical and chemical tests used in food production QA."),
+("👃","Sensory Evaluation Methods","Structured sensory panels, difference tests, acceptance testing, flavour profiling and sensory record keeping for product development and quality monitoring."),
+("📊","Results Interpretation & Records","How to interpret test results against specifications, record findings correctly, identify trends and escalate results that indicate a food safety or quality risk."),
+("🏭","On-Site Practical Workshops","Hands-on workshop delivery at your facility using your equipment, your products and your testing protocols — not a classroom simulation."),
+("📋","Lab Procedure Development","Written laboratory procedures and work instructions for routine QA testing — so new staff can perform tests correctly and consistently from day one."),
+],
+"who_title":"Who is this training for?",
+"who":[
+("QA technicians & analysts","Laboratory staff who need to build confidence and consistency with routine food testing techniques used in their specific facility."),
+("New food science graduates","Recent graduates entering food industry QA roles who have theoretical knowledge but need practical, production-relevant lab skills."),
+("Production supervisors","Supervisors responsible for monitoring product quality who need to understand testing methods and know how to interpret results."),
+("Food manufacturers setting up QA","Small manufacturers establishing a QA function for the first time who need to build testing capability from scratch."),
+("TAFE & RTO students","Students completing food science or food technology qualifications who need practical lab skills development beyond classroom work."),
+("Team leaders upskilling staff","Managers wanting to upskill existing staff in specific techniques to reduce reliance on external laboratory testing for routine checks."),
+],
+"steps":[
+("Skills assessment","We identify your team's current level, the specific techniques required for your operation, and any gaps or inconsistencies in current practice."),
+("Program design","A practical training program is designed around your specific equipment, products and testing requirements — not a generic course."),
+("On-site delivery","Hands-on workshop delivered at your facility — each technique demonstrated, then practised under supervision until competency is achieved."),
+("Assessment & sign-off","Competency is assessed against agreed standards. Sign-off records provided for your training file."),
+("Written procedures","Lab procedures and work instructions for trained techniques provided as editable documents for your QA manual."),
+],
+"faqs":[
+("Can you train staff who have no prior laboratory experience?","Yes — we regularly train production staff and supervisors with no formal lab background. We start from the fundamentals and build practical competency through hands-on repetition."),
+("Do you use our own equipment and products during training?","Yes — training is always more effective when conducted using your actual equipment and real products. We'll advise on any consumables or reagents needed in advance."),
+("Is the training accredited to any food industry qualifications?","The training is professional development, not accredited VET delivery. Where accredited outcomes are required, we can design training that aligns with specific units from the FDF or SIT training packages."),
+("Can you train a team across multiple sites?","Yes. We can design a consistent training program and deliver it at multiple facilities, ensuring all staff perform tests to the same standard regardless of location."),
+("Do you provide lab procedures as part of the training?","Yes — written procedures for each technique covered in the training are provided as part of the package, formatted as editable SOPs for your QA documentation system."),
+],
+"related":[("/food-safety-training-sydney","03","Food Safety Training","Broader food safety awareness and HACCP training for the wider team."),("/sop-writing-food-businesses","04","SOP & Documentation","Lab procedures and QA documentation writing service."),("/sampling-inspection-services","09","Sampling & Inspection","Product sampling program design and testing liaison.")],
+},
+{
+"file":"rto-resource-development.html","slug":"rto-resource-development",
+"title":"RTO Food Safety Training Resource Development NSW | AMES Food Advisory",
+"desc":"Curriculum development, assessment tools and training resources for RTOs delivering food technology and food safety qualifications. TAFE-experienced. Sydney NSW.",
+"kw":"RTO training resources food safety NSW, RTO curriculum development food technology, food safety assessment tools NSW, RTO food industry resources Sydney",
+"sname":"RTO Assessment & Resource Development","sdesc":"Curriculum development, assessment tool design, competency mapping and training resource creation for RTOs delivering food-related qualifications across NSW.",
+"eyebrow":"Service 07 · B2B Specialist","h1":"RTO Food Safety <em>Resource Development</em>",
+"sub":"Most RTO training resources for food-related qualifications are built by learning designers without food industry experience. AMES Food Advisory brings both — TAFE NSW sessional lecturing experience combined with 11+ years on the production floor of major Australian food manufacturers.",
+"includes":[
+("📚","Curriculum & Unit Mapping","Competency mapping for food-related units from the SIT, FDF, BSB and HLT training packages — identifying evidence requirements, assessment conditions and industry currency benchmarks."),
+("📝","Assessment Tool Development","Industry-accurate assessment tools — knowledge assessments, practical observation checklists, workplace-based assessment tasks and portfolio evidence guides."),
+("🎓","Learner Resource Development","Learner guides, facilitation guides, PowerPoint presentations and workbooks built to current training package requirements and industry standards."),
+("🔬","Lab & Practical Resources","Practical activity guides, experiment sheets, equipment checklists and workplace simulation scenarios for food science and food technology units."),
+("✅","RTO Compliance Review","Review of existing food-related training resources against current training package versions, ASQA standards and industry currency requirements."),
+("🤝","Industry Partnership Support","Development of industry placement agreements, workplace supervisor guides and structured workplace learning frameworks for food industry partners."),
+],
+"who_title":"Who is this service for?",
+"who":[
+("RTOs delivering food qualifications","Training organisations delivering SIT, FDF or food-related qualifications who need industry-current, audit-ready training and assessment resources."),
+("TAFE departments","TAFE NSW departments delivering food technology, hospitality or food science programs who need curriculum refresh or new unit resources."),
+("Private RTOs entering the food sector","Training organisations expanding into food-related qualifications who need end-to-end curriculum development from someone who knows the industry."),
+("RTOs with non-conformances","RTOs that received training and assessment strategy or assessment tool findings from ASQA or state training authority audits."),
+("High schools & VET in Schools","Secondary schools delivering VET food industry programs who need industry-relevant, practical learning activities."),
+("Workplace training coordinators","Enterprises with internal RTO registration delivering food safety qualifications who need to update resources for currency."),
+],
+"steps":[
+("Training package analysis","We map the specific units required, review current training package versions and identify any recent changes affecting evidence requirements."),
+("Resource scoping","We scope exactly which resources are needed — new builds, updates, or compliance reviews — and agree on formats, templates and delivery timelines."),
+("Industry currency check","All content is benchmarked against current industry practice — not what was standard 10 years ago when many existing resources were written."),
+("Development & review","Resources are developed in your templates, reviewed by your team, revised based on feedback and delivered in final editable format."),
+("Validation support","We can support the industry validation process — including providing industry expert review of assessment tools on request."),
+],
+"faqs":[
+("Do you work with specific training package versions?","Yes — we work with the current versions of all food-related training packages including SIT (hospitality), FDF (food processing), and relevant units from BSB and HLT. We advise on transition requirements when packages are superseded."),
+("Can you develop resources for workplace-based assessment?","Yes. Workplace-based assessment tools, structured workplace learning frameworks and industry supervisor guides are a core part of our RTO resource development service."),
+("Are your resources ASQA-compliant?","Resources are developed to align with ASQA's Standards for RTOs 2015 and the relevant training package assessment requirements. Final compliance responsibility rests with the RTO — but we build to a standard that supports a positive audit outcome."),
+("Can you work with our existing templates and style guide?","Yes. We work in your document templates and formatting conventions. Consistency with your existing resource library is standard practice."),
+("Do you offer a review-only service for existing resources?","Yes — we can audit your existing food-related resources against current training package versions and ASQA requirements, and deliver a gap report with recommendations."),
+],
+"related":[("/food-safety-training-sydney","03","Food Safety Training","On-site food safety training for workplace delivery."),("/lab-skills-training","06","Lab Skills Training","Practical lab training for student and workplace assessment activities."),("/sop-writing-food-businesses","04","SOP & Documentation","Industry documentation for use as authentic assessment materials.")],
+},
+{
+"file":"online-food-safety-courses.html","slug":"online-food-safety-courses",
+"title":"Online Food Safety Short Courses NSW | AMES Food Advisory",
+"desc":"Self-paced online food safety short courses for food industry professionals and businesses across NSW. HACCP fundamentals, allergen management, audit preparation. Launching 2026.",
+"kw":"online food safety course NSW, HACCP online course Australia, food safety short course Sydney, allergen management course online, food safety CPD NSW",
+"sname":"Online Food Safety Short Courses","sdesc":"Self-paced online professional development courses in food safety for food industry professionals across NSW — HACCP fundamentals, allergen management, food safety programs and audit preparation.",
+"eyebrow":"Service 08 · Coming Soon","h1":"Online Food Safety <em>Short Courses</em>",
+"sub":"Industry-accurate, self-paced professional development for food industry workers and business owners — built by someone who's worked across the entire food supply chain. No generic content, no filler. Courses launching in 2026.",
+"includes":[
+("📋","HACCP Fundamentals","A practical introduction to HACCP principles — the seven steps, hazard analysis, CCP identification and how to build and maintain a HACCP plan."),
+("⚠️","Allergen Management Essentials","The 14 major allergens, cross-contact risks, supplier management, labelling requirements and emergency response — for food handlers, supervisors and business owners."),
+("📊","Food Safety Programs Explained","Understanding Standard 3.2.1 — what a food safety program must contain, who needs one, and how to ensure yours meets NSW Food Authority requirements."),
+("🔍","Audit Preparation & Readiness","What council inspectors and third-party auditors look for — records, premises, staff knowledge, documentation and how to prepare."),
+("🏭","GMP for Food Manufacturers","Good Manufacturing Practice for small to medium food manufacturers — hygiene, cleaning, pest management, zoning and GMP record keeping."),
+("🎓","Food Handler Competency","Essential food safety knowledge for all food handling staff — hygiene, temperature control, cross-contamination, allergens and your legal obligations."),
+],
+"who_title":"Who are these courses for?",
+"who":[
+("Food business owners","Owners who want to understand the compliance landscape for their business without spending a full day in a face-to-face course."),
+("Food industry workers","Workers seeking professional development and to build their food safety knowledge for career progression."),
+("Supervisors & team leaders","Staff taking on food safety responsibilities who need a solid foundation before managing HACCP monitoring and records."),
+("New entrants to the food industry","People entering food manufacturing, food service or food retail who need a grounding in industry food safety requirements."),
+("Students & graduates","Food science and hospitality students using short courses as industry-relevant supplementary learning alongside formal qualifications."),
+("Businesses with remote staff","Operations with staff across multiple sites or in regional NSW who can't attend face-to-face training."),
+],
+"steps":[
+("Register your interest","Add your name to the notification list and tell us which courses matter most — this shapes what we build first."),
+("Courses launch 2026","Courses are currently in development. Registered subscribers receive early access and launch pricing."),
+("Self-paced delivery","Complete modules at your own pace — on any device, at any time. No fixed schedule or live sessions required."),
+("Assessment & certificate","Short knowledge assessment at the end of each course. Certificate of completion issued immediately on passing."),
+("CPD record keeping","Completion certificates are suitable for professional development records and can be used as training evidence in your business."),
+],
+"faqs":[
+("When will the online courses be available?","The first courses are targeted for launch in mid-2026. Register your interest to be notified when they go live and to access early-bird pricing."),
+("Will the courses be accredited?","The initial courses are professional development short courses, not accredited VET qualifications. They are designed to build practical knowledge and industry competency."),
+("How long will each course take to complete?","Courses are designed to be completed in 1–3 hours depending on the topic. All courses are self-paced — you can start, pause and return at any time."),
+("Will I receive a certificate on completion?","Yes. A certificate of completion is issued immediately on passing the assessment at the end of each course."),
+("Can I buy courses for my whole team?","Group and business licensing options will be available at launch — allowing you to enrol multiple staff members at a reduced per-person rate."),
+],
+"related":[("/food-safety-training-sydney","03","On-Site Training","Face-to-face food safety training delivered at your premises."),("/food-safety-consulting-sydney","01","HACCP & Consulting","Expert HACCP plan development and food safety program design."),("/lab-skills-training","06","Lab Skills Training","Practical laboratory skills workshops for QA teams.")],
+},
+{
+"file":"sampling-inspection-services.html","slug":"sampling-inspection-services",
+"title":"Food Product Sampling & Inspection Services Sydney NSW | AMES Food Advisory",
+"desc":"Product sampling program design, incoming goods inspection, shelf-life testing liaison and sensory evaluation support for small food manufacturers across Sydney and NSW.",
+"kw":"food sampling services Sydney, food product inspection NSW, incoming goods inspection Sydney, shelf life testing NSW, sensory evaluation food Sydney",
+"sname":"Food Sampling & Inspection Services","sdesc":"Product sampling program design, incoming goods inspection, shelf-life testing liaison, sensory evaluation support and results interpretation for food manufacturers across Sydney and NSW.",
+"eyebrow":"Service 09 · Field Service","h1":"Food Sampling &amp; <em>Inspection Services</em>",
+"sub":"Small food manufacturers often lack the in-house expertise to design and run a rigorous product sampling program. AMES Food Advisory designs your testing framework, supports incoming goods inspection, and bridges the gap between your production floor and the laboratory.",
+"includes":[
+("📊","Sampling Program Design","End-to-end product sampling program design — what to test, how often, how to sample, which parameters to request, and how to interpret results against specifications."),
+("📦","Incoming Goods Inspection","Documented inspection procedures for receiving raw materials and ingredients — temperature, condition, labelling, allergen compliance and supplier documentation checks."),
+("🔬","Laboratory Liaison","We brief external laboratories on testing requirements, review test methods, interpret results against your specifications and advise on any out-of-specification findings."),
+("📅","Shelf-Life Testing Support","Shelf-life study design, sampling plans, testing schedules and results interpretation for new products or reformulations requiring validated shelf-life data."),
+("👃","Sensory Evaluation Support","Structured sensory panels, difference testing and product benchmarking for quality monitoring and product development decision-making."),
+("📋","Sampling Records & Reports","Sampling record templates, certificates of analysis filing systems, result trending and non-conformance reports for your food safety and quality documentation."),
+],
+"who_title":"Who is this for?",
+"who":[
+("Small food manufacturers","Producers without a dedicated QA function who need a professional sampling program without the overhead of a full-time food scientist."),
+("Start-up food brands","New food businesses launching products who need shelf-life data, microbiological benchmarks and documented sampling programs for retail or food service buyers."),
+("Businesses supplying to retailers","Manufacturers being asked by supermarket or food service buyers for evidence of product testing and quality monitoring programs."),
+("Businesses with product complaints","Operations investigating a customer complaint or product failure who need structured testing to identify the cause and demonstrate corrective action."),
+("Businesses changing suppliers","Food manufacturers switching ingredient suppliers who need incoming goods testing to verify quality and safety of new supply."),
+("Home-based & cottage producers","Small-scale producers wanting to validate the safety and shelf-life of their products before expanding to markets, online sales or wholesale."),
+],
+"steps":[
+("Product and risk assessment","We review your product range, processes, ingredients, packaging and target markets to design a sampling program appropriate to your specific risk profile."),
+("Sampling program design","Test parameters, sampling frequencies, sample collection methods, laboratory selection and specifications are documented in a written sampling plan."),
+("Laboratory briefing","We brief your chosen laboratory on testing requirements, review test methods and ensure the right parameters are being tested for your product type."),
+("Ongoing sampling support","We can attend sampling events, review incoming certificates of analysis, interpret results and advise on any findings requiring investigation or corrective action."),
+("Records & trending","Sampling results are recorded systematically to enable trending — identifying patterns that indicate process issues before they become food safety problems."),
+],
+"faqs":[
+("Do you run the laboratory testing yourself?","No — laboratory analysis is conducted by accredited external NATA laboratories. AMES Food Advisory designs the sampling program, briefs the laboratory and interprets the results. This is more cost-effective than having a food scientist on staff."),
+("Which laboratories do you work with?","We work with NATA-accredited laboratories across NSW. We can recommend a laboratory suited to your product type and testing requirements, or work with your existing laboratory partner."),
+("How do I know what testing my product actually needs?","That's exactly what the sampling program design scoping covers. Testing requirements vary significantly by product type, process, packaging format, shelf life and target market."),
+("Can you help if we've had a positive microbial result from a customer complaint?","Yes. We can help design an investigation sampling plan, brief the laboratory on the right tests, interpret results and support corrective action documentation."),
+("Do we need shelf-life testing even for products with short shelf lives?","If you're selling your product commercially — at markets, online, through food service or to retailers — you need to be able to demonstrate that your stated shelf life is validated."),
+],
+"related":[("/food-safety-consulting-sydney","01","HACCP & Consulting","Food safety program design that incorporates your sampling controls."),("/lab-skills-training","06","Lab Skills Training","Train your team in basic testing and sampling techniques."),("/internal-auditing-services","02","Internal Auditing","Verify your sampling program is being implemented correctly.")],
+},
+]
+
+def build_includes(items):
+    rows = []
+    for icon,title,desc in items:
+        rows.append(f'<div class="include-item fade-up"><div class="include-icon">{icon}</div><div><div class="include-title">{title}</div><div class="include-desc">{desc}</div></div></div>')
+    return '<div class="includes-grid">'+''.join(rows)+'</div>'
+
+def build_who(who_title, who_items):
+    cards=''.join(f'<div class="who-card fade-up"><div class="who-card-title">{t}</div><div class="who-card-desc">{d}</div></div>' for t,d in who_items)
+    return f'<section class="who-section"><div class="container"><div class="section-eyebrow" style="color:var(--amber-light);">{who_title}</div><h2 class="display-light">This service is <em>right for you</em> if...</h2><div class="who-grid">{cards}</div></div></section>'
+
+def build_steps(steps):
+    rows=''.join(f'<div class="step fade-up"><div class="step-num">0{i}</div><div class="step-content"><div class="step-title">{t}</div><div class="step-desc">{d}</div></div></div>' for i,(t,d) in enumerate(steps,1))
+    return '<div class="steps">'+rows+'</div>'
+
+def build_faq(faqs):
+    items_html=''.join(f'<div class="faq-item"><div class="faq-q">{q}</div><div class="faq-a">{a}</div></div>' for q,a in faqs)
+    schema_items=[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]
+    schema=json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":schema_items},indent=2)
+    return '<div class="faq-list">'+items_html+'</div>', f'<script type="application/ld+json">{schema}</script>'
+
+def build_related(related):
+    cards=''.join(f'<a href="{url}" class="related-card fade-up"><div class="related-num">Service {num}</div><div class="related-title">{title}</div><div class="related-desc">{desc}</div></a>' for url,num,title,desc in related)
+    return '<div class="related-grid">'+cards+'</div>'
+
+for p in PAGES:
+    faq_html, faq_schema = build_faq(p["faqs"])
+    c = head(p["title"],p["desc"],p["kw"],p["slug"],p["sname"],p["sdesc"])
+    c += SHARED_CSS
+    c += faq_schema
+    c += "</head><body>"
+    c += NAV
+    c += f'''<div class="page-hero"><div class="page-hero-inner">
+<div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/#services">Services</a><span>›</span>{p["sname"]}</div>
+<div class="page-eyebrow">{p["eyebrow"]}</div>
+<h1>{p["h1"]}</h1>
+<p class="page-hero-sub">{p["sub"]}</p>
+<div class="hero-actions"><a href="/#contact" class="btn-primary">Get a free consultation ↗</a><a href="/#services" class="btn-outline">All services</a></div>
+</div></div>'''
+    c += CREDS
+    c += f'<section style="background:var(--stone);"><div class="container"><div class="section-eyebrow">What\'s included</div><h2 class="display">Everything covered, <em>nothing missed.</em></h2><p class="body-lead">Every engagement is scoped to your operation. Here\'s what this service typically covers.</p>{build_includes(p["includes"])}</div></section>'
+    c += build_who(p["who_title"],p["who"])
+    c += f'<section style="background:var(--white);"><div class="container"><div class="section-eyebrow">How it works</div><h2 class="display">Clear process, <em>no surprises.</em></h2><p class="body-lead">Every engagement follows a structured process — so you always know what\'s happening, what\'s next, and what you\'ll have at the end.</p>{build_steps(p["steps"])}</div></section>'
+    c += f'<section style="background:var(--stone-mid);"><div class="container" style="max-width:780px;"><div class="section-eyebrow">Common questions</div><h2 class="display">Your questions, <em>answered.</em></h2>{faq_html}</div></section>'
+    c += f'<div class="cta-strip"><div class="cta-strip-inner"><h2>Ready to get <em>compliant?</em></h2><p>Free 30-minute consultation call. No obligation, no sales pitch — just honest advice on what your business actually needs.</p><div class="cta-strip-actions"><a href="/#contact" class="btn-primary">Book a free consultation ↗</a><a href="tel:+61400000000" class="btn-outline">Call us direct</a></div></div></div>'
+    c += f'<section style="background:var(--stone);"><div class="container"><div class="section-eyebrow">Related services</div><h2 class="display">You might also <em>need...</em></h2>{build_related(p["related"])}</div></section>'
+    c += FOOTER
+    c += JS
+    c += "</body></html>"
+    
+    fp = os.path.join(OUTPUT_DIR, p["file"])
+    with open(fp,"w",encoding="utf-8") as f:
+        f.write(c)
+    print(f"✓ {p['file']} ({len(c):,} chars)")
+
+print(f"\nDone — {len(PAGES)} pages.")
+PYEOF
+python3 /tmp/bp.py
+Output
+
+✓ food-safety-consulting-sydney.html (28,443 chars)
+✓ internal-auditing-services.html (28,066 chars)
+✓ food-safety-training-sydney.html (28,268 chars)
+✓ sop-writing-food-businesses.html (28,361 chars)
+✓ food-business-startup-package.html (28,755 chars)
+✓ lab-skills-training.html (28,185 chars)
+✓ rto-resource-development.html (28,437 chars)
+✓ online-food-safety-courses.html (27,499 chars)
+✓ sampling-inspection-services.html (28,666 chars)
+
+Done — 9 pages.
+Done

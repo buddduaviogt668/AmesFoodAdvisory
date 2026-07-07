@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Safety & Technology Expert | Sydney NSW</title>
+<meta name="description" content="Expert food safety consulting, HACCP, training, SOP writing, internal auditing and food business start-up packages. Serving Sydney and NSW.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #1C3A2A;
+    --forest-mid: #2A5240;
+    --forest-light: #3D6B52;
+    --cream: #F5F0E8;
+    --cream-dark: #EDE6D6;
+    --cream-darker: #DDD4C0;
+    --gold: #C8942A;
+    --gold-light: #E8B84B;
+    --gold-pale: #F7EDD4;
+    --ink: #1A1A18;
+    --ink-mid: #3D3D38;
+    --ink-soft: #6B6B62;
+    --ink-muted: #9A9A8E;
+    --white: #FFFFFF;
+    --border: rgba(28,58,42,0.12);
+    --border-gold: rgba(200,148,42,0.3);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(245,240,232,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--forest);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links {
+    display: flex; gap: 2rem; align-items: center;
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--ink-soft);
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--forest); }
+  .nav-cta {
+    background: var(--forest) !important;
+    color: var(--cream) !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    font-weight: 500 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--forest-mid) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--forest);
+    display: flex; align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 7rem 2rem 4rem;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(200,148,42,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 80% at 10% 80%, rgba(61,107,82,0.4) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: relative; z-index: 1;
+    max-width: 1200px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 380px; gap: 4rem; align-items: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold-light);
+    margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 24px; height: 1px; background: var(--gold-light);
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(245,240,232,0.65);
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--gold);
+    color: var(--forest);
+    padding: 0.875rem 1.75rem;
+    border-radius: 100px;
+    font-weight: 500; font-size: 0.9rem;
+    text-decoration: none;
+    border: none; cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: transparent;
+    color: var(--cream);
+    padding: 0.875rem 1.75rem;
+    border-radius: 100px;
+    font-weight: 400; font-size: 0.9rem;
+    text-decoration: none;
+    border: 1px solid rgba(245,240,232,0.3);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline:hover { border-color: rgba(245,240,232,0.6); background: rgba(245,240,232,0.06); }
+  .hero-card {
+    background: rgba(245,240,232,0.06);
+    border: 1px solid rgba(245,240,232,0.12);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  .hero-card-label {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold-light);
+    margin-bottom: 1.25rem;
+  }
+  .hero-stat {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(245,240,232,0.1);
+  }
+  .hero-stat:last-child { border-bottom: none; padding-bottom: 0; }
+  .hero-stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem; font-weight: 300;
+    color: var(--cream); line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+  .hero-stat-label {
+    font-size: 0.8rem; color: rgba(245,240,232,0.55);
+  }
+
+  /* CREDENTIALS BAR */
+  .creds-bar {
+    background: var(--gold);
+    padding: 0;
+    overflow: hidden;
+  }
+  .creds-track {
+    display: flex; align-items: center;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+    padding: 0.85rem 0;
+  }
+  .creds-bar:hover .creds-track { animation-play-state: paused; }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .cred-pill {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.78rem; font-weight: 500;
+    color: var(--forest);
+    white-space: nowrap;
+    padding: 0 2rem;
+    border-right: 1px solid rgba(28,58,42,0.2);
+  }
+  .cred-pill::before { content: '✦'; font-size: 0.6rem; }
+
+  /* SECTIONS SHARED */
+  section { padding: 6rem 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; width: 100%; }
+  .section-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .section-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+  h2.display {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--forest);
+    margin-bottom: 1.25rem;
+  }
+  h2.display em { font-style: italic; color: var(--gold); }
+
+  /* INTRO / ABOUT TEASER */
+  .intro { background: var(--cream); }
+  .intro-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
+  }
+  .intro-body {
+    font-size: 1.05rem; color: var(--ink-mid);
+    line-height: 1.8; margin-bottom: 1.5rem;
+  }
+  .intro-body strong { color: var(--forest); font-weight: 500; }
+  .intro-visual {
+    position: relative;
+  }
+  .intro-quote-card {
+    background: var(--forest);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+  }
+  .intro-quote {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem; font-weight: 300; font-style: italic;
+    color: var(--cream);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .intro-quote-attr {
+    font-size: 0.8rem; color: rgba(245,240,232,0.5);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .intro-tags {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem;
+  }
+  .tag {
+    display: inline-flex;
+    background: var(--cream-dark);
+    color: var(--forest);
+    font-size: 0.78rem; font-weight: 400;
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+  }
+
+  /* SERVICES */
+  .services { background: var(--forest); }
+  .services h2.display { color: var(--cream); }
+  .services h2.display em { color: var(--gold-light); }
+  .services-intro {
+    font-size: 1rem; color: rgba(245,240,232,0.6);
+    max-width: 560px; margin-bottom: 3.5rem; line-height: 1.7;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(245,240,232,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .service-item {
+    background: rgba(28,58,42,0.6);
+    padding: 2rem 1.75rem;
+    transition: background 0.2s;
+    cursor: default;
+  }
+  .service-item:hover { background: rgba(61,107,82,0.4); }
+  .service-num {
+    font-family: 'Fraunces', serif;
+    font-size: 0.75rem; font-weight: 300;
+    color: var(--gold-light); opacity: 0.6;
+    margin-bottom: 1rem; letter-spacing: 0.05em;
+  }
+  .service-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem; font-weight: 400;
+    color: var(--cream);
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+  .service-desc {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.55);
+    line-height: 1.65;
+  }
+  .service-badge {
+    display: inline-flex; margin-top: 1rem;
+    background: rgba(200,148,42,0.15);
+    border: 1px solid rgba(200,148,42,0.25);
+    color: var(--gold-light);
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.05em;
+    padding: 0.25rem 0.7rem;
+    border-radius: 100px;
+  }
+
+  /* STARTUP PACKAGE FEATURE */
+  .package { background: var(--gold-pale); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold); }
+  .package-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  }
+  .package-includes {
+    margin-top: 2rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
+  }
+  .package-item {
+    display: flex; gap: 0.875rem; align-items: flex-start;
+    padding: 0.875rem 1rem;
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid rgba(200,148,42,0.2);
+  }
+  .package-item-icon {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: var(--forest);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-size: 0.8rem;
+    color: var(--gold-light);
+  }
+  .package-item-text { flex: 1; }
+  .package-item-title { font-size: 0.875rem; font-weight: 500; color: var(--forest); }
+  .package-item-desc { font-size: 0.78rem; color: var(--ink-soft); margin-top: 2px; }
+  .package-cta-box {
+    background: var(--forest);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+  }
+  .package-cta-box h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem; font-weight: 300; font-style: italic;
+    color: var(--cream); margin-bottom: 0.75rem;
+  }
+  .package-cta-box p {
+    font-size: 0.9rem; color: rgba(245,240,232,0.6);
+    margin-bottom: 2rem; line-height: 1.6;
+  }
+  .package-tag-row {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    justify-content: center; margin-bottom: 2rem;
+  }
+  .package-tag {
+    background: rgba(245,240,232,0.08);
+    border: 1px solid rgba(245,240,232,0.15);
+    color: rgba(245,240,232,0.7);
+    font-size: 0.72rem; padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+  }
+
+  /* CHECKER */
+  .checker { background: var(--cream-dark); }
+  .checker-wrap {
+    max-width: 760px; margin: 0 auto;
+  }
+  .checker-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .checker-progress {
+    display: flex; gap: 6px; margin-bottom: 2rem;
+  }
+  .checker-step {
+    flex: 1; height: 3px; border-radius: 3px;
+    background: var(--cream-darker);
+    transition: background 0.3s;
+  }
+  .checker-step.active { background: var(--gold); }
+  .checker-step.done { background: var(--forest); }
+  .checker-q {
+    font-family: 'Fraunces', serif;
+    font-size: 1.25rem; font-weight: 400;
+    color: var(--forest); margin-bottom: 0.5rem;
+    min-height: 2.5rem;
+  }
+  .checker-sub {
+    font-size: 0.85rem; color: var(--ink-soft);
+    margin-bottom: 1.75rem;
+  }
+  .checker-options { display: flex; flex-direction: column; gap: 0.6rem; }
+  .checker-option {
+    display: flex; align-items: center; gap: 0.875rem;
+    padding: 0.875rem 1.125rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem; color: var(--ink-mid);
+    background: var(--cream);
+    transition: all 0.15s;
+    text-align: left; width: 100%;
+  }
+  .checker-option:hover { border-color: var(--forest); background: rgba(28,58,42,0.04); }
+  .checker-option.selected { border-color: var(--forest); background: rgba(28,58,42,0.06); color: var(--forest); font-weight: 500; }
+  .checker-option::before {
+    content: '';
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 1.5px solid var(--border);
+    flex-shrink: 0; transition: all 0.15s;
+  }
+  .checker-option.selected::before {
+    background: var(--forest); border-color: var(--forest);
+    box-shadow: inset 0 0 0 4px var(--white);
+  }
+  .checker-nav { display: flex; justify-content: space-between; margin-top: 1.5rem; }
+  .btn-back {
+    background: none; border: 1px solid var(--border);
+    border-radius: 100px; padding: 0.6rem 1.25rem;
+    font-size: 0.85rem; color: var(--ink-soft);
+    cursor: pointer; transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-back:hover { border-color: var(--forest); color: var(--forest); }
+  .btn-next {
+    background: var(--forest); border: none;
+    border-radius: 100px; padding: 0.6rem 1.5rem;
+    font-size: 0.85rem; color: var(--cream);
+    cursor: pointer; transition: background 0.15s;
+    font-family: 'DM Sans', sans-serif; font-weight: 500;
+  }
+  .btn-next:hover { background: var(--forest-mid); }
+  .btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
+  .checker-result { display: none; }
+  .result-score-ring {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 1.75rem; font-weight: 300;
+    margin: 0 auto 1.5rem;
+  }
+  .result-low { background: #E8F5EE; color: #1A6B3A; border: 2px solid #9FE1CB; }
+  .result-medium { background: #FFF8E6; color: #8A5A00; border: 2px solid #F7CE6B; }
+  .result-high { background: #FEF0EC; color: #8A2A1A; border: 2px solid #F5A090; }
+  .result-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem; font-weight: 400; text-align: center;
+    color: var(--forest); margin-bottom: 0.5rem;
+  }
+  .result-desc { font-size: 0.9rem; color: var(--ink-soft); text-align: center; margin-bottom: 2rem; line-height: 1.65; }
+  .result-recs { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem; }
+  .result-rec {
+    display: flex; gap: 0.75rem; align-items: flex-start;
+    background: var(--cream); border-radius: 8px; padding: 0.75rem 1rem;
+    font-size: 0.85rem; color: var(--ink-mid);
+  }
+  .result-rec::before { content: '→'; color: var(--gold); font-weight: 500; flex-shrink: 0; }
+  .reset-link {
+    background: none; border: none; color: var(--ink-muted);
+    font-size: 0.8rem; cursor: pointer; text-decoration: underline;
+    display: block; text-align: center; margin-top: 1rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* ABOUT */
+  .about { background: var(--cream); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+  }
+  .about-body { font-size: 1rem; color: var(--ink-mid); line-height: 1.8; }
+  .about-body p + p { margin-top: 1rem; }
+  .about-body strong { color: var(--forest); font-weight: 500; }
+  .credentials-list {
+    margin-top: 2.5rem;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .cred-row {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 0.875rem 1rem;
+    background: var(--cream-dark);
+    border-radius: 10px;
+    border-left: 3px solid var(--gold);
+  }
+  .cred-row-icon { font-size: 1rem; width: 24px; text-align: center; flex-shrink: 0; }
+  .cred-row-text { font-size: 0.875rem; color: var(--forest); font-weight: 400; }
+  .cred-row-text strong { font-weight: 500; }
+  .industries {
+    margin-top: 2.5rem;
+  }
+  .industries-label {
+    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-muted);
+    margin-bottom: 1rem;
+  }
+  .industries-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;
+  }
+  .industry-item {
+    display: flex; align-items: center; gap: 0.5rem;
+    font-size: 0.85rem; color: var(--ink-soft);
+  }
+  .industry-item::before { content: '·'; color: var(--gold); font-size: 1.2rem; line-height: 0; }
+
+  /* CONTACT */
+  .contact { background: var(--forest); }
+  .contact h2.display { color: var(--cream); }
+  .contact h2.display em { color: var(--gold-light); }
+  .contact-intro { font-size: 1rem; color: rgba(245,240,232,0.6); max-width: 500px; margin-bottom: 3rem; line-height: 1.7; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-label {
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.05em;
+    text-transform: uppercase; color: rgba(245,240,232,0.45);
+  }
+  .form-input, .form-select, .form-textarea {
+    background: rgba(245,240,232,0.07);
+    border: 1px solid rgba(245,240,232,0.15);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--cream);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .form-input::placeholder, .form-textarea::placeholder { color: rgba(245,240,232,0.25); }
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: rgba(200,148,42,0.5);
+  }
+  .form-select { appearance: none; }
+  .form-select option { background: var(--forest); }
+  .form-textarea { min-height: 120px; resize: vertical; }
+  .contact-info { padding-top: 0.5rem; }
+  .contact-info-label {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(245,240,232,0.35);
+    margin-bottom: 1.5rem;
+  }
+  .contact-detail {
+    display: flex; align-items: flex-start; gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-detail-icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: rgba(200,148,42,0.15); border: 1px solid rgba(200,148,42,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem; flex-shrink: 0;
+  }
+  .contact-detail-body {}
+  .contact-detail-title { font-size: 0.75rem; color: rgba(245,240,232,0.4); text-transform: uppercase; letter-spacing: 0.06em; }
+  .contact-detail-value { font-size: 0.95rem; color: var(--cream); margin-top: 2px; }
+  .contact-detail-value a { color: var(--cream); text-decoration: none; }
+  .contact-detail-value a:hover { color: var(--gold-light); }
+  .service-areas {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(245,240,232,0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(245,240,232,0.08);
+  }
+  .service-areas-label {
+    font-size: 0.7rem; color: rgba(245,240,232,0.35);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+  }
+  .service-areas-list {
+    font-size: 0.85rem; color: rgba(245,240,232,0.55);
+    line-height: 1.8;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #111E16;
+    padding: 2rem;
+    text-align: center;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-logo {
+    font-family: 'Fraunces', serif;
+    font-size: 0.95rem; font-weight: 400;
+    color: rgba(245,240,232,0.4);
+    text-decoration: none;
+  }
+  .footer-logo span { color: rgba(200,148,42,0.6); }
+  .footer-copy {
+    font-size: 0.78rem; color: rgba(245,240,232,0.2);
+  }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    font-size: 0.78rem; color: rgba(245,240,232,0.35);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover { color: rgba(245,240,232,0.65); }
+
+  /* ANIMATIONS */
+  .fade-up {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up-delay-1 { transition-delay: 0.1s; }
+  .fade-up-delay-2 { transition-delay: 0.2s; }
+  .fade-up-delay-3 { transition-delay: 0.3s; }
+
+  /* SUCCESS STATE */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+  }
+  .form-success-icon {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: rgba(200,148,42,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; margin: 0 auto 1rem;
+  }
+  .form-success h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem; font-weight: 300; font-style: italic;
+    color: var(--cream); margin-bottom: 0.5rem;
+  }
+  .form-success p { font-size: 0.9rem; color: rgba(245,240,232,0.5); }
+
+  /* MOBILE */
+  @media (max-width: 900px) {
+    .hero-grid, .intro-grid, .package-grid, .about-grid, .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .hero-card { display: none; }
+    .services-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; }
+    section { padding: 4rem 1.25rem; }
+    .industries-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Food<span>Tech</span> Expert</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#package">Start-Up Package</a></li>
+    <li><a href="#checker">Risk Checker</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">Sydney & NSW · Food Safety Expert</div>
+      <h1>Food safety done<br><em>properly,</em> by someone<br>who's lived it.</h1>
+      <p class="hero-sub">Practical food safety consulting, training, auditing, and compliance support — from a food technologist with 11 years at Arnotts and TAFE NSW teaching credentials.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Book a free call ↗</a>
+        <a href="#checker" class="btn-outline">Check your risk</a>
+      </div>
+    </div>
+    <div class="hero-card fade-up">
+      <div class="hero-card-label">At a glance</div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">11+</div>
+        <div class="hero-stat-label">Years at Arnotts (national food manufacturer)</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">9</div>
+        <div class="hero-stat-label">Specialist service areas</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">TAE</div>
+        <div class="hero-stat-label">Accredited trainer & TAFE NSW instructor</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">Sydney</div>
+        <div class="hero-stat-label">Based in NSW · on-site & remote available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS BAR -->
+<div class="creds-bar">
+  <div class="creds-track">
+    <span class="cred-pill">11 Years — Arnotts</span>
+    <span class="cred-pill">TAE Qualified Trainer</span>
+    <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">HACCP Specialist</span>
+    <span class="cred-pill">Food Industry Training</span>
+    <span class="cred-pill">RTO Resource Development</span>
+    <span class="cred-pill">Lab Skills Training</span>
+    <span class="cred-pill">SOP & Document Writing</span>
+    <span class="cred-pill">Internal Auditing</span>
+    <span class="cred-pill">Allergen Management</span>
+    <span class="cred-pill">NSW Food Authority</span>
+    <span class="cred-pill">11 Years — Arnotts</span>
+    <span class="cred-pill">TAE Qualified Trainer</span>
+    <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">HACCP Specialist</span>
+    <span class="cred-pill">Food Industry Training</span>
+    <span class="cred-pill">RTO Resource Development</span>
+    <span class="cred-pill">Lab Skills Training</span>
+    <span class="cred-pill">SOP & Document Writing</span>
+    <span class="cred-pill">Internal Auditing</span>
+    <span class="cred-pill">Allergen Management</span>
+    <span class="cred-pill">NSW Food Authority</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro" id="intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="fade-up">
+        <div class="section-eyebrow">The difference</div>
+        <h2 class="display">Not a firm. An <em>expert</em> who's done the work.</h2>
+        <p class="intro-body">When you hire a large consultancy, you get a junior consultant following a checklist. When you hire me, you get <strong>11 years of real food manufacturing experience</strong> — quality systems, laboratory compliance, regulatory auditing, and staff training at one of Australia's largest food companies.</p>
+        <p class="intro-body">I work directly with you, on your premises, in your systems. I know what council inspectors look for, what HACCP auditors ask, and what small food businesses get wrong before they even open the door.</p>
+        <div class="intro-tags">
+          <span class="tag">Small food businesses</span>
+          <span class="tag">Food startups</span>
+          <span class="tag">Cafes & restaurants</span>
+          <span class="tag">Food manufacturers</span>
+          <span class="tag">RTOs</span>
+          <span class="tag">Food industry workers</span>
+        </div>
+      </div>
+      <div class="intro-visual fade-up fade-up-delay-1">
+        <div class="intro-quote-card">
+          <div class="intro-quote">"Most compliance problems aren't about not caring — they're about not knowing where to start. That's exactly what I fix."</div>
+          <div class="intro-quote-attr">Food Safety & Technology Expert · Sydney NSW</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--gold-light)">What I do</div>
+    <h2 class="display">Nine specialist <em>services</em>,<br>one trusted expert.</h2>
+    <p class="services-intro">From a single SOP to a complete compliance overhaul — I work across the full spectrum of food safety, training, and documentation.</p>
+    <div class="services-grid">
+      <div class="service-item fade-up">
+        <div class="service-num">01</div>
+        <div class="service-title">Food Safety & HACCP Consulting</div>
+        <div class="service-desc">HACCP plan development, food safety program design, hazard analysis, CCP monitoring, and regulatory compliance guidance tailored to your operation.</div>
+        <div class="service-badge">Core service</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-1">
+        <div class="service-num">02</div>
+        <div class="service-title">Internal Auditor for Small Businesses</div>
+        <div class="service-desc">Embedded internal audit service — gap analysis, pre-audit readiness checks, corrective action support, and ongoing compliance monitoring. Available as a retainer.</div>
+        <div class="service-badge">Retainer available</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-2">
+        <div class="service-num">03</div>
+        <div class="service-title">Food Industry Training</div>
+        <div class="service-desc">Tailored in-house training programs — food safety awareness, HACCP, GMP, allergen management, hygiene programs, and food handler competency.</div>
+        <div class="service-badge">On-site delivery</div>
+      </div>
+      <div class="service-item fade-up">
+        <div class="service-num">04</div>
+        <div class="service-title">Docs & SOP Writing</div>
+        <div class="service-desc">Custom food safety documentation — standard operating procedures, work instructions, monitoring forms, corrective action records, and audit-ready policy documents.</div>
+        <div class="service-badge">Audit-ready output</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-1">
+        <div class="service-num">05</div>
+        <div class="service-title">Food Business Start-Up Packages</div>
+        <div class="service-desc">Complete compliance setup for new food businesses — licensing requirements, food safety plans, record templates, staff training, and council audit preparation.</div>
+        <div class="service-badge">Most popular</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-2">
+        <div class="service-num">06</div>
+        <div class="service-title">Lab Skills Training</div>
+        <div class="service-desc">Practical hands-on training for food industry workers — microbiological, chemical, sensory, and physical testing techniques for QA teams and production staff.</div>
+        <div class="service-badge">Workshops available</div>
+      </div>
+      <div class="service-item fade-up">
+        <div class="service-num">07</div>
+        <div class="service-title">RTO Assessment & Resource Development</div>
+        <div class="service-desc">Curriculum development, assessment tool design, competency mapping, and training resource creation for RTOs delivering food-related qualifications.</div>
+        <div class="service-badge">B2B specialist</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-1">
+        <div class="service-num">08</div>
+        <div class="service-title">Online Short Courses</div>
+        <div class="service-desc">Self-paced professional development courses for food industry workers — HACCP fundamentals, allergen management, food safety programs, and audit preparation.</div>
+        <div class="service-badge">Coming soon</div>
+      </div>
+      <div class="service-item fade-up fade-up-delay-2">
+        <div class="service-num">09</div>
+        <div class="service-title">Sampling & Inspection Services</div>
+        <div class="service-desc">Product sampling program design, incoming goods inspection, shelf-life testing liaison, sensory evaluation support, and results interpretation for small manufacturers.</div>
+        <div class="service-badge">Field service</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STARTUP PACKAGE -->
+<section class="package" id="package">
+  <div class="container">
+    <div class="package-grid">
+      <div class="fade-up">
+        <div class="section-eyebrow">Featured offer</div>
+        <h2 class="display">The Food Business<br><em>Start-Up Package</em></h2>
+        <p style="font-size:1rem; color:var(--ink-mid); line-height:1.75; margin-bottom:1.5rem;">Opening a food business is overwhelming. Between council requirements, food safety laws, staff training and audit prep — most new operators don't know where to start. This package covers everything, in one engagement, with one expert.</p>
+        <div class="package-includes">
+          <div class="package-item">
+            <div class="package-item-icon">✓</div>
+            <div class="package-item-text">
+              <div class="package-item-title">Licensing & regulatory requirements</div>
+              <div class="package-item-desc">Council registration, NSW Food Authority compliance, food business classification</div>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-item-icon">✓</div>
+            <div class="package-item-text">
+              <div class="package-item-title">Customised food safety plan</div>
+              <div class="package-item-desc">HACCP-based, tailored to your specific food type and operation</div>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-item-icon">✓</div>
+            <div class="package-item-text">
+              <div class="package-item-title">Record templates & SOPs</div>
+              <div class="package-item-desc">Temperature logs, cleaning schedules, supplier approval, corrective action forms</div>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-item-icon">✓</div>
+            <div class="package-item-text">
+              <div class="package-item-title">Staff food safety training</div>
+              <div class="package-item-desc">On-site delivery to your team — food handling, hygiene, allergen awareness</div>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-item-icon">✓</div>
+            <div class="package-item-text">
+              <div class="package-item-title">Council audit preparation</div>
+              <div class="package-item-desc">Walk-through of your premises, mock inspection, corrective action checklist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="package-cta-box fade-up fade-up-delay-1">
+        <h3>Everything you need to open with confidence.</h3>
+        <p>One package. One expert. No gaps, no guesswork, no compliance surprises after you've already opened.</p>
+        <div class="package-tag-row">
+          <span class="package-tag">Cafes</span>
+          <span class="package-tag">Food trucks</span>
+          <span class="package-tag">Home-based producers</span>
+          <span class="package-tag">Catering businesses</span>
+          <span class="package-tag">Small manufacturers</span>
+          <span class="package-tag">Pop-up food stalls</span>
+        </div>
+        <a href="#contact" class="btn-primary" style="width:100%; justify-content:center;">Enquire about this package ↗</a>
+        <p style="font-size:0.78rem; color:rgba(245,240,232,0.3); margin-top:1rem;">Fixed fee quoted upfront. No hidden costs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE CHECKER -->
+<section class="checker" id="checker">
+  <div class="container">
+    <div class="checker-wrap">
+      <div class="section-eyebrow">Free tool</div>
+      <h2 class="display">Is your food business<br><em>compliance-ready?</em></h2>
+      <p style="font-size:1rem; color:var(--ink-soft); max-width:500px; line-height:1.7;">Answer 6 quick questions to get a personalised risk assessment and recommendations for your business.</p>
+      <div class="checker-card">
+        <div class="checker-progress" id="progress"></div>
+        <div id="checker-body">
+          <div class="checker-q" id="q-text"></div>
+          <div class="checker-sub" id="q-sub"></div>
+          <div class="checker-options" id="q-options"></div>
+          <div class="checker-nav">
+            <button class="btn-back" id="btn-back" style="visibility:hidden">← Back</button>
+            <button class="btn-next" id="btn-next" disabled>Next →</button>
+          </div>
+        </div>
+        <div class="checker-result" id="checker-result">
+          <div class="result-score-ring" id="result-ring"></div>
+          <div class="result-title" id="result-title"></div>
+          <div class="result-desc" id="result-desc"></div>
+          <div class="result-recs" id="result-recs"></div>
+          <a href="#contact" class="btn-primary" style="width:100%; justify-content:center; text-decoration:none;">Book a free consultation ↗</a>
+          <button class="reset-link" onclick="resetChecker()">Start again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="section-eyebrow">About</div>
+        <h2 class="display">Real food industry<br>experience — <em>applied.</em></h2>
+        <div class="about-body">
+          <p>I spent <strong>over 11 years at Arnotts</strong>, one of Australia's largest and most demanding food manufacturers — working across quality assurance, food safety systems, laboratory operations, and regulatory compliance. I know what it takes to build and maintain a food safety culture that actually works at scale.</p>
+          <p>I'm also a <strong>TAE-qualified trainer and current TAFE NSW instructor</strong> in food science and technology. That means I don't just know the theory — I teach it to industry standard, and I translate it into practical, usable systems for businesses of every size.</p>
+          <p>Whether you're a food startup trying to navigate your first council registration, or an established manufacturer who needs an independent internal auditor, I bring the same depth of expertise to every engagement.</p>
+        </div>
+        <div class="credentials-list">
+          <div class="cred-row">
+            <div class="cred-row-icon">🏭</div>
+            <div class="cred-row-text"><strong>11+ years</strong> — Quality & food safety, Arnotts (Snack Brands)</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row-icon">📋</div>
+            <div class="cred-row-text"><strong>TAE Certificate IV</strong> — Training & Assessment (accredited)</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row-icon">🎓</div>
+            <div class="cred-row-text"><strong>TAFE NSW instructor</strong> — Food Science & Technology</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row-icon">🔬</div>
+            <div class="cred-row-text"><strong>Laboratory expertise</strong> — Micro, chemical, sensory & physical testing</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row-icon">📍</div>
+            <div class="cred-row-text"><strong>Based in Sydney</strong> — Serving all of NSW, on-site & remote</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up fade-up-delay-1">
+        <div class="industries">
+          <div class="industries-label">Industries served</div>
+          <div class="industries-grid">
+            <div class="industry-item">Cafes & restaurants</div>
+            <div class="industry-item">Food manufacturing</div>
+            <div class="industry-item">Catering operations</div>
+            <div class="industry-item">Bakeries & pastry</div>
+            <div class="industry-item">Food startups</div>
+            <div class="industry-item">Aged care & hospitals</div>
+            <div class="industry-item">Hospitality venues</div>
+            <div class="industry-item">Food trucks & pop-ups</div>
+            <div class="industry-item">Childcare centres</div>
+            <div class="industry-item">Home-based producers</div>
+            <div class="industry-item">RTOs & training orgs</div>
+            <div class="industry-item">Food importers</div>
+          </div>
+        </div>
+        <div style="margin-top:2.5rem; padding:2rem; background:var(--forest); border-radius:16px;">
+          <div style="font-size:0.7rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(245,240,232,0.4); margin-bottom:1rem;">Why work with me</div>
+          <div style="display:flex; flex-direction:column; gap:0.875rem;">
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--gold-light); flex-shrink:0; margin-top:1px;">✦</span>
+              <span style="font-size:0.875rem; color:rgba(245,240,232,0.7);">You get the expert — not a junior doing a checklist</span>
+            </div>
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--gold-light); flex-shrink:0; margin-top:1px;">✦</span>
+              <span style="font-size:0.875rem; color:rgba(245,240,232,0.7);">Fixed-fee quotes — no hourly surprises</span>
+            </div>
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--gold-light); flex-shrink:0; margin-top:1px;">✦</span>
+              <span style="font-size:0.875rem; color:rgba(245,240,232,0.7);">On-site or remote — wherever you need me</span>
+            </div>
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--gold-light); flex-shrink:0; margin-top:1px;">✦</span>
+              <span style="font-size:0.875rem; color:rgba(245,240,232,0.7);">Practical, plain-English advice — no jargon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-eyebrow" style="color:rgba(200,148,42,0.7)">Get in touch</div>
+    <h2 class="display">Let's sort out your<br><em>food safety</em> together.</h2>
+    <p class="contact-intro">Tell me a bit about your business and what you need. I'll get back to you within one business day to arrange a free 20-minute consultation call.</p>
+    <div class="contact-grid">
+      <div>
+        <div id="contact-form-wrap">
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First name</label>
+                <input type="text" class="form-input" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Business name</label>
+                <input type="text" class="form-input" placeholder="Your business">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-input" placeholder="jane@yourbusiness.com.au" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Service needed</label>
+              <select class="form-select form-input">
+                <option value="" disabled selected>Select a service...</option>
+                <option>Food Business Start-Up Package</option>
+                <option>HACCP / Food Safety Consulting</option>
+                <option>Internal Auditing</option>
+                <option>Food Industry Training</option>
+                <option>Lab Skills Training</option>
+                <option>SOP / Document Writing</option>
+                <option>RTO Resource Development</option>
+                <option>Sampling & Inspection</option>
+                <option>Not sure — I need advice</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Tell me about your situation</label>
+              <textarea class="form-textarea" placeholder="Brief description of your business, what you're working towards, and any specific challenges or deadlines..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send enquiry ↗</button>
+            <p style="font-size:0.75rem; color:rgba(245,240,232,0.25); text-align:center; margin-top:0.5rem;">I reply within one business day.</p>
+          </form>
+        </div>
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✓</div>
+          <h3>Thanks, I'll be in touch.</h3>
+          <p>I've received your enquiry and will reply within one business day to arrange a free consultation call.</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-info-label">Direct contact</div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-title">Location</div>
+            <div class="contact-detail-value">Sydney, NSW · Servicing all of NSW</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-title">Email</div>
+            <div class="contact-detail-value"><a href="mailto:hello@yourname.com.au">hello@yourname.com.au</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-title">Phone</div>
+            <div class="contact-detail-value"><a href="tel:+61400000000">04XX XXX XXX</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💼</div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-title">LinkedIn</div>
+            <div class="contact-detail-value"><a href="#">linkedin.com/in/yourprofile</a></div>
+          </div>
+        </div>
+        <div class="service-areas">
+          <div class="service-areas-label">Service areas</div>
+          <div class="service-areas-list">Sydney CBD · Inner West · Eastern Suburbs · North Shore · Northern Beaches · Western Sydney · Parramatta · Sutherland Shire · Wollongong · Newcastle · All of NSW (remote available)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">Food<span>Tech</span> Expert</a>
+    <div class="footer-copy">© 2025 · ABN XX XXX XXX XXX · Sydney, NSW</div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// FADE IN ON SCROLL
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// COMPLIANCE CHECKER
+const questions = [
+  {
+    q: "What type of food business are you running?",
+    sub: "This helps us identify which regulations apply to your operation.",
+    options: ["Café, restaurant, or food service", "Food manufacturer or producer", "Home-based or cottage food business", "Food truck or market stall", "Catering business", "Other / not sure yet"]
+  },
+  {
+    q: "Do you have a written food safety program or HACCP plan?",
+    sub: "A written plan is a legal requirement for many food businesses in NSW.",
+    options: ["Yes, fully documented and current", "We have something but it's out of date", "We have an informal system but nothing written", "No — we don't have one"],
+    risk: [0, 1, 2, 3]
+  },
+  {
+    q: "When did you last review or update your food safety documentation?",
+    sub: "Regular review keeps your system relevant and audit-ready.",
+    options: ["Within the last 12 months", "1–2 years ago", "More than 2 years ago", "We haven't reviewed it / don't have any"],
+    risk: [0, 1, 2, 3]
+  },
+  {
+    q: "Do your staff receive regular food safety training?",
+    sub: "Trained staff are your first line of defence against food safety incidents.",
+    options: ["Yes — formal, documented training", "Basic induction only — no ongoing training", "Informal — we show people on the job", "No food safety training at all"],
+    risk: [0, 1, 2, 3]
+  },
+  {
+    q: "How prepared do you feel for a council inspection?",
+    sub: "Council officers can inspect at any time without prior notice.",
+    options: ["Very prepared — I'd welcome one today", "Reasonably prepared with a few gaps", "I'd be worried if one arrived tomorrow", "I have no idea what they'd look for"],
+    risk: [0, 1, 2, 3]
+  },
+  {
+    q: "Do you have documented allergen controls in place?",
+    sub: "Allergen management is one of the most scrutinised areas in food safety audits.",
+    options: ["Yes — allergen register, procedures and staff training", "We know our allergens but don't have formal controls", "Partially — some awareness but no documentation", "No allergen controls in place"],
+    risk: [0, 1, 2, 3]
+  }
+];
+
+let current = 0, answers = [], riskTotal = 0;
+
+function buildProgress() {
+  const p = document.getElementById('progress');
+  p.innerHTML = '';
+  questions.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'checker-step' + (i < current ? ' done' : i === current ? ' active' : '');
+    p.appendChild(d);
+  });
+}
+
+function loadQ() {
+  const q = questions[current];
+  document.getElementById('q-text').textContent = q.q;
+  document.getElementById('q-sub').textContent = q.sub;
+  const opts = document.getElementById('q-options');
+  opts.innerHTML = '';
+  q.options.forEach((o, i) => {
+    const b = document.createElement('button');
+    b.className = 'checker-option' + (answers[current] === i ? ' selected' : '');
+    b.textContent = o;
+    b.onclick = () => selectOption(i);
+    opts.appendChild(b);
+  });
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
+  document.getElementById('btn-next').disabled = answers[current] === undefined;
+  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results →' : 'Next →';
+  buildProgress();
+}
+
+function selectOption(i) {
+  answers[current] = i;
+  document.querySelectorAll('.checker-option').forEach((b, idx) => {
+    b.classList.toggle('selected', idx === i);
+  });
+  document.getElementById('btn-next').disabled = false;
+}
+
+document.getElementById('btn-next').onclick = () => {
+  if (answers[current] === undefined) return;
+  const q = questions[current];
+  if (q.risk) riskTotal += q.risk[answers[current]];
+  current++;
+  if (current >= questions.length) { showResult(); return; }
+  loadQ();
+};
+
+document.getElementById('btn-back').onclick = () => {
+  if (current > 0) { current--; loadQ(); }
+};
+
+function showResult() {
+  document.getElementById('checker-body').style.display = 'none';
+  const r = document.getElementById('checker-result');
+  r.style.display = 'block';
+  buildProgress();
+  const ring = document.getElementById('result-ring');
+  let title, desc, recs, cls;
+  if (riskTotal <= 3) {
+    cls = 'result-low'; title = 'Low risk — well managed';
+    desc = 'Your food safety practices look solid. Keep maintaining your systems and consider a periodic review to stay current with any regulatory changes.';
+    recs = ['Schedule a 12-month review of your food safety program', 'Consider an allergen audit to confirm your controls are current', 'Document any informal systems you rely on'];
+  } else if (riskTotal <= 8) {
+    cls = 'result-medium'; title = 'Moderate risk — some gaps to address';
+    desc = 'You have the basics in place but there are meaningful gaps that could cause problems at a council inspection or audit. These are fixable with targeted support.';
+    recs = ['Update your food safety documentation to reflect current operations', 'Formalise staff training and keep attendance records', 'Review your allergen controls and add documentation', 'Book a pre-inspection walkthrough before your next audit'];
+  } else {
+    cls = 'result-high'; title = 'Higher risk — action needed';
+    desc = 'There are significant gaps in your food safety systems. This creates real risk — both for your customers and your business if a council inspection occurs. The good news: this is all fixable.';
+    recs = ['Develop a written food safety program or HACCP plan urgently', 'Implement documented staff food safety training', 'Establish allergen management controls and documentation', 'Book a compliance consultation to prioritise actions', 'Consider the Food Business Start-Up Package for a complete solution'];
+  }
+  ring.className = 'result-score-ring ' + cls;
+  ring.textContent = riskTotal <= 3 ? 'Low' : riskTotal <= 8 ? 'Mid' : 'High';
+  document.getElementById('result-title').textContent = title;
+  document.getElementById('result-desc').textContent = desc;
+  const recsEl = document.getElementById('result-recs');
+  recsEl.innerHTML = '';
+  recs.forEach(rec => {
+    const d = document.createElement('div');
+    d.className = 'result-rec'; d.textContent = rec;
+    recsEl.appendChild(d);
+  });
+}
+
+function resetChecker() {
+  current = 0; answers = []; riskTotal = 0;
+  document.getElementById('checker-body').style.display = 'block';
+  document.getElementById('checker-result').style.display = 'none';
+  loadQ();
+}
+
+loadQ();
+
+// FORM SUBMIT
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('contact-form-wrap').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+</body>
+</html>

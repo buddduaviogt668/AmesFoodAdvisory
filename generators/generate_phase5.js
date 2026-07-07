@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -118,7 +118,7 @@ ${JSON.stringify(schemaData, null, 2)}
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li><a href="/the-ames-standard">Our Mission</a></li>
@@ -144,9 +144,9 @@ ${bodyContent}
   <div class="footer-inner">
     <a href="/" class="footer-logo">
       <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-      <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+      <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
     </a>
-    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW.</div>
+    <div class="footer-copy">Â© 2026 AMES Food Advisory. Serving all of NSW.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
@@ -180,10 +180,10 @@ const pages = [
       <p>But when we looked at the local hospitality and independent food manufacturing sector in NSW, we saw a massive gap.</p>
 
       <h2>The Problem with the "Old Guard"</h2>
-      <p>Too many independent cafes, bakeries, and restaurants are being let down. They are sold generic, overpriced HACCP binders by consultants who have never managed a high-speed production line. These generic templates sit on a shelf gathering dust until the council inspector arrives, resulting in failed audits, fines, and immense stress for the business owner.</p>
+      <p>Too many independent cafes, bakeries, and restaurants are being let down. They are sold generic, overpriced HACCP binders by consultants who have never managed a high-speed production line. These generic templates sit on a shelf gathering dust until the NSW Food Authority auditor arrives, resulting in failed audits, fines, and immense stress for the business owner.</p>
 
       <h2>The AMES Difference</h2>
-      <p>We created AMES Food Advisory to bridge this gap. We are taking the corporate rigor of Tier-1 manufacturing and scaling it down into practical, actionable systems for independent businesses. We combine this with deep pedagogical expertise—our Principal Consultant is also a <strong>TAFE NSW Lecturer</strong> and TAE-Qualified trainer. This means we don't just hand you a binder; we teach your staff how to actually use it.</p>
+      <p>We created AMES Food Advisory to bridge this gap. We are taking the corporate rigor of Tier-1 manufacturing and scaling it down into practical, actionable systems for independent businesses. We combine this with deep pedagogical expertiseâ€”our Principal Consultant is also a <strong>TAFE NSW Lecturer</strong> and TAE-Qualified trainer. This means we don't just hand you a binder; we teach your staff how to actually use it.</p>
 
       <ul>
         <li><strong>No False Promises:</strong> We don't claim to be a regulatory body, and we do not conduct official council audits. We are the elite coaches who ensure you pass those audits with flying colors.</li>
@@ -194,7 +194,7 @@ const pages = [
       <p>If you are ready to elevate your business to the Tier-1 standard, we are ready to help.</p>
 
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book Your Free Scoping Call Today ↗</a>
+        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book Your Free Scoping Call Today â†—</a>
       </div>
     </div>
     `
@@ -206,7 +206,7 @@ const pages = [
     kw: 'free food safety templates, free HACCP logs, food safety vault',
     heroEyebrow: 'Free Compliance Toolkit',
     heroTitle: 'Unlock <em>The Vault</em>',
-    heroSub: 'Stop paying for generic templates. Get immediate access to our entire library of Tier-1 standard food safety logs, checklists, and guides—completely free.',
+    heroSub: 'Stop paying for generic templates. Get immediate access to our entire library of Tier-1 standard food safety logs, checklists, and guidesâ€”completely free.',
     schema: { "@context": "https://schema.org", "@type": "CollectionPage", "name": "The Food Safety Vault" },
     body: `
     <div class="content-area">
@@ -244,11 +244,11 @@ const pages = [
   {
     slug: 'council-readiness-checklist',
     title: '50-Point Council Readiness Checklist | AMES Food Advisory',
-    desc: 'The ultimate 50-point self-audit checklist to prepare your food business for a NSW local council health inspection.',
-    kw: 'council health inspection checklist, NSW food authority audit, EHO checklist',
+    desc: 'The ultimate 50-point self-audit checklist to prepare your food business for a NSW local NSW Food Authority audit.',
+    kw: 'NSW Food Authority audit checklist, NSW food authority audit, EHO checklist',
     heroEyebrow: 'Audit Preparation',
     heroTitle: 'The 50-Point <em>EHO Readiness</em> Checklist',
-    heroSub: 'Grade your own kitchen before the council inspector arrives. A comprehensive self-audit guide based on real NSW Food Authority criteria.',
+    heroSub: 'Grade your own kitchen before the NSW Food Authority auditor arrives. A comprehensive self-audit guide based on real NSW Food Authority criteria.',
     schema: { "@context": "https://schema.org", "@type": "Article", "headline": "50-Point Council Readiness Checklist" },
     body: `
     <div class="content-area">
@@ -266,8 +266,8 @@ const pages = [
 
       <h3>Phase 2: Temperature Control</h3>
       <ul>
-        <li>Are all cool rooms operating strictly below 5°C?</li>
-        <li>Is hot food being held above 60°C during service?</li>
+        <li>Are all cool rooms operating strictly below 5Â°C?</li>
+        <li>Is hot food being held above 60Â°C during service?</li>
         <li>Do staff have calibrated probe thermometers readily available?</li>
         <li>Are cooling processes for cooked foods tracked and documented?</li>
       </ul>
@@ -292,7 +292,7 @@ const pages = [
 
       <h2 style="margin-top: 3rem;">Failing the Checklist?</h2>
       <p>If you answered "No" to any of the questions above, you are at risk of a council fine or a warning notice. AMES Food Advisory provides mock audits and compliance coaching to fix these gaps permanently.</p>
-      <p><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book a Mock Audit with our Principal Consultant ↗</a></p>
+      <p><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book a Mock Audit with our Principal Consultant â†—</a></p>
     </div>
     `
   },
@@ -303,7 +303,7 @@ const pages = [
     kw: 'cafe startup checklist NSW, opening a cafe food safety, restaurant startup compliance',
     heroEyebrow: 'New Business Guide',
     heroTitle: 'The Cafe Startup <em>Success Map</em>',
-    heroSub: 'Opening a new venue? Follow this exact compliance roadmap to ensure you pass your initial council inspections and open without delays.',
+    heroSub: 'Opening a new venue? Follow this exact compliance roadmap to ensure you pass your initial NSW Food Authority audits and open without delays.',
     schema: { "@context": "https://schema.org", "@type": "Article", "headline": "The Cafe Startup Success Map" },
     body: `
     <div class="content-area">
