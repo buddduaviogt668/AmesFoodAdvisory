@@ -1,26 +1,163 @@
-﻿?# AMES Food Advisory
+﻿# AMES Food Advisory
 
-> Food safety consulting, HACCP planning, training, and auditing for NSW food businesses — based in Sydney, Australia.
+> Food safety consulting, HACCP plan development, SOP writing, staff training, and compliance auditing for NSW food businesses. Based in Sydney, Australia.
 
-AMES Food Advisory is a food safety consultancy serving food businesses across Sydney and NSW. Services include Food Safety Program (FSP) development, HACCP plans, Food Safety Supervisor (FSS) training, internal auditing, and start-up compliance packages.
+AMES Food Advisory is a specialist food safety consultancy founded by George Skarmoutsos — 11+ years in QA and food manufacturing at The Arnott's Group, TAE-qualified trainer, and TAFE NSW sessional lecturer in Food Science & Technology.
 
 ## Services
 
-- [HACCP & Food Safety Consulting](/food-safety-consulting-sydney): Food Safety Program writing, hazard analysis, HACCP plan development, regulatory compliance gap analysis.
-- [Food Safety Training](/food-safety-training-sydney): NSW Food Authority approved Food Safety Supervisor courses, food handler training, team workshops.
-- [Internal Auditing](/internal-auditing-services): pre-audit inspections, supplier readiness audits, third-party certification preparation.
-- [Food Business Start-Up Package](/food-business-startup-package): End-to-end compliance setup for new food businesses — council notification, FSP, HACCP, SOP suite, training.
+- [Food Safety & HACCP Consulting](/food-safety-consulting-sydney): HACCP plan development, food safety program design, hazard analysis, regulatory compliance gap analysis. Custom-built for your specific operation.
+- [HACCP Plan Development](/haccp-plan-development): Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification systems.
+- [Food Safety Training](/food-safety-training-sydney): On-site food safety and HACCP training delivered by a TAE-qualified trainer. Food handler competency, allergen management, supervisor training.
+- [Internal Food Safety Auditing](/internal-auditing-services): Gap analysis, pre-audit readiness checks, mock inspections, corrective action support, and ongoing compliance monitoring.
+- [SOP & Documentation Writing](/sop-writing-food-businesses): Custom standard operating procedures, monitoring forms, corrective action records, and audit-ready food safety documentation.
+- [Food Business Start-Up Package](/food-business-startup-package): Complete compliance setup for new food businesses — council registration, HACCP plan, SOP suite, staff training, pre-inspection preparation.
+- [Food Lab Skills Training](/lab-skills-training): Hands-on laboratory training — microbial plating, chemical testing, sensory panels, and data logging for QA teams.
+- [RTO Resource Development](/rto-resource-development): Curriculum development, assessment tool design, competency mapping, and training resources for RTOs delivering food qualifications.
+- [Online Food Safety Short Courses](/online-food-safety-courses): Self-paced professional development — HACCP fundamentals, allergen management, food safety programs (launching 2026).
+- [Food Sampling & Inspection Services](/sampling-inspection-services): Product sampling program design, incoming goods inspection, shelf-life testing liaison, sensory evaluation support.
+
+## Client Types
+
+- [Small Food Businesses](/food-safety-small-business): Practical compliance, record-keeping setup, and training for small operations.
+- [Food Startups](/food-startup-consultant-sydney): Strategic compliance advising, kitchen design review, label validation, HACCP programs before launch.
+- [Cafes & Restaurants](/cafe-restaurant-food-safety): Food safety programs, kitchen inspections, allergen management, staff training for hospitality.
+- [Food Manufacturers](/food-manufacturer-consulting): Advanced QA programs, GFSI audit preparation (SQF, BRC), supplier risk management.
+- [RTOs & Training Providers](/rto-food-technology-resources): Curriculum updates, assessment tools, learner guides for food qualifications.
+- [Food Industry Workers](/food-industry-workers-training): GMP training, CCP monitoring, allergen controls, record-keeping for production staff.
+
+## Locations
+
 - [Suburb Directory](/suburb-directory): Service coverage across Sydney metro and surrounds.
+- Local consultants: [Parramatta](/food-safety-consultant-parramatta), [Blacktown](/food-safety-consultant-blacktown), [Liverpool](/food-safety-consultant-liverpool), [Mascot](/food-safety-consultant-mascot), [Alexandria](/food-safety-consultant-alexandria), [Botany](/food-safety-consultant-botany), [Surry Hills](/food-safety-consultant-surry-hills), [Newtown](/food-safety-consultant-newtown), [Leichhardt](/food-safety-consultant-leichhardt), [Chatswood](/food-safety-consultant-chatswood), [Hornsby](/food-safety-consultant-hornsby), [Penrith](/food-safety-consultant-penrith), [Campbelltown](/food-safety-consultant-campbelltown), [Newcastle](/food-safety-consultant-newcastle), [Wollongong](/food-safety-consultant-wollongong), [Marrickville](/food-safety-consultant-marrickville)
 
-## Free Resources
+## Council Guides
 
-- [Free Resources Hub](/free-resources): Overview of all free tools.
-- [NSW Compliance Checklist](/free-compliance-checklist-nsw): 47-point interactive checklist for NSW food businesses.
-- [Restaurant SOP Template](/free-restaurant-sop-template): 7-SOP template covering receiving, temperature, cooking, cooling, allergens, cleaning, personal hygiene.
-- [Audit Readiness Checklist](/free-audit-readiness-checklist): Pre-audit self-assessment with 21-day preparation timeline.
+Local council food safety requirements across NSW: [Bayside](/councils/bayside-council-food-safety), [Blacktown](/councils/blacktown-city-council-food-safety), [Camden](/councils/camden-council-food-safety), [Campbelltown](/councils/campbelltown-city-council-food-safety), [Canterbury-Bankstown](/councils/canterbury-bankstown-council-food-safety), [City of Sydney](/councils/city-of-sydney-food-safety), [Cumberland](/councils/cumberland-city-council-food-safety), [Fairfield](/councils/fairfield-city-council-food-safety), [Georges River](/councils/georges-river-council-food-safety), [Inner West](/councils/inner-west-council-food-safety), [Ku-ring-gai](/councils/ku-ring-gai-council-food-safety), [Liverpool](/councils/liverpool-city-council-food-safety), [North Sydney](/councils/north-sydney-council-food-safety), [Northern Beaches](/councils/northern-beaches-council-food-safety), [Parramatta](/councils/parramatta-city-council-food-safety), [Penrith](/councils/penrith-city-council-food-safety), [Randwick](/councils/randwick-city-council-food-safety), [Sutherland Shire](/councils/sutherland-shire-council-food-safety), [Waverley](/councils/waverley-council-food-safety), [Willoughby](/councils/willoughby-city-council-food-safety)
+
+## Blog
+
+### HACCP
+- [What is HACCP in NSW](/blog/haccp/what-is-haccp-nsw)
+- [How to Write a HACCP Plan NSW](/blog/haccp/how-to-write-haccp-plan-nsw)
+- [CCPs Explained](/blog/haccp/ccps-critical-control-points-explained)
+- [HACCP Common Mistakes NSW](/blog/haccp/haccp-common-mistakes-nsw)
+- [HACCP for Cafes Sydney](/blog/haccp/haccp-for-cafes-sydney)
+- [HACCP Aged Care Hospitals](/blog/haccp/haccp-aged-care-hospitals-class1)
+- [HACCP Caterers Events NSW](/blog/haccp/haccp-caterers-events-nsw)
+- [HACCP Prerequisite Programs](/blog/haccp/haccp-prerequisite-programs-explained)
+- [HACCP Record Keeping](/blog/haccp/haccp-record-keeping-what-to-keep)
+- [HACCP Review Annual Requirements](/blog/haccp/haccp-review-annual-requirements)
+- [HACCP Verification vs Validation](/blog/haccp/haccp-verification-validation-difference)
+- [Temperature Control Food Safety NSW](/blog/haccp/temperature-control-food-safety-nsw)
+- [Food Safety Program Requirements NSW](/blog/haccp/food-safety-program-requirements-nsw)
+- [Allergen Management HACCP NSW 2024](/blog/haccp/allergen-management-haccp-nsw-2024)
+
+### Allergen Management
+- [Building Customer Trust Through Allergen Practices](/blog/allergens/building-customer-trust-through-allergen-practices)
+- [Cleaning Protocols for Allergen-Free Preparation](/blog/allergens/cleaning-protocols-for-allergen-free-preparation)
+- [Cross-Contamination Prevention Strategies](/blog/allergens/cross-contamination-prevention-strategies)
+- [Designing an Allergen Matrix](/blog/allergens/designing-an-allergen-matrix-for-your-menu)
+- [Gluten-Free vs Gluten-Friendly Requirements](/blog/allergens/gluten-free-vs-gluten-friendly-legal-requirements)
+- [How to Conduct a Mock Product Recall](/blog/allergens/how-to-conduct-a-mock-product-recall)
+- [Labeling Requirements for Packaged Foods](/blog/allergens/labeling-requirements-for-packaged-foods-in-cafes)
+- [Mastering Allergen Management](/blog/allergens/mastering-allergen-management-in-a-commercial-kitchen)
+- [Staff Training for Severe Food Allergies](/blog/allergens/staff-training-for-severe-food-allergies)
+- [The Ames Approach to Allergen Risk Assessment](/blog/allergens/the-ames-approach-to-allergen-risk-assessment)
+- [The Cost of Getting Allergen Management Wrong](/blog/allergens/the-cost-of-getting-allergen-management-wrong)
+- [NSW Guidelines on Allergen Declarations](/blog/allergens/the-new-nsw-guidelines-on-allergen-declarations)
+- [Traceability for Ingredients](/blog/allergens/traceability-knowing-where-your-ingredients-come-from)
+- [What to Do if a Customer Has an Allergic Reaction](/blog/allergens/what-to-do-if-a-customer-has-an-allergic-reaction)
+
+### SOPs
+- [The Ultimate Guide to SOP Writing](/blog/sop/the-ultimate-guide-to-sop-writing-for-food-businesses)
+- [How to Write a Cleaning SOP](/blog/sop/how-to-write-a-cleaning-sop-that-passes-audits)
+- [Documenting Temperature Controls](/blog/sop/documenting-temperature-controls-step-by-step)
+- [Creating a Supplier Approval SOP](/blog/sop/creating-a-supplier-approval-sop)
+- [Digital vs Paper SOPs](/blog/sop/digital-vs-paper-sops-which-is-better)
+- [Training Staff on SOPs](/blog/sop/how-to-train-staff-on-new-sops-effectively)
+- [The Role of SOPs in Passing Audits](/blog/sop/the-role-of-sops-in-passing-nsw-food-authority-audits)
+- [SOPs for Food Trucks](/blog/sop/sops-for-food-trucks-simplifying-compliance)
+- [Streamlining Morning Prep with SOPs](/blog/sop/streamlining-morning-kitchen-prep-with-sops)
+- [The Anatomy of a Perfect SOP](/blog/sop/the-anatomy-of-a-perfect-food-safety-sop)
+- [Common Failures in Record Keeping](/blog/sop/common-failures-in-record-keeping.html)
+- [How Ames Customizes SOPs](/blog/sop/how-ames-customizes-sops-for-your-business)
+- [Translating HACCP Plans into SOPs](/blog/sop/translating-haccp-plans-into-daily-sops)
+- [Why Your Cafe Needs SOPs](/blog/sop/why-your-cafe-needs-standard-operating-procedures)
+
+### Food Business Startups
+- [The Complete Startup Checklist](/blog/startup/the-complete-startup-checklist-for-nsw)
+- [Essential Food Safety Steps Before Opening](/blog/startup/essential-food-safety-steps-before-opening)
+- [How to Design a Compliant Kitchen](/blog/startup/how-to-design-a-compliant-commercial-kitchen)
+- [Navigating Council Approvals](/blog/startup/navigating-council-approvals-for-new-premises)
+- [Securing Your FSS Certificate](/blog/startup/securing-your-fss-certificate-before-launch)
+- [Setting Up Your First HACCP Plan](/blog/startup/setting-up-your-first-haccp-plan)
+- [Common Pitfalls for First-Time Owners](/blog/startup/common-pitfalls-for-first-time-restaurant-owners)
+- [Choosing Pest Control and Waste Partners](/blog/startup/choosing-pest-control-and-waste-management-partners)
+- [Budgeting for Food Safety Compliance](/blog/startup/budgeting-for-food-safety-compliance)
+- [Understanding NSW Licensing](/blog/startup/understanding-nsw-food-authority-licensing)
+- [The Ames Startup Package Explained](/blog/startup/the-ames-food-advisory-startup-package-explained)
+- [How to Handle Your First Inspection](/blog/startup/how-to-handle-your-first-council-health-inspection)
+- [Sourcing Compliant Ingredients](/blog/startup/sourcing-compliant-ingredients-what-startups-need)
+- [Why Expert Advice is Crucial](/blog/startup/why-expert-advice-is-crucial-for-startups)
+- [Writing Your First Food Safety Program](/blog/startup/writing-your-first-food-safety-program)
+
+### Food Safety Training
+- [Food Safety Supervisor vs Food Handler](/blog/training/food-safety-supervisor-vs-food-handler)
+- [Why Training is Critical for Sydney Cafes](/blog/training/why-food-safety-training-is-critical-for-sydney-cafes)
+- [NSW Food Authority Training Requirements](/blog/training/how-to-meet-nsw-food-authority-training-requirements)
+- [Online vs In-Person Training](/blog/training/online-vs-in-person-food-safety-training)
+- [Creating a Training Matrix](/blog/training/creating-a-training-matrix-for-your-bakery)
+- [How to Document Staff Training](/blog/training/how-to-document-staff-training-for-nsw-audits)
+- [Refresher Courses: When to Retrain](/blog/training/refresher-courses-when-should-staff-be-retrained)
+- [The True Cost of Inadequate Training](/blog/training/the-true-cost-of-inadequate-food-safety-training)
+- [The Arnott's Methodology for Cafes](/blog/training/why-the-arnotts-group-methodology-works-for-small-cafes)
+- [Training for Multicultural Teams](/blog/training/training-for-multicultural-kitchen-teams)
+- [Top 5 Mistakes in Food Handler Training](/blog/training/top-5-mistakes-in-food-handler-training)
+- [Implementing a Continuous Training Culture](/blog/training/implementing-a-continuous-training-culture)
+- [How Ames Transforms Hygiene Standards](/blog/training/how-ames-transforms-your-teams-hygiene-standards)
+- [The Role of TAFE-Qualified Trainers](/blog/training/the-role-of-tafe-qualified-trainers-in-food-safety)
+
+## Industry Pages
+
+Food safety consulting for specific sectors: [Aged Care](/industries/food-safety-for-aged-care-facilities), [Bakeries](/industries/food-safety-for-boutique-bakeries), [Breweries](/industries/food-safety-for-breweries-distilleries), [Butcher Shops](/industries/food-safety-for-butcher-shops), [Catering](/industries/food-safety-for-corporate-catering), [Childcare](/industries/food-safety-for-childcare-centers), [Coffee Roasters](/industries/food-safety-for-coffee-roasters), [Event Catering](/industries/food-safety-for-event-festival-catering), [Food Trucks](/industries/food-safety-for-food-trucks-mobile-vendors), [Ghost Kitchens](/industries/food-safety-for-ghost-kitchens), [Hotels](/industries/food-safety-for-hotel-kitchens), [Ice Cream](/industries/food-safety-for-ice-cream-gelato-shops), [Juice Bars](/industries/food-safety-for-juice-smoothie-bars), [Market Stalls](/industries/food-safety-for-market-stalls-pop-ups), [Meal Prep](/industries/food-safety-for-meal-prep-delivery-services), [School Canteens](/industries/food-safety-for-school-canteens), [Seafood Retailers](/industries/food-safety-for-seafood-retailers), [Condiment Manufacturers](/industries/food-safety-for-small-scale-condiment-manufacturers), [Sushi Bars](/industries/food-safety-for-sushi-bars)
+
+## Guides
+
+- [How to Write a Food Safety Program NSW](/how-to-write-a-food-safety-program-nsw)
+- [What is HACCP? NSW Guide](/what-is-haccp-nsw-food-businesses)
+- [NSW Food Authority Registration Guide](/nsw-food-authority-registration-guide)
+- [Food Safety Supervisor Requirements NSW 2026](/food-safety-supervisor-requirements-nsw)
+- [Free Compliance Checklist](/free-compliance-checklist-nsw)
+- [Free Restaurant SOP Template](/free-restaurant-sop-template)
+- [Free Audit Readiness Checklist](/free-audit-readiness-checklist)
+- [Allergen Management Guide](/guides/allergen-management-cafes-restaurants-nsw)
+- [Cleaning & Sanitising Guide](/guides/cleaning-sanitising-guide-nsw)
+- [Temperature Control Guide](/guides/temperature-control-guide-nsw)
+- [Pest Control Guide](/guides/pest-control-guide-nsw)
+- [Food Labelling Guide](/guides/food-labelling-requirements-nsw)
+- [Cross-Contamination Prevention Guide](/guides/cross-contamination-prevention-guide-nsw)
+- [Food Safety Program Guide](/guides/food-safety-program-nsw)
+- [Personal Hygiene Guide](/guides/personal-hygiene-requirements-food-handlers-nsw)
+- [Record Keeping Guide](/guides/record-keeping-guide-food-safety-compliance-nsw)
+- [Staff Training Guide](/guides/staff-food-safety-training-guide-nsw)
+- [Supplier Verification Guide](/guides/supplier-verification-guide-nsw)
+- [Internal Audit Guide](/guides/internal-food-safety-audits-guide-nsw)
+- [HACCP Plan Development Guide](/guides/haccp-plan-development-guide-nsw)
+
+## FAQs
+
+- [Food Safety FAQ NSW](/food-safety-faq-nsw): 25 common questions answered about food safety compliance in NSW.
+
+## Tools
+
+- [Compliance Checker](/): Interactive 6-question risk assessment for food businesses on the homepage.
 
 ## About
 
-George Skarmoutsos — 11+ years in food manufacturing (Arnott's), TAFE NSW accredited trainer, dual-accredited food safety consultant. Sydney, NSW, Australia.
+George Skarmoutsos — 11+ years in food manufacturing QA at The Arnott's Group, TAE-qualified trainer (Certificate IV in Training & Assessment), TAFE NSW sessional lecturer in Food Science & Technology, Diploma-qualified food technologist.
 
-Contact: george@amesfoodadvisory.com.au
+- Phone: (02) 7822 0109
+- Email: ames.food.adv@gmail.com
+- Location: Sydney, NSW — servicing all of NSW
+- Pricing: [Fixed-price packages](/pricing)

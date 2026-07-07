@@ -53,6 +53,11 @@ function head(title, desc, keywords, slug, sname, sdesc) {
 <meta property="og:url" content="https://www.amesfoodadvisory.com.au/${slug}">
 <meta property="og:site_name" content="AMES Food Advisory">
 <meta property="og:locale" content="en_AU">
+<meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${title}">
+<meta name="twitter:description" content="${desc}">
+<meta name="twitter:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
