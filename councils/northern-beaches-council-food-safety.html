@@ -93,6 +93,15 @@
   .footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--amber); }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--amber); padding: 0.75rem 1.5rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s; cursor: pointer; }
+  .btn-outline:hover { background: var(--amber); color: var(--navy-deep); border-bottom-color: transparent; }
+  .cta-strip { background: var(--navy); color: var(--white); padding: 4rem 2rem; text-align: center; }
+  .cta-strip-inner { max-width: 800px; margin: 0 auto; }
+  .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+  .cta-strip h2 em { font-style: italic; color: var(--amber); }
+  .cta-strip p { font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 2rem; max-width: 650px; margin-left: auto; margin-right: auto; }
+  .cta-strip-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
   @media(max-width: 768px) {
     .nav-links { display: none; }
@@ -132,6 +141,10 @@
     <div class="page-eyebrow">Local Council Compliance Guide</div>
     <h1>Pass Your <em>Northern Beaches Council</em> Food Inspections</h1>
     <p class="page-hero-sub">Expert mock audits, coaching, and compliance preparation to ensure your venue meets all local and state regulatory requirements.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="tel:+61278220109" class="btn-primary">📞 Call (02) 7822 0109</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book free consultation ↗</a>
+    </div>
   </div>
 </div>
 
@@ -162,6 +175,15 @@
     </div>
   </div>
   
+
+<div class="cta-strip"><div class="cta-strip-inner">
+  <h2>Need clear, actionable <em>food safety</em> advice?</h2>
+  <p>Built on 11+ years in QA at The Arnott's Group. One-on-one support from a TAE-qualified trainer and TAFE NSW lecturer. Fixed-price programs, no hidden fees.</p>
+  <div class="cta-strip-actions">
+    <a href="tel:+61278220109" class="btn-primary">📞 Call Now — Free Compliance Chat: (02) 7822 0109</a>
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book online instead ↗</a>
+  </div>
+</div></div>
 
 <footer>
   <div class="footer-inner">

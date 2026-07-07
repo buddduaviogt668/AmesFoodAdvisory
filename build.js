@@ -1,4 +1,4 @@
-﻿?const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = __dirname; // build directly in the same folder
@@ -68,7 +68,7 @@ function head(title, desc, keywords, slug, sname, sdesc) {
     "@type": "LocalBusiness",
     "name": "AMES Food Advisory",
     "url": "https://www.amesfoodadvisory.com.au",
-    "telephone": "+61400000000",
+    "telephone": "+61278220109",
     "email": "ames.food.adv@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -439,7 +439,7 @@ const NAV = `
         <a href="/food-safety-consultant-chatswood">North Shore</a>
       </div>
     </li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
   <button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
@@ -472,7 +472,7 @@ const NAV = `
   <span class="mob-section">Company</span>
   <a href="/pricing">Pricing</a>
   <a href="/suburb-directory">All Sydney Locations</a>
-  <a href="/#about">About</a>
+  <a href="/about">About</a>
   <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book a Free Call</a>
 </div>
 `;
@@ -496,7 +496,7 @@ const FOOTER = `
   <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
   <div class="footer-links">
     <a href="/#services">Services</a>
-    <a href="/#about">About</a>
+    <a href="/about">About</a>
     <a href="/#contact">Contact</a>
   </div>
 </div></footer>
@@ -688,8 +688,8 @@ ${NAV}
     <h1>${p.h1}</h1>
     <p class="page-hero-sub">${p.sub}</p>
     <div class="hero-actions">
-      <a href="/#contact" class="btn-primary">Book a free consultation ↗</a>
-      <a href="/#services" class="btn-outline">All services</a>
+      <a href="tel:+61278220109" class="btn-primary">📞 Call (02) 7822 0109</a>
+      <a href="/#contact" class="btn-outline">Book a free consultation ↗</a>
     </div>
   </div>
 </div>
@@ -742,8 +742,8 @@ ${faqsHtml}
     <h2>Need clear, actionable <em>food safety</em> advice?</h2>
     <p>We work directly with your business to construct robust quality structures, training platforms, and audit preparedness tools.</p>
     <div class="cta-strip-actions">
-      <a href="/#contact" class="btn-primary">Arrange a free consultation call ↗</a>
-      <a href="tel:+61400000000" class="btn-outline">Speak with a specialist</a>
+      <a href="tel:+61278220109" class="btn-primary">📞 Call Now — Free Compliance Chat: (02) 7822 0109</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book online instead ↗</a>
     </div>
   </div>
 </div>

@@ -360,7 +360,7 @@ ${JSON.stringify(schemaData, null, 2)}
     <li><a href="/blog">Blog</a></li>
     <li><a href="/pricing">Pricing</a></li>
     <li><a href="/suburb-directory">Locations</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="/contact">Contact</a></li>
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
@@ -372,8 +372,8 @@ ${JSON.stringify(schemaData, null, 2)}
     <h1>${heroTitle}</h1>
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
-      <a href="/pricing" class="btn-outline">View pricing</a>
+      <a href="tel:+61278220109" class="btn-primary">📞 Call (02) 7822 0109</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book free consultation ↗</a>
     </div>
   </div>
 </div>
@@ -390,6 +390,15 @@ ${JSON.stringify(schemaData, null, 2)}
 </div></div>
 
 ${bodyContent}
+
+<div class="cta-strip"><div class="cta-strip-inner">
+  <h2>Need clear, actionable <em>food safety</em> advice?</h2>
+  <p>Built on 11+ years in QA at The Arnott's Group. One-on-one support from a TAE-qualified trainer and TAFE NSW lecturer. Fixed-price programs, no hidden fees.</p>
+  <div class="cta-strip-actions">
+    <a href="tel:+61278220109" class="btn-primary">📞 Call Now — Free Compliance Chat: (02) 7822 0109</a>
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book online instead ↗</a>
+  </div>
+</div></div>
 
 <footer>
   <div class="footer-inner">

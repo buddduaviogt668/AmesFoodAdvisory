@@ -1,4 +1,4 @@
-﻿?module.exports = [
+module.exports = [
   // ── TIER 1: SERVICE PAGES ──
   {
     "file": "food-safety-consulting-sydney.html",
