@@ -34,6 +34,31 @@
       "source": "/blog/haccp",
       "destination": "/blog/haccp/what-is-haccp-nsw",
       "permanent": false
-    }
+    },
+    {"source": "/guides/guide-1", "destination": "/guides/food-safety-program-nsw", "permanent": true},
+    {"source": "/guides/guide-2", "destination": "/guides/haccp-plan-development-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-3", "destination": "/guides/nsw-food-authority-registration-guide", "permanent": true},
+    {"source": "/guides/guide-4", "destination": "/guides/temperature-control-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-5", "destination": "/guides/allergen-management-cafes-restaurants-nsw", "permanent": true},
+    {"source": "/guides/guide-6", "destination": "/guides/staff-food-safety-training-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-7", "destination": "/how-to-prepare-for-council-food-safety-inspection", "permanent": true},
+    {"source": "/guides/guide-8", "destination": "/guides/sop-writing-guide-commercial-kitchens-nsw", "permanent": true},
+    {"source": "/guides/guide-9", "destination": "/guides/cool-room-refrigeration-compliance-nsw", "permanent": true},
+    {"source": "/guides/guide-10", "destination": "/guides/food-labelling-requirements-nsw", "permanent": true},
+    {"source": "/guides/guide-11", "destination": "/guides/food-safety-guide-startups-nsw", "permanent": true},
+    {"source": "/guides/guide-12", "destination": "/guides/cleaning-sanitising-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-13", "destination": "/guides/internal-food-safety-audits-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-14", "destination": "/guides/cross-contamination-prevention-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-15", "destination": "/guides/food-safety-food-trucks-mobile-vendors-nsw", "permanent": true},
+    {"source": "/guides/guide-16", "destination": "/guides/supplier-verification-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-17", "destination": "/guides/food-recall-procedure-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-18", "destination": "/guides/pest-control-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-19", "destination": "/guides/building-food-safety-culture-nsw", "permanent": true},
+    {"source": "/guides/guide-20", "destination": "/aged-care-food-safety-nsw", "permanent": true},
+    {"source": "/guides/guide-21", "destination": "/guides/waste-management-food-safety-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-22", "destination": "/guides/personal-hygiene-requirements-food-handlers-nsw", "permanent": true},
+    {"source": "/guides/guide-23", "destination": "/guides/record-keeping-guide-food-safety-compliance-nsw", "permanent": true},
+    {"source": "/guides/guide-24", "destination": "/guides/food-delivery-transport-safety-guide-nsw", "permanent": true},
+    {"source": "/guides/guide-25", "destination": "/guides/catering-operations-food-safety-nsw", "permanent": true}
   ]
 }
