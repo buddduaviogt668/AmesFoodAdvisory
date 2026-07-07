@@ -59,6 +59,21 @@
     {"source": "/guides/guide-22", "destination": "/guides/personal-hygiene-requirements-food-handlers-nsw", "permanent": true},
     {"source": "/guides/guide-23", "destination": "/guides/record-keeping-guide-food-safety-compliance-nsw", "permanent": true},
     {"source": "/guides/guide-24", "destination": "/guides/food-delivery-transport-safety-guide-nsw", "permanent": true},
-    {"source": "/guides/guide-25", "destination": "/guides/catering-operations-food-safety-nsw", "permanent": true}
+    {"source": "/guides/guide-25", "destination": "/guides/catering-operations-food-safety-nsw", "permanent": true},
+    {"source": "/data/data-1", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-2", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-3", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-4", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-5", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-6", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-7", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-8", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-9", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-10", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-11", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-12", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-13", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-14", "destination": "/resource-hub", "permanent": true},
+    {"source": "/data/data-15", "destination": "/resource-hub", "permanent": true}
   ]
 }
