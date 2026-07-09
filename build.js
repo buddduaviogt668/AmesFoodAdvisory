@@ -132,22 +132,48 @@ const SHARED_CSS = `
     text-decoration: none; letter-spacing: 0.01em;
   }
   .nav-logo span { color: var(--amber); }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a {
-    text-decoration: none; font-size: 0.855rem; font-weight: 400;
+  .nav-links { display: flex; gap: 0; align-items: center; list-style: none; }
+  .nav-links > li { position: relative; }
+  .nav-links > li > a {
+    text-decoration: none; font-size: 0.82rem; font-weight: 400;
     color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
+    padding: 0 0.85rem; height: 66px; display: flex; align-items: center; gap: 0.25rem;
   }
-  .nav-links a:hover { color: var(--white); }
+  .nav-links > li > a:hover { color: var(--white); }
+  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+  .nav-drop {
+    position: absolute; top: 66px; left: 0; min-width: 210px;
+    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0; opacity: 0; visibility: hidden;
+    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+  }
+  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-drop a {
+    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+  }
+  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
   .nav-cta {
-    background: var(--amber) !important;
-    color: var(--navy) !important;
-    padding: 0.5rem 1.3rem !important;
-    border-radius: 6px !important;
-    font-weight: 600 !important;
+    background: var(--amber) !important; color: var(--navy) !important;
+    padding: 0.45rem 1.1rem !important; border-radius: 5px !important;
+    font-weight: 600 !important; font-size: 0.8rem !important; margin-left: 0.5rem;
     transition: background 0.2s !important;
   }
   .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
-  
+  .nav-phone {
+    text-decoration: none; font-size: 0.82rem; font-weight: 400;
+    color: rgba(255,255,255,0.6); letter-spacing: 0.01em;
+    padding: 0 0.85rem; height: 66px; display: flex; align-items: center; gap: 0.25rem;
+    transition: color 0.2s;
+  }
+  .nav-phone:hover { color: var(--white); }
+  .footer-phone { margin: 0.5rem 0; }
+  .footer-phone a { font-size: 0.9rem; color: var(--amber-light); text-decoration: none; font-weight: 500; transition: color 0.15s; }
+  .footer-phone a:hover { color: var(--white); }
+  .footer-phone-divider { color: rgba(255,255,255,0.15); margin: 0 0.5rem; font-size: 0.8rem; }
   .page-hero {
     background: var(--navy-deep);
     padding: 9rem 2rem 5rem;
@@ -346,7 +372,9 @@ const SHARED_CSS = `
 
 const NAV = `
 <nav>
-  <a href="/" class="nav-logo">AMES <span>Food Advisory</span></a>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+  </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
     <li><a href="/food-safety-training-sydney">Training</a></li>
@@ -354,7 +382,8 @@ const NAV = `
     <li><a href="/food-business-startup-package">Start-Up Package</a></li>
     <li><a href="/#services">All Services</a></li>
     <li><a href="/#about">About</a></li>
-    <li><a href="/#contact" class="nav-cta">Get in touch</a></li>
+    <li><a href="tel:+61278220109" class="nav-cta">📞 (02) 7822 0109</a></li>
+    <li><a href="/#contact" class="nav-phone">Get in touch</a></li>
   </ul>
 </nav>
 `;
@@ -376,6 +405,11 @@ const FOOTER = `
 <footer><div class="footer-inner">
   <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
   <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
+  <div class="footer-phone">
+    <a href="tel:+61278220109">📞 (02) 7822 0109</a>
+    <span class="footer-phone-divider">·</span>
+    <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
+  </div>
   <div class="footer-links">
     <a href="/#services">Services</a>
     <a href="/#about">About</a>

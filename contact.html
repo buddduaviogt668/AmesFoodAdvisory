@@ -44,7 +44,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,30,40,0.
 .nav-drop a:hover{color:var(--amber);background:rgba(212,117,31,0.06);}
 .drop-divider{height:1px;background:rgba(255,255,255,0.06);margin:0.35rem 0;}
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.45rem 1.1rem!important;border-radius:5px!important;font-weight:600!important;font-size:0.8rem!important;margin-left:0.5rem;}
-.nav-cta:hover{background:var(--amber-dim)!important;}
+.nav-cta:hover{background:var(--amber-dim)!important;}.nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
 .page-hero{background:var(--navy-deep);padding:8rem 2rem 5rem;position:relative;overflow:hidden;}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 85% 50%,rgba(212,117,31,0.09) 0%,transparent 65%);}
 .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);opacity:0.4;}
@@ -139,7 +139,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white);}
 .footer-logo span{color:var(--amber);}
-.footer-copy{font-size:0.74rem;color:rgba(255,255,255,0.25);}
+.footer-copy{font-size:0.74rem;color:rgba(255,255,255,0.25);}.footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
 .footer-links{display:flex;gap:1.4rem;flex-wrap:wrap;}
 .footer-links a{font-size:0.76rem;color:rgba(255,255,255,0.32);text-decoration:none;transition:color 0.2s;}
 .footer-links a:hover{color:var(--amber);}
@@ -334,7 +334,8 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
     </li>
     <li><a href="/#about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="tel:+61278220109" class="nav-cta">📞 (02) 7822 0109</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
 <div class="page-hero">
@@ -444,7 +445,12 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <footer>
   <div class="footer-inner">
     <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
-    <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW &middot; ABN 61 136 364 150</div>
+    <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
+    <div class="footer-phone">
+      <a href="tel:+61278220109">📞 (02) 7822 0109</a>
+      <span class="footer-phone-divider">&middot;</span>
+      <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
+    </div>
     <div class="footer-links">
       <a href="/#services">Services</a>
       <a href="/food-safety-training-sydney">Training</a>
