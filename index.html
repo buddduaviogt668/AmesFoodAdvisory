@@ -165,6 +165,13 @@
     transition: background 0.2s !important;
   }
   .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
+  .nav-phone {
+    text-decoration: none; font-size: 0.82rem; font-weight: 500;
+    color: var(--amber-light) !important; letter-spacing: 0.01em;
+    padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem;
+    transition: color 0.2s;
+  }
+  .nav-phone:hover { color: var(--white) !important; }
 
   /* ── HERO ── */
   .hero {
@@ -539,6 +546,20 @@
   .contact-detail-value { font-size: 0.92rem; color: var(--white); margin-top: 2px; }
   .contact-detail-value a { color: var(--white); text-decoration: none; }
   .contact-detail-value a:hover { color: var(--amber); }
+  .contact-phone-block {
+    display: flex; flex-direction: column; align-items: center; gap: 0.25rem;
+    background: rgba(212,117,31,0.1); border: 1.5px solid var(--amber);
+    border-radius: 12px; padding: 1.5rem; text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .contact-phone-block:hover { background: rgba(212,117,31,0.18); transform: translateY(-1px); }
+  .contact-phone-icon { font-size: 1.5rem; }
+  .contact-phone-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; font-weight: 500; color: var(--white);
+    letter-spacing: 0.02em;
+  }
+  .contact-phone-label { font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 300; }
   .service-areas {
     margin-top: 2.5rem; padding: 1.5rem;
     background: rgba(255,255,255,0.04); border-radius: 10px;
@@ -559,6 +580,10 @@
   .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
   .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
   .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.18); }
+  .footer-phone { margin: 0.5rem 0; }
+  .footer-phone a { font-size: 0.9rem; color: var(--amber-light); text-decoration: none; font-weight: 500; transition: color 0.15s; }
+  .footer-phone a:hover { color: var(--white); }
+  .footer-phone-divider { color: rgba(255,255,255,0.15); margin: 0 0.5rem; font-size: 0.8rem; }
   .footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.15s; }
   .footer-links a:hover { color: rgba(255,255,255,0.6); }
@@ -707,6 +732,7 @@
       </div>
     </li>
     <li><a href="/#about">About</a></li>
+    <li><a href="tel:+61278220109" class="nav-phone">📞 (02) 7822 0109</a></li>
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
@@ -719,7 +745,7 @@
       <h1>Fixed-Price Food Safety Programs.<br><em>Zero Corporate Friction.</em></h1>
       <p class="hero-sub">Get your Sydney food business compliant, well-documented, and confidently run — without the hidden consulting costs. Built on 11+ years of real QA & manufacturing experience and TAFE NSW training expertise.</p>
       <div class="hero-actions">
-        <a href="/free-resources" class="btn-outline">Download Free Compliance Checklist</a>
+        <a href="tel:+61278220109" class="btn-outline">📞 (02) 7822 0109</a>
         <a href="/pricing" class="btn-primary">View Fixed-Price Packages &amp; Book Call ↗</a>
       </div>
     </div>
@@ -1377,7 +1403,13 @@
         </div>
       </div>
       <div class="contact-info">
-        <div class="contact-info-label">Direct contact</div>
+        <div class="contact-info-label">Call us directly</div>
+        <a href="tel:+61278220109" class="contact-phone-block">
+          <span class="contact-phone-icon">📞</span>
+          <span class="contact-phone-num">(02) 7822 0109</span>
+          <span class="contact-phone-label">Click to call · Available Mon–Fri, 9am–5pm</span>
+        </a>
+        <div class="contact-info-label" style="margin-top:2rem;">Direct contact</div>
         <div class="contact-detail">
           <div class="contact-detail-icon">📍</div>
           <div>
@@ -1451,6 +1483,11 @@
     <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;Food Safety</span>
   </a>
     <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
+    <div class="footer-phone">
+      <a href="tel:+61278220109">📞 (02) 7822 0109</a>
+      <span class="footer-phone-divider">·</span>
+      <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
+    </div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/#services">Services</a>
