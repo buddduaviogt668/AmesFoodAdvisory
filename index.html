@@ -12,11 +12,13 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@additionalType": "https://schema.org/FoodConsultant",
+  "category": "Food Safety Consultancy",
   "name": "AMES Food Advisory",
   "@id": "https://www.amesfoodadvisory.com.au",
   "url": "https://www.amesfoodadvisory.com.au",
-  "telephone": "+61 2 0000 0000",
+  "telephone": "+61278220109",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Sydney",
@@ -28,11 +30,25 @@
   "priceRange": "$$",
   "description": "Food safety training, HACCP plan development, documentation support, and compliance readiness for NSW food businesses. Built on 11+ years in QA & food manufacturing.",
   "areaServed": "Sydney, NSW, Australia",
-  "knowsAbout": ["HACCP", "Food Safety", "FSANZ", "NSW Food Act 2003", "Standard 3.2.2A", "Food Safety Supervisor", "Internal Auditing", "SOP Writing", "RTO Resources"],
+  "knowsAbout": ["HACCP", "Food Safety", "FSANZ", "NSW Food Act 2003", "Standard 3.2.2A", "Food Safety Supervisor", "Internal Auditing", "SOP Writing", "Food Consultancy", "Cafes", "Restaurants", "Aged Care", "Childcare", "Food Trucks", "Bakeries", "Catering", "Food Manufacturers", "Breweries", "Hotels", "Ghost Kitchens", "Market Stalls", "Sushi Bars", "School Canteens", "Meal Prep Services", "Coffee Roasters", "Seafood Retailers", "Butcher Shops", "Ice Cream Shops", "Juice Bars", "Condiment Manufacturers", "Event Catering", "Chocolate Makers", "Mobile Vendors", "Pop-ups"],
   "hasCredential": [
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "Food Safety Specialist", "recognizedBy": {"@type": "Organization", "name": "TAFE NSW"}},
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "TAE Certificate IV in Training and Assessment"}
-  ]
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "Food Safety Consulting Specialist", "recognizedBy": {"@type": "Organization", "name": "TAFE NSW"}},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "TAE Certificate IV in Training and Assessment"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "HACCP Food Safety Consultant"}
+  ],
+  "serviceArea": ["Sydney CBD", "Inner West", "Eastern Suburbs", "North Shore", "Northern Beaches", "Western Sydney", "Parramatta", "Sutherland Shire", "Wollongong", "Newcastle", "All of NSW"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Food Safety Consulting Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HACCP Plan Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Food Safety Training"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Internal Auditing"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SOP Writing"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Start-Up Package"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compliance Consulting"}}
+    ]
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -43,7 +59,7 @@
     {
       "@type": "Question",
       "name": "What is a food safety consultant and do I need one in NSW?",
-      "acceptedAnswer": {"@type": "Answer", "text": "A food safety consultant helps food businesses in NSW develop HACCP plans, prepare for council inspections, write SOPs, and train staff to meet the NSW Food Act 2003 and FSANZ Food Standards Code requirements. If your business handles food in NSW, a consultant ensures you're compliant before an inspector arrives — not after a penalty notice."}
+      "acceptedAnswer": {"@type": "Answer", "text": "A food safety consultant helps food businesses in NSW develop HACCP plans, prepare for regulatory inspections, write SOPs, and train staff to meet the NSW Food Act 2003 and FSANZ Food Standards Code requirements. If your business handles food in NSW, a consultant ensures you're compliant before an inspector arrives — not after a penalty notice."}
     },
     {
       "@type": "Question",
@@ -62,8 +78,8 @@
     },
     {
       "@type": "Question",
-      "name": "What happens if I fail a council food safety inspection in NSW?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Failing a council food safety inspection in NSW can result in verbal or written warnings, improvement notices, prohibition orders, on-the-spot fines, or prosecution under the NSW Food Act 2003. AMES Food Advisory specialises in pre-inspection preparation — ensuring your documentation, practices, and staff knowledge are compliant before the inspector arrives."}
+      "name": "What happens if I fail a food safety inspection in NSW?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Failing a food safety inspection in NSW can result in verbal or written warnings, improvement notices, prohibition orders, on-the-spot fines, or prosecution under the NSW Food Act 2003. AMES Food Advisory specialises in pre-inspection preparation — ensuring your documentation, practices, and staff knowledge are compliant before the inspector arrives."}
     },
     {
       "@type": "Question",
@@ -878,7 +894,7 @@
       <div class="service-item fade-up fade-up-delay-1">
         <div class="service-num">05</div>
         <div class="service-title">Food Business Start-Up Packages</div>
-        <div class="service-desc">Complete compliance setup for new food businesses — council registration guidance, food safety plans, record templates and SOPs, staff food safety training, and pre-inspection preparation. Everything you need to open confidently, in one engagement.</div>
+        <div class="service-desc">Complete compliance setup for new food businesses — regulatory guidance, food safety plans, record templates and SOPs, staff food safety training, and pre-inspection preparation. Everything you need to open confidently, in one engagement.</div>
         <div class="service-badge">Most popular</div>
         <a href="/food-business-startup-package" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
       </div>
@@ -919,7 +935,7 @@
   <div class="container">
     <div class="section-eyebrow" style="color:var(--amber);">Audit &amp; Compliance Standards</div>
     <h2 class="display-light">End-to-End <em>Compliance Support</em></h2>
-    <p class="body-lead" style="color: rgba(255, 255, 255, 0.6); max-width: 700px; margin-bottom: 3.5rem;">We design and prepare your food safety management systems (FSMS) to satisfy all local council requirements, state authority regulations, and third-party auditing standards.</p>
+    <p class="body-lead" style="color: rgba(255, 255, 255, 0.6); max-width: 700px; margin-bottom: 3.5rem;">We design and prepare your food safety management systems (FSMS) to satisfy all regulatory requirements, state authority regulations, and third-party auditing standards.</p>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
       <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(232, 145, 58, 0.15); border-radius: 10px; padding: 2rem; transition: border-color 0.2s;">
@@ -991,7 +1007,7 @@
       <div class="credential-card fade-up fade-up-delay-2">
         <div class="credential-icon">✓</div>
         <h3>Dual-Accredited Consultant</h3>
-        <p>HACCP specialist, NSW Food Act 2003 compliance, council audit preparation, Standard 3.2.2A implementation.</p>
+        <p>HACCP specialist, NSW Food Act 2003 compliance, regulatory audit preparation, Standard 3.2.2A implementation.</p>
       </div>
     </div>
     <div style="margin-top:2.5rem; padding-top:2.5rem; border-top:1px solid rgba(255,255,255,0.08); text-align:center;">
@@ -1011,7 +1027,7 @@
       <div class="sector-card fade-up">
         <div class="sector-icon">☕</div>
         <div class="sector-name">Cafes & Restaurants</div>
-        <div class="sector-desc">Food safety programs, FSS compliance, council inspection prep and on-site staff training.</div>
+        <div class="sector-desc">Food safety programs, FSS compliance, regulatory inspection prep and on-site staff training.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
         <div class="sector-icon">🏭</div>
@@ -1036,12 +1052,12 @@
       <div class="sector-card fade-up fade-up-delay-2">
         <div class="sector-icon">🧪</div>
         <div class="sector-name">Food Startups</div>
-        <div class="sector-desc">End-to-end launch packages — licensing, food safety plans and council submission support.</div>
+        <div class="sector-desc">End-to-end launch packages — licensing, food safety plans and regulatory submission support.</div>
       </div>
       <div class="sector-card fade-up">
         <div class="sector-icon">🍺</div>
         <div class="sector-name">Breweries &amp; Distilleries</div>
-        <div class="sector-desc">Taproom compliance, FSS registration, Standard 3.2.2A, and Inner West Council audit preparation for craft producers.</div>
+        <div class="sector-desc">Taproom compliance, FSS registration, Standard 3.2.2A, and regulatory audit preparation for craft producers.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
         <div class="sector-icon">🏥</div>
@@ -1069,13 +1085,13 @@
       <div class="fade-up">
         <div class="section-eyebrow">Featured offer</div>
         <h2 class="display">The Food Business<br><em>Start-Up Package</em></h2>
-        <p style="font-size:0.98rem; color:var(--ink-mid); line-height:1.78; margin-bottom:1.5rem; font-weight:300;">Opening a food business is overwhelming. Between council requirements, food safety laws, staff training and compliance prep — most new operators don't know where to start. This package covers everything, in one engagement.</p>
+        <p style="font-size:0.98rem; color:var(--ink-mid); line-height:1.78; margin-bottom:1.5rem; font-weight:300;">Opening a food business is overwhelming. Between regulatory requirements, food safety laws, staff training and compliance prep — most new operators don't know where to start. This package covers everything, in one engagement.</p>
         <div class="package-includes">
           <div class="package-item">
             <div class="package-item-icon">✓</div>
             <div class="package-item-text">
               <div class="package-item-title">Licensing & regulatory requirements</div>
-              <div class="package-item-desc">Council registration, NSW Food Authority compliance, food business classification</div>
+              <div class="package-item-desc">Regulatory registration, NSW Food Authority compliance, food business classification</div>
             </div>
           </div>
           <div class="package-item">
@@ -1103,7 +1119,7 @@
             <div class="package-item-icon">✓</div>
             <div class="package-item-text">
               <div class="package-item-title">Pre-inspection preparation</div>
-              <div class="package-item-desc">Premises walk-through, gap review against council requirements, corrective action checklist</div>
+              <div class="package-item-desc">Premises walk-through, gap review against regulatory requirements, corrective action checklist</div>
             </div>
           </div>
         </div>
@@ -1203,7 +1219,7 @@
         <div class="about-body">
           <p>AMES Food Advisory was built on <strong>over 11 years at Arnotts</strong>, one of Australia's largest and most demanding food manufacturers — working across quality assurance, food safety systems, laboratory operations, and regulatory compliance. That's not textbook knowledge — it's hard-won experience from the factory floor up.</p>
           <p>As a <strong>TAE-qualified trainer and current TAFE NSW instructor</strong> in food science and technology, the expertise is also backed by nationally recognised teaching credentials. Theory and practice in one place — and the ability to pass it on to your team in plain English.</p>
-          <p>Whether you're a food startup navigating your first council registration, or an established operator who needs practical training, solid documentation, or a set of fresh eyes on your food safety system — AMES brings the same depth and honesty to every engagement.</p>
+          <p>Whether you're a food startup navigating your first regulatory registration, or an established operator who needs practical training, solid documentation, or a set of fresh eyes on your food safety system — AMES brings the same depth and honesty to every engagement.</p>
         </div>
         <div class="credentials-list">
           <div class="cred-row">
@@ -1267,7 +1283,7 @@
       <div class="resource-card fade-up">
         <div class="resource-type">Free guide</div>
         <div class="resource-title">How to Write a Food Safety Program in NSW</div>
-        <div class="resource-desc">What must be included under FSANZ Standard 3.2.1, the seven steps to writing a valid Food Safety Program, and the common mistakes that fail council inspections.</div>
+        <div class="resource-desc">What must be included under FSANZ Standard 3.2.1, the seven steps to writing a valid Food Safety Program, and the common mistakes that fail regulatory inspections.</div>
         <a href="/how-to-write-a-food-safety-program-nsw" class="resource-action">Read the guide →</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-1">
@@ -1278,9 +1294,9 @@
       </div>
       <div class="resource-card fade-up fade-up-delay-2">
         <div class="resource-type">Free guide + checklist</div>
-        <div class="resource-title">How to Prepare for a Council Food Safety Inspection</div>
-        <div class="resource-desc">What council EHOs check, what gets businesses into trouble, and an interactive 28-point pre-inspection checklist to run through before any visit.</div>
-        <a href="/how-to-prepare-for-council-food-safety-inspection" class="resource-action">Read the guide →</a>
+        <div class="resource-title">How to Prepare for a Food Safety Inspection</div>
+        <div class="resource-desc">What regulatory officers check, what gets businesses into trouble, and an interactive 28-point pre-inspection checklist to run through before any visit.</div>
+        <a href="/how-to-prepare-for-a-food-safety-inspection" class="resource-action">Read the guide →</a>
       </div>
       <div class="resource-card fade-up">
         <div class="resource-type">Free guide</div>
@@ -1291,7 +1307,7 @@
       <div class="resource-card fade-up fade-up-delay-1">
         <div class="resource-type">Free guide</div>
         <div class="resource-title">NSW Food Authority Registration Guide</div>
-        <div class="resource-desc">Who needs a NSW Food Authority licence, the difference between council notification and a NSWFA licence, and the step-by-step application process.</div>
+        <div class="resource-desc">Who needs a NSW Food Authority licence, the difference between local regulatory registration and a NSWFA licence, and the step-by-step application process.</div>
         <a href="/nsw-food-authority-registration-guide" class="resource-action">Read the guide →</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-2">
@@ -1373,14 +1389,14 @@
           <div class="contact-detail-icon">📧</div>
           <div>
             <div class="contact-detail-title">Email</div>
-            <div class="contact-detail-value"><a href="mailto:hello@amesfoodadvisory.com.au">hello@amesfoodadvisory.com.au</a></div>
+            <div class="contact-detail-value"><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
           </div>
         </div>
         <div class="contact-detail">
           <div class="contact-detail-icon">📞</div>
           <div>
             <div class="contact-detail-title">Phone</div>
-            <div class="contact-detail-value"><a href="tel:+61400000000">04XX XXX XXX</a></div>
+            <div class="contact-detail-value"><a href="tel:+61278220109">(02) 7822 0109</a></div>
           </div>
         </div>
         <div class="contact-detail">
@@ -1405,7 +1421,7 @@
     <div style="text-align: center; margin-bottom: 3rem;">
       <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.75rem;">Service Areas</div>
       <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 400; color: var(--navy); margin-bottom: 0.75rem;">We Come to <em style="font-style:italic; color: var(--amber);">You</em></h2>
-      <p style="font-size: 0.95rem; color: var(--ink-soft); max-width: 560px; margin: 0 auto; line-height: 1.75;">On-site consulting, audits, and training across Greater Sydney and NSW. We know your local council requirements.</p>
+      <p style="font-size: 0.95rem; color: var(--ink-soft); max-width: 560px; margin: 0 auto; line-height: 1.75;">On-site consulting, audits, and training across Greater Sydney and NSW. We know your local regulatory requirements.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; margin-bottom: 2.5rem;">
       <a href="/food-safety-consultant-parramatta" style="background: var(--white); border: 1px solid var(--stone-dark); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy); font-size: 0.88rem; font-weight: 500; display: block; text-align: center;">Parramatta</a>
@@ -1456,7 +1472,7 @@ const questions = [
   { q: "Do you have a written food safety program or HACCP plan?", sub: "A written plan is a legal requirement for many food businesses in NSW.", options: ["Yes, fully documented and current","We have something but it's out of date","We have an informal system but nothing written","No — we don't have one"], risk: [0,1,2,3] },
   { q: "When did you last review your food safety documentation?", sub: "Regular review keeps your system relevant and audit-ready.", options: ["Within the last 12 months","1–2 years ago","More than 2 years ago","We haven't reviewed it / don't have any"], risk: [0,1,2,3] },
   { q: "Do your staff receive regular food safety training?", sub: "Trained staff are your first line of defence against food safety incidents.", options: ["Yes — formal, documented training","Basic induction only — no ongoing training","Informal — we show people on the job","No food safety training at all"], risk: [0,1,2,3] },
-  { q: "How prepared do you feel for a council inspection?", sub: "Council officers can inspect at any time without prior notice.", options: ["Very prepared — I'd welcome one today","Reasonably prepared with a few gaps","I'd be worried if one arrived tomorrow","I have no idea what they'd look for"], risk: [0,1,2,3] },
+  { q: "How prepared do you feel for a regulatory inspection?", sub: "Regulatory officers can inspect at any time without prior notice.", options: ["Very prepared — I'd welcome one today","Reasonably prepared with a few gaps","I'd be worried if one arrived tomorrow","I have no idea what they'd look for"], risk: [0,1,2,3] },
   { q: "Do you have documented allergen controls in place?", sub: "Allergen management is one of the most scrutinised areas in food safety audits.", options: ["Yes — allergen register, procedures and staff training","We know our allergens but don't have formal controls","Partially — some awareness but no documentation","No allergen controls in place"], risk: [0,1,2,3] }
 ];
 
@@ -1520,7 +1536,7 @@ function showResult() {
     recs = ['Schedule a 12-month review of your food safety program','Consider an allergen audit to confirm controls are current','Document any informal systems you rely on'];
   } else if (riskTotal <= 8) {
     cls = 'result-medium'; title = 'Moderate risk — some gaps to address';
-    desc = 'You have the basics in place but there are meaningful gaps that could cause problems at a council inspection or audit. These are fixable with targeted support.';
+    desc = 'You have the basics in place but there are meaningful gaps that could cause problems at a regulatory inspection or audit. These are fixable with targeted support.';
     recs = ['Update your food safety documentation to reflect current operations','Formalise staff training and keep attendance records','Review allergen controls and add documentation','Book a pre-inspection walkthrough before your next audit'];
   } else {
     cls = 'result-high'; title = 'Higher risk — action needed';
