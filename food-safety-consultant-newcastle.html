@@ -90,9 +90,9 @@
   }
   .nav-logo { display: flex; align-items: center; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { display: none; }
-.nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
+  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
+  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
   .nav-links a {
     text-decoration: none; font-size: 0.855rem; font-weight: 400;
     color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
@@ -106,8 +106,7 @@
     font-weight: 600 !important;
     transition: background 0.2s !important;
   }
-  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
-  .nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
+  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }.nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
   
   .page-hero {
     background: var(--navy-deep);
@@ -190,7 +189,7 @@
     white-space: nowrap; padding: 0 2rem;
     border-right: 1px solid rgba(28,43,58,0.18);
   }
-  .cred-pill::before { content: 'â—†'; font-size: 0.5rem; }
+  .cred-pill::before { content: '◆'; font-size: 0.5rem; }
 
   section { padding: 5rem 2rem; }
   .container { max-width: 1100px; margin: 0 auto; width: 100%; }
@@ -285,10 +284,9 @@
   .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
   .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
   .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-.footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
-  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
-  .footer-logo-tag{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.22);font-family:'Inter',sans-serif;line-height:1;}
-.footer-links { display: flex; gap: 1.5rem; }
+  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
+  .footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
+  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--amber); }
 
@@ -359,13 +357,11 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-
-    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
-
+    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">â–¼</span></a>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/haccp-plan-development">HACCP Plan Development</a>
         <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -385,7 +381,7 @@
       </div>
     </li>
     <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">â–¼</span></a>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/food-safety-training-sydney">Food Safety Training</a>
         <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -397,7 +393,7 @@
       </div>
     </li>
     <li>
-      <a href="/blog">Blog <span class="nav-arrow">â–¼</span></a>
+      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/blog/haccp">HACCP Deep-Dive</a>
         <a href="/blog">All Articles</a>
@@ -411,7 +407,7 @@
       <a href="/pricing">Pricing</a>
     </li>
     <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">â–¼</span></a>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/suburb-directory">All Sydney</a>
         <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -422,19 +418,18 @@
     </li>
     <li><a href="/#about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="/">Home</a><span>â€º</span>Newcastle Food Safety Services</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span>Newcastle Food Safety Services</div>
     <div class="page-eyebrow">Local Expert: Newcastle</div>
     <h1>Food Safety &amp; HACCP Consultant <em>Newcastle</em></h1>
     <p class="page-hero-sub">Supporting local food manufacturers, cafes, and distributors in Newcastle. We deliver custom, NSW Food Authority-ready food safety programs and HACCP plans tailored to your specific business classification.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation â†—</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
       <a href="/pricing" class="btn-outline">View pricing</a>
     </div>
   </div>
@@ -467,7 +462,7 @@
       <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
         <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Teaching Credential</div>
         <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">TAFE NSW</div>
-        <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">Sessional lecturer in Food Science &amp; Technology. TAE Certificate IV in Training &amp; Assessment â€” nationally recognised training qualification.</div>
+        <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">Sessional lecturer in Food Science &amp; Technology. TAE Certificate IV in Training &amp; Assessment — nationally recognised training qualification.</div>
       </div>
       <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
         <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Technical Expertise</div>
@@ -491,7 +486,7 @@
     <p class="body-lead">Newcastle food businesses face regular NSW Food Authority audits. We make sure your documentation is complete and compliant.</p>
     <div class="includes-grid">
         <div class="include-item fade-up">
-          <div class="include-icon">ðŸ›</div>
+          <div class="include-icon">🏛</div>
           <div>
             <div class="include-title">Newcastle NSW Food Authority audit Prep</div>
             <div class="include-desc">Specialist support to prepare your kitchen and documentation for City of Newcastle environmental health inspections.</div>
@@ -581,7 +576,7 @@
     <h2>Need clear, actionable <em>food safety</em> advice?</h2>
     <p>We work directly with your business to construct robust quality structures, training platforms, and audit preparedness tools.</p>
     <div class="cta-strip-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Arrange a free consultation call â†—</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Arrange a free consultation call ↗</a>
       <a href="/pricing" class="btn-outline">View all services</a>
     </div>
   </div>
@@ -612,10 +607,10 @@
         <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin-bottom: 1rem;">Local Knowledge</div>
         <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem;">We Know Newcastle</h2>
         <p style="font-size: 0.95rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1rem;">
-          Newcastle is home to Hunter Street mall dining precinct, Newcastle Beach cafÃ© strip, Hunter Valley wine and food region, Honeysuckle waterfront restaurants, and the Newcastle East village. The area's hospitality, craft brewing, food tourism, wine tourism, food manufacturing sector operates under <strong>NSW Food Authority</strong> regulations â€” and we know exactly what local inspectors look for.
+          Newcastle is home to Hunter Street mall dining precinct, Newcastle Beach café strip, Hunter Valley wine and food region, Honeysuckle waterfront restaurants, and the Newcastle East village. The area's hospitality, craft brewing, food tourism, wine tourism, food manufacturing sector operates under <strong>NSW Food Authority</strong> regulations — and we know exactly what local inspectors look for.
         </p>
         <p style="font-size: 0.95rem; color: var(--ink-mid); line-height: 1.8;">
-          Newcastle's food scene has transformed dramatically â€” specialty coffee, craft beer, and destination dining alongside the Hunter Valley's wine tourism and food manufacturing base. AMES Food Advisory works on-site with local businesses to make sure your food safety documentation, HACCP plans, and staff training are ready before any NSW Food Authority audit.
+          Newcastle's food scene has transformed dramatically — specialty coffee, craft beer, and destination dining alongside the Hunter Valley's wine tourism and food manufacturing base. AMES Food Advisory works on-site with local businesses to make sure your food safety documentation, HACCP plans, and staff training are ready before any NSW Food Authority audit.
         </p>
       </div>
     </section>
@@ -623,16 +618,10 @@
 <footer><div class="footer-inner">
   <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-
-    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
-
+    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
-  <div class="footer-copy">Â© 2026 AMES Food Advisory Â· Sydney, NSW</div>
-  <div class="footer-phone">
-  <a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a>
-  <span class="footer-phone-divider">|</span>
-  <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
-</div>
+  <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
+    <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
   <div class="footer-links">
     <a href="/#services">Services</a>
     <a href="/suburb-directory">Locations</a>

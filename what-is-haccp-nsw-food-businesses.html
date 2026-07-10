@@ -33,13 +33,12 @@
   nav{background:var(--navy-deep);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,117,31,0.12);}
     .nav-logo { display: flex; align-items: center; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { display: none; }
-.nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
+  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
+  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
+  .nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
   .nav-links a{font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s;}
   .nav-links a:hover{color:var(--white);}
   .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.5rem 1.25rem!important;border-radius:6px;font-weight:600!important;}
-  .nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
   @media(max-width:768px){.nav-links{display:none;}}
 
   .article-hero{background:var(--navy-deep);padding:4rem 2rem 3rem;border-bottom:1px solid var(--border-amber);}
@@ -79,10 +78,9 @@
     .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
   .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
   .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
-  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
-.footer-logo-tag{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.22);font-family:'Inter',sans-serif;line-height:1;}
-.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
+  .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
+  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
   .footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
   .footer-links a:hover{color:var(--amber);}
   .nav-links > li { position: relative; }
@@ -122,13 +120,11 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-
-    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
-
+    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">â–¼</span></a>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/haccp-plan-development">HACCP Plan Development</a>
         <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -148,7 +144,7 @@
       </div>
     </li>
     <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">â–¼</span></a>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/food-safety-training-sydney">Food Safety Training</a>
         <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -160,7 +156,7 @@
       </div>
     </li>
     <li>
-      <a href="/blog">Blog <span class="nav-arrow">â–¼</span></a>
+      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/blog/haccp">HACCP Deep-Dive</a>
         <a href="/blog">All Articles</a>
@@ -174,7 +170,7 @@
       <a href="/pricing">Pricing</a>
     </li>
     <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">â–¼</span></a>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
       <div class="nav-drop">
         <a href="/suburb-directory">All Sydney</a>
         <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -185,8 +181,7 @@
     </li>
     <li><a href="/#about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
 
@@ -194,17 +189,17 @@
   <div class="article-hero-inner">
     <p class="eyebrow">NSW Food Safety Guide</p>
     <h1>What is HACCP and Do NSW Food Businesses Need It?</h1>
-    <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);max-width:580px;line-height:1.7;margin-top:0.75rem;">Plain-English explanation of HACCP â€” what it actually means, who is legally required to implement it in NSW, and what getting it right looks like in practice.</p>
-    <div class="hero-meta">Updated June 2026 Â· FSANZ Standard 3.2.1 Â· NSW Food Act 2003</div>
+    <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);max-width:580px;line-height:1.7;margin-top:0.75rem;">Plain-English explanation of HACCP — what it actually means, who is legally required to implement it in NSW, and what getting it right looks like in practice.</p>
+    <div class="hero-meta">Updated June 2026 · FSANZ Standard 3.2.1 · NSW Food Act 2003</div>
   </div>
 </section>
 
 <div class="article-body">
 
   <h2>HACCP in plain English</h2>
-  <p>HACCP stands for Hazard Analysis and Critical Control Points. It's a systematic, preventive approach to food safety â€” the idea being that you identify the points in your food handling process where something could go seriously wrong, and put specific controls in place at those points before anything actually goes wrong.</p>
+  <p>HACCP stands for Hazard Analysis and Critical Control Points. It's a systematic, preventive approach to food safety — the idea being that you identify the points in your food handling process where something could go seriously wrong, and put specific controls in place at those points before anything actually goes wrong.</p>
 
-  <p>It was developed by NASA and the Pillsbury Company in the 1960s to ensure food safety for space missions, and has since become the international standard for managing food safety hazards across every type of food business â€” from a small cafÃ© in Newtown to a large food manufacturer in Parramatta.</p>
+  <p>It was developed by NASA and the Pillsbury Company in the 1960s to ensure food safety for space missions, and has since become the international standard for managing food safety hazards across every type of food business — from a small café in Newtown to a large food manufacturer in Parramatta.</p>
 
   <p>The practical meaning: you systematically work through every step of how you handle food, identify what could make people sick at each step, decide which of those risks are serious enough to need a formal control measure, set a measurable limit for that control, and document that you're monitoring it.</p>
 
@@ -218,12 +213,12 @@
     <div class="principle-card">
       <div class="principle-num">Principle 2</div>
       <div class="principle-title">Identify Critical Control Points</div>
-      <div class="principle-desc">Determine which steps are essential to controlling a food safety hazard â€” where the hazard can be prevented, eliminated, or reduced to safe levels.</div>
+      <div class="principle-desc">Determine which steps are essential to controlling a food safety hazard — where the hazard can be prevented, eliminated, or reduced to safe levels.</div>
     </div>
     <div class="principle-card">
       <div class="principle-num">Principle 3</div>
       <div class="principle-title">Establish critical limits</div>
-      <div class="principle-desc">Set measurable limits at each CCP â€” e.g. cooking temperature must reach 75Â°C internal; cold storage must be held at â‰¤5Â°C.</div>
+      <div class="principle-desc">Set measurable limits at each CCP — e.g. cooking temperature must reach 75°C internal; cold storage must be held at ≤5°C.</div>
     </div>
     <div class="principle-card">
       <div class="principle-num">Principle 4</div>
@@ -233,12 +228,12 @@
     <div class="principle-card">
       <div class="principle-num">Principle 5</div>
       <div class="principle-title">Establish corrective actions</div>
-      <div class="principle-desc">Document exactly what happens when a critical limit is breached â€” what to do with the food, who to notify, and how to correct the process.</div>
+      <div class="principle-desc">Document exactly what happens when a critical limit is breached — what to do with the food, who to notify, and how to correct the process.</div>
     </div>
     <div class="principle-card">
       <div class="principle-num">Principle 6</div>
       <div class="principle-title">Establish verification procedures</div>
-      <div class="principle-desc">Confirm the system is working â€” through thermometer calibration records, internal audits, and periodic reviews of monitoring records.</div>
+      <div class="principle-desc">Confirm the system is working — through thermometer calibration records, internal audits, and periodic reviews of monitoring records.</div>
     </div>
     <div class="principle-card">
       <div class="principle-num">Principle 7</div>
@@ -248,7 +243,7 @@
   </div>
 
   <h2>Is HACCP legally required for NSW food businesses?</h2>
-  <p>Under FSANZ Standard 3.2.1, certain food businesses in NSW must implement a food safety management system based on HACCP principles â€” specifically a documented Food Safety Program. Not every food business has this obligation, but higher-risk businesses do.</p>
+  <p>Under FSANZ Standard 3.2.1, certain food businesses in NSW must implement a food safety management system based on HACCP principles — specifically a documented Food Safety Program. Not every food business has this obligation, but higher-risk businesses do.</p>
 
   <p>Businesses that are generally required to have a HACCP-based Food Safety Program in NSW include:</p>
   <ul>
@@ -263,18 +258,18 @@
   </div>
 
   <h2>What HACCP is not</h2>
-  <p>HACCP is not a certificate, a license, or something you can tick off and forget. It's an ongoing system â€” it requires regular monitoring, active record-keeping, and review when your operation changes. A HACCP plan written three years ago that's sitting in a drawer is not HACCP compliance.</p>
+  <p>HACCP is not a certificate, a license, or something you can tick off and forget. It's an ongoing system — it requires regular monitoring, active record-keeping, and review when your operation changes. A HACCP plan written three years ago that's sitting in a drawer is not HACCP compliance.</p>
 
-  <p>HACCP is also not the same as Standard 3.2.2A compliance (Food Safety Supervisor requirements) â€” that's a separate obligation that runs alongside your HACCP program, not instead of it.</p>
+  <p>HACCP is also not the same as Standard 3.2.2A compliance (Food Safety Supervisor requirements) — that's a separate obligation that runs alongside your HACCP program, not instead of it.</p>
 
-  <h2>HACCP for small food businesses â€” does it need to be complicated?</h2>
-  <p>No. The common mistake is over-engineering HACCP for a simple operation. A cafÃ© with a small kitchen does not need a 40-page HACCP study. What it needs is a clear, honest analysis of where things could go wrong, practical controls at those points, and evidence that staff are following the controls.</p>
+  <h2>HACCP for small food businesses — does it need to be complicated?</h2>
+  <p>No. The common mistake is over-engineering HACCP for a simple operation. A café with a small kitchen does not need a 40-page HACCP study. What it needs is a clear, honest analysis of where things could go wrong, practical controls at those points, and evidence that staff are following the controls.</p>
 
-  <p>A HACCP plan for a small NSW cafÃ© might have three CCPs: cooking temperature, cold storage temperature, and reheating. Three CCPs, properly monitored and documented, is more effective â€” and more defensible in front of a NSW Food Authority inspector â€” than 20 poorly defined CCPs with no monitoring records.</p>
+  <p>A HACCP plan for a small NSW café might have three CCPs: cooking temperature, cold storage temperature, and reheating. Three CCPs, properly monitored and documented, is more effective — and more defensible in front of a NSW Food Authority inspector — than 20 poorly defined CCPs with no monitoring records.</p>
 
   <div class="cta-inline">
     <h3>Need a HACCP plan developed for your business?</h3>
-    <p>AMES Food Advisory develops HACCP plans sized to your operation â€” not generic templates. Start with a free 20-minute scoping call.</p>
+    <p>AMES Food Advisory develops HACCP plans sized to your operation — not generic templates. Start with a free 20-minute scoping call.</p>
     <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book free scoping call</a>
     <a href="/pricing" class="btn-ghost">View packages</a>
   </div>
@@ -292,16 +287,10 @@
 <footer><div class="footer-inner">
   <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-
-    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
-
+    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
-  <div class="footer-copy">Â© 2026 AMES Food Advisory Â· Sydney, NSW</div>
-  <div class="footer-phone">
-  <a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a>
-  <span class="footer-phone-divider">|</span>
-  <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
-</div>
+  <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
+    <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
   <div class="footer-links">
     <a href="/pricing">Pricing</a>
     <a href="/#services">Services</a>

@@ -54,9 +54,9 @@
     display: flex; align-items: center; justify-content: space-between;
     position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(212,117,31,0.12);
   }
-  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
+  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
   .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
   .nav-links { display: flex; gap: 0; align-items: center; list-style: none; }
   .nav-links > li > a {
@@ -89,7 +89,7 @@
     font-weight: 600 !important; font-size: 0.8rem !important; margin-left: 0.5rem;
     transition: background 0.2s !important;
   }
-  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
+  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }.nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
   .nav-phone {
     font-size: 0.82rem; font-weight: 400;
     color: rgba(255,255,255,0.6); text-decoration: none; letter-spacing: 0.01em;
@@ -243,7 +243,6 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
   <ul class="nav-links">
     <li>
