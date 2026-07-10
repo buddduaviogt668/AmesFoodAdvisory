@@ -16,10 +16,10 @@
 html{scroll-behavior:smooth;}
 body{font-family:'Inter',sans-serif;background:var(--stone);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden;}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,117,31,0.15);padding:0 2rem;height:66px;display:flex;align-items:center;justify-content:space-between;}
-  .nav-logo { display: flex; align-items: center; text-decoration: none; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
+ .nav-logo { display: flex; align-items: center; text-decoration: none; }
+ .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
+ .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } 
+ .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
 .nav-links{display:flex;gap:1.75rem;align-items:center;list-style:none;}
 .nav-links a{text-decoration:none;font-size:0.855rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;transition:color 0.2s;}
 .nav-links a:hover{color:var(--white);}
@@ -84,315 +84,315 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.9
 .lm-cta-btn:hover{background:var(--amber-dim);}
 footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);padding:2.5rem 2rem;}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
-  .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
-  .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
-  .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
+ .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
+ .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
+ .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
+ .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
 .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links{display:flex;gap:1.5rem;}
 .footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
 .footer-links a:hover{color:var(--amber);}
 @media print{nav,.lm-hero,.lm-cta-strip,footer,.lm-actions,.lm-progress{display:none!important;}.lm-content{padding:0;max-width:100%;}body{background:white;}}
 @media(max-width:768px){.nav-links{display:none;}.lm-cta-strip{grid-template-columns:1fr;}.lm-content .sop-meta{grid-template-columns:1fr;}}
-  .nav-links > li { position: relative; }
-  .nav-links > li > a { padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem; }
-  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
-  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
-  .nav-drop {
-    position: absolute; top: 100%; left: 0; min-width: 210px;
-    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
-    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
-    padding: 0.5rem 0; opacity: 0; visibility: hidden;
-    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
-  }
-  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
-  .nav-drop a {
-    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
-    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
-  }
-  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
-  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
+ .nav-links > li { position: relative; }
+ .nav-links > li > a { padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem; }
+ .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+ .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+ .nav-drop {
+ position: absolute; top: 100%; left: 0; min-width: 210px;
+ background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+ border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+ padding: 0.5rem 0; opacity: 0; visibility: hidden;
+ transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+ }
+ .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+ .nav-drop a {
+ display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+ color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+ }
+ .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+ .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
 </style>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+ <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+ <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <script type="application/ld+json" id="org-schema">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AMES Food Advisory",
-  "url": "https://www.amesfoodadvisory.com.au",
-  "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
-  "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
-  "sameAs": [
-    "https://www.linkedin.com/company/ames-food-advisory",
-    "https://www.facebook.com/amesfoodadvisory",
-    "https://www.instagram.com/amesfoodadvisory"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "telephone": "+61-2-XXXX-XXXX",
-    "email": "ames.food.adv@gmail.com"
-  },
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "New South Wales",
-      "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
-    }
-  ],
-  "knowsAbout": [
-    "HACCP Plan Development",
-    "Food Safety Consulting",
-    "Staff Training",
-    "Internal Auditing",
-    "SOP Writing",
-    "Compliance Readiness",
-    "Food Safety Supervisor Certification"
-  ]
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
+ "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
+ "sameAs": [
+ "https://www.linkedin.com/company/ames-food-advisory",
+ "https://www.facebook.com/amesfoodadvisory",
+ "https://www.instagram.com/amesfoodadvisory"
+ ],
+ "contactPoint": {
+ "@type": "ContactPoint",
+ "contactType": "Customer Service",
+ "telephone": "+61-2-XXXX-XXXX",
+ "email": "ames.food.adv@gmail.com"
+ },
+ "areaServed": [
+ {
+ "@type": "State",
+ "name": "New South Wales",
+ "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
+ }
+ ],
+ "knowsAbout": [
+ "HACCP Plan Development",
+ "Food Safety Consulting",
+ "Staff Training",
+ "Internal Auditing",
+ "SOP Writing",
+ "Compliance Readiness",
+ "Food Safety Supervisor Certification"
+ ]
 }
 </script>
 <script type="application/ld+json" id="breadcrumb-schema">
 {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.amesfoodadvisory.com.au/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Free NSW Food Business Compliance Checklist \u2014 47 Points | AMES Food Advisory",
-      "item": "https://www.amesfoodadvisory.com.au/free-compliance-checklist-nsw"
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "Home",
+ "item": "https://www.amesfoodadvisory.com.au/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "Free NSW Food Business Compliance Checklist \u2014 47 Points | AMES Food Advisory",
+ "item": "https://www.amesfoodadvisory.com.au/free-compliance-checklist-nsw"
+ }
+ ]
 }
 </script>
 <link rel="stylesheet" href="/assets/lead-gate.css">
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-WE0FLYZLBP");
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag("js", new Date());
+ gtag("config", "G-WE0FLYZLBP");
 </script>
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/haccp-plan-development">HACCP Plan Development</a>
-        <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
-        <a href="/food-safety-training-sydney">Staff Training</a>
-        <a href="/sop-writing-food-businesses">SOP Writing</a>
-        <a href="/internal-auditing-services">Compliance Readiness</a>
-        <div class="drop-divider"></div>
-        <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
-        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
-        <a href="/food-business-startup-package">Start-Up Package</a>
-        <div class="drop-divider"></div>
-        <a href="/food-truck-food-safety-nsw">Food Trucks</a>
-        <a href="/catering-food-safety-nsw">Catering &amp; Events</a>
-        <a href="/bakery-food-safety-nsw">Bakeries</a>
-        <a href="/aged-care-food-safety-nsw">Aged Care</a>
-        <a href="/childcare-food-safety-nsw">Childcare</a>
-      </div>
-    </li>
-    <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/food-safety-training-sydney">Food Safety Training</a>
-        <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
-        <a href="/food-industry-workers-training">Industry Workers</a>
-        <a href="/online-food-safety-courses">Online Courses</a>
-        <a href="/lab-skills-training">Lab Skills</a>
-        <div class="drop-divider"></div>
-        <a href="/rto-resource-development">RTO Resource Development</a>
-      </div>
-    </li>
-    <li>
-      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/blog/haccp">HACCP Deep-Dive</a>
-        <a href="/blog">All Articles</a>
-        <div class="drop-divider"></div>
-        <a href="/free-resources">Free Resources</a>
-        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
-        <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
-      </div>
-    </li>
-    <li>
-      <a href="/pricing">Pricing</a>
-    </li>
-    <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/suburb-directory">All Sydney</a>
-        <a href="/food-safety-consultant-surry-hills">CBD</a>
-        <a href="/food-safety-consultant-marrickville">Inner West</a>
-        <a href="/food-safety-consultant-parramatta">Parramatta</a>
-        <a href="/food-safety-consultant-chatswood">North Shore</a>
-      </div>
-    </li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
-  </ul>
+ <a href="/" class="nav-logo">
+ <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+ <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ </a>
+ <ul class="nav-links">
+ <li>
+ <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/haccp-plan-development">HACCP Plan Development</a>
+ <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+ <a href="/food-safety-training-sydney">Staff Training</a>
+ <a href="/sop-writing-food-businesses">SOP Writing</a>
+ <a href="/internal-auditing-services">Compliance Readiness</a>
+ <div class="drop-divider"></div>
+ <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+ <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+ <a href="/food-business-startup-package">Start-Up Package</a>
+ <div class="drop-divider"></div>
+ <a href="/food-truck-food-safety-nsw">Food Trucks</a>
+ <a href="/catering-food-safety-nsw">Catering &amp; Events</a>
+ <a href="/bakery-food-safety-nsw">Bakeries</a>
+ <a href="/aged-care-food-safety-nsw">Aged Care</a>
+ <a href="/childcare-food-safety-nsw">Childcare</a>
+ </div>
+ </li>
+ <li>
+ <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/food-safety-training-sydney">Food Safety Training</a>
+ <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+ <a href="/food-industry-workers-training">Industry Workers</a>
+ <a href="/online-food-safety-courses">Online Courses</a>
+ <a href="/lab-skills-training">Lab Skills</a>
+ <div class="drop-divider"></div>
+ <a href="/rto-resource-development">RTO Resource Development</a>
+ </div>
+ </li>
+ <li>
+ <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/blog/haccp">HACCP Deep-Dive</a>
+ <a href="/blog">All Articles</a>
+ <div class="drop-divider"></div>
+ <a href="/free-resources">Free Resources</a>
+ <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+ <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+ </div>
+ </li>
+ <li>
+ <a href="/pricing">Pricing</a>
+ </li>
+ <li>
+ <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/suburb-directory">All Sydney</a>
+ <a href="/food-safety-consultant-surry-hills">CBD</a>
+ <a href="/food-safety-consultant-marrickville">Inner West</a>
+ <a href="/food-safety-consultant-parramatta">Parramatta</a>
+ <a href="/food-safety-consultant-chatswood">North Shore</a>
+ </div>
+ </li>
+ <li><a href="/#about">About</a></li>
+ <li><a href="/contact">Contact</a></li>
+ <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+ </ul>
 </nav>
 <div class="lm-hero">
-  <div class="lm-hero-inner">
-    <div class="lm-badge">&#8595; Free Download &middot; NSW Food Safety</div>
-    <h1>NSW Food Business <em>Compliance Checklist</em></h1>
-    <p class="lm-hero-sub">47 essential checkpoints covering the NSW Food Act 2003, FSANZ Food Standards Code, and NSW Food Authority audit readiness. Tick off each item — then fix the gaps.</p>
-    <div class="lm-actions">
-      <button class="btn-print" onclick="showLeadGate('print', document.title)">&#9113; Print / Save as PDF</button>
-      <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="btn-back">Talk to an expert &rarr;</a>
-    </div>
-  </div>
+ <div class="lm-hero-inner">
+ <div class="lm-badge">&#8595; Free Download &middot; NSW Food Safety</div>
+ <h1>NSW Food Business <em>Compliance Checklist</em></h1>
+ <p class="lm-hero-sub">47 essential checkpoints covering the NSW Food Act 2003, FSANZ Food Standards Code, and NSW Food Authority audit readiness. Tick off each item — then fix the gaps.</p>
+ <div class="lm-actions">
+ <button class="btn-print" onclick="showLeadGate('print', document.title)">&#9113; Print / Save as PDF</button>
+ <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="btn-back">Talk to an expert &rarr;</a>
+ </div>
+ </div>
 </div>
 <div class="lm-content">
-  <div class="lm-progress">
-    <span class="lm-progress-label">Completion</span>
-    <div class="lm-progress-bar"><div class="lm-progress-fill" id="prog-fill"></div></div>
-    <span class="lm-progress-count" id="prog-count">0 / 0</span>
-  </div>
-  <div class="source"><strong>Regulatory Basis</strong>NSW Food Act 2003 &middot; FSANZ Food Standards Code &middot; NSW Food Authority Requirements &middot; NSW Food Authority Guidelines</div>
+ <div class="lm-progress">
+ <span class="lm-progress-label">Completion</span>
+ <div class="lm-progress-bar"><div class="lm-progress-fill" id="prog-fill"></div></div>
+ <span class="lm-progress-count" id="prog-count">0 / 0</span>
+ </div>
+ <div class="source"><strong>Regulatory Basis</strong>NSW Food Act 2003 &middot; FSANZ Food Standards Code &middot; NSW Food Authority Requirements &middot; NSW Food Authority Guidelines</div>
 
-  <div class="section">
-    <div class="section-title">1. Business Registration &amp; Licencing</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food business notification submitted</strong> to your NSW Food Authority under the NSW Food Act 2003. <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food Authority licence obtained</strong> (if operating in a licensed sector &mdash; meat, seafood, dairy, egg, plant products, or vulnerable persons). <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Business ABN registered</strong> and listed on all food business documents.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Trade waste agreement</strong> in place with NSW Food Authority or water authority.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Development Application (DA) approved</strong> for food premises fitout if applicable.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">1. Business Registration &amp; Licencing</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food business notification submitted</strong> to your NSW Food Authority under the NSW Food Act 2003. <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food Authority licence obtained</strong> (if operating in a licensed sector &mdash; meat, seafood, dairy, egg, plant products, or vulnerable persons). <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Business ABN registered</strong> and listed on all food business documents.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Trade waste agreement</strong> in place with NSW Food Authority or water authority.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Development Application (DA) approved</strong> for food premises fitout if applicable.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">2. Food Safety Supervisor &amp; Staff Training</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food Safety Supervisor (FSS) appointed</strong> and certificate is current (renewed every 5 years). <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSS certificate displayed</strong> or available for inspection at the premises.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>All food handlers trained</strong> in food safety fundamentals (food hygiene, temperature control, cross-contamination). <span class="priority-med">MED</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Training records maintained</strong> for all staff including induction dates and course certificates.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Illness and injury reporting procedure</strong> communicated to all food handlers.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">2. Food Safety Supervisor &amp; Staff Training</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food Safety Supervisor (FSS) appointed</strong> and certificate is current (renewed every 5 years). <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSS certificate displayed</strong> or available for inspection at the premises.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>All food handlers trained</strong> in food safety fundamentals (food hygiene, temperature control, cross-contamination). <span class="priority-med">MED</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Training records maintained</strong> for all staff including induction dates and course certificates.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Illness and injury reporting procedure</strong> communicated to all food handlers.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">3. Food Safety Program (FSP / HACCP)</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Written Food Safety Program in place</strong> (mandatory for Class 1 &amp; 2 businesses). <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Hazard analysis completed</strong> &mdash; biological, chemical, and physical hazards identified for each process step.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Critical Control Points (CCPs) identified</strong> with documented critical limits (e.g. cook to 75&deg;C core temp).</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Monitoring procedures documented</strong> &mdash; who checks, how often, what records are kept. <span class="priority-med">MED</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Corrective action procedures documented</strong> for each CCP deviation.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSP reviewed annually</strong> or when process/menu changes occur.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSP accessible on-site</strong> and available for inspection.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">3. Food Safety Program (FSP / HACCP)</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Written Food Safety Program in place</strong> (mandatory for Class 1 &amp; 2 businesses). <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Hazard analysis completed</strong> &mdash; biological, chemical, and physical hazards identified for each process step.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Critical Control Points (CCPs) identified</strong> with documented critical limits (e.g. cook to 75&deg;C core temp).</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Monitoring procedures documented</strong> &mdash; who checks, how often, what records are kept. <span class="priority-med">MED</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Corrective action procedures documented</strong> for each CCP deviation.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSP reviewed annually</strong> or when process/menu changes occur.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>FSP accessible on-site</strong> and available for inspection.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">4. Temperature Control</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cold storage maintained at 5&deg;C or below.</strong> Fridge temperatures checked and recorded daily. <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Hot holding maintained at 60&deg;C or above.</strong> Temperature checked and recorded every 2 hours.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Calibrated probe thermometer available</strong> and used for cooking and cooling verification.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cooling procedure documented</strong> &mdash; food cooled from 60&deg;C to 21&deg;C within 2 hours, then to 5&deg;C within next 4 hours. <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Temperature logs retained</strong> for minimum 3 months and available on request.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Freezer temperature maintained at &minus;15&deg;C or below.</strong></div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">4. Temperature Control</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cold storage maintained at 5&deg;C or below.</strong> Fridge temperatures checked and recorded daily. <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Hot holding maintained at 60&deg;C or above.</strong> Temperature checked and recorded every 2 hours.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Calibrated probe thermometer available</strong> and used for cooking and cooling verification.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cooling procedure documented</strong> &mdash; food cooled from 60&deg;C to 21&deg;C within 2 hours, then to 5&deg;C within next 4 hours. <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Temperature logs retained</strong> for minimum 3 months and available on request.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Freezer temperature maintained at &minus;15&deg;C or below.</strong></div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">5. Cleaning &amp; Sanitation</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cleaning schedule documented</strong> &mdash; daily, weekly, and periodic tasks listed with responsible persons. <span class="priority-med">MED</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food-safe sanitisers used at correct dilution.</strong> Dilution rates posted at handwash and cleaning stations.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cleaning records signed off</strong> and retained for minimum 3 months.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Separate colour-coded chopping boards</strong> for different food types (raw meat, produce, ready-to-eat).</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Chemical storage separated</strong> from food storage, preparation, and service areas.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Handwashing facilities adequate</strong> &mdash; dedicated hand basin with hot/cold water, soap, and paper towels at each prep area.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">5. Cleaning &amp; Sanitation</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cleaning schedule documented</strong> &mdash; daily, weekly, and periodic tasks listed with responsible persons. <span class="priority-med">MED</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Food-safe sanitisers used at correct dilution.</strong> Dilution rates posted at handwash and cleaning stations.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Cleaning records signed off</strong> and retained for minimum 3 months.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Separate colour-coded chopping boards</strong> for different food types (raw meat, produce, ready-to-eat).</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Chemical storage separated</strong> from food storage, preparation, and service areas.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Handwashing facilities adequate</strong> &mdash; dedicated hand basin with hot/cold water, soap, and paper towels at each prep area.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">6. Allergen Management</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>14 FSANZ priority allergens identified</strong> in all menu items and documented. <span class="priority-high">HIGH</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Allergen information communicated to customers</strong> accurately &mdash; menus, verbal, or written on request.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Allergen cross-contact procedures documented</strong> and staff trained on them.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Supplier ingredient specifications checked</strong> for each ingredient to confirm allergen content.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">6. Allergen Management</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>14 FSANZ priority allergens identified</strong> in all menu items and documented. <span class="priority-high">HIGH</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Allergen information communicated to customers</strong> accurately &mdash; menus, verbal, or written on request.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Allergen cross-contact procedures documented</strong> and staff trained on them.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Supplier ingredient specifications checked</strong> for each ingredient to confirm allergen content.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">7. Pest Control</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Pest control contract in place</strong> with a licensed pest controller. <span class="priority-med">MED</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Pest control service reports retained</strong> and available on-site.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Entry points sealed</strong> &mdash; gaps around pipes, doors, and windows checked and sealed.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>No evidence of pest activity</strong> &mdash; staff trained to report signs immediately.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">7. Pest Control</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Pest control contract in place</strong> with a licensed pest controller. <span class="priority-med">MED</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Pest control service reports retained</strong> and available on-site.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Entry points sealed</strong> &mdash; gaps around pipes, doors, and windows checked and sealed.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>No evidence of pest activity</strong> &mdash; staff trained to report signs immediately.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">8. Waste Management</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Waste bins lidded and pest-proof,</strong> cleaned regularly.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Waste removed from food prep areas frequently</strong> &mdash; at least daily.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Grease trap maintained</strong> and serviced as per NSW Food Authority requirements.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">8. Waste Management</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Waste bins lidded and pest-proof,</strong> cleaned regularly.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Waste removed from food prep areas frequently</strong> &mdash; at least daily.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Grease trap maintained</strong> and serviced as per NSW Food Authority requirements.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">9. Supplier &amp; Traceability</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Approved supplier list maintained</strong> &mdash; only licensed and reputable suppliers used. <span class="priority-med">MED</span></div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Delivery records retained</strong> &mdash; date, supplier, product, temperature on receipt.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Batch/lot numbers recorded</strong> for high-risk ingredients to support recalls if needed.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Recall/withdrawal procedure documented</strong> and staff aware of it.</div></div>
-  </div>
+ <div class="section">
+ <div class="section-title">9. Supplier &amp; Traceability</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Approved supplier list maintained</strong> &mdash; only licensed and reputable suppliers used. <span class="priority-med">MED</span></div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Delivery records retained</strong> &mdash; date, supplier, product, temperature on receipt.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Batch/lot numbers recorded</strong> for high-risk ingredients to support recalls if needed.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Recall/withdrawal procedure documented</strong> and staff aware of it.</div></div>
+ </div>
 
-  <div class="section">
-    <div class="section-title">10. Premises &amp; Equipment</div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Floors, walls, and ceilings smooth and cleanable</strong> in food preparation areas.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Adequate lighting in all food areas</strong> (minimum 240 lux at food prep surfaces).</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Ventilation adequate</strong> &mdash; no condensation dripping onto food or surfaces.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Equipment maintained and in good repair</strong> &mdash; no rust, cracks, or damage that could contaminate food.</div></div>
-    <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>First aid kit available</strong> on premises.</div></div>
-  </div>
-  <div class="lm-cta-strip">
-    <div><h3>Gaps found in this checklist?</h3><p>AMES Food Advisory helps you close them — FSP writing, HACCP plans, staff training, and audit preparation across Sydney.</p></div>
-    <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="lm-cta-btn">Book a free call &rarr;</a>
-  </div>
+ <div class="section">
+ <div class="section-title">10. Premises &amp; Equipment</div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Floors, walls, and ceilings smooth and cleanable</strong> in food preparation areas.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Adequate lighting in all food areas</strong> (minimum 240 lux at food prep surfaces).</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Ventilation adequate</strong> &mdash; no condensation dripping onto food or surfaces.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>Equipment maintained and in good repair</strong> &mdash; no rust, cracks, or damage that could contaminate food.</div></div>
+ <div class="checklist-item"><div class="checkbox"></div><div class="item-text"><strong>First aid kit available</strong> on premises.</div></div>
+ </div>
+ <div class="lm-cta-strip">
+ <div><h3>Gaps found in this checklist?</h3><p>AMES Food Advisory helps you close them — FSP writing, HACCP plans, staff training, and audit preparation across Sydney.</p></div>
+ <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="lm-cta-btn">Book a free call &rarr;</a>
+ </div>
 </div>
 <footer><div class="footer-inner">
-  <a href="/" class="footer-logo">
-    <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
-    <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
-  <div class="footer-links">
-    <a href="/#services">Services</a>
-    <a href="/suburb-directory">Locations</a>
-    <a href="/free-resources">Free Resources</a>
-    <a href="/#about">About</a>
-    <a href="/#contact">Contact</a>
-    <a href="/privacy-policy">Privacy</a>
-    <a href="/terms-of-service">Terms</a>
-  </div>
+ <a href="/" class="footer-logo">
+ <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
+ <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ </a>
+ <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
+ <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+ <div class="footer-links">
+ <a href="/#services">Services</a>
+ <a href="/suburb-directory">Locations</a>
+ <a href="/free-resources">Free Resources</a>
+ <a href="/#about">About</a>
+ <a href="/#contact">Contact</a>
+ <a href="/privacy-policy">Privacy</a>
+ <a href="/terms-of-service">Terms</a>
+ </div>
 </div></footer>
 <script>
 function updateProgress(){
-  var boxes=document.querySelectorAll('.checkbox');
-  var checked=document.querySelectorAll('.checkbox.checked').length;
-  var total=boxes.length;
-  var pct=total?Math.round(checked/total*100):0;
-  document.getElementById('prog-fill').style.width=pct+'%';
-  document.getElementById('prog-count').textContent=checked+' / '+total+' ('+pct+'%)';
+ var boxes=document.querySelectorAll('.checkbox');
+ var checked=document.querySelectorAll('.checkbox.checked').length;
+ var total=boxes.length;
+ var pct=total?Math.round(checked/total*100):0;
+ document.getElementById('prog-fill').style.width=pct+'%';
+ document.getElementById('prog-count').textContent=checked+' / '+total+' ('+pct+'%)';
 }
 document.addEventListener('click',function(e){
-  var box=e.target.closest('.checkbox');
-  if(box){box.classList.toggle('checked');updateProgress();}
+ var box=e.target.closest('.checkbox');
+ if(box){box.classList.toggle('checked');updateProgress();}
 });
 updateProgress();
 </script>

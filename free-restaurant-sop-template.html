@@ -16,10 +16,10 @@
 html{scroll-behavior:smooth;}
 body{font-family:'Inter',sans-serif;background:var(--stone);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden;}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,117,31,0.15);padding:0 2rem;height:66px;display:flex;align-items:center;justify-content:space-between;}
-  .nav-logo { display: flex; align-items: center; text-decoration: none; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
+ .nav-logo { display: flex; align-items: center; text-decoration: none; }
+ .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
+ .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } 
+ .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
 .nav-links{display:flex;gap:1.75rem;align-items:center;list-style:none;}
 .nav-links a{text-decoration:none;font-size:0.855rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;transition:color 0.2s;}
 .nav-links a:hover{color:var(--white);}
@@ -84,359 +84,359 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,0.9
 .lm-cta-btn:hover{background:var(--amber-dim);}
 footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);padding:2.5rem 2rem;}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
-  .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
-  .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
-  .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
+ .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
+ .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
+ .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
+ .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
 .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links{display:flex;gap:1.5rem;}
 .footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
 .footer-links a:hover{color:var(--amber);}
 @media print{nav,.lm-hero,.lm-cta-strip,footer,.lm-actions,.lm-progress{display:none!important;}.lm-content{padding:0;max-width:100%;}body{background:white;}}
 @media(max-width:768px){.nav-links{display:none;}.lm-cta-strip{grid-template-columns:1fr;}.lm-content .sop-meta{grid-template-columns:1fr;}}
-  .nav-links > li { position: relative; }
-  .nav-links > li > a { padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem; }
-  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
-  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
-  .nav-drop {
-    position: absolute; top: 100%; left: 0; min-width: 210px;
-    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
-    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
-    padding: 0.5rem 0; opacity: 0; visibility: hidden;
-    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
-  }
-  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
-  .nav-drop a {
-    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
-    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
-  }
-  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
-  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
+ .nav-links > li { position: relative; }
+ .nav-links > li > a { padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem; }
+ .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+ .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+ .nav-drop {
+ position: absolute; top: 100%; left: 0; min-width: 210px;
+ background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+ border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+ padding: 0.5rem 0; opacity: 0; visibility: hidden;
+ transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+ }
+ .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+ .nav-drop a {
+ display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+ color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+ }
+ .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+ .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
 </style>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+ <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+ <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <script type="application/ld+json" id="org-schema">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AMES Food Advisory",
-  "url": "https://www.amesfoodadvisory.com.au",
-  "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
-  "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
-  "sameAs": [
-    "https://www.linkedin.com/company/ames-food-advisory",
-    "https://www.facebook.com/amesfoodadvisory",
-    "https://www.instagram.com/amesfoodadvisory"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "telephone": "+61-2-XXXX-XXXX",
-    "email": "ames.food.adv@gmail.com"
-  },
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "New South Wales",
-      "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
-    }
-  ],
-  "knowsAbout": [
-    "HACCP Plan Development",
-    "Food Safety Consulting",
-    "Staff Training",
-    "Internal Auditing",
-    "SOP Writing",
-    "Compliance Readiness",
-    "Food Safety Supervisor Certification"
-  ]
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "logo": "https://www.amesfoodadvisory.com.au/assets/logo-dark-bg.png",
+ "description": "NSW Food Authority Compliance Specialists - Fixed-Price HACCP Plans & Food Safety Consulting",
+ "sameAs": [
+ "https://www.linkedin.com/company/ames-food-advisory",
+ "https://www.facebook.com/amesfoodadvisory",
+ "https://www.instagram.com/amesfoodadvisory"
+ ],
+ "contactPoint": {
+ "@type": "ContactPoint",
+ "contactType": "Customer Service",
+ "telephone": "+61-2-XXXX-XXXX",
+ "email": "ames.food.adv@gmail.com"
+ },
+ "areaServed": [
+ {
+ "@type": "State",
+ "name": "New South Wales",
+ "url": "https://www.amesfoodadvisory.com.au/suburb-directory"
+ }
+ ],
+ "knowsAbout": [
+ "HACCP Plan Development",
+ "Food Safety Consulting",
+ "Staff Training",
+ "Internal Auditing",
+ "SOP Writing",
+ "Compliance Readiness",
+ "Food Safety Supervisor Certification"
+ ]
 }
 </script>
 <script type="application/ld+json" id="breadcrumb-schema">
 {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.amesfoodadvisory.com.au/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Free Restaurant Food Safety SOP Template | AMES Food Advisory",
-      "item": "https://www.amesfoodadvisory.com.au/free-restaurant-sop-template"
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "Home",
+ "item": "https://www.amesfoodadvisory.com.au/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "Free Restaurant Food Safety SOP Template | AMES Food Advisory",
+ "item": "https://www.amesfoodadvisory.com.au/free-restaurant-sop-template"
+ }
+ ]
 }
 </script>
 <link rel="stylesheet" href="/assets/lead-gate.css">
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-WE0FLYZLBP");
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag("js", new Date());
+ gtag("config", "G-WE0FLYZLBP");
 </script>
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/haccp-plan-development">HACCP Plan Development</a>
-        <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
-        <a href="/food-safety-training-sydney">Staff Training</a>
-        <a href="/sop-writing-food-businesses">SOP Writing</a>
-        <a href="/internal-auditing-services">Compliance Readiness</a>
-        <div class="drop-divider"></div>
-        <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
-        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
-        <a href="/food-business-startup-package">Start-Up Package</a>
-        <div class="drop-divider"></div>
-        <a href="/food-truck-food-safety-nsw">Food Trucks</a>
-        <a href="/catering-food-safety-nsw">Catering &amp; Events</a>
-        <a href="/bakery-food-safety-nsw">Bakeries</a>
-        <a href="/aged-care-food-safety-nsw">Aged Care</a>
-        <a href="/childcare-food-safety-nsw">Childcare</a>
-      </div>
-    </li>
-    <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/food-safety-training-sydney">Food Safety Training</a>
-        <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
-        <a href="/food-industry-workers-training">Industry Workers</a>
-        <a href="/online-food-safety-courses">Online Courses</a>
-        <a href="/lab-skills-training">Lab Skills</a>
-        <div class="drop-divider"></div>
-        <a href="/rto-resource-development">RTO Resource Development</a>
-      </div>
-    </li>
-    <li>
-      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/blog/haccp">HACCP Deep-Dive</a>
-        <a href="/blog">All Articles</a>
-        <div class="drop-divider"></div>
-        <a href="/free-resources">Free Resources</a>
-        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
-        <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
-      </div>
-    </li>
-    <li>
-      <a href="/pricing">Pricing</a>
-    </li>
-    <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/suburb-directory">All Sydney</a>
-        <a href="/food-safety-consultant-surry-hills">CBD</a>
-        <a href="/food-safety-consultant-marrickville">Inner West</a>
-        <a href="/food-safety-consultant-parramatta">Parramatta</a>
-        <a href="/food-safety-consultant-chatswood">North Shore</a>
-      </div>
-    </li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
-  </ul>
+ <a href="/" class="nav-logo">
+ <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+ <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ </a>
+ <ul class="nav-links">
+ <li>
+ <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/haccp-plan-development">HACCP Plan Development</a>
+ <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+ <a href="/food-safety-training-sydney">Staff Training</a>
+ <a href="/sop-writing-food-businesses">SOP Writing</a>
+ <a href="/internal-auditing-services">Compliance Readiness</a>
+ <div class="drop-divider"></div>
+ <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+ <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+ <a href="/food-business-startup-package">Start-Up Package</a>
+ <div class="drop-divider"></div>
+ <a href="/food-truck-food-safety-nsw">Food Trucks</a>
+ <a href="/catering-food-safety-nsw">Catering &amp; Events</a>
+ <a href="/bakery-food-safety-nsw">Bakeries</a>
+ <a href="/aged-care-food-safety-nsw">Aged Care</a>
+ <a href="/childcare-food-safety-nsw">Childcare</a>
+ </div>
+ </li>
+ <li>
+ <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/food-safety-training-sydney">Food Safety Training</a>
+ <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+ <a href="/food-industry-workers-training">Industry Workers</a>
+ <a href="/online-food-safety-courses">Online Courses</a>
+ <a href="/lab-skills-training">Lab Skills</a>
+ <div class="drop-divider"></div>
+ <a href="/rto-resource-development">RTO Resource Development</a>
+ </div>
+ </li>
+ <li>
+ <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/blog/haccp">HACCP Deep-Dive</a>
+ <a href="/blog">All Articles</a>
+ <div class="drop-divider"></div>
+ <a href="/free-resources">Free Resources</a>
+ <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+ <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+ </div>
+ </li>
+ <li>
+ <a href="/pricing">Pricing</a>
+ </li>
+ <li>
+ <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+ <div class="nav-drop">
+ <a href="/suburb-directory">All Sydney</a>
+ <a href="/food-safety-consultant-surry-hills">CBD</a>
+ <a href="/food-safety-consultant-marrickville">Inner West</a>
+ <a href="/food-safety-consultant-parramatta">Parramatta</a>
+ <a href="/food-safety-consultant-chatswood">North Shore</a>
+ </div>
+ </li>
+ <li><a href="/#about">About</a></li>
+ <li><a href="/contact">Contact</a></li>
+ <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+ </ul>
 </nav>
 <div class="lm-hero">
-  <div class="lm-hero-inner">
-    <div class="lm-badge">&#8595; Free Download &middot; NSW Food Safety</div>
-    <h1>Restaurant Food Safety <em>SOP Template</em></h1>
-    <p class="lm-hero-sub">Ready-to-customise standard operating procedures for food service businesses. Fill in your venue details, assign responsibilities, and post at your stations.</p>
-    <div class="lm-actions">
-      <button class="btn-print" onclick="showLeadGate('print', document.title)">&#9113; Print / Save as PDF</button>
-      <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="btn-back">Talk to an expert &rarr;</a>
-    </div>
-  </div>
+ <div class="lm-hero-inner">
+ <div class="lm-badge">&#8595; Free Download &middot; NSW Food Safety</div>
+ <h1>Restaurant Food Safety <em>SOP Template</em></h1>
+ <p class="lm-hero-sub">Ready-to-customise standard operating procedures for food service businesses. Fill in your venue details, assign responsibilities, and post at your stations.</p>
+ <div class="lm-actions">
+ <button class="btn-print" onclick="showLeadGate('print', document.title)">&#9113; Print / Save as PDF</button>
+ <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="btn-back">Talk to an expert &rarr;</a>
+ </div>
+ </div>
 </div>
 <div class="lm-content">
-  <div class="lm-progress">
-    <span class="lm-progress-label">Completion</span>
-    <div class="lm-progress-bar"><div class="lm-progress-fill" id="prog-fill"></div></div>
-    <span class="lm-progress-count" id="prog-count">0 / 0</span>
-  </div>
-  <div class="intro-box">
-    <h3>How to Use This Template</h3>
-    <p>Complete the shaded fields with your business details. Assign a responsible person for each SOP. Post relevant SOPs at the appropriate workstation. Review all SOPs annually or whenever processes change.</p>
-    <p><strong>Business Name:</strong> <input type="text" placeholder="Enter your business name"> &nbsp;&nbsp; <strong>Last Reviewed:</strong> <input type="date" style="width:auto;"></p>
-  </div>
+ <div class="lm-progress">
+ <span class="lm-progress-label">Completion</span>
+ <div class="lm-progress-bar"><div class="lm-progress-fill" id="prog-fill"></div></div>
+ <span class="lm-progress-count" id="prog-count">0 / 0</span>
+ </div>
+ <div class="intro-box">
+ <h3>How to Use This Template</h3>
+ <p>Complete the shaded fields with your business details. Assign a responsible person for each SOP. Post relevant SOPs at the appropriate workstation. Review all SOPs annually or whenever processes change.</p>
+ <p><strong>Business Name:</strong> <input type="text" placeholder="Enter your business name"> &nbsp;&nbsp; <strong>Last Reviewed:</strong> <input type="date" style="width:auto;"></p>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 01 &mdash; Receiving &amp; Inspecting Deliveries</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Every delivery</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Delivery log, temperature record</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Check vehicle hygiene and driver compliance before unloading.</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>Inspect packaging for damage, leaks, or tampering. Reject damaged goods.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Probe-check temperature of chilled goods (&le;5&deg;C) and frozen goods (&le;&minus;15&deg;C) using calibrated thermometer.</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Check use-by / best-before dates. Reject anything past date or with insufficient shelf life.</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>Record delivery details: date, time, supplier, product, temperature, condition, accepted/rejected.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>Store immediately in correct temperature zone &mdash; chilled goods within 15 minutes of receipt.</span></div>
-      <div class="sop-step"><span class="sop-step-num">7.</span><span>Apply FIFO (First In, First Out) &mdash; rotate stock so older items are used first.</span></div>
-    </div>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 01 &mdash; Receiving &amp; Inspecting Deliveries</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Every delivery</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Delivery log, temperature record</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Check vehicle hygiene and driver compliance before unloading.</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>Inspect packaging for damage, leaks, or tampering. Reject damaged goods.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Probe-check temperature of chilled goods (&le;5&deg;C) and frozen goods (&le;&minus;15&deg;C) using calibrated thermometer.</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Check use-by / best-before dates. Reject anything past date or with insufficient shelf life.</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>Record delivery details: date, time, supplier, product, temperature, condition, accepted/rejected.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>Store immediately in correct temperature zone &mdash; chilled goods within 15 minutes of receipt.</span></div>
+ <div class="sop-step"><span class="sop-step-num">7.</span><span>Apply FIFO (First In, First Out) &mdash; rotate stock so older items are used first.</span></div>
+ </div>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 02 &mdash; Temperature Monitoring &amp; Recording</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Min. twice daily</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Temperature log</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Check all refrigerators at opening and before service. Target: &le;5&deg;C. Corrective action if &gt;8&deg;C.</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>Check hot holding equipment. Target: &ge;60&deg;C. Corrective action if &lt;57&deg;C for &gt;30 min.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Record all readings on the temperature monitoring log with time and initials.</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Calibrate probe thermometer weekly using ice slurry (0&deg;C &plusmn;1) and boiling water (100&deg;C &plusmn;1).</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>If equipment fails temperature targets, place out of service, transfer food, and notify manager immediately.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>Retain temperature logs for minimum 3 months.</span></div>
-    </div>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 02 &mdash; Temperature Monitoring &amp; Recording</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Min. twice daily</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Temperature log</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Check all refrigerators at opening and before service. Target: &le;5&deg;C. Corrective action if &gt;8&deg;C.</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>Check hot holding equipment. Target: &ge;60&deg;C. Corrective action if &lt;57&deg;C for &gt;30 min.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Record all readings on the temperature monitoring log with time and initials.</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Calibrate probe thermometer weekly using ice slurry (0&deg;C &plusmn;1) and boiling water (100&deg;C &plusmn;1).</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>If equipment fails temperature targets, place out of service, transfer food, and notify manager immediately.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>Retain temperature logs for minimum 3 months.</span></div>
+ </div>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 03 &mdash; Cooking &amp; Reheating</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Every cooking/reheating event</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Cooking temperature log</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Cook all poultry, minced meat, and stuffed meats to minimum internal temperature of 75&deg;C (measured at thickest point).</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>Cook whole cuts of beef, pork, and lamb to minimum 63&deg;C (with 3-minute rest) unless customer requests otherwise.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Reheat all previously cooked food to minimum 75&deg;C throughout &mdash; never reheat more than once.</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Probe at multiple points for thick items. Wipe and sanitise thermometer probe between uses.</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>Record: food item, target temp, actual temp, time, and initials.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>Do not serve food that has not reached the required internal temperature &mdash; return to heat.</span></div>
-    </div>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 03 &mdash; Cooking &amp; Reheating</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Every cooking/reheating event</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Cooking temperature log</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Cook all poultry, minced meat, and stuffed meats to minimum internal temperature of 75&deg;C (measured at thickest point).</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>Cook whole cuts of beef, pork, and lamb to minimum 63&deg;C (with 3-minute rest) unless customer requests otherwise.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Reheat all previously cooked food to minimum 75&deg;C throughout &mdash; never reheat more than once.</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Probe at multiple points for thick items. Wipe and sanitise thermometer probe between uses.</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>Record: food item, target temp, actual temp, time, and initials.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>Do not serve food that has not reached the required internal temperature &mdash; return to heat.</span></div>
+ </div>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 04 &mdash; Cooling Cooked Food</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Every cooling event</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Cooling log</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Remove food from heat. Divide into shallow containers (max 10cm depth) to speed cooling.</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>Cool from 60&deg;C to 21&deg;C within 2 hours. Methods: blast chiller, ice bath, shallow pans.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Cool from 21&deg;C to 5&deg;C within a further 4 hours. Total cooling time must not exceed 6 hours.</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Record start temperature, intermediate temperature (at 2 hrs), and final temperature with times.</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>Discard any food that has not cooled within the required timeframe.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>Label cooled food with date and time. Store covered, labelled, and dated.</span></div>
-    </div>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 04 &mdash; Cooling Cooked Food</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Every cooling event</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Cooling log</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Remove food from heat. Divide into shallow containers (max 10cm depth) to speed cooling.</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>Cool from 60&deg;C to 21&deg;C within 2 hours. Methods: blast chiller, ice bath, shallow pans.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Cool from 21&deg;C to 5&deg;C within a further 4 hours. Total cooling time must not exceed 6 hours.</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Record start temperature, intermediate temperature (at 2 hrs), and final temperature with times.</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>Discard any food that has not cooled within the required timeframe.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>Label cooled food with date and time. Store covered, labelled, and dated.</span></div>
+ </div>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 05 &mdash; Allergen Management</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Ongoing / per service</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Allergen matrix, training records</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Maintain an up-to-date allergen matrix for all menu items (14 FSANZ priority allergens).</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>When a customer declares an allergy: confirm with chef, do not guess &mdash; check ingredient labels and specs.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Prepare allergen-free dishes on clean surfaces using dedicated utensils and equipment (no shared fryers).</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Wash hands thoroughly before handling allergen-free meals.</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>Communicate allergen requests clearly through the pass &mdash; flag the plate/ticket visually.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>If unsure whether a dish can be made allergen-safe, tell the customer &mdash; never guess.</span></div>
-    </div>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 05 &mdash; Allergen Management</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Ongoing / per service</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Allergen matrix, training records</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Maintain an up-to-date allergen matrix for all menu items (14 FSANZ priority allergens).</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>When a customer declares an allergy: confirm with chef, do not guess &mdash; check ingredient labels and specs.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Prepare allergen-free dishes on clean surfaces using dedicated utensils and equipment (no shared fryers).</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Wash hands thoroughly before handling allergen-free meals.</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>Communicate allergen requests clearly through the pass &mdash; flag the plate/ticket visually.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>If unsure whether a dish can be made allergen-safe, tell the customer &mdash; never guess.</span></div>
+ </div>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 06 &mdash; Cleaning &amp; Sanitation Schedule</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Daily + periodic</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Cleaning schedule sign-off</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <table>
-      <tr><th>Area / Item</th><th>Frequency</th><th>Method / Chemical</th><th>Responsible</th></tr>
-      <tr><td>Food prep benches</td><td>After each use &amp; between tasks</td><td>Clean &rarr; rinse &rarr; sanitise (200ppm chlorine or TGA-listed)</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Cooking equipment (grills, ovens)</td><td>Daily (end of service)</td><td>Degrease, scrub, rinse, sanitise</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Refrigerators (interior)</td><td>Weekly</td><td>Remove shelves, wash, rinse, sanitise, dry</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Floors (kitchen)</td><td>Daily + spill response</td><td>Sweep &rarr; mop with food-safe detergent</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Handwash basins</td><td>Daily</td><td>Clean, sanitise, restock soap &amp; paper towels</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Exhaust canopy / filters</td><td>Monthly</td><td>Degrease per manufacturer instructions</td><td><input type="text" placeholder="Role"></td></tr>
-      <tr><td>Cool room / walk-in</td><td>Weekly</td><td>Remove stock, clean walls/floor/shelves, sanitise</td><td><input type="text" placeholder="Role"></td></tr>
-    </table>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 06 &mdash; Cleaning &amp; Sanitation Schedule</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> <input type="text" placeholder="Name/role"></div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Daily + periodic</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Cleaning schedule sign-off</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <table>
+ <tr><th>Area / Item</th><th>Frequency</th><th>Method / Chemical</th><th>Responsible</th></tr>
+ <tr><td>Food prep benches</td><td>After each use &amp; between tasks</td><td>Clean &rarr; rinse &rarr; sanitise (200ppm chlorine or TGA-listed)</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Cooking equipment (grills, ovens)</td><td>Daily (end of service)</td><td>Degrease, scrub, rinse, sanitise</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Refrigerators (interior)</td><td>Weekly</td><td>Remove shelves, wash, rinse, sanitise, dry</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Floors (kitchen)</td><td>Daily + spill response</td><td>Sweep &rarr; mop with food-safe detergent</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Handwash basins</td><td>Daily</td><td>Clean, sanitise, restock soap &amp; paper towels</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Exhaust canopy / filters</td><td>Monthly</td><td>Degrease per manufacturer instructions</td><td><input type="text" placeholder="Role"></td></tr>
+ <tr><td>Cool room / walk-in</td><td>Weekly</td><td>Remove stock, clean walls/floor/shelves, sanitise</td><td><input type="text" placeholder="Role"></td></tr>
+ </table>
+ </div>
 
-  <div class="sop-block">
-    <div class="sop-title">SOP 07 &mdash; Personal Hygiene &amp; Illness Policy</div>
-    <div class="sop-meta">
-      <div class="sop-meta-item"><strong>Responsible:</strong> All staff</div>
-      <div class="sop-meta-item"><strong>Frequency:</strong> Ongoing</div>
-      <div class="sop-meta-item"><strong>Records Required:</strong> Illness report log</div>
-      <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
-    </div>
-    <div class="sop-steps">
-      <div class="sop-step"><span class="sop-step-num">1.</span><span>Wash hands: on arrival, after toilet, after handling raw food, after handling waste, after touching face/hair.</span></div>
-      <div class="sop-step"><span class="sop-step-num">2.</span><span>Wear clean uniform each shift. No jewellery except plain wedding band. Hair tied back or covered.</span></div>
-      <div class="sop-step"><span class="sop-step-num">3.</span><span>Do not handle food if suffering from: diarrhoea, vomiting, jaundice, sore throat with fever, infected skin wounds.</span></div>
-      <div class="sop-step"><span class="sop-step-num">4.</span><span>Report illness to supervisor before commencing work. Complete illness report log.</span></div>
-      <div class="sop-step"><span class="sop-step-num">5.</span><span>Cover any cuts or wounds with a brightly coloured (blue) waterproof bandage and gloves.</span></div>
-      <div class="sop-step"><span class="sop-step-num">6.</span><span>No eating, drinking (except water in sealed container), or smoking in food preparation areas.</span></div>
-    </div>
-  </div>
-  <div class="lm-cta-strip">
-    <div><h3>Need your SOPs written professionally?</h3><p>AMES Food Advisory writes complete, audit-ready SOP suites tailored to your specific food business type and NSW regulatory requirements.</p></div>
-    <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="lm-cta-btn">Get a quote &rarr;</a>
-  </div>
+ <div class="sop-block">
+ <div class="sop-title">SOP 07 &mdash; Personal Hygiene &amp; Illness Policy</div>
+ <div class="sop-meta">
+ <div class="sop-meta-item"><strong>Responsible:</strong> All staff</div>
+ <div class="sop-meta-item"><strong>Frequency:</strong> Ongoing</div>
+ <div class="sop-meta-item"><strong>Records Required:</strong> Illness report log</div>
+ <div class="sop-meta-item"><strong>Review Date:</strong> <input type="date" style="width:auto;"></div>
+ </div>
+ <div class="sop-steps">
+ <div class="sop-step"><span class="sop-step-num">1.</span><span>Wash hands: on arrival, after toilet, after handling raw food, after handling waste, after touching face/hair.</span></div>
+ <div class="sop-step"><span class="sop-step-num">2.</span><span>Wear clean uniform each shift. No jewellery except plain wedding band. Hair tied back or covered.</span></div>
+ <div class="sop-step"><span class="sop-step-num">3.</span><span>Do not handle food if suffering from: diarrhoea, vomiting, jaundice, sore throat with fever, infected skin wounds.</span></div>
+ <div class="sop-step"><span class="sop-step-num">4.</span><span>Report illness to supervisor before commencing work. Complete illness report log.</span></div>
+ <div class="sop-step"><span class="sop-step-num">5.</span><span>Cover any cuts or wounds with a brightly coloured (blue) waterproof bandage and gloves.</span></div>
+ <div class="sop-step"><span class="sop-step-num">6.</span><span>No eating, drinking (except water in sealed container), or smoking in food preparation areas.</span></div>
+ </div>
+ </div>
+ <div class="lm-cta-strip">
+ <div><h3>Need your SOPs written professionally?</h3><p>AMES Food Advisory writes complete, audit-ready SOP suites tailored to your specific food business type and NSW regulatory requirements.</p></div>
+ <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="lm-cta-btn">Get a quote &rarr;</a>
+ </div>
 </div>
 <footer><div class="footer-inner">
-  <a href="/" class="footer-logo">
-    <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
-    <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
-  <div class="footer-links">
-    <a href="/#services">Services</a>
-    <a href="/suburb-directory">Locations</a>
-    <a href="/free-resources">Free Resources</a>
-    <a href="/#about">About</a>
-    <a href="/#contact">Contact</a>
-    <a href="/privacy-policy">Privacy</a>
-    <a href="/terms-of-service">Terms</a>
-  </div>
+ <a href="/" class="footer-logo">
+ <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
+ <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ </a>
+ <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
+ <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+ <div class="footer-links">
+ <a href="/#services">Services</a>
+ <a href="/suburb-directory">Locations</a>
+ <a href="/free-resources">Free Resources</a>
+ <a href="/#about">About</a>
+ <a href="/#contact">Contact</a>
+ <a href="/privacy-policy">Privacy</a>
+ <a href="/terms-of-service">Terms</a>
+ </div>
 </div></footer>
 <script>
 function updateProgress(){
-  var boxes=document.querySelectorAll('.checkbox');
-  var checked=document.querySelectorAll('.checkbox.checked').length;
-  var total=boxes.length;
-  var pct=total?Math.round(checked/total*100):0;
-  document.getElementById('prog-fill').style.width=pct+'%';
-  document.getElementById('prog-count').textContent=checked+' / '+total+' ('+pct+'%)';
+ var boxes=document.querySelectorAll('.checkbox');
+ var checked=document.querySelectorAll('.checkbox.checked').length;
+ var total=boxes.length;
+ var pct=total?Math.round(checked/total*100):0;
+ document.getElementById('prog-fill').style.width=pct+'%';
+ document.getElementById('prog-count').textContent=checked+' / '+total+' ('+pct+'%)';
 }
 document.addEventListener('click',function(e){
-  var box=e.target.closest('.checkbox');
-  if(box){box.classList.toggle('checked');updateProgress();}
+ var box=e.target.closest('.checkbox');
+ if(box){box.classList.toggle('checked');updateProgress();}
 });
 updateProgress();
 </script>
