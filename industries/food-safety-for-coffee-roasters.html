@@ -46,15 +46,16 @@
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background: var(--stone); color: var(--ink); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(28,43,58,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(212,117,31,0.15); padding: 0 2rem; height: 58px; display: flex; align-items: center; justify-content: space-between; }
-  .nav-logo { display: flex; flex-direction: column; gap: 3px; text-decoration: none; justify-content: center; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1.1; }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
   .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+  .nav-logo-tag { display: none; }
+.nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
   .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
   .nav-links a:hover { color: var(--amber); }
   .nav-cta { background: var(--amber); color: var(--navy-deep); padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
   .nav-cta:hover { background: var(--amber-dim); }
+  .nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
   
   .page-hero { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); color: var(--white); padding: 120px 2rem 60px; margin-top: 58px; position: relative; overflow: hidden; }
   .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; text-align: center; }
@@ -84,9 +85,10 @@
   .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
   .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
   .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
-  .footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
-  .footer-links { display: flex; gap: 1.5rem; }
+.footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
+  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
+  .footer-logo-tag{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.22);font-family:'Inter',sans-serif;line-height:1;}
+.footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--amber); }
 
@@ -110,7 +112,9 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+
+    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+
   </a>
   <ul class="nav-links">
     <li><a href="/food-safety-consulting-sydney">Services</a></li>
@@ -119,7 +123,8 @@
     <li><a href="/pricing">Pricing</a></li>
     <li><a href="/suburb-directory">Locations</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
 
@@ -143,7 +148,7 @@
     <p>At AMES Food Advisory, we understand that a system built for a massive commercial factory won't work for your operation, and a generic cafe template won't cover your specific risks. You need bespoke, scalable solutions.</p>
 
     <h2>The Arnott's Standard, Scaled for You</h2>
-    <p>Our principal brings over a decade of Tier-1 manufacturing Quality Assurance experience—gained at The Arnott's Group—directly to your business. This means we build systems that are robust enough to pass any audit, but practical enough that your staff will actually follow them.</p>
+    <p>Our principal brings over a decade of Tier-1 manufacturing Quality Assurance experienceâ€”gained at The Arnott's Groupâ€”directly to your business. This means we build systems that are robust enough to pass any audit, but practical enough that your staff will actually follow them.</p>
 
     <p>We provide comprehensive support for Coffee Roasters including:</p>
     <ul>
@@ -156,7 +161,7 @@
     <div class="cta-box">
       <h3>Need Help with Your Compliance?</h3>
       <p>Whether you are launching a new venture in the Coffee Roasters space or upgrading an existing operation, we can streamline your compliance.</p>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Discuss Your Needs Today ↗</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Discuss Your Needs Today â†—</a>
     </div>
   </div>
   
@@ -165,10 +170,17 @@
   <div class="footer-inner">
     <a href="/" class="footer-logo">
       <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-      <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+
+      <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+
     </a>
-    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW.</div>
-    <div class="footer-links">
+    <div class="footer-copy">Â© 2026 AMES Food Advisory. Serving all of NSW.</div>
+  <div class="footer-phone">
+  <a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a>
+  <span class="footer-phone-divider">|</span>
+  <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
+</div>
+  <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>

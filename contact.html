@@ -31,7 +31,7 @@ a{text-decoration:none;color:inherit;}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,30,40,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,117,31,0.15);padding:0 2rem;height:58px;display:flex;align-items:center;justify-content:space-between;}
 .nav-logo{display:flex;align-items:center;text-decoration:none;}
 .nav-logo-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--white);}
-.nav-logo-adv{color:var(--amber);font-style:italic;font-weight:400;}
+.nav-logo-adv{color:var(--amber);font-style:italic;font-weight:400;}.nav-logo-tag{display:none;}
 .nav-links{display:flex;gap:0;align-items:center;list-style:none;}
 .nav-links>li{position:relative;}
 .nav-links>li>a{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}
@@ -137,8 +137,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,30,40,0.
 .rc-desc{font-size:0.79rem;color:var(--ink-soft);line-height:1.5;font-weight:300;}
 footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);padding:2.25rem 2rem;}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
-.footer-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white);}
-.footer-logo span{color:var(--amber);}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white);text-decoration:none;display:inline-flex;flex-direction:column;gap:2px;}
+.footer-logo-name{color:var(--white);}
+.footer-logo-adv{color:var(--amber);font-style:italic;font-weight:400;}
+.footer-logo-tag{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.22);font-family:'Inter',sans-serif;line-height:1;}
 .footer-copy{font-size:0.74rem;color:rgba(255,255,255,0.25);}.footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
 .footer-links{display:flex;gap:1.4rem;flex-wrap:wrap;}
 .footer-links a{font-size:0.76rem;color:rgba(255,255,255,0.32);text-decoration:none;transition:color 0.2s;}
@@ -444,7 +446,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 </div>
 <footer>
   <div class="footer-inner">
-    <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
+    <a href="/" class="footer-logo">
+      <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
+      <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    </a>
     <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
     <div class="footer-phone">
       <a href="tel:+61278220109">📞 (02) 7822 0109</a>

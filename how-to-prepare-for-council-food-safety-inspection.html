@@ -31,14 +31,15 @@
   html{scroll-behavior:smooth;}
   body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;}
   nav{background:var(--navy-deep);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,117,31,0.12);}
-    .nav-logo { display: flex; flex-direction: column; gap: 3px; text-decoration: none; justify-content: center; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1.1; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
   .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
+  .nav-logo-tag { display: none; }
+.nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
   .nav-links a{font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s;}
   .nav-links a:hover{color:var(--white);}
   .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.5rem 1.25rem!important;border-radius:6px;font-weight:600!important;}
+  .nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
   @media(max-width:768px){.nav-links{display:none;}}
 
   .article-hero{background:var(--navy-deep);padding:4rem 2rem 3rem;border-bottom:1px solid var(--border-amber);}
@@ -97,9 +98,10 @@
     .footer-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
   .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: rgba(255,255,255,0.7); line-height: 1.1; }
   .footer-logo-adv { color: rgba(212,117,31,0.8); font-style: italic; font-weight: 400; }
-  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
-  .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
-  .footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.28);}
+  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}
+.footer-logo-tag{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.22);font-family:'Inter',sans-serif;line-height:1;}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
   .footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
   .footer-links a:hover{color:var(--amber);}
   .nav-links > li { position: relative; }
@@ -139,11 +141,13 @@
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+
+    <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+
   </a>
   <ul class="nav-links">
     <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">â–¼</span></a>
       <div class="nav-drop">
         <a href="/haccp-plan-development">HACCP Plan Development</a>
         <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -163,7 +167,7 @@
       </div>
     </li>
     <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">â–¼</span></a>
       <div class="nav-drop">
         <a href="/food-safety-training-sydney">Food Safety Training</a>
         <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -175,7 +179,7 @@
       </div>
     </li>
     <li>
-      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+      <a href="/blog">Blog <span class="nav-arrow">â–¼</span></a>
       <div class="nav-drop">
         <a href="/blog/haccp">HACCP Deep-Dive</a>
         <a href="/blog">All Articles</a>
@@ -189,7 +193,7 @@
       <a href="/pricing">Pricing</a>
     </li>
     <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">â–¼</span></a>
       <div class="nav-drop">
         <a href="/suburb-directory">All Sydney</a>
         <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -200,7 +204,8 @@
     </li>
     <li><a href="/#about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
 
@@ -209,7 +214,7 @@
     <p class="eyebrow">NSW Food Safety Guide</p>
     <h1>How to Prepare for a NSW Food Authority audit in NSW</h1>
     <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);max-width:580px;line-height:1.7;margin-top:0.75rem;">What NSW Food Authority inspectors check, what gets businesses into trouble, and an interactive pre-inspection checklist to run through before the visit.</p>
-    <div class="hero-meta">Updated June 2026 · NSW Food Act 2003 · FSANZ Standards 3.2.1 &amp; 3.2.2</div>
+    <div class="hero-meta">Updated June 2026 Â· NSW Food Act 2003 Â· FSANZ Standards 3.2.1 &amp; 3.2.2</div>
   </div>
 </section>
 
@@ -218,12 +223,12 @@
   <h2>What happens during a NSW Food Authority audit?</h2>
   <p>NSW Food Authority NSW Food Authority inspectors conduct food safety inspections under the NSW Food Act 2003. They have the authority to enter your premises without notice during trading hours, inspect your operation, review your documentation, and issue improvement notices, prohibition orders, or penalty infringement notices on the spot.</p>
 
-  <p>Most routine inspections cover the same ground: your food handling practices, temperature control, staff hygiene, premises condition, and your documentation. The areas where businesses most commonly fail are not the obvious ones — they're documentation gaps and training deficiencies, not dirty kitchens.</p>
+  <p>Most routine inspections cover the same ground: your food handling practices, temperature control, staff hygiene, premises condition, and your documentation. The areas where businesses most commonly fail are not the obvious ones â€” they're documentation gaps and training deficiencies, not dirty kitchens.</p>
 
   <h2>What inspectors specifically check</h2>
 
   <h3>1. Food Safety Program documentation</h3>
-  <p>If your business is required to have a Food Safety Program (FSP) under Standard 3.2.1, the inspector will ask to see it. They'll check whether it's current, whether it reflects your actual operation, and whether your staff know it exists. An outdated FSP — or one that references processes you no longer use — is an improvement notice waiting to happen.</p>
+  <p>If your business is required to have a Food Safety Program (FSP) under Standard 3.2.1, the inspector will ask to see it. They'll check whether it's current, whether it reflects your actual operation, and whether your staff know it exists. An outdated FSP â€” or one that references processes you no longer use â€” is an improvement notice waiting to happen.</p>
 
   <h3>2. Temperature records</h3>
   <p>Inspectors will check your temperature monitoring logs. Are they complete? Are they consistent? Do they show any corrective actions taken when temperatures were out of range? Temperature logs that look too perfect (same reading every day, no out-of-range entries ever) raise red flags as much as blank logs do.</p>
@@ -232,32 +237,32 @@
   <p>Under Standard 3.2.2A, businesses in the hospitality and retail sectors must have a qualified Food Safety Supervisor (FSS). The inspector will ask for the FSS certificate and confirm that person is contactable and their qualification is current (certificates expire after five years under the current standard). See: <a href="/food-safety-supervisor-requirements-nsw" style="color:var(--amber)">Food Safety Supervisor requirements NSW 2026</a>.</p>
 
   <h3>4. Staff food safety knowledge</h3>
-  <p>Inspectors frequently ask staff members direct questions — about temperature danger zones, personal hygiene requirements, or what they'd do if the cool room failed. If staff can't answer basic food safety questions, it signals that the FSS certificate is in a drawer somewhere and actual food safety knowledge isn't embedded in the team.</p>
+  <p>Inspectors frequently ask staff members direct questions â€” about temperature danger zones, personal hygiene requirements, or what they'd do if the cool room failed. If staff can't answer basic food safety questions, it signals that the FSS certificate is in a drawer somewhere and actual food safety knowledge isn't embedded in the team.</p>
 
   <h3>5. Premises and equipment condition</h3>
-  <p>Physical condition of the premises: clean and in good repair. Calibrated thermometers with calibration records. Hand wash basins accessible and stocked. Adequate temperature-controlled storage. Pest control evidence. Adequate lighting. These are baseline expectations — failing them is avoidable with regular maintenance.</p>
+  <p>Physical condition of the premises: clean and in good repair. Calibrated thermometers with calibration records. Hand wash basins accessible and stocked. Adequate temperature-controlled storage. Pest control evidence. Adequate lighting. These are baseline expectations â€” failing them is avoidable with regular maintenance.</p>
 
   <h3>6. Allergen management</h3>
-  <p>Increasingly, inspectors check allergen management — particularly in premises that have had allergen complaints or that serve customers with complex dietary needs. Do staff know which dishes contain the 14 major allergens? Is there a procedure for allergen queries?</p>
+  <p>Increasingly, inspectors check allergen management â€” particularly in premises that have had allergen complaints or that serve customers with complex dietary needs. Do staff know which dishes contain the 14 major allergens? Is there a procedure for allergen queries?</p>
 
   <div class="callout">
-    <p><strong>Common trigger for unannounced follow-up inspections:</strong> A customer complaint, a foodborne illness report linked to your premises, or a previous inspection with outstanding improvement notices. NSW Food Authority NSW Food Authority inspectors track these and prioritise businesses with open matters. Responding to improvement notices promptly — and in writing — matters.</p>
+    <p><strong>Common trigger for unannounced follow-up inspections:</strong> A customer complaint, a foodborne illness report linked to your premises, or a previous inspection with outstanding improvement notices. NSW Food Authority NSW Food Authority inspectors track these and prioritise businesses with open matters. Responding to improvement notices promptly â€” and in writing â€” matters.</p>
   </div>
 
   <h2>What actually gets businesses into trouble</h2>
   <p>In order of frequency at NSW inspections:</p>
   <ol>
-    <li><strong>Blank or inconsistent temperature records</strong> — Food Safety Program exists but monitoring records aren't being completed</li>
-    <li><strong>Outdated Food Safety Program</strong> — Written when the business opened, never updated despite operational changes</li>
-    <li><strong>FSS certificate expired or person no longer working there</strong> — Certificate still on the wall for a staff member who left two years ago</li>
-    <li><strong>Staff can't answer basic food safety questions</strong> — No training since initial FSS qualification</li>
-    <li><strong>No calibration records for thermometers</strong> — Thermometers used but never calibrated or documented</li>
-    <li><strong>Handwash basins inaccessible or unstocked</strong> — Blocked, used for storage, or no soap/paper towels</li>
-    <li><strong>Raw/ready-to-eat cross-contamination risks</strong> — Storage, equipment, or colour-coding failures</li>
+    <li><strong>Blank or inconsistent temperature records</strong> â€” Food Safety Program exists but monitoring records aren't being completed</li>
+    <li><strong>Outdated Food Safety Program</strong> â€” Written when the business opened, never updated despite operational changes</li>
+    <li><strong>FSS certificate expired or person no longer working there</strong> â€” Certificate still on the wall for a staff member who left two years ago</li>
+    <li><strong>Staff can't answer basic food safety questions</strong> â€” No training since initial FSS qualification</li>
+    <li><strong>No calibration records for thermometers</strong> â€” Thermometers used but never calibrated or documented</li>
+    <li><strong>Handwash basins inaccessible or unstocked</strong> â€” Blocked, used for storage, or no soap/paper towels</li>
+    <li><strong>Raw/ready-to-eat cross-contamination risks</strong> â€” Storage, equipment, or colour-coding failures</li>
   </ol>
 
   <h2>Interactive pre-inspection checklist</h2>
-  <p>Run through this before any inspection — scheduled or unannounced. Each item is something an NSW Food Authority inspectors may check.</p>
+  <p>Run through this before any inspection â€” scheduled or unannounced. Each item is something an NSW Food Authority inspectors may check.</p>
 
   <div class="checklist-wrapper">
     <div class="checklist-header">
@@ -267,44 +272,44 @@
     <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 
     <div class="checklist-section-title">Documentation</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Food Safety Program is current and reflects your actual operation</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Temperature monitoring logs are complete and up to date</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Corrective action records completed where temperatures were out of range</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Thermometer calibration records on file</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Cleaning and sanitising schedule completed and signed off</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">NSW Food Authority registration certificate displayed</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Food Safety Program is current and reflects your actual operation</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Temperature monitoring logs are complete and up to date</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Corrective action records completed where temperatures were out of range</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Thermometer calibration records on file</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Cleaning and sanitising schedule completed and signed off</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">NSW Food Authority registration certificate displayed</div></div>
 
     <div class="checklist-section-title">Food Safety Supervisor</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Current Food Safety Supervisor certificate on premises</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">FSS certificate holder is still employed at this premises</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">FSS certificate is not expired (valid for 5 years)</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">FSS is reasonably contactable during business hours</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Current Food Safety Supervisor certificate on premises</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">FSS certificate holder is still employed at this premises</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">FSS certificate is not expired (valid for 5 years)</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">FSS is reasonably contactable during business hours</div></div>
 
     <div class="checklist-section-title">Temperature control</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">All refrigeration units operating at ≤5°C</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">All freezer units operating at ≤-15°C</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Hot-held food maintained at ≥60°C</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Calibrated probe thermometer available and working</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Staff can demonstrate correct thermometer probing technique</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">All refrigeration units operating at â‰¤5Â°C</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">All freezer units operating at â‰¤-15Â°C</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Hot-held food maintained at â‰¥60Â°C</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Calibrated probe thermometer available and working</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Staff can demonstrate correct thermometer probing technique</div></div>
 
     <div class="checklist-section-title">Personal hygiene and staff</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">All food-handling staff know correct handwashing procedure</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Staff illness exclusion policy in place and communicated</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Staff can state temperature danger zone (5°C–60°C)</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Staff wearing appropriate protective clothing</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">All food-handling staff know correct handwashing procedure</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Staff illness exclusion policy in place and communicated</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Staff can state temperature danger zone (5Â°Câ€“60Â°C)</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Staff wearing appropriate protective clothing</div></div>
 
     <div class="checklist-section-title">Premises and equipment</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Handwash basin(s) accessible, stocked with soap and paper towels</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">All food contact surfaces clean and in good repair</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Raw and ready-to-eat foods stored separately</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">All food stored off the floor (min. 15cm)</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">No pest activity or evidence of pests observed</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Pest control records available for NSW Food Authority inspection</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Handwash basin(s) accessible, stocked with soap and paper towels</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">All food contact surfaces clean and in good repair</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Raw and ready-to-eat foods stored separately</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">All food stored off the floor (min. 15cm)</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">No pest activity or evidence of pests observed</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Pest control records available for NSW Food Authority inspection</div></div>
 
     <div class="checklist-section-title">Allergen management</div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Staff can identify the 14 major allergens relevant to your menu</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Allergen procedure documented for handling customer enquiries</div></div>
-    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">✓</span></div><div class="check-label">Ingredient labels and supplier specs accessible for staff reference</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Staff can identify the 14 major allergens relevant to your menu</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Allergen procedure documented for handling customer enquiries</div></div>
+    <div class="check-item" onclick="toggle(this)"><div class="check-box"><span class="check-box-tick">âœ“</span></div><div class="check-label">Ingredient labels and supplier specs accessible for staff reference</div></div>
 
     <div class="checklist-result" id="checklistResult">
       <div class="result-score" id="resultScore">0%</div>
@@ -314,7 +319,7 @@
 
   <div class="cta-inline">
     <h3>Want a professional pre-inspection audit?</h3>
-    <p>The $450 site audit includes an on-site walkthrough, documentation review, and written gap report — delivered within 48 hours. $450 is credited back in full if you proceed with any package.</p>
+    <p>The $450 site audit includes an on-site walkthrough, documentation review, and written gap report â€” delivered within 48 hours. $450 is credited back in full if you proceed with any package.</p>
     <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book site audit</a>
     <a href="/pricing" class="btn-ghost">View pricing</a>
   </div>
@@ -332,9 +337,16 @@
 <footer><div class="footer-inner">
   <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+
+    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
+
   </a>
-  <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
+  <div class="footer-copy">Â© 2026 AMES Food Advisory Â· Sydney, NSW</div>
+  <div class="footer-phone">
+  <a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a>
+  <span class="footer-phone-divider">|</span>
+  <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
+</div>
   <div class="footer-links">
     <a href="/pricing">Pricing</a>
     <a href="/#services">Services</a>
@@ -363,7 +375,7 @@
     document.getElementById('resultScore').textContent = pct + '%';
 
     let label = '';
-    if (pct === 100) label = 'All items checked — you\'re well prepared.';
+    if (pct === 100) label = 'All items checked â€” you\'re well prepared.';
     else if (pct >= 80) label = 'Good progress. Review any unchecked items before the inspection.';
     else if (pct >= 50) label = 'Several gaps remain. Address unchecked items as a priority.';
     else label = 'Significant preparation required. Consider booking a professional site audit.';
