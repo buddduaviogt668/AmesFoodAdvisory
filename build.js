@@ -17,7 +17,7 @@ const ACCREDITATION_LOGOS_HTML = `
         </div>
         <div class="logo-item" style="display: flex; align-items: center; gap: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--amber);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
-          ARNOTTS <span style="font-size:0.7rem; font-family:'Inter', sans-serif; font-weight:400; color:var(--ink-soft); vertical-align:middle; margin-left:2px;">(11+ Years Quality QA)</span>
+          FOOD MANUFACTURING <span style="font-size:0.7rem; font-family:'Inter', sans-serif; font-weight:400; color:var(--ink-soft); vertical-align:middle; margin-left:2px;">(11+ Years Quality QA)</span>
         </div>
         <div class="logo-item" style="display: flex; align-items: center; gap: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--amber);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>

@@ -180,7 +180,7 @@ const seriesList = [
       'Online vs In-Person Food Safety Training',
       'Creating a Training Matrix for Your Bakery',
       'Training for Multicultural Kitchen Teams',
-      'Why The Arnotts Group Methodology Works for Small Cafes'
+      'Why The National Manufacturer Methodology Works for Small Cafes'
     ]
   },
   {
