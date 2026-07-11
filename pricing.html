@@ -110,6 +110,21 @@
  h1 em { color: var(--amber); font-style: italic; }
  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 560px; line-height: 1.7; font-weight: 300; }
 
+ /* Booking CTA */
+ .booking-cta { background: var(--navy); padding: 3rem 2rem; border-bottom: 1px solid var(--border-amber); }
+ .booking-cta-inner { max-width: 1100px; margin: 0 auto; }
+ .booking-cta-content { text-align: center; margin-bottom: 1.5rem; }
+ .booking-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--white); margin-bottom: 0.8rem; }
+ .booking-cta h2 em { color: var(--amber); font-style: italic; }
+ .booking-cta-desc { font-size: 0.92rem; color: rgba(255,255,255,0.5); max-width: 620px; margin: 0 auto 1.5rem; line-height: 1.7; font-weight: 300; }
+ .btn-large { font-size: 1.05rem; padding: 1rem 2.5rem; }
+ .booking-cta-footnote { font-size: 0.75rem; color: rgba(255,255,255,0.3); margin-top: 0.75rem; }
+ .booking-cta-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; max-width: 800px; margin: 1.5rem auto 0; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem; }
+ .booking-stat { text-align: center; padding: 0.5rem 1rem; border-right: 1px solid rgba(255,255,255,0.06); }
+ .booking-stat:last-child { border-right: none; }
+ .booking-stat-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: var(--amber); line-height: 1; margin-bottom: 0.25rem; }
+ .booking-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 300; }
+
  .section { padding: 4.5rem 2rem; }
  .section-inner { max-width: 900px; margin: 0 auto; }
  .section-inner.wide { max-width: 1100px; }
@@ -329,6 +344,39 @@
  <p class="eyebrow">Transparent pricing</p>
  <h1>Fixed prices.<br><em>No surprises.</em></h1>
  <p class="hero-sub">Every engagement is quoted at a fixed price before work begins. You know exactly what you're paying — and what you get — before signing anything.</p>
+ </div>
+ </section>
+
+<!-- BOOK AUDIT CTA -->
+<section class="booking-cta">
+ <div class="booking-cta-inner">
+ <div class="booking-cta-content">
+ <p class="eyebrow">Book your site audit — online now</p>
+ <h2>Pay once. <em>We handle the rest.</em></h2>
+ <p class="booking-cta-desc">Pay $595 for your site audit &amp; gap report via Stripe. We'll receive an email notification and call you within 24 hours to schedule your on-site visit. No back-and-forth — just book, pay, and we take it from there.</p>
+ <div class="booking-cta-actions">
+ <a href="https://buy.stripe.com/5kQ3cu5Q5aUbexD6A6gIo01" target="_blank" rel="noopener" class="btn-primary btn-large">Pay $595 &amp; book your audit</a>
+ <p class="booking-cta-footnote">Card payments incur a 1.7% Stripe processing fee.</p>
+ </div>
+ </div>
+ <div class="booking-cta-strip">
+ <div class="booking-stat">
+ <div class="booking-stat-num">11+</div>
+ <div class="booking-stat-label">Years at Arnotts</div>
+ </div>
+ <div class="booking-stat">
+ <div class="booking-stat-num">TAE</div>
+ <div class="booking-stat-label">Accredited trainer</div>
+ </div>
+ <div class="booking-stat">
+ <div class="booking-stat-num">48hr</div>
+ <div class="booking-stat-label">Gap report turnaround</div>
+ </div>
+ <div class="booking-stat">
+ <div class="booking-stat-num">NSW</div>
+ <div class="booking-stat-label">On-site &amp; remote</div>
+ </div>
+ </div>
  </div>
 </section>
 
