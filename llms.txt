@@ -1,26 +1,86 @@
 # AMES Food Advisory
 
-> Food safety consulting, HACCP planning, training, and auditing for NSW food businesses — based in Sydney, Australia.
+> Food safety consulting, HACCP planning, training, auditing, and compliance readiness for food businesses across Sydney and NSW, Australia.
 
-AMES Food Advisory is a food safety consultancy serving food businesses across Sydney and NSW. Services include Food Safety Program (FSP) development, HACCP plans, Food Safety Supervisor (FSS) training, internal auditing, and start-up compliance packages.
+AMES Food Advisory is a Sydney-based food safety consultancy serving cafes, restaurants, food manufacturers, aged care facilities, childcare centres, food startups, and RTOs across New South Wales. Services include HACCP plan development, Food Safety Program (FSP) writing, on-site staff training, internal auditing, SOP documentation, commercial kitchen asset compliance, and end-to-end start-up compliance packages.
 
-## Services
+The principal consultant holds a Lead Auditor Statement of Attainment (SAI Global), is TAE-qualified (Certificate IV in Training & Assessment), and is a current TAFE NSW sessional lecturer in Food Science & Technology with 11+ years of national food manufacturing Quality Assurance experience.
 
-- [HACCP & Food Safety Consulting](/food-safety-consulting-sydney): Food Safety Program writing, hazard analysis, HACCP plan development, regulatory compliance gap analysis.
-- [Food Safety Training](/food-safety-training-sydney): NSW Food Authority approved Food Safety Supervisor courses, food handler training, team workshops.
-- [Internal Auditing](/internal-auditing-services): Pre-council inspection audits, supplier readiness audits, third-party certification preparation.
-- [Food Business Start-Up Package](/food-business-startup-package): End-to-end compliance setup for new food businesses — council notification, FSP, HACCP, SOP suite, training.
-- [Suburb Directory](/suburb-directory): Service coverage across Sydney metro and surrounds.
+## Core Services
+
+- [HACCP Consultant Sydney](/food-safety-consulting-sydney): HACCP plan development, food safety program design, hazard analysis, food regulatory compliance consulting, food hygiene consulting, food business advisory, and warehouse/storage compliance. Fixed-price programs.
+- [Internal Audit Service Sydney](/internal-auditing-services): Pre-inspection mock audits, gap analysis, document review, corrective action planning, compliance readiness support for NSW Food Authority and council inspections.
+- [Food Safety Training Sydney](/food-safety-training-sydney): On-site food safety training — HACCP for supervisors, allergen management, GMP, food handler competency, record keeping. Delivered by a TAE-qualified trainer.
+- [Food Safety SOP Writing](/sop-writing-food-businesses): Custom standard operating procedures, monitoring forms, allergen registers, cleaning schedules, corrective action records. Audit-ready documentation built for your specific operation.
+- [Food Business Start-Up Package](/food-business-startup-package): Complete compliance setup for new food businesses — council registration guidance, custom food safety plan, SOPs, staff training, pre-audit walkthrough, 90-day post-launch support.
+- [Commercial Kitchen Asset Compliance](/commercial-kitchen-asset-compliance): AS 4674 compliance audits, structural and equipment verification, ventilation and plumbing checks, written compliance reports with prioritised corrective actions.
+- [Food Manufacturing Consultant](/food-manufacturer-consulting): HACCP for manufacturers, QA documentation, SQF gap analysis, regulatory compliance for food production facilities.
+- [Food Lab Skills Training](/lab-skills-training): Practical food laboratory training — microbiological, chemical, sensory and physical testing techniques for QA teams and food industry workers.
+- [RTO Resource Development](/rto-resource-development): Food safety training resources, assessment tools and learning materials for registered training organisations.
+- [Sampling & Inspection Services](/sampling-inspection-services): Food sampling, product inspection and quality verification services.
+
+## Industry-Specific Services
+
+- [Cafe & Restaurant Food Safety](/cafe-restaurant-food-safety): Food safety compliance for cafes, restaurants and food service businesses.
+- [Food Safety for Small Business](/food-safety-small-business): Simplified compliance for micro and small food businesses.
+- [Food Startup Consultant](/food-startup-consultant-sydney): Food safety guidance for startup and emerging food businesses.
+- [Aged Care Food Safety NSW](/aged-care-food-safety-nsw): Class 1 food safety compliance for aged care facilities and hospitals.
+- [Childcare Food Safety NSW](/childcare-food-safety-nsw): Food safety programs for early childhood education centres.
+- [Bakery Food Safety NSW](/bakery-food-safety-nsw): HACCP and compliance for retail and production bakeries.
+- [Catering Food Safety NSW](/catering-food-safety-nsw): Food safety for catering and events businesses.
+- [Food Truck Food Safety NSW](/food-truck-food-safety-nsw): Mobile food business compliance across NSW LGAs.
+- [Multi-Site Restaurant Compliance](/multi-site-restaurant-food-safety-nsw): Consistent food safety systems across multiple locations.
+- [Restaurant HACCP Plan Sydney](/restaurant-haccp-plan-sydney): HACCP plans for restaurant and food service operations.
+
+## HACCP Blog & Guides
+
+- [HACCP Blog](/blog): Full library of HACCP deep-dive articles.
+- [What is HACCP NSW](/blog/haccp/what-is-haccp-nsw): Comprehensive guide to HACCP requirements for NSW food businesses.
+- [HACCP for Cafes Sydney](/blog/haccp/haccp-for-cafes-sydney): HACCP requirements specific to cafe operations.
+- [HACCP for Aged Care & Hospitals](/blog/haccp/haccp-aged-care-hospitals-class1): Class 1 food safety requirements for healthcare.
+- [HACCP for Caterers & Events](/blog/haccp/haccp-caterers-events-nsw): Food safety for catering operations.
+- [Food Safety Program Requirements NSW](/blog/haccp/food-safety-program-requirements-nsw): Guide to FSP requirements under Standard 3.2.1.
+- [How to Write a HACCP Plan NSW](/blog/haccp/how-to-write-haccp-plan-nsw): Step-by-step HACCP plan writing guide.
+- [HACCP Record Keeping Guide](/blog/haccp/haccp-record-keeping-what-to-keep): What records to keep and for how long.
+- [HACCP Annual Review Requirements](/blog/haccp/haccp-review-annual-requirements): When and how to review your HACCP plan.
+- [CCPs & Critical Control Points Explained](/blog/haccp/ccps-critical-control-points-explained): Guide to identifying and managing CCPs.
+- [HACCP Prerequisite Programs](/blog/haccp/haccp-prerequisite-programs-explained): PRPs explained — pest control, cleaning, training, etc.
+- [HACCP Verification vs Validation](/blog/haccp/haccp-verification-validation-difference): The difference between verification and validation.
+- [Allergen Management HACCP](/blog/haccp/allergen-management-haccp-nsw-2024): Allergen controls within a HACCP framework.
+- [Temperature Control Food Safety NSW](/blog/haccp/temperature-control-food-safety-nsw): Temperature control requirements for NSW food businesses.
+- [HACCP Common Mistakes](/blog/haccp/haccp-common-mistakes-nsw): Frequent HACCP documentation errors to avoid.
+
+## Food Safety Guides (25 topical guides)
+
+Comprehensive guides covering food safety topics for specific business types, compliance requirements, and operational scenarios. Each guide includes detailed content, FAQ accordion sections, and internal linking to relevant services.
+
+Available at: [/guides/](/guides/)
 
 ## Free Resources
 
-- [Free Resources Hub](/free-resources): Overview of all free tools.
-- [NSW Compliance Checklist](/free-compliance-checklist-nsw): 47-point interactive checklist for NSW food businesses.
-- [Restaurant SOP Template](/free-restaurant-sop-template): 7-SOP template covering receiving, temperature, cooking, cooling, allergens, cleaning, personal hygiene.
-- [Audit Readiness Checklist](/free-audit-readiness-checklist): Pre-audit self-assessment with 21-day preparation timeline.
+- [Free Resources Hub](/free-resources): Overview of all free tools and downloads.
+- [NSW Compliance Checklist](/free-compliance-checklist-nsw): Interactive 47-point self-assessment checklist for NSW food businesses.
+- [Restaurant SOP Template](/free-restaurant-sop-template): 7-SOP template set covering receiving, temperature control, cooking, cooling, allergens, cleaning, and personal hygiene.
+- [Audit Readiness Checklist](/free-audit-readiness-checklist): Pre-audit self-assessment with a 21-day preparation timeline.
+- [Council Readiness Checklist](/council-readiness-checklist): 50-point overview of council inspection readiness.
+
+## Service Areas
+
+- [Suburb Directory](/suburb-directory): Full list of Sydney suburbs and regional areas served.
+- On-site consulting, audits and training available across Greater Sydney, Wollongong, Newcastle, Central Coast, and regional NSW. Remote consulting available across all of NSW.
+
+## Pricing
+
+- [Pricing](/pricing): Fixed-price food safety consulting packages. Free 20-minute scoping call before any engagement. $595 flat fee for standard HACCP plan development (Stripe payment available, 1.7% processing fee applies).
 
 ## About
 
-George Skarmoutsos — 11+ years in food manufacturing (Arnott's), TAFE NSW accredited trainer, dual-accredited food safety consultant. Sydney, NSW, Australia.
+- [The AMES Standard](/the-ames-standard): Mission, background, and approach — bringing corporate food safety standards to independent food businesses.
+- [Contact](/contact): Phone (02) 7822 0109, email ames.food.adv@gmail.com, or book a free scoping call via Calendly.
 
-Contact: george@amesfoodadvisory.com.au
+## Technical
+
+- Built as a static HTML site deployed on Vercel.
+- GA4 tracking: G-WE0FLYZLBP.
+- Fonts: Playfair Display (headings), Inter (body).
+- Theme colours: Midnight Navy (#1C2B3A), Warm Amber (#E8913A), Stone (#F5F1EB).
