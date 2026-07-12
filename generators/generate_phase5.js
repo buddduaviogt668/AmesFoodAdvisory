@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -173,7 +173,7 @@ const pages = [
     body: `
     <div class="content-area">
       <h2>Why We Started AMES Food Advisory</h2>
-      <p>For over 11 years, our Principal Consultant managed Quality Assurance and Food Safety at the absolute highest levels of Australian manufacturing, including extensive tenure at <strong>The Arnott's Group</strong>.</p>
+      <p>For over 11 years, our Principal Consultant managed Quality Assurance and Food Safety at the absolute highest levels of Australian manufacturing, including extensive experience in <strong>national food manufacturing</strong>.</p>
       
       <p>In those environments, food safety isn't a "tick-box" exercise; it is a finely tuned, scientifically rigorous system that protects millions of consumers and billions of dollars in brand equity. The systems are bulletproof. The training is continuous. The culture is relentless.</p>
 

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -196,7 +196,7 @@ councils.forEach(council => {
     <p>Failing an inspection in the ${council} area can result in costly fines, mandatory improvement notices, or in severe cases, the temporary closure of your business and placement on the "Name and Shame" register.</p>
 
     <h2>How AMES Food Advisory Helps You Pass</h2>
-    <p>We take the stress out of unannounced council audits. Our principal consultant brings <strong>over 11 years of Tier-1 manufacturing experience at The Arnott's Group</strong>, combined with deep pedagogical expertise as a <strong>TAFE NSW Lecturer</strong>.</p>
+    <p>We take the stress out of unannounced council audits. Our principal consultant brings <strong>over 11 years of Tier-1 national food manufacturing experience</strong>, combined with deep pedagogical expertise as a <strong>TAFE NSW Lecturer</strong>.</p>
     
     <p>We apply this corporate rigor to your small or medium-sized business through:</p>
     <ul>
@@ -260,7 +260,7 @@ industries.forEach(ind => {
     
     <p>At AMES Food Advisory, we understand that a system built for a massive commercial factory won't work for your operation, and a generic cafe template won't cover your specific risks. You need bespoke, scalable solutions.</p>
 
-    <h2>The Arnott's Standard, Scaled for You</h2>
+    <h2>Manufacturing-Proven Standards, Scaled for You</h2>
     <p>Our principal brings over a decade of Tier-1 manufacturing Quality Assurance experience—gained at The Arnott's Group—directly to your business. This means we build systems that are robust enough to pass any audit, but practical enough that your staff will actually follow them.</p>
 
     <p>We provide comprehensive support for ${ind} including:</p>

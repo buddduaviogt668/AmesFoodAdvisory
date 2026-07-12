@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
@@ -283,7 +283,7 @@ seriesList.forEach(series => {
       <p>Welcome to the latest entry in our <strong>${series.seriesName}</strong>. Today, we are discussing <strong>${title}</strong>—a critical topic for any food business aiming for strict compliance with NSW Food Authority standards.</p>
       
       <h2>Why This Matters for Your Business</h2>
-      <p>Food safety isn't just about passing your local council audit; it's about protecting your brand, your customers, and your bottom line. At <a href="/">AMES Food Advisory</a>, we leverage over 11 years of Tier-1 manufacturing experience (including time at The Arnott's Group) to bring corporate-level rigor to small and medium businesses.</p>
+      <p>Food safety isn't just about passing your local council audit; it's about protecting your brand, your customers, and your bottom line. At <a href="/">AMES Food Advisory</a>, we leverage over 11 years of Tier-1 manufacturing experience (including experience in national food manufacturing) to bring corporate-level rigor to small and medium businesses.</p>
       
       <p>Whether you are operating a bustling cafe in <a href="/food-safety-consultant-surry-hills">Surry Hills</a>, managing a manufacturing facility in <a href="/food-safety-consultant-parramatta">Parramatta</a>, or preparing for an audit in <a href="/food-safety-consultant-chatswood">Chatswood</a>, understanding these principles is non-negotiable.</p>
 

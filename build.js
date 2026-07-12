@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = __dirname; // build directly in the same folder
@@ -394,7 +394,7 @@ const NAV = `
 const CREDS = `
 <div class="creds-bar"><div class="creds-track">
   <span class="cred-pill">11+ Years Food Quality Experience</span>
-  <span class="cred-pill">The Arnott's Group Background</span>
+  <span class="cred-pill">National Manufacturer QA Background</span>
   <span class="cred-pill">TAE-Qualified Trainer</span>
   <span class="cred-pill">TAFE NSW Lecturer</span>
   <span class="cred-pill">HACCP &amp; SQF Specialist</span>
