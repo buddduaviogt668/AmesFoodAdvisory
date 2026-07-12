@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -336,6 +336,10 @@
 .nav-logo-name, .nav-logo-tag { white-space: nowrap !important; flex-shrink: 0 !important; }
 .nav-logo { flex-shrink: 0 !important; }
 
+.summary-box { background: var(--amber-pale); border-left: 4px solid var(--amber); padding: 1.25rem 1.5rem; margin: 0 auto; max-width: 860px; border-radius: 0 8px 8px 0; }
+.summary-box p { font-size: 0.92rem; color: var(--ink-mid); line-height: 1.7; font-weight: 300; margin: 0; }
+.summary-box strong { color: var(--navy); font-weight: 600; }
+
 </style>
 
 <script type="application/ld+json">
@@ -364,7 +368,7 @@
   "name": "Can you help if my business already has a HACCP plan that needs updating?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Absolutely. We review existing plans regularly � identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance."
+ "text": "Absolutely. We review existing plans regularly ï¿½ identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance."
  }
  }
  ]
@@ -425,6 +429,32 @@
  "serviceType": "Food Safety Consulting & Training"
 }
 </script>
+<script type="application/ld+json" id="website-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": {
+ "@type": "EntryPoint",
+ "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
+ },
+ "query-input": "required name=search_term_string"
+ }
+}
+</script>
+<script type="application/ld+json" id="speakable-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "speakable": {
+ "@type": "SpeakableSpecification",
+ "cssSelector": [".summary-box p", ".page-hero-sub"]
+ }
+}
+</script>
 <script type="application/ld+json" id="breadcrumb-schema">
 {
  "@context": "https://schema.org",
@@ -459,7 +489,7 @@
 <nav>
  <a href="/" class="nav-logo">
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;�&nbsp;HACCP&nbsp;�&nbsp;FOOD CONSULTANTS</span>
+ <span class="nav-logo-tag">NSW&nbsp;ï¿½&nbsp;HACCP&nbsp;ï¿½&nbsp;FOOD CONSULTANTS</span>
  </a>
  <ul class="nav-links">
  <li>
@@ -526,15 +556,27 @@
 
 <div class="page-hero">
  <div class="page-hero-inner">
- <div class="breadcrumb"><a href="/">Home</a><span>�</span>Food Safety & HACCP Consulting</div>
+ <div class="breadcrumb"><a href="/">Home</a><span>ï¿½</span>Food Safety & HACCP Consulting</div>
  <div class="page-eyebrow">Service 01</div>
  <h1>Food Safety &amp; <em>HACCP Consulting</em></h1>
- <p class="page-hero-sub">A properly built HACCP plan isn't just a compliance document � it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.</p>
+ <p class="page-hero-sub">A properly built HACCP plan isn't just a compliance document ï¿½ it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.</p>
  <div class="hero-actions">
  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary">Claim Your Food Safety Consultation ?</a>
  <a href="/pricing" class="btn-outline">View pricing</a>
  </div>
  </div>
+</div>
+
+<div class="summary-box">
+ <p><strong>How it works:</strong> To get a HACCP-compliant food safety program for your NSW food business, you need:
+</p>
+<ul>
+ <li>A written plan based on Codex principles</li>
+ <li>Daily temperature and sanitation records</li>
+ <li>A trained Food Safety Supervisor</li>
+ <li>Scheduled internal verification checks</li>
+</ul>
+<p> AMES builds these from scratch or upgrades existing programs for fixed prices starting at $1,500.</p>
 </div>
 
 <div class="creds-bar"><div class="creds-track">
@@ -558,18 +600,18 @@
  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;max-width:900px;margin:0 auto;">
  <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
  <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Corporate Experience</div>
- <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">The Arnott's Group</div>
+ <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">National Food Manufacturer QA</div>
  <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">11+ years in Quality Assurance, food safety systems, and laboratory operations at one of Australia's largest food manufacturers.</div>
  </div>
  <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
  <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Teaching Credential</div>
  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">TAFE NSW</div>
- <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">Sessional lecturer in Food Science &amp; Technology. TAE Certificate IV in Training &amp; Assessment � nationally recognised training qualification.</div>
+ <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">Sessional lecturer in Food Science &amp; Technology. TAE Certificate IV in Training &amp; Assessment ï¿½ nationally recognised training qualification.</div>
  </div>
  <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
  <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Technical Expertise</div>
  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--navy);">HACCP &amp; SQF Specialist</div>
- <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">HACCP plan development, SQF implementation gap analysis, and NSW Food Authority compliance across commercial food operations.</div>
+ <div style="font-size:0.8rem;color:var(--ink-soft);line-height:1.5;">HACCP plan development, SQF implementation gap analysis, and <a href="https://www.foodauthority.nsw.gov.au/" target="_blank" rel="noopener nofollow">NSW Food Authority</a> compliance across commercial food operations.</div>
  </div>
  <div style="background:var(--stone);border:1px solid var(--stone-dark);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
  <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);">Academic Background</div>
@@ -591,7 +633,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">HACCP Plan Development</div>
- <div class="include-desc">Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification � built for your specific operation and food type.</div>
+ <div class="include-desc">Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification ï¿½ built for your specific operation and food type.</div>
  </div>
  </div>
  
@@ -607,7 +649,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Safety Program Design</div>
- <div class="include-desc">End-to-end food safety management system design compliant with the Australia New Zealand Food Standards Code.</div>
+ <div class="include-desc">End-to-end food safety management system design compliant with the Australia New Zealand <a href="https://www.foodstandards.gov.au/" target="_blank" rel="noopener nofollow">Food Standards Code</a>.</div>
  </div>
  </div>
  
@@ -631,7 +673,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Annual Review Service</div>
- <div class="include-desc">Scheduled review and update of your HACCP plan as your menu, processes, or supply chain change � retainer available.</div>
+ <div class="include-desc">Scheduled review and update of your HACCP plan as your menu, processes, or supply chain change ï¿½ retainer available.</div>
  </div>
  </div>
  </div>
@@ -657,7 +699,7 @@
  
  <div class="who-card fade-up">
  <div class="who-card-title">New food businesses</div>
- <div class="who-card-desc">Start-ups that need a food safety program built correctly from day one � before the NSW Food Authority audit, not after.</div>
+ <div class="who-card-desc">Start-ups that need a food safety program built correctly from day one ï¿½ before the NSW Food Authority audit, not after.</div>
  </div>
  
  </div>
@@ -677,7 +719,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Regulatory Compliance Consulting</div>
- <div class="include-desc">Plain-English guidance through the NSW Food Authority regulatory landscape � Food Act 2003, Food Standards Code, licensing categories, notification obligations and compliance timelines for food businesses of all sizes and classifications.</div>
+ <div class="include-desc">Plain-English guidance through the NSW Food Authority regulatory landscape ï¿½ Food Act 2003, Food Standards Code, licensing categories, notification obligations and compliance timelines for food businesses of all sizes and classifications.</div>
  </div>
  </div>
 
@@ -685,7 +727,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Hygiene Consulting</div>
- <div class="include-desc">Practical hygiene system design for commercial kitchens and food production facilities � including cleaning schedules, sanitation procedures, allergen cross-contact controls, and staff hygiene protocols aligned with GMP standards.</div>
+ <div class="include-desc">Practical hygiene system design for commercial kitchens and food production facilities ï¿½ including cleaning schedules, sanitation procedures, allergen cross-contact controls, and staff hygiene protocols aligned with GMP standards.</div>
  </div>
  </div>
 
@@ -693,7 +735,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Business Advisory</div>
- <div class="include-desc">Strategic food safety advice for business owners � compliance roadmaps, due diligence reviews for business purchases, lease compliance assessments, and food safety system scoping for new ventures and expansions.</div>
+ <div class="include-desc">Strategic food safety advice for business owners ï¿½ compliance roadmaps, due diligence reviews for business purchases, lease compliance assessments, and food safety system scoping for new ventures and expansions.</div>
  </div>
  </div>
 
@@ -701,7 +743,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Safety Inspections (Pre-Audit)</div>
- <div class="include-desc">Pre-inspection walkthroughs covering your premises, documentation and team preparedness before an NSW Food Authority audit or council visit. We catch gaps before the inspector does � with a prioritised corrective action plan.</div>
+ <div class="include-desc">Pre-inspection walkthroughs covering your premises, documentation and team preparedness before an NSW Food Authority audit or council visit. We catch gaps before the inspector does ï¿½ with a prioritised corrective action plan.</div>
  </div>
  </div>
 
@@ -709,7 +751,7 @@
  <div class="include-icon">??</div>
  <div>
  <div class="include-title">Food Safety Supervisor Compliance</div>
- <div class="include-desc">Guidance on NSW Food Safety Supervisor (FSS) requirements � who needs one, what training is required, how to document FSS oversight in your food safety program, and compliance with Standard 3.2.2A.</div>
+ <div class="include-desc">Guidance on NSW Food Safety Supervisor (FSS) requirements ï¿½ who needs one, what training is required, how to document FSS oversight in your food safety program, and compliance with Standard 3.2.2A.</div>
  </div>
  </div>
 
@@ -766,7 +808,7 @@
  <div class="step-num">02</div>
  <div>
  <div class="step-title">Site visit or remote briefing</div>
- <div class="step-desc">We map your full production process � ingredients in, product out � identifying every potential hazard point.</div>
+ <div class="step-desc">We map your full production process ï¿½ ingredients in, product out ï¿½ identifying every potential hazard point.</div>
  </div>
  </div>
  
@@ -801,7 +843,7 @@
  
  <div class="faq-item">
  <div class="faq-q">Can you help if my business already has a HACCP plan that needs updating?</div>
- <div class="faq-a">Absolutely. We review existing plans regularly � identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance.</div>
+ <div class="faq-a">Absolutely. We review existing plans regularly ï¿½ identifying gaps, outdated controls, and areas that no longer reflect your current operation, then update the documentation to bring it back into compliance.</div>
  </div>
  
  </div>
@@ -847,10 +889,10 @@
 <footer><div class="footer-inner">
  <a href="/" class="footer-logo">
  <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
- <span class="footer-logo-tag">NSW&nbsp;�&nbsp;HACCP&nbsp;�&nbsp;FOOD CONSULTANTS</span>
+ <span class="footer-logo-tag">NSW&nbsp;ï¿½&nbsp;HACCP&nbsp;ï¿½&nbsp;FOOD CONSULTANTS</span>
  </a>
- <div class="footer-copy">� 2026 AMES Food Advisory � Sydney, NSW</div>
- <div class="footer-phone"><a href="tel:+61278220109">?? (02) 7822 0109</a><span class="footer-phone-divider">�</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+ <div class="footer-copy">ï¿½ 2026 AMES Food Advisory ï¿½ Sydney, NSW</div>
+ <div class="footer-phone"><a href="tel:+61278220109">?? (02) 7822 0109</a><span class="footer-phone-divider">ï¿½</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
  <div class="footer-links">
  <a href="/#services">Services</a>
  <a href="/suburb-directory">Locations</a>

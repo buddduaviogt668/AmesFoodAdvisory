@@ -50,6 +50,22 @@
  ]
 }
 </script>
+<script type="application/ld+json" id="website-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": {
+ "@type": "EntryPoint",
+ "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
+ },
+ "query-input": "required name=search_term_string"
+ }
+}
+</script>
 <script type="application/ld+json" id="service-schema">
 {
  "@context": "https://schema.org",
@@ -67,6 +83,22 @@
  "name": "New South Wales"
  },
  "serviceType": "Food Safety Consulting & Training"
+}
+</script>
+<script type="application/ld+json" id="website-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": {
+ "@type": "EntryPoint",
+ "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
+ },
+ "query-input": "required name=search_term_string"
+ }
 }
 </script>
 <script type="application/ld+json" id="breadcrumb-schema">
@@ -328,7 +360,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <div class="cta-strip">
  <div class="cta-inner">
  <h2>Still have questions? <em>Let's talk.</em></h2>
- <p>Book a free 15-minute scoping call and get direct answers to your food safety questions from a specialist with 11+ years at The Arnott's Group.</p>
+ <p>Book a free 15-minute scoping call and get direct answers to your food safety questions from a specialist with 11+ years in national food manufacturing.</p>
  <div class="cta-actions">
  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Free Scoping Call ↗</a>
  <a href="/contact" class="btn-ghost">Send a Message</a>
@@ -357,6 +389,54 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </div>
 </footer>
 
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "How do I register a new food business with the NSW Food Authority?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "In New South Wales, retail food businesses like cafes, restaurants, and retail bakeries must notify the NSW Food Authority before operating. Non-retail food businesses such as food manufacturers, wholesalers, egg producers, and dairy processors must apply for a licence directly with the NSW Food Authority."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "What is required to pass a NSW Food Authority audit?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "A NSW Food Authority audit assesses compliance across three core areas: structural requirements like kitchen surfaces, handwashing facilities and ventilation; operational processes including safe food temperatures, clean storage and allergen separation; and record-keeping covering daily temperature sheets, sanitising logs and supplier approvals."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Do I need a certified Food Safety Supervisor on-site at all times?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Under Standard 3.2.2A of the Food Standards Code, most food service businesses that process and sell ready-to-eat potentially hazardous foods must appoint at least one trained Food Safety Supervisor. The FSS does not need to be physically present at all times but must be reasonably available to supervise food handling operations and maintain the food safety program."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "How do I prepare for a third-party food safety audit?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Third-party food safety audits assess your HACCP program, documented procedures, supplier verification, and staff competency. The foundation is the same regardless of the audit type: solid documentation, clear SOPs, and evidence that your team understands food safety practices."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "What is a HACCP plan and do I need one in NSW?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "HACCP is a systematic approach to identifying and managing food safety hazards in food production. In NSW, Class 2 food businesses including most cafes, restaurants, caterers, and food manufacturers are legally required to maintain a documented Food Safety Program based on HACCP principles under Standard 3.2.1 of the Food Standards Code."
+ }
+ }
+ ]
+}
+</script>
 <script>
 (function(){
  document.querySelectorAll('.faq-q').forEach(function(q){
@@ -368,6 +448,26 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  });
  });
 })();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ var p=window.location.pathname;
+ document.querySelectorAll('a[href*="calendly.com"]').forEach(function(l){
+  l.addEventListener('click',function(){
+   gtag('event','calendly_click',{'event_category':'conversion','event_label':p});
+  });
+ });
+ document.querySelectorAll('a[href^="tel:"]').forEach(function(l){
+  l.addEventListener('click',function(){
+   gtag('event','phone_click',{'event_category':'conversion','event_label':p});
+  });
+ });
+ document.querySelectorAll('a[href^="mailto:"]').forEach(function(l){
+  l.addEventListener('click',function(){
+   gtag('event','email_click',{'event_category':'conversion','event_label':p});
+  });
+ });
+});
 </script>
 </body>
 </html>

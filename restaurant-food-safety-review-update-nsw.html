@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -80,7 +80,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,30,40,0.
 .creds-track{display:flex;align-items:center;animation:marquee 32s linear infinite;width:max-content;padding:0.75rem 0;}
 @keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 .cred-pill{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.74rem;font-weight:600;color:var(--navy-deep);white-space:nowrap;padding:0 1.75rem;border-right:1px solid rgba(28,43,58,0.18);}
-.cred-pill::before{content:'◆';font-size:0.48rem;}
+.cred-pill::before{content:'â—†';font-size:0.48rem;}
 /* CONTENT */
 .page-content{max-width:1100px;margin:0 auto;padding:4rem 2rem 5rem;}
 .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
@@ -233,6 +233,22 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  "serviceType": "Food Safety Consulting & Training"
 }
 </script>
+<script type="application/ld+json" id="website-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": {
+ "@type": "EntryPoint",
+ "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
+ },
+ "query-input": "required name=search_term_string"
+ }
+}
+</script>
 <script type="application/ld+json" id="breadcrumb-schema">
 {
  "@context": "https://schema.org",
@@ -266,11 +282,11 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <nav>
  <a href="/" class="nav-logo">
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
  </a>
  <ul class="nav-links">
  <li>
- <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+ <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/haccp-plan-development">HACCP Plan Development</a>
  <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -290,7 +306,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </div>
  </li>
  <li>
- <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+ <a href="/food-safety-training-sydney">Training <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/food-safety-training-sydney">Food Safety Training</a>
  <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -302,7 +318,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </div>
  </li>
  <li>
- <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+ <a href="/blog">Blog <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/blog/haccp">HACCP Deep-Dive</a>
  <a href="/blog">All Articles</a>
@@ -316,7 +332,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <a href="/pricing">Pricing</a>
  </li>
  <li>
- <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+ <a href="/suburb-directory">Locations <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/suburb-directory">All Sydney</a>
  <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -327,30 +343,30 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </li>
  <li><a href="/#about">About</a></li>
  <li><a href="/contact">Contact</a></li>
- <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+ <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
  </ul>
 </nav>
 <div class="page-hero">
  <div class="hero-inner">
- <div class="breadcrumb"><a href="/">Home</a><span>›</span> <a href="/cafe-restaurant-food-safety">Cafe & Restaurant</a><span>›</span> <span class="bc-cur">Restaurant Food Safety Program Review NSW</span></div>
- <div class="eyebrow">Cafes & Restaurants · FSP Review & Update</div>
+ <div class="breadcrumb"><a href="/">Home</a><span>â€º</span> <a href="/cafe-restaurant-food-safety">Cafe & Restaurant</a><span>â€º</span> <span class="bc-cur">Restaurant Food Safety Program Review NSW</span></div>
+ <div class="eyebrow">Cafes & Restaurants Â· FSP Review & Update</div>
  <h1>Restaurant Food Safety Program <em>Review & Update NSW</em></h1>
- <p class="hero-sub">Most non-compliant cafes and restaurants don't have missing documents — they have outdated ones. Your menu has changed, your equipment has changed, the regulations have changed. When did your Food Safety Program last change?</p>
+ <p class="hero-sub">Most non-compliant cafes and restaurants don't have missing documents â€” they have outdated ones. Your menu has changed, your equipment has changed, the regulations have changed. When did your Food Safety Program last change?</p>
  <div class="hero-actions">
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review â†—</a>
  <a href="/pricing" class="btn-ghost">View Pricing</a>
  </div>
  </div>
 </div>
 <div class="creds-bar"><div class="creds-track">
- <span class="cred-pill">11+ Years at The Arnott's Group</span>
+ <span class="cred-pill">11+ Years Food Quality Experience</span>
  <span class="cred-pill">TAE-Qualified Trainer &amp; Assessor</span>
  <span class="cred-pill">TAFE NSW Food Technology Lecturer</span>
  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
  <span class="cred-pill">NSW Food Authority Compliance</span>
  <span class="cred-pill">Fixed-Price Programs</span>
  <span class="cred-pill">Sydney-Wide Service</span>
- <span class="cred-pill">11+ Years at The Arnott's Group</span>
+ <span class="cred-pill">11+ Years Food Quality Experience</span>
  <span class="cred-pill">TAE-Qualified Trainer &amp; Assessor</span>
  <span class="cred-pill">TAFE NSW Food Technology Lecturer</span>
  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
@@ -363,22 +379,22 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <div class="prose">
  
 <h2>The FSP update problem in food service</h2>
-<p>Standard 3.2.1 requires a Food Safety Program to be reviewed at least annually and whenever a significant change occurs. In practice, food service businesses rarely update their FSPs proactively — changes accumulate until the gap between what the document says and what actually happens in the kitchen becomes obvious to any auditor reviewing it.</p>
-<p>An FSP written for a different menu, describing equipment that has been replaced, with allergen management that pre-dates the 2021 FSANZ amendments, is not compliant — regardless of how thorough it was when originally written.</p>
+<p>Standard 3.2.1 requires a Food Safety Program to be reviewed at least annually and whenever a significant change occurs. In practice, food service businesses rarely update their FSPs proactively â€” changes accumulate until the gap between what the document says and what actually happens in the kitchen becomes obvious to any auditor reviewing it.</p>
+<p>An FSP written for a different menu, describing equipment that has been replaced, with allergen management that pre-dates the 2021 FSANZ amendments, is not compliant â€” regardless of how thorough it was when originally written.</p>
 <div class="callout">
  <div class="callout-label">Signs your FSP needs an update</div>
- <p>Menu items are described that you no longer serve · New dishes or specials are not in the hazard analysis · Equipment mentioned has been replaced · Allergen management doesn't address sesame · A Food Safety Supervisor is listed who has left the business · Critical limits don't match current FSANZ guidance · No corrective action records have ever been recorded</p>
+ <p>Menu items are described that you no longer serve Â· New dishes or specials are not in the hazard analysis Â· Equipment mentioned has been replaced Â· Allergen management doesn't address sesame Â· A Food Safety Supervisor is listed who has left the business Â· Critical limits don't match current FSANZ guidance Â· No corrective action records have ever been recorded</p>
 </div>
 <h2>What an FSP review and update involves</h2>
 <p>AMES conducts a structured review of your existing Food Safety Program against three criteria: does it accurately reflect your current operations, does it satisfy all eight elements of Standard 3.2.1, and does it address current regulatory requirements (including post-2021 allergen changes and Standard 3.2.2A)?</p>
-<p>The review produces a gap assessment report and an updated FSP that addresses every identified gap — revised hazard analysis, updated CCPs, current allergen management, and all updated monitoring forms. Where the existing FSP is sound but needs targeted updates, we can work with your existing document rather than rewriting it from scratch.</p>
+<p>The review produces a gap assessment report and an updated FSP that addresses every identified gap â€” revised hazard analysis, updated CCPs, current allergen management, and all updated monitoring forms. Where the existing FSP is sound but needs targeted updates, we can work with your existing document rather than rewriting it from scratch.</p>
 <p><a href="/cafe-food-safety-audit-preparation-sydney">Learn more about our audit preparation service</a> or <a href="/pricing">view our fixed-price packages</a>.</p>
 
  </div>
  <aside class="sidebar">
  <div class="sidebar-cta">
  <p>Need food safety support for your NSW cafes & restaurants? Fixed-price programs, no hidden costs.</p>
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review â†—</a>
  </div>
  <div class="sidebar-card">
  <div class="sidebar-title">Key Services</div>
@@ -418,9 +434,9 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <div class="cta-strip">
  <div class="cta-inner">
  <h2>Ready to get your food business <em>fully compliant?</em></h2>
- <p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. Built on 11+ years of real manufacturing experience at The Arnott's Group.</p>
+ <p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. Built on 11+ years of real QA experience in national food manufacturing.</p>
  <div class="cta-actions">
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book an FSP Review â†—</a>
  <a href="/pricing" class="btn-ghost">View Pricing</a>
  </div>
  </div>
@@ -451,10 +467,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <div class="footer-inner">
  <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
   </a>
  <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
- <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+ <div class="footer-phone"><a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a><span class="footer-phone-divider">Â·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
  <div class="footer-links">
  <a href="/#services">Services</a>
  <a href="/food-safety-training-sydney">Training</a>

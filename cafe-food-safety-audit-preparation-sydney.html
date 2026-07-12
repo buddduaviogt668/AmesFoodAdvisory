@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -80,7 +80,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,30,40,0.
 .creds-track{display:flex;align-items:center;animation:marquee 32s linear infinite;width:max-content;padding:0.75rem 0;}
 @keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 .cred-pill{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.74rem;font-weight:600;color:var(--navy-deep);white-space:nowrap;padding:0 1.75rem;border-right:1px solid rgba(28,43,58,0.18);}
-.cred-pill::before{content:'◆';font-size:0.48rem;}
+.cred-pill::before{content:'â—†';font-size:0.48rem;}
 /* CONTENT */
 .page-content{max-width:1100px;margin:0 auto;padding:4rem 2rem 5rem;}
 .content-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
@@ -233,6 +233,22 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  "serviceType": "Food Safety Consulting & Training"
 }
 </script>
+<script type="application/ld+json" id="website-schema">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "AMES Food Advisory",
+ "url": "https://www.amesfoodadvisory.com.au",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": {
+ "@type": "EntryPoint",
+ "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
+ },
+ "query-input": "required name=search_term_string"
+ }
+}
+</script>
 <script type="application/ld+json" id="breadcrumb-schema">
 {
  "@context": "https://schema.org",
@@ -266,11 +282,11 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <nav>
  <a href="/" class="nav-logo">
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+ <span class="nav-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
  </a>
  <ul class="nav-links">
  <li>
- <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+ <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/haccp-plan-development">HACCP Plan Development</a>
  <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -290,7 +306,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </div>
  </li>
  <li>
- <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+ <a href="/food-safety-training-sydney">Training <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/food-safety-training-sydney">Food Safety Training</a>
  <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -302,7 +318,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </div>
  </li>
  <li>
- <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+ <a href="/blog">Blog <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/blog/haccp">HACCP Deep-Dive</a>
  <a href="/blog">All Articles</a>
@@ -316,7 +332,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <a href="/pricing">Pricing</a>
  </li>
  <li>
- <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+ <a href="/suburb-directory">Locations <span class="nav-arrow">â–¼</span></a>
  <div class="nav-drop">
  <a href="/suburb-directory">All Sydney</a>
  <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -327,30 +343,30 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  </li>
  <li><a href="/#about">About</a></li>
  <li><a href="/contact">Contact</a></li>
- <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">📞 (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+ <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">ðŸ“ž (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
  </ul>
 </nav>
 <div class="page-hero">
  <div class="hero-inner">
- <div class="breadcrumb"><a href="/">Home</a><span>›</span> <a href="/cafe-restaurant-food-safety">Cafe & Restaurant</a><span>›</span> <span class="bc-cur">Cafe Food Safety Audit Preparation Sydney</span></div>
- <div class="eyebrow">Cafes & Restaurants · Audit Preparation</div>
+ <div class="breadcrumb"><a href="/">Home</a><span>â€º</span> <a href="/cafe-restaurant-food-safety">Cafe & Restaurant</a><span>â€º</span> <span class="bc-cur">Cafe Food Safety Audit Preparation Sydney</span></div>
+ <div class="eyebrow">Cafes & Restaurants Â· Audit Preparation</div>
  <h1>Cafe Audit Preparation Sydney <em>Find the Gaps Before the Inspector Does</em></h1>
- <p class="hero-sub">A NSW Food Authority audit finding on record costs more than fixing it beforehand. AMES Food Advisory's pre-audit gap assessment identifies every compliance issue in your cafe before an inspector does — with a written report and prioritised action plan.</p>
+ <p class="hero-sub">A NSW Food Authority audit finding on record costs more than fixing it beforehand. AMES Food Advisory's pre-audit gap assessment identifies every compliance issue in your cafe before an inspector does â€” with a written report and prioritised action plan.</p>
  <div class="hero-actions">
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment â†—</a>
  <a href="/pricing" class="btn-ghost">View Pricing</a>
  </div>
  </div>
 </div>
 <div class="creds-bar"><div class="creds-track">
- <span class="cred-pill">11+ Years at The Arnott's Group</span>
+ <span class="cred-pill">11+ Years Food Quality Experience</span>
  <span class="cred-pill">TAE-Qualified Trainer &amp; Assessor</span>
  <span class="cred-pill">TAFE NSW Food Technology Lecturer</span>
  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
  <span class="cred-pill">NSW Food Authority Compliance</span>
  <span class="cred-pill">Fixed-Price Programs</span>
  <span class="cred-pill">Sydney-Wide Service</span>
- <span class="cred-pill">11+ Years at The Arnott's Group</span>
+ <span class="cred-pill">11+ Years Food Quality Experience</span>
  <span class="cred-pill">TAE-Qualified Trainer &amp; Assessor</span>
  <span class="cred-pill">TAFE NSW Food Technology Lecturer</span>
  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
@@ -364,31 +380,31 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  
 <h2>What a NSW Food Authority audit actually involves</h2>
 <p>A routine NSW Food Authority audit of a Class 2 food business in Sydney typically covers: reviewing the Food Safety Program for currency and accuracy, checking temperature monitoring records for completeness, verifying probe thermometers are calibrated, directly measuring refrigeration temperatures, reviewing corrective action records, requesting the Food Safety Supervisor certificate, observing staff food handling practices, and checking allergen management procedures.</p>
-<p>The businesses that pass without findings have current, site-specific FSPs that are actively implemented. The businesses that receive improvement notices have outdated plans, missing records, or uncalibrated equipment — issues that AMES identifies and fixes in the pre-audit gap assessment before an inspector sees them.</p>
+<p>The businesses that pass without findings have current, site-specific FSPs that are actively implemented. The businesses that receive improvement notices have outdated plans, missing records, or uncalibrated equipment â€” issues that AMES identifies and fixes in the pre-audit gap assessment before an inspector sees them.</p>
 <div class="callout">
  <div class="callout-label">What we check in a pre-audit gap assessment</div>
- <p>Food Safety Program currency · Temperature monitoring record completeness · Probe thermometer calibration status · Refrigeration unit temperatures · Corrective action documentation · Food Safety Supervisor certificate validity · Allergen management procedures · Cleaning schedule compliance · Supplier records</p>
+ <p>Food Safety Program currency Â· Temperature monitoring record completeness Â· Probe thermometer calibration status Â· Refrigeration unit temperatures Â· Corrective action documentation Â· Food Safety Supervisor certificate validity Â· Allergen management procedures Â· Cleaning schedule compliance Â· Supplier records</p>
 </div>
 <h2>The most common audit failures in Sydney cafes</h2>
 <ul>
- <li>Food Safety Program describes a menu or process that no longer exists — never updated after a menu change</li>
- <li>Temperature logs with gaps — weeks where no monitoring was recorded</li>
+ <li>Food Safety Program describes a menu or process that no longer exists â€” never updated after a menu change</li>
+ <li>Temperature logs with gaps â€” weeks where no monitoring was recorded</li>
  <li>Probe thermometers that have never been calibrated, or that are demonstrably out of range</li>
- <li>No corrective action records — suggesting either perfection or a broken monitoring system</li>
+ <li>No corrective action records â€” suggesting either perfection or a broken monitoring system</li>
  <li>Food Safety Supervisor certificate lapsed or the FSS has left the business</li>
  <li>No allergen management section in the FSP post-2021 FSANZ amendments</li>
  <li>Cooling procedures described in the FSP but not being followed in practice</li>
 </ul>
 <h2>What you receive from a gap assessment</h2>
 <p>A written report assessing your cafe's food safety system against Standard 3.2.1, Standard 3.2.2, and Standard 3.2.2A requirements. Each finding is categorised as critical (needs immediate attention), major (needs to be resolved before any audit), or minor (improvement recommended). A prioritised action plan tells you exactly what to fix and in what order.</p>
-<p>AMES can also carry out the remediation work — updating the FSP, writing missing SOPs, retraining staff on corrective action documentation — as a follow-on engagement after the gap assessment.</p>
+<p>AMES can also carry out the remediation work â€” updating the FSP, writing missing SOPs, retraining staff on corrective action documentation â€” as a follow-on engagement after the gap assessment.</p>
 <p><a href="/internal-auditing-services">Learn more about our auditing services</a> or <a href="/pricing">view fixed-price packages</a>.</p>
 
  </div>
  <aside class="sidebar">
  <div class="sidebar-cta">
  <p>Need food safety support for your NSW cafes & restaurants? Fixed-price programs, no hidden costs.</p>
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment â†—</a>
  </div>
  <div class="sidebar-card">
  <div class="sidebar-title">Key Services</div>
@@ -421,7 +437,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <div class="faq-list">
  <div class="faq-item">
  <div class="faq-q">How far in advance of an expected audit should I book a gap assessment?</div>
- <div class="faq-a">Ideally four to six weeks before any expected audit. This allows time for the gap assessment itself, for you to implement the remediation actions identified, and for AMES to verify that the critical and major issues have been addressed before the NSW Food Authority inspection occurs. If you have received notice of an imminent audit, contact us immediately — we can expedite the gap assessment process.</div>
+ <div class="faq-a">Ideally four to six weeks before any expected audit. This allows time for the gap assessment itself, for you to implement the remediation actions identified, and for AMES to verify that the critical and major issues have been addressed before the NSW Food Authority inspection occurs. If you have received notice of an imminent audit, contact us immediately â€” we can expedite the gap assessment process.</div>
  </div>
  <div class="faq-item">
  <div class="faq-q">Does AMES provide a follow-up to verify issues have been fixed?</div>
@@ -432,9 +448,9 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <div class="cta-strip">
  <div class="cta-inner">
  <h2>Ready to get your food business <em>fully compliant?</em></h2>
- <p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. Built on 11+ years of real manufacturing experience at The Arnott's Group.</p>
+ <p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. Built on 11+ years of real QA experience in national food manufacturing.</p>
  <div class="cta-actions">
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment ↗</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a Gap Assessment â†—</a>
  <a href="/pricing" class="btn-ghost">View Pricing</a>
  </div>
  </div>
@@ -465,10 +481,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <div class="footer-inner">
  <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
+    <span class="footer-logo-tag">NSW&nbsp;Â·&nbsp;HACCP&nbsp;Â·&nbsp;FOOD CONSULTANTS</span>
   </a>
  <div class="footer-copy">&copy; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
- <div class="footer-phone"><a href="tel:+61278220109">📞 (02) 7822 0109</a><span class="footer-phone-divider">·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+ <div class="footer-phone"><a href="tel:+61278220109">ðŸ“ž (02) 7822 0109</a><span class="footer-phone-divider">Â·</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
  <div class="footer-links">
  <a href="/#services">Services</a>
  <a href="/food-safety-training-sydney">Training</a>
