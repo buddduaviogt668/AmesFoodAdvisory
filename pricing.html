@@ -675,6 +675,8 @@
  q.closest('.faq-item').classList.toggle('open');
  });
  });
+
+(function(){var pp=window.location.pathname;var ps=pp.replace(/\//g,'-').replace(/^-|-$/g,'')||'home';var u='?utm_source=ames&utm_medium=website&utm_campaign='+ps;document.addEventListener('click',function(e){var l=e.target.closest('a');if(!l)return;var h=l.getAttribute('href')||'';if(h.indexOf('calendly.com')>-1){if(typeof gtag!=='undefined')gtag('event','calendly_click',{'event_category':'conversion','event_label':pp});if(h.indexOf('?')===-1)l.setAttribute('href',h+u);}if(h.indexOf('tel:')===0&&typeof gtag!=='undefined')gtag('event','phone_click',{'event_category':'conversion','event_label':pp});if(h.indexOf('mailto:')===0&&typeof gtag!=='undefined')gtag('event','email_click',{'event_category':'conversion','event_label':pp});});})();
 </script>
 </body>
 </html>
