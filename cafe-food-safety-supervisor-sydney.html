@@ -182,7 +182,20 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
 <script type="application/ld+json" id="org-schema">
 {
  "@context": "https://schema.org",
@@ -285,7 +298,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
  <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
- <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
  <li>
  <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
  <div class="nav-drop">
@@ -386,10 +402,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <p>The FSS should be someone who is regularly present during operations and has genuine supervisory authority over food handling practices &mdash; typically the owner, manager, or head chef. Nominating a junior staff member who is not actually supervising food safety practices does not satisfy the intent of Standard 3.2.2A.</p>
 <p>AMES Food Advisory helps cafes identify the right candidate for the FSS role, assess any knowledge gaps, and prepare the nominated person for the certification assessment through targeted training before they sit the formal assessment with an approved RTO.</p>
 <div class="services-grid">
- <div class="service-card"><div class="sc-icon">📋</div><div class="sc-title">FSS Needs Assessment</div><div class="sc-desc">Review your current FSS arrangements against Standard 3.2.2A requirements. Identify any gaps and the fastest compliant pathway.</div></div>
- <div class="service-card"><div class="sc-icon">🎓</div><div class="sc-title">Pre-Certification Training</div><div class="sc-desc">Targeted training to prepare your nominated FSS candidate for the RTO assessment. Covers food safety law, HACCP, temperature control, and hygiene requirements.</div></div>
- <div class="service-card"><div class="sc-icon">📝</div><div class="sc-title">Documentation Support</div><div class="sc-desc">Help incorporating FSS details into your Food Safety Program and notifying the NSW Food Authority as required by Standard 3.2.2A.</div></div>
- <div class="service-card"><div class="sc-icon">🔄</div><div class="sc-title">Certificate Renewal Support</div><div class="sc-desc">Reminder system and renewal preparation for when your FSS certificate is approaching expiry. Certificates do not last forever &mdash; most require renewal every five years.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128203;</div><div class="sc-title">FSS Needs Assessment</div><div class="sc-desc">Review your current FSS arrangements against Standard 3.2.2A requirements. Identify any gaps and the fastest compliant pathway.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127891;</div><div class="sc-title">Pre-Certification Training</div><div class="sc-desc">Targeted training to prepare your nominated FSS candidate for the RTO assessment. Covers food safety law, HACCP, temperature control, and hygiene requirements.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128221;</div><div class="sc-title">Documentation Support</div><div class="sc-desc">Help incorporating FSS details into your Food Safety Program and notifying the NSW Food Authority as required by Standard 3.2.2A.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128260;</div><div class="sc-title">Certificate Renewal Support</div><div class="sc-desc">Reminder system and renewal preparation for when your FSS certificate is approaching expiry. Certificates do not last forever &mdash; most require renewal every five years.</div></div>
 </div>
 <p>Book a training needs assessment to discuss your cafe's FSS requirements, or view our <a href="/pricing">fixed-price packages</a>.</p>
 

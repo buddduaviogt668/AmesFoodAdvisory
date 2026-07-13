@@ -169,7 +169,20 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
 <script type="application/ld+json" id="org-schema">
 {
  "@context": "https://schema.org",
@@ -272,7 +285,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
  <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
- <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
  <li>
  <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
  <div class="nav-drop">
@@ -379,10 +395,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <h2>Gluten-free production in a gluten-containing bakery</h2>
 <p>Many Sydney bakeries now offer gluten-free products. Producing gluten-free items in a bakery that also handles wheat flour presents significant cross-contact risks &mdash; airborne flour, shared equipment, and shared surfaces can all introduce gluten into nominally gluten-free products.</p>
 <div class="services-grid">
- <div class="service-card"><div class="sc-icon">🌾</div><div class="sc-title">Allergen Matrix Development</div><div class="sc-desc">Complete allergen matrix for your entire product range &mdash; present, absent, and cross-contact risk for all major allergens including sesame.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127806;</div><div class="sc-title">Allergen Matrix Development</div><div class="sc-desc">Complete allergen matrix for your entire product range &mdash; present, absent, and cross-contact risk for all major allergens including sesame.</div></div>
  <div class="service-card"><div class="sc-icon">❄️</div><div class="sc-title">Cooling CCP Design</div><div class="sc-desc">Validated cooling procedures for cream-filled and custard products &mdash; with monitoring forms and corrective action procedures.</div></div>
- <div class="service-card"><div class="sc-icon">🔒</div><div class="sc-title">Gluten-Free Segregation Protocol</div><div class="sc-desc">Documented procedures for gluten-free production &mdash; dedicated equipment, cleaning validation, and customer communication guidelines.</div></div>
- <div class="service-card"><div class="sc-icon">📋</div><div class="sc-title">Supplier Allergen Management</div><div class="sc-desc">Allergen specifications on file for every ingredient &mdash; with a supplier change notification procedure to catch reformulations.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128274;</div><div class="sc-title">Gluten-Free Segregation Protocol</div><div class="sc-desc">Documented procedures for gluten-free production &mdash; dedicated equipment, cleaning validation, and customer communication guidelines.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128203;</div><div class="sc-title">Supplier Allergen Management</div><div class="sc-desc">Allergen specifications on file for every ingredient &mdash; with a supplier change notification procedure to catch reformulations.</div></div>
 </div>
 <p><a href="/pricing">View our fixed-price packages</a> or book a scoping call to discuss your bakery's requirements.</p>
 

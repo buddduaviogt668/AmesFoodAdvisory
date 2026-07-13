@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -191,6 +191,8 @@
     transition: color 0.2s;
   }
   .nav-phone:hover { color: var(--white) !important; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
 
   /* ── HERO ── */
   .hero {
@@ -700,7 +702,16 @@
     .trust-inner { grid-template-columns: 1fr 1fr; }
     .form-row { grid-template-columns: 1fr; }
     nav { padding: 0 1.25rem; }
-    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
     section { padding: 4rem 1.25rem; }
     .industries-grid { grid-template-columns: 1fr; }
     .process-grid { grid-template-columns: 1fr 1fr; }
@@ -724,7 +735,20 @@
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -746,6 +770,9 @@
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
     <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
   </a>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
     <li>
       <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
@@ -1103,12 +1130,12 @@
     <p style="font-size:0.95rem; color:rgba(255,255,255,0.45); max-width:560px; line-height:1.7; font-weight:300;">More than a decade in food safety &mdash; from national manufacturing to RTO instruction to on-site compliance auditing.</p>
     <div class="credentials-grid">
       <div class="credential-card fade-up">
-        <div class="credential-icon">🏭</div>
+        <div class="credential-icon">&#127981;</div>
         <h3>11+ Years in Food Manufacturing</h3>
         <p>National food manufacturer. HACCP implementation, compliance scaling, multi-site operations.</p>
       </div>
       <div class="credential-card fade-up fade-up-delay-1">
-        <div class="credential-icon">📚</div>
+        <div class="credential-icon">&#128218;</div>
         <h3>TAFE NSW Accredited Trainer</h3>
         <p>Food Safety Supervisor &amp; Advanced Food Handling instructor. Current credentials with NSW RTO authority.</p>
       </div>
@@ -1138,47 +1165,47 @@
         <div class="sector-desc">Food safety programs, FSS compliance, regulatory inspection prep and on-site staff training.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
-        <div class="sector-icon">🏭</div>
+        <div class="sector-icon">&#127981;</div>
         <div class="sector-name">Food Manufacturers</div>
         <div class="sector-desc">HACCP plans/SQF readiness, allergen management and retailer audit preparation.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-2">
-        <div class="sector-icon">🚚</div>
+        <div class="sector-icon">&#128666;</div>
         <div class="sector-name">Catering & Events</div>
         <div class="sector-desc">Mobile food unit compliance, temporary premises licensing and food handler training.</div>
       </div>
       <div class="sector-card fade-up">
-        <div class="sector-icon">🥐</div>
+        <div class="sector-icon">&#129360;</div>
         <div class="sector-name">Bakeries & Pastry</div>
         <div class="sector-desc">Allergen labelling, GMP documentation and retail licensing for specialty bakery operations.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
-        <div class="sector-icon">🏨</div>
+        <div class="sector-icon">&#127976;</div>
         <div class="sector-name">Aged Care & Health</div>
         <div class="sector-desc">Vulnerable population food safety protocols, nutrition services compliance and staff training.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-2">
-        <div class="sector-icon">🧪</div>
+        <div class="sector-icon">&#129514;</div>
         <div class="sector-name">Food Startups</div>
         <div class="sector-desc">End-to-end launch packages &mdash; licensing, food safety plans and regulatory submission support.</div>
       </div>
       <div class="sector-card fade-up">
-        <div class="sector-icon">🍺</div>
+        <div class="sector-icon">&#127866;</div>
         <div class="sector-name">Breweries &amp; Distilleries</div>
         <div class="sector-desc">Taproom compliance, FSS registration, Standard 3.2.2A, and regulatory audit preparation for craft producers.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
-        <div class="sector-icon">🏥</div>
+        <div class="sector-icon">&#127973;</div>
         <div class="sector-name">Childcare &amp; Aged Care</div>
         <div class="sector-desc">Strict vulnerable-population food safety programs, allergen management protocols, and mandatory record-keeping systems.</div>
       </div>
       <div class="sector-card fade-up">
-        <div class="sector-icon">🎓</div>
+        <div class="sector-icon">&#127891;</div>
         <div class="sector-name">RTOs & TAFEs</div>
         <div class="sector-desc">Assessment resource development, competency mapping and sessional training delivery.</div>
       </div>
       <div class="sector-card fade-up fade-up-delay-1">
-        <div class="sector-icon">🏠</div>
+        <div class="sector-icon">&#127968;</div>
         <div class="sector-name">Home-Based Producers</div>
         <div class="sector-desc">Cottage food legislation guidance, product registration and food safety program setup.</div>
       </div>
@@ -1328,23 +1355,23 @@
         </div>
         <div class="credentials-list">
           <div class="cred-row">
-            <div class="cred-row-icon">🏭</div>
+            <div class="cred-row-icon">&#127981;</div>
             <div class="cred-row-text"><strong>11+ years</strong> &mdash; Quality & food safety at a national food manufacturer</div>
           </div>
           <div class="cred-row">
-            <div class="cred-row-icon">📋</div>
+            <div class="cred-row-icon">&#128203;</div>
             <div class="cred-row-text"><strong>TAE Certificate IV</strong> &mdash; Training & Assessment (nationally accredited)</div>
           </div>
           <div class="cred-row">
-            <div class="cred-row-icon">🎓</div>
+            <div class="cred-row-icon">&#127891;</div>
             <div class="cred-row-text"><strong>TAFE NSW instructor</strong> &mdash; Food Science & Technology</div>
           </div>
           <div class="cred-row">
-            <div class="cred-row-icon">🔬</div>
+            <div class="cred-row-icon">&#128300;</div>
             <div class="cred-row-text"><strong>Laboratory expertise</strong> &mdash; Micro, chemical, sensory & physical testing</div>
           </div>
           <div class="cred-row">
-            <div class="cred-row-icon">📍</div>
+            <div class="cred-row-icon">&#128205;</div>
             <div class="cred-row-text"><strong>Based in Sydney</strong> &mdash; Serving all of NSW, on-site & remote available</div>
           </div>
         </div>
@@ -1492,14 +1519,14 @@
         </a>
         <div class="contact-info-label" style="margin-top:2rem;">Direct contact</div>
         <div class="contact-detail">
-          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-icon">&#128205;</div>
           <div>
             <div class="contact-detail-title">Location</div>
             <div class="contact-detail-value">Sydney, NSW &middot; Servicing all of NSW</div>
           </div>
         </div>
         <div class="contact-detail">
-          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-icon">&#128231;</div>
           <div>
             <div class="contact-detail-title">Email</div>
             <div class="contact-detail-value"><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>

@@ -169,7 +169,20 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
 <script type="application/ld+json" id="org-schema">
 {
  "@context": "https://schema.org",
@@ -272,7 +285,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
  <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
- <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
  <li>
  <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
  <div class="nav-drop">
@@ -375,10 +391,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 </div>
 <h2>What a catering HACCP plan must cover</h2>
 <div class="services-grid">
- <div class="service-card"><div class="sc-icon">🚐</div><div class="sc-title">Transport Phase CCPs</div><div class="sc-desc">Temperature monitoring during transport &mdash; including pre-chilling requirements, insulated container specifications, and maximum transport time limits for different food types.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128656;</div><div class="sc-title">Transport Phase CCPs</div><div class="sc-desc">Temperature monitoring during transport &mdash; including pre-chilling requirements, insulated container specifications, and maximum transport time limits for different food types.</div></div>
  <div class="service-card"><div class="sc-icon">⏱️</div><div class="sc-title">Time-Temperature Management</div><div class="sc-desc">Cumulative time tracking from preparation through service &mdash; documented procedures for recording time out of temperature control and decision criteria for food disposal.</div></div>
- <div class="service-card"><div class="sc-icon">🏕️</div><div class="sc-title">Temporary Service Environment</div><div class="sc-desc">Procedures for temporary food service &mdash; including handwashing facility requirements, surface sanitisation, and equipment setup at venues without fixed food service infrastructure.</div></div>
- <div class="service-card"><div class="sc-icon">🍽️</div><div class="sc-title">Large-Batch Cooking & Cooling</div><div class="sc-desc">CCPs for large-batch cooking &mdash; including cook temperature monitoring, rapid cooling procedures, and reheating requirements for pre-cooked items served at events.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127957;️</div><div class="sc-title">Temporary Service Environment</div><div class="sc-desc">Procedures for temporary food service &mdash; including handwashing facility requirements, surface sanitisation, and equipment setup at venues without fixed food service infrastructure.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127869;️</div><div class="sc-title">Large-Batch Cooking & Cooling</div><div class="sc-desc">CCPs for large-batch cooking &mdash; including cook temperature monitoring, rapid cooling procedures, and reheating requirements for pre-cooked items served at events.</div></div>
 </div>
 <h2>Council registration for caterers</h2>
 <p>Catering businesses in NSW must be registered with their home council as a food business. If you operate at events in multiple council areas, you may need to notify those councils. For events on council-managed land, some councils require a temporary food stall permit in addition to your food business registration.</p>

@@ -182,7 +182,20 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
 <script type="application/ld+json" id="org-schema">
 {
  "@context": "https://schema.org",
@@ -285,7 +298,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
  <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
- <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
  <li>
  <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
  <div class="nav-drop">
@@ -388,10 +404,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 </div>
 <h2>Training programs for food service businesses</h2>
 <div class="services-grid">
- <div class="service-card"><div class="sc-icon">🎓</div><div class="sc-title">Food Handler Induction</div><div class="sc-desc">Foundational food safety training for new kitchen staff. Covers hygiene, temperature control, allergen awareness, and your FSP basics. Customised to your menu and processes.</div></div>
- <div class="service-card"><div class="sc-icon">📋</div><div class="sc-title">HACCP & FSP Awareness</div><div class="sc-desc">Team briefing on your Food Safety Program &mdash; what the CCPs are, how to monitor them, and what to do when something goes wrong. Essential when a new FSP is introduced.</div></div>
- <div class="service-card"><div class="sc-icon">🌾</div><div class="sc-title">Allergen Management Training</div><div class="sc-desc">Focused on the 2021 FSANZ changes, sesame as a new major allergen, cross-contact risk, and customer communication. Critical for cafes and restaurants serving allergen-aware customers.</div></div>
- <div class="service-card"><div class="sc-icon">🔬</div><div class="sc-title">Food Technology Upskilling</div><div class="sc-desc">Deeper food science content for supervisors and senior kitchen staff &mdash; microbiology, thermal processing, preservation principles, and quality control fundamentals.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127891;</div><div class="sc-title">Food Handler Induction</div><div class="sc-desc">Foundational food safety training for new kitchen staff. Covers hygiene, temperature control, allergen awareness, and your FSP basics. Customised to your menu and processes.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128203;</div><div class="sc-title">HACCP & FSP Awareness</div><div class="sc-desc">Team briefing on your Food Safety Program &mdash; what the CCPs are, how to monitor them, and what to do when something goes wrong. Essential when a new FSP is introduced.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127806;</div><div class="sc-title">Allergen Management Training</div><div class="sc-desc">Focused on the 2021 FSANZ changes, sesame as a new major allergen, cross-contact risk, and customer communication. Critical for cafes and restaurants serving allergen-aware customers.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128300;</div><div class="sc-title">Food Technology Upskilling</div><div class="sc-desc">Deeper food science content for supervisors and senior kitchen staff &mdash; microbiology, thermal processing, preservation principles, and quality control fundamentals.</div></div>
 </div>
 <h2>Food Safety Supervisor certification pathway</h2>
 <p>Standard 3.2.2A requires every food service business handling unpackaged potentially hazardous food to have a certified Food Safety Supervisor (FSS). The FSS must hold a current certificate from an approved RTO covering food handling and food safety practices relevant to the business type.</p>

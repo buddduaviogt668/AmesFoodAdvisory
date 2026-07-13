@@ -169,7 +169,20 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-</style>
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
+  @media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
+    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
+    .nav-links .nav-phone { padding-left: 0 !important; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }</style>
 <script type="application/ld+json" id="org-schema">
 {
  "@context": "https://schema.org",
@@ -272,7 +285,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
  <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
- <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
  <li>
  <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
  <div class="nav-drop">
@@ -379,10 +395,10 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.1);pad
 <h2>Temperature control on the road</h2>
 <p>Temperature control is the most critical food safety challenge for mobile vendors. Your HACCP plan must document how you maintain cold foods at or below 5°C and hot foods at or above 60°C throughout transport, setup, service, and pack-down.</p>
 <div class="services-grid">
- <div class="service-card"><div class="sc-icon">🌡️</div><div class="sc-title">Transport Temperature Management</div><div class="sc-desc">Validated procedures for maintaining food temperatures during transport &mdash; including pre-chilling protocols, insulated container requirements, and monitoring records.</div></div>
+ <div class="service-card"><div class="sc-icon">&#127777;️</div><div class="sc-title">Transport Temperature Management</div><div class="sc-desc">Validated procedures for maintaining food temperatures during transport &mdash; including pre-chilling protocols, insulated container requirements, and monitoring records.</div></div>
  <div class="service-card"><div class="sc-icon">⚡</div><div class="sc-title">Generator Failure Contingency</div><div class="sc-desc">Documented corrective action procedures for power failure &mdash; including maximum safe holding times and decision criteria for discarding food.</div></div>
- <div class="service-card"><div class="sc-icon">💧</div><div class="sc-title">Water & Waste Management</div><div class="sc-desc">Potable water supply documentation, grey water disposal procedures, and handwashing facility compliance for mobile operations.</div></div>
- <div class="service-card"><div class="sc-icon">📋</div><div class="sc-title">Event-Specific SOPs</div><div class="sc-desc">Standard Operating Procedures tailored to your typical event types &mdash; markets, festivals, corporate catering, and private events.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128167;</div><div class="sc-title">Water & Waste Management</div><div class="sc-desc">Potable water supply documentation, grey water disposal procedures, and handwashing facility compliance for mobile operations.</div></div>
+ <div class="service-card"><div class="sc-icon">&#128203;</div><div class="sc-title">Event-Specific SOPs</div><div class="sc-desc">Standard Operating Procedures tailored to your typical event types &mdash; markets, festivals, corporate catering, and private events.</div></div>
 </div>
 <h2>Allergen management for food trucks</h2>
 <p>Food trucks often operate with limited space and shared equipment, making allergen cross-contact management particularly challenging. Your HACCP plan must document how you manage allergen requests when you cannot guarantee a completely allergen-free preparation environment &mdash; including what you communicate to customers and how.</p>
