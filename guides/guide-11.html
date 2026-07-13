@@ -80,6 +80,10 @@
     border-bottom: 1px solid rgba(212,117,31,0.15);
     padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; -ms-overflow-style: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
   }
   .nav-logo { display: flex; align-items: center; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
@@ -360,6 +364,7 @@
 /* PREVENT LOGO WORD WRAPPING */
 .nav-logo-name, .nav-logo-tag { white-space: nowrap !important; flex-shrink: 0 !important; }
 .nav-logo { flex-shrink: 0 !important; }
+.nav-links { flex-shrink: 0 !important; }
 
 /* BREADCRUMB */
 .breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.74rem;color:rgba(255,255,255,0.4);margin-bottom:1.5rem;flex-wrap:wrap;}
