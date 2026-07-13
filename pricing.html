@@ -203,7 +203,7 @@
  .funnel-stage-list { list-style: none; margin-top: 0.85rem; }
  .funnel-stage-list li { font-size: 0.8rem; color: var(--ink-soft); line-height: 1.6; padding: 0.2rem 0; display: flex; gap: 0.5rem; }
  .funnel-stage.highlight .funnel-stage-list li { color: rgba(255,255,255,0.5); }
- .funnel-stage-list li::before { content: '?'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
+ .funnel-stage-list li::before { content: '\00B7'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
  .funnel-arrow { display: flex; align-items: center; justify-content: center; padding: 0 0.75rem; padding-top: 2.5rem; color: var(--amber); font-size: 1.4rem; font-weight: 300; }
  .credit-badge { display: inline-block; background: var(--amber-pale); border: 1px solid var(--border-amber); color: var(--amber-dim); font-size: 0.72rem; font-weight: 600; padding: 0.3rem 0.7rem; border-radius: 100px; margin-top: 0.75rem; }
 
@@ -224,7 +224,7 @@
  .pkg-list { list-style: none; }
  .pkg-list li { font-size: 0.83rem; color: var(--ink-mid); line-height: 1.65; padding: 0.25rem 0; display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border-navy); }
  .pkg-list li:last-child { border-bottom: none; }
- .pkg-list li::before { content: '?'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
+ .pkg-list li::before { content: '\00B7'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
  .pkg-cta { display: block; background: var(--navy); color: var(--white); text-decoration: none; text-align: center; font-size: 0.85rem; font-weight: 600; padding: 0.85rem; border-radius: 8px; transition: background 0.2s; }
  .pkg-card.featured .pkg-cta { background: var(--amber); color: var(--navy-deep); }
  .pkg-cta:hover { background: var(--navy-lift); }
@@ -248,7 +248,7 @@
  .retainer-list { list-style: none; }
  .retainer-list li { font-size: 0.83rem; color: rgba(255,255,255,0.5); padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 0.5rem; }
  .retainer-list li:last-child { border-bottom: none; }
- .retainer-list li::before { content: '?'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
+ .retainer-list li::before { content: '\00B7'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
 
  /* FAQ */
  .faq-list { border-bottom: 1px solid var(--border-navy); }
@@ -343,14 +343,14 @@
 <nav>
  <a href="/" class="nav-logo">
  <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;?&nbsp;HACCP&nbsp;?&nbsp;FOOD CONSULTANTS</span>
+ <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
   <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
 <ul class="nav-links">
  <li>
- <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">?</span></a>
+ <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">&#9660;</span></a>
  <div class="nav-drop">
  <a href="/haccp-plan-development">HACCP Plan Development</a>
  <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -370,7 +370,7 @@
  </div>
  </li>
  <li>
- <a href="/food-safety-training-sydney">Training <span class="nav-arrow">?</span></a>
+ <a href="/food-safety-training-sydney">Training <span class="nav-arrow">&#9660;</span></a>
  <div class="nav-drop">
  <a href="/food-safety-training-sydney">Food Safety Training</a>
  <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -382,7 +382,7 @@
  </div>
  </li>
  <li>
- <a href="/blog">Blog <span class="nav-arrow">?</span></a>
+ <a href="/blog">Blog <span class="nav-arrow">&#9660;</span></a>
  <div class="nav-drop">
  <a href="/blog/haccp">HACCP Deep-Dive</a>
  <a href="/blog">All Articles</a>
@@ -396,7 +396,7 @@
  <a href="/pricing">Pricing</a>
  </li>
  <li>
- <a href="/suburb-directory">Locations <span class="nav-arrow">?</span></a>
+ <a href="/suburb-directory">Locations <span class="nav-arrow">&#9660;</span></a>
  <div class="nav-drop">
  <a href="/suburb-directory">All Sydney</a>
  <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -459,7 +459,7 @@
 <section class="section" style="background: var(--stone);">
  <div class="section-inner">
  <p class="eyebrow">How it works</p>
- <h2 class="display">Three stages ? <em>start anywhere</em></h2>
+ <h2 class="display">Three stages &mdash; <em>start anywhere</em></h2>
  <p class="section-sub">Most clients begin with a free scoping call. Some jump straight to the site audit. A few come in with a specific program in mind. All paths lead to the same outcome: a compliant food business.</p>
 
  <div class="funnel">
@@ -725,7 +725,7 @@
 <footer><div class="footer-inner">
  <a href="/" class="footer-logo">
  <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
- <span class="footer-logo-tag">NSW&nbsp;?&nbsp;HACCP&nbsp;?&nbsp;FOOD CONSULTANTS</span>
+ <span class="footer-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
  </a>
  <div class="footer-copy">? 2026 AMES Food Advisory ? Sydney, NSW</div>
  <div class="footer-phone">
