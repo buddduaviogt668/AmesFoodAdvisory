@@ -138,15 +138,15 @@
     overflow-x: hidden;
   }
 
-  /* ── NAV ── */
+  /* &#9472;&#9472; NAV &#9472;&#9472; */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     background: rgba(19,30,40,0.97); backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(212,117,31,0.15);
     padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
-    overflow-x: auto; -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; -ms-overflow-style: none;
+    
+    
   }
   nav::-webkit-scrollbar { display: none; }
   .nav-logo { display: flex; align-items: center; gap: 0.35rem; text-decoration: none; }
@@ -194,7 +194,7 @@
   .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
   .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
 
-  /* ── HERO ── */
+  /* &#9472;&#9472; HERO &#9472;&#9472; */
   .hero {
     min-height: 100vh;
     background: var(--navy-deep);
@@ -281,7 +281,7 @@
   }
   .hero-stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.45); font-weight: 300; }
 
-  /* ── CREDENTIALS BAR ── */
+  /* &#9472;&#9472; CREDENTIALS BAR &#9472;&#9472; */
   .creds-bar { background: var(--amber); padding: 0; overflow: hidden; }
   .creds-track {
     display: flex; align-items: center;
@@ -299,9 +299,9 @@
     white-space: nowrap; padding: 0 2rem;
     border-right: 1px solid rgba(28,43,58,0.18);
   }
-  .cred-pill::before { content: '◆'; font-size: 0.5rem; }
+  .cred-pill::before { content: '&#9670;'; font-size: 0.5rem; }
 
-  /* ── SHARED SECTION STYLES ── */
+  /* &#9472;&#9472; SHARED SECTION STYLES &#9472;&#9472; */
   section { padding: 6rem 2rem; }
   .container { max-width: 1200px; margin: 0 auto; width: 100%; }
   .section-eyebrow {
@@ -318,7 +318,7 @@
   }
   h2.display em { font-style: italic; color: var(--amber-dim); }
 
-  /* ── INTRO ── */
+  /* &#9472;&#9472; INTRO &#9472;&#9472; */
   .intro { background: var(--white); }
   .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
   .intro-body { font-size: 1rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1.25rem; font-weight: 300; }
@@ -342,7 +342,7 @@
     border: 1px solid var(--border-navy);
   }
 
-  /* ── TRUST STRIP ── */
+  /* &#9472;&#9472; TRUST STRIP &#9472;&#9472; */
   .trust-strip {
     background: var(--navy); padding: 3rem 2rem;
   }
@@ -362,7 +362,7 @@
   }
   .trust-label { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.4; }
 
-  /* ── BOOKING CTA ── */
+  /* &#9472;&#9472; BOOKING CTA &#9472;&#9472; */
   .booking-cta { background: var(--navy); padding: 3rem 2rem; border-bottom: 1px solid var(--border-amber); }
   .booking-cta-inner { max-width: 1100px; margin: 0 auto; }
   .booking-cta-content { text-align: center; margin-bottom: 1.5rem; }
@@ -372,7 +372,7 @@
   .btn-large { font-size: 1.05rem; padding: 1rem 2.5rem; }
   .booking-cta-footnote { font-size: 0.75rem; color: rgba(255,255,255,0.3); margin-top: 0.75rem; }
 
-  /* ── SERVICES ── */
+  /* &#9472;&#9472; SERVICES &#9472;&#9472; */
   .services { background: var(--navy); }
   .services h2.display { color: var(--white); }
   .services h2.display em { color: var(--amber); }
@@ -407,7 +407,7 @@
     padding: 0.22rem 0.7rem; border-radius: 4px;
   }
 
-  /* ── STARTUP PACKAGE ── */
+  /* &#9472;&#9472; STARTUP PACKAGE &#9472;&#9472; */
   .package { background: var(--amber-pale); border-top: 1px solid var(--border-amber); border-bottom: 1px solid var(--border-amber); }
   .package-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
   .package-includes { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.7rem; }
@@ -439,7 +439,7 @@
     padding: 0.2rem 0.65rem; border-radius: 4px; font-weight: 400;
   }
 
-  /* ── CHECKER ── */
+  /* &#9472;&#9472; CHECKER &#9472;&#9472; */
   .checker { background: var(--stone-mid); }
   .checker-wrap { max-width: 740px; margin: 0 auto; }
   .checker-card {
@@ -506,7 +506,7 @@
     background: var(--stone); border-radius: 6px; padding: 0.75rem 1rem;
     font-size: 0.83rem; color: var(--ink-mid); font-weight: 300;
   }
-  .result-rec::before { content: '→'; color: var(--amber-dim); font-weight: 600; flex-shrink: 0; }
+  .result-rec::before { content: '&#8594;'; color: var(--amber-dim); font-weight: 600; flex-shrink: 0; }
   .reset-link {
     background: none; border: none; color: var(--ink-muted);
     font-size: 0.78rem; cursor: pointer; text-decoration: underline;
@@ -514,7 +514,7 @@
     font-family: 'Inter', sans-serif;
   }
 
-  /* ── ABOUT ── */
+  /* &#9472;&#9472; ABOUT &#9472;&#9472; */
   .about { background: var(--white); }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
   .about-body { font-size: 0.98rem; color: var(--ink-mid); line-height: 1.8; font-weight: 300; }
@@ -543,7 +543,7 @@
   .why-row span:first-child { color: var(--amber); flex-shrink: 0; margin-top: 1px; font-size: 0.85rem; }
   .why-row span:last-child { font-size: 0.855rem; color: rgba(255,255,255,0.65); font-weight: 300; }
 
-  /* ── CONTACT ── */
+  /* &#9472;&#9472; CONTACT &#9472;&#9472; */
   .contact { background: var(--navy-deep); }
   .contact h2.display { color: var(--white); }
   .contact h2.display em { color: var(--amber); }
@@ -599,7 +599,7 @@
   .service-areas-label { font-size: 0.68rem; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
   .service-areas-list { font-size: 0.83rem; color: rgba(255,255,255,0.48); line-height: 1.8; font-weight: 300; }
 
-  /* ── FAQ ── */
+  /* &#9472;&#9472; FAQ &#9472;&#9472; */
   .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
   .faq-item {
     background: var(--white); border: 1px solid var(--border-navy);
@@ -618,7 +618,7 @@
     padding-top: 0.4rem; border-top: 1px solid var(--border-navy);
   }
 
-  /* ── FOOTER ── */
+  /* &#9472;&#9472; FOOTER &#9472;&#9472; */
   footer { background: #0D1620; padding: 2rem; }
   .footer-inner {
     max-width: 1200px; margin: 0 auto;
@@ -638,13 +638,13 @@
   .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.15s; }
   .footer-links a:hover { color: rgba(255,255,255,0.6); }
 
-  /* ── ANIMATION ── */
+  /* &#9472;&#9472; ANIMATION &#9472;&#9472; */
   .fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
   .fade-up-delay-1 { transition-delay: 0.1s; }
   .fade-up-delay-2 { transition-delay: 0.2s; }
 
-  /* ── FORM SUCCESS ── */
+  /* &#9472;&#9472; FORM SUCCESS &#9472;&#9472; */
   .form-success { display: none; text-align: center; padding: 2rem; }
   .form-success-icon {
     width: 56px; height: 56px; border-radius: 50%;
@@ -655,7 +655,7 @@
   .form-success h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--white); margin-bottom: 0.5rem; }
   .form-success p { font-size: 0.88rem; color: rgba(255,255,255,0.45); font-weight: 300; }
 
-  /* ── PROCESS / HOW WE WORK ── */
+  /* &#9472;&#9472; PROCESS / HOW WE WORK &#9472;&#9472; */
   .process-section { background: var(--white); }
   .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
   .process-step { position: relative; padding: 2rem 1.5rem; background: var(--stone); border: 1px solid var(--border-navy); border-radius: 12px; transition: border-color 0.2s, box-shadow 0.2s; }
@@ -665,7 +665,7 @@
   .process-desc { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.65; font-weight: 300; }
   .process-badge { display: inline-flex; margin-top: 1rem; background: var(--amber-pale); border: 1px solid var(--border-amber); color: var(--amber-dim); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.2rem 0.7rem; border-radius: 4px; }
 
-  /* ── CREDENTIALS & TRUST SIGNALS ── */
+  /* &#9472;&#9472; CREDENTIALS & TRUST SIGNALS &#9472;&#9472; */
   .credentials-section { background: var(--navy); }
   .credentials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
   .credential-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(212,117,31,0.12); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; gap: 1.2rem; transition: border-color 0.2s, background 0.2s; }
@@ -674,7 +674,7 @@
   .credential-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--white); font-family: 'Inter', sans-serif; line-height: 1.4; }
   .credential-card p { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; font-weight: 300; }
 
-  /* ── INDUSTRY SECTORS ── */
+  /* &#9472;&#9472; INDUSTRY SECTORS &#9472;&#9472; */
   .sectors-section { background: var(--stone-mid); }
   .sectors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
   .sector-card { background: var(--white); border: 1px solid var(--border-navy); border-radius: 10px; padding: 1.5rem; text-align: center; transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s; }
@@ -683,7 +683,7 @@
   .sector-name { font-size: 0.88rem; font-weight: 600; color: var(--navy); margin-bottom: 0.3rem; }
   .sector-desc { font-size: 0.76rem; color: var(--ink-soft); line-height: 1.5; font-weight: 300; }
 
-  /* ── FREE RESOURCES ── */
+  /* &#9472;&#9472; FREE RESOURCES &#9472;&#9472; */
   .resources-section { background: var(--amber-pale); border-top: 1px solid var(--border-amber); border-bottom: 1px solid var(--border-amber); }
   .resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
   .resource-card { background: var(--white); border: 1px solid rgba(212,117,31,0.2); border-radius: 10px; padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem; transition: border-color 0.2s, box-shadow 0.2s; }
@@ -694,7 +694,7 @@
   .resource-action { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: var(--amber-dim); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; cursor: pointer; font-family: 'Inter', sans-serif; }
   .resource-action:hover { border-bottom-color: var(--amber-dim); }
 
-  /* ── MOBILE ── */
+  /* &#9472;&#9472; MOBILE &#9472;&#9472; */
   @media (max-width: 900px) {
     .hero-grid, .intro-grid, .package-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .hero-card { display: none; }
@@ -775,7 +775,7 @@
   </button>
   <ul class="nav-links">
     <li>
-      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">&#9660;</span></a>
       <div class="nav-drop">
         <a href="/haccp-plan-development">HACCP Plan Development</a>
         <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
@@ -789,7 +789,7 @@
       </div>
     </li>
     <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">&#9660;</span></a>
       <div class="nav-drop">
         <a href="/food-safety-training-sydney">Food Safety Training</a>
         <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
@@ -801,7 +801,7 @@
       </div>
     </li>
     <li>
-      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+      <a href="/blog">Blog <span class="nav-arrow">&#9660;</span></a>
       <div class="nav-drop">
         <a href="/blog/haccp">HACCP Deep-Dive</a>
         <a href="/blog">All Articles</a>
@@ -814,7 +814,7 @@
       <a href="/pricing">Pricing</a>
     </li>
     <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">&#9660;</span></a>
       <div class="nav-drop">
         <a href="/suburb-directory">All Sydney</a>
         <a href="/food-safety-consultant-surry-hills">CBD</a>
@@ -838,7 +838,7 @@
       <p class="hero-sub">Get your Sydney food business compliant, well-documented, and confidently run &mdash; without the hidden consulting costs. Built on 11+ years of real QA & manufacturing experience and TAFE NSW training expertise.</p>
       <div class="hero-actions">
         <a href="tel:+61278220109" class="btn-primary">&#128222; (02) 7822 0109</a>
-        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book a Free Consultation ↗</a>
+        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-outline">Book a Free Consultation &#8599;</a>
       </div>
     </div>
     <div class="hero-card fade-up">
@@ -925,7 +925,7 @@
  <div class="booking-cta-actions" style="display:flex; gap:1rem; justify-content:center; align-items:center; flex-wrap:wrap;">
  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary btn-large">Book free scoping call</a>
  <span style="color:rgba(255,255,255,0.2); font-size:0.85rem;">or</span>
- <a href="https://buy.stripe.com/5kQ3cu5Q5aUbexD6A6gIo01" target="_blank" rel="noopener" style="color:var(--amber); font-size:0.9rem; text-decoration:none; font-weight:500;">Pay $595 &amp; book direct →</a>
+ <a href="https://buy.stripe.com/5kQ3cu5Q5aUbexD6A6gIo01" target="_blank" rel="noopener" style="color:var(--amber); font-size:0.9rem; text-decoration:none; font-weight:500;">Pay $595 &amp; book direct &#8594;</a>
  </div>
  <p class="booking-cta-footnote">Card payments incur a 1.7% Stripe processing fee.</p>
  </div>
@@ -1003,63 +1003,63 @@
         <div class="service-title">HACCP Plan Development & Food Safety Programs</div>
         <div class="service-desc">HACCP plan development, food safety program design, hazard identification, and NSW Food Authority compliance guidance &mdash; tailored to your specific operation type and food category. Grounded in real manufacturing experience, not generic templates.</div>
         <div class="service-badge">Core service</div>
-        <a href="/food-safety-consulting-sydney" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/food-safety-consulting-sydney" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-1">
         <div class="service-num">02</div>
         <div class="service-title">Compliance Readiness Support</div>
         <div class="service-desc">Not sure if your food safety system would hold up to scrutiny? I review your documents, processes, and records against NSW requirements and help you close the gaps &mdash; before anyone official comes to look. Includes document review, process walk-throughs, corrective action support, and a clear action list.</div>
         <div class="service-badge">Retainer available</div>
-        <a href="/internal-auditing-services" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/internal-auditing-services" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-2">
         <div class="service-num">03</div>
         <div class="service-title">Food Industry Training</div>
         <div class="service-desc">Tailored in-house training delivered by a nationally accredited trainer &mdash; food safety awareness, HACCP fundamentals, GMP, allergen management, hygiene, and food handler competency. Practical, plain-English sessions your team will actually retain.</div>
         <div class="service-badge">On-site delivery &middot; Customised to your operation</div>
-        <a href="/food-safety-training-sydney" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/food-safety-training-sydney" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up">
         <div class="service-num">04</div>
         <div class="service-title">Food Safety Documentation & SOP Writing</div>
         <div class="service-desc">Custom food safety documents written from real manufacturing experience &mdash; standard operating procedures, HACCP supporting records, cleaning schedules, temperature logs, allergen registers, supplier approval forms, corrective action records, and staff-facing work instructions. Written in plain English your team can follow on the floor, not just file in a drawer.</div>
         <div class="service-badge">Audit-ready output &middot; Built from real QA experience</div>
-        <a href="/sop-writing-food-businesses" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/sop-writing-food-businesses" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-1">
         <div class="service-num">05</div>
         <div class="service-title">Food Business Start-Up Packages</div>
         <div class="service-desc">Complete compliance setup for new food businesses &mdash; regulatory guidance, food safety plans, record templates and SOPs, staff food safety training, and pre-inspection preparation. Everything you need to open confidently, in one engagement.</div>
         <div class="service-badge">Most popular</div>
-        <a href="/food-business-startup-package" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/food-business-startup-package" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-2">
         <div class="service-num">06</div>
         <div class="service-title">Lab Skills Training</div>
         <div class="service-desc">Hands-on practical training for QA teams and production staff &mdash; microbiological, chemical, sensory, and physical testing techniques grounded in real laboratory experience. Ideal for upskilling new QA staff or refreshing team competency.</div>
         <div class="service-badge">Workshops available &middot; QA teams & production staff</div>
-        <a href="/lab-skills-training" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/lab-skills-training" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up">
         <div class="service-num">07</div>
         <div class="service-title">RTO Resource Development</div>
         <div class="service-desc">Curriculum development, assessment tool design, competency mapping, and training resource creation for RTOs delivering food science and food safety qualifications. Developed by a TAE-qualified practitioner with active TAFE NSW teaching experience.</div>
         <div class="service-badge">B2B specialist &middot; TAE-qualified developer</div>
-        <a href="/rto-resource-development" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/rto-resource-development" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-1">
         <div class="service-num">08</div>
         <div class="service-title">Online Short Courses</div>
         <div class="service-desc">Self-paced professional development &mdash; HACCP fundamentals, allergen management, food safety programs, and audit preparation. Industry-accurate content.</div>
         <div class="service-badge">Coming soon</div>
-        <a href="/online-food-safety-courses" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/online-food-safety-courses" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
       <div class="service-item fade-up fade-up-delay-2">
         <div class="service-num">09</div>
         <div class="service-title">Sampling & Inspection Services</div>
         <div class="service-desc">Product sampling program design, incoming goods inspection, shelf-life testing liaison, sensory evaluation support, and results interpretation for small manufacturers.</div>
         <div class="service-badge">Field service</div>
-        <a href="/sampling-inspection-services" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more →</a>
+        <a href="/sampling-inspection-services" style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:var(--amber);text-decoration:none;font-weight:500;">Learn more &#8594;</a>
       </div>
     </div>
   </div>
@@ -1140,7 +1140,7 @@
         <p>Food Safety Supervisor &amp; Advanced Food Handling instructor. Current credentials with NSW RTO authority.</p>
       </div>
       <div class="credential-card fade-up fade-up-delay-2">
-        <div class="credential-icon">✓</div>
+        <div class="credential-icon">&#10003;</div>
         <h3>Dual-Accredited Consultant</h3>
         <p>HACCP specialist, NSW Food Act 2003 compliance, regulatory audit preparation, Standard 3.2.2A implementation.</p>
       </div>
@@ -1160,7 +1160,7 @@
     <p style="font-size:0.98rem; color:var(--ink-mid); max-width:580px; line-height:1.8; font-weight:300; margin-bottom:0;">From single-site cafes to multi-SKU manufacturers &mdash; if you handle food in NSW, we know your compliance environment.</p>
     <div class="sectors-grid">
       <div class="sector-card fade-up">
-        <div class="sector-icon">☕</div>
+        <div class="sector-icon">&#9749;</div>
         <div class="sector-name">Cafes & Restaurants</div>
         <div class="sector-desc">Food safety programs, FSS compliance, regulatory inspection prep and on-site staff training.</div>
       </div>
@@ -1223,35 +1223,35 @@
         <p style="font-size:0.98rem; color:var(--ink-mid); line-height:1.78; margin-bottom:1.5rem; font-weight:300;">Opening a food business is overwhelming. Between regulatory requirements, food safety laws, staff training and compliance prep &mdash; most new operators don't know where to start. This package covers everything, in one engagement.</p>
         <div class="package-includes">
           <div class="package-item">
-            <div class="package-item-icon">✓</div>
+            <div class="package-item-icon">&#10003;</div>
             <div class="package-item-text">
               <div class="package-item-title">Licensing & regulatory requirements</div>
               <div class="package-item-desc">Regulatory registration, NSW Food Authority compliance, food business classification</div>
             </div>
           </div>
           <div class="package-item">
-            <div class="package-item-icon">✓</div>
+            <div class="package-item-icon">&#10003;</div>
             <div class="package-item-text">
               <div class="package-item-title">Customised food safety plan</div>
               <div class="package-item-desc">HACCP-based, tailored to your specific food type and operation</div>
             </div>
           </div>
           <div class="package-item">
-            <div class="package-item-icon">✓</div>
+            <div class="package-item-icon">&#10003;</div>
             <div class="package-item-text">
               <div class="package-item-title">Record templates & SOPs</div>
               <div class="package-item-desc">Temperature logs, cleaning schedules, supplier approval, corrective action forms</div>
             </div>
           </div>
           <div class="package-item">
-            <div class="package-item-icon">✓</div>
+            <div class="package-item-icon">&#10003;</div>
             <div class="package-item-text">
               <div class="package-item-title">Staff food safety training</div>
               <div class="package-item-desc">On-site delivery to your team &mdash; food handling, hygiene, allergen awareness</div>
             </div>
           </div>
           <div class="package-item">
-            <div class="package-item-icon">✓</div>
+            <div class="package-item-icon">&#10003;</div>
             <div class="package-item-text">
               <div class="package-item-title">Pre-inspection preparation</div>
               <div class="package-item-desc">Premises walk-through, gap review against regulatory requirements, corrective action checklist</div>
@@ -1270,7 +1270,7 @@
           <span class="package-tag">Small manufacturers</span>
           <span class="package-tag">Pop-up food stalls</span>
         </div>
-        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="width:100%; justify-content:center;">Enquire about this package ↗</a>
+        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="width:100%; justify-content:center;">Enquire about this package &#8599;</a>
         <p style="font-size:0.76rem; color:rgba(255,255,255,0.28); margin-top:1rem;">Fixed fee quoted upfront. No hidden costs.</p>
       </div>
     </div>
@@ -1291,8 +1291,8 @@
           <div class="checker-sub" id="q-sub"></div>
           <div class="checker-options" id="q-options"></div>
           <div class="checker-nav">
-            <button class="btn-back" id="btn-back" style="visibility:hidden">← Back</button>
-            <button class="btn-next" id="btn-next" disabled>Next →</button>
+            <button class="btn-back" id="btn-back" style="visibility:hidden">&#8592; Back</button>
+            <button class="btn-next" id="btn-next" disabled>Next &#8594;</button>
           </div>
         </div>
         <div class="checker-result" id="checker-result">
@@ -1300,7 +1300,7 @@
           <div class="result-title" id="result-title"></div>
           <div class="result-desc" id="result-desc"></div>
           <div class="result-recs" id="result-recs"></div>
-          <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="width:100%; justify-content:center; text-decoration:none;">Book a free consultation ↗</a>
+          <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="width:100%; justify-content:center; text-decoration:none;">Book a free consultation &#8599;</a>
           <button class="reset-link" onclick="resetChecker()">Start again</button>
         </div>
       </div>
@@ -1313,7 +1313,7 @@
   <div class="container" style="max-width: 820px;">
     <div class="section-eyebrow">Common questions</div>
     <h2 class="display">Plain-English answers to <em>food safety questions.</em></h2>
-    <p class="body-lead" style="margin-bottom: 2.5rem;">The questions NSW food businesses ask most. Answered directly, without the runaround. <a href="/food-safety-faq-nsw" style="color:var(--amber-dim);font-weight:500;">Browse our full FAQ library →</a></p>
+    <p class="body-lead" style="margin-bottom: 2.5rem;">The questions NSW food businesses ask most. Answered directly, without the runaround. <a href="/food-safety-faq-nsw" style="color:var(--amber-dim);font-weight:500;">Browse our full FAQ library &#8594;</a></p>
     
     <div class="faq-list">
       <div class="faq-item">
@@ -1336,7 +1336,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:2rem;">
-      <a href="/food-safety-faq-nsw" class="btn-outline" style="color:var(--navy);border-color:var(--border-navy);">View all FAQs →</a>
+      <a href="/food-safety-faq-nsw" class="btn-outline" style="color:var(--navy);border-color:var(--border-navy);">View all FAQs &#8594;</a>
     </div>
   </div>
 </section>
@@ -1394,11 +1394,11 @@
         </div>
         <div class="why-box">
           <div class="why-box-label">Why clients choose AMES</div>
-          <div class="why-row"><span>◆</span><span>You get the expert &mdash; not a junior following a checklist</span></div>
-          <div class="why-row"><span>◆</span><span>Fixed-fee quotes &mdash; no hourly billing surprises</span></div>
-          <div class="why-row"><span>◆</span><span>On-site or remote &mdash; wherever you need us</span></div>
-          <div class="why-row"><span>◆</span><span>Practical, plain-English advice &mdash; no jargon</span></div>
-          <div class="why-row"><span>◆</span><span>Honest about what you need &mdash; and what you don't</span></div>
+          <div class="why-row"><span>&#9670;</span><span>You get the expert &mdash; not a junior following a checklist</span></div>
+          <div class="why-row"><span>&#9670;</span><span>Fixed-fee quotes &mdash; no hourly billing surprises</span></div>
+          <div class="why-row"><span>&#9670;</span><span>On-site or remote &mdash; wherever you need us</span></div>
+          <div class="why-row"><span>&#9670;</span><span>Practical, plain-English advice &mdash; no jargon</span></div>
+          <div class="why-row"><span>&#9670;</span><span>Honest about what you need &mdash; and what you don't</span></div>
         </div>
       </div>
     </div>
@@ -1416,41 +1416,41 @@
         <div class="resource-type">Free guide</div>
         <div class="resource-title">How to Write a Food Safety Program in NSW</div>
         <div class="resource-desc">What must be included under FSANZ Standard 3.2.1, the seven steps to writing a valid Food Safety Program, and the common mistakes that fail regulatory inspections.</div>
-        <a href="/how-to-write-a-food-safety-program-nsw" class="resource-action">Read the guide →</a>
+        <a href="/how-to-write-a-food-safety-program-nsw" class="resource-action">Read the guide &#8594;</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-1">
         <div class="resource-type">Free guide</div>
         <div class="resource-title">What is HACCP? NSW Food Businesses Explained</div>
         <div class="resource-desc">Plain-English explanation of HACCP &mdash; what it means, who is legally required to implement it in NSW, and what getting it right looks like in practice.</div>
-        <a href="/what-is-haccp-nsw-food-businesses" class="resource-action">Read the guide →</a>
+        <a href="/what-is-haccp-nsw-food-businesses" class="resource-action">Read the guide &#8594;</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-2">
         <div class="resource-type">Free guide + checklist</div>
         <div class="resource-title">How to Prepare for a Food Safety Inspection</div>
         <div class="resource-desc">What regulatory officers check, what gets businesses into trouble, and an interactive 28-point pre-inspection checklist to run through before any visit.</div>
-        <a href="/how-to-prepare-for-council-food-safety-inspection" class="resource-action">Read the guide →</a>
+        <a href="/how-to-prepare-for-council-food-safety-inspection" class="resource-action">Read the guide &#8594;</a>
       </div>
       <div class="resource-card fade-up">
         <div class="resource-type">Free guide</div>
         <div class="resource-title">Food Safety Supervisor Requirements NSW 2026</div>
         <div class="resource-desc">Everything food businesses need to know about the FSS requirement under Standard 3.2.2A &mdash; who must have one, what qualification is needed, and how to comply.</div>
-        <a href="/food-safety-supervisor-requirements-nsw" class="resource-action">Read the guide →</a>
+        <a href="/food-safety-supervisor-requirements-nsw" class="resource-action">Read the guide &#8594;</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-1">
         <div class="resource-type">Free guide</div>
         <div class="resource-title">NSW Food Authority Registration Guide</div>
         <div class="resource-desc">Who needs a NSW Food Authority licence, the difference between local regulatory registration and a NSWFA licence, and the step-by-step application process.</div>
-        <a href="/nsw-food-authority-registration-guide" class="resource-action">Read the guide →</a>
+        <a href="/nsw-food-authority-registration-guide" class="resource-action">Read the guide &#8594;</a>
       </div>
       <div class="resource-card fade-up fade-up-delay-2">
         <div class="resource-type">Free assessment</div>
         <div class="resource-title">Food Business Compliance Risk Assessment</div>
         <div class="resource-desc">Use our interactive compliance checker to get a personalised risk score and recommendations &mdash; or book a free 20-minute call for a more detailed assessment.</div>
-        <a href="/#checker" class="resource-action">Use the free checker →</a>
+        <a href="/#checker" class="resource-action">Use the free checker &#8594;</a>
       </div>
     </div>
     <div style="text-align:center;margin-top:2rem;">
-      <a href="/suburb-directory" style="font-size:0.85rem; color:var(--amber); text-decoration:none; font-weight:500;">View full suburb directory with local guides →</a>
+      <a href="/suburb-directory" style="font-size:0.85rem; color:var(--amber); text-decoration:none; font-weight:500;">View full suburb directory with local guides &#8594;</a>
     </div>
   </div>
 </section>
@@ -1500,12 +1500,12 @@
               <label class="form-label">Tell us about your situation</label>
               <textarea name="message" class="form-textarea" placeholder="Brief description of your business, what you're working towards, and any specific challenges or deadlines..." required></textarea>
             </div>
-            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send enquiry ↗</button>
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send enquiry &#8599;</button>
             <p style="font-size:0.73rem; color:rgba(255,255,255,0.22); text-align:center; margin-top:0.5rem;">We reply within one business day.</p>
           </form>
         </div>
         <div class="form-success" id="form-success">
-          <div class="form-success-icon">✓</div>
+          <div class="form-success-icon">&#10003;</div>
           <h3>Thanks &mdash; we'll be in touch.</h3>
           <p>Your enquiry has been received. We'll reply within one business day to arrange a free consultation call.</p>
         </div>
@@ -1568,10 +1568,10 @@
       <a href="/food-safety-consultant-penrith" style="background: var(--white); border: 1px solid var(--stone-dark); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy); font-size: 0.88rem; font-weight: 500; display: block; text-align: center;">Penrith</a>
       <a href="/food-safety-consultant-newcastle" style="background: var(--white); border: 1px solid var(--stone-dark); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy); font-size: 0.88rem; font-weight: 500; display: block; text-align: center;">Newcastle</a>
       <a href="/food-safety-consultant-wollongong" style="background: var(--white); border: 1px solid var(--stone-dark); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy); font-size: 0.88rem; font-weight: 500; display: block; text-align: center;">Wollongong</a>
-      <a href="/suburb-directory" style="background: var(--amber); border: 1px solid var(--amber); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy-deep); font-size: 0.88rem; font-weight: 600; display: block; text-align: center;">All locations →</a>
+      <a href="/suburb-directory" style="background: var(--amber); border: 1px solid var(--amber); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--navy-deep); font-size: 0.88rem; font-weight: 600; display: block; text-align: center;">All locations &#8594;</a>
     </div>
     <div style="text-align: center;">
-      <a href="/suburb-directory" style="font-size: 0.85rem; color: var(--amber); text-decoration: none; font-weight: 500;">View full suburb directory with local guides →</a>
+      <a href="/suburb-directory" style="font-size: 0.85rem; color: var(--amber); text-decoration: none; font-weight: 500;">View full suburb directory with local guides &#8594;</a>
     </div>
   </div>
 </section>
@@ -1583,7 +1583,7 @@
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
     <span class="footer-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
   </a>
-    <div class="footer-copy">© 2026 AMES Food Advisory &middot; Sydney, NSW</div>
+    <div class="footer-copy">&#169; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
     <div class="footer-phone">
       <a href="tel:+61278220109">&#128222; (02) 7822 0109</a>
       <span class="footer-phone-divider">&middot;</span>
@@ -1606,7 +1606,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
 const questions = [
-  { q: "What type of food business are you running?", sub: "This helps us identify which regulations apply to your operation.", options: ["Café, restaurant or food service","Food manufacturer or producer","Home-based or cottage food business","Food truck or market stall","Catering business","Other / not sure yet"] },
+  { q: "What type of food business are you running?", sub: "This helps us identify which regulations apply to your operation.", options: ["Caf&#233;, restaurant or food service","Food manufacturer or producer","Home-based or cottage food business","Food truck or market stall","Catering business","Other / not sure yet"] },
   { q: "Do you have a written food safety program or HACCP plan?", sub: "A written plan is a legal requirement for many food businesses in NSW.", options: ["Yes, fully documented and current","We have something but it's out of date","We have an informal system but nothing written","No &mdash; we don't have one"], risk: [0,1,2,3] },
   { q: "When did you last review your food safety documentation?", sub: "Regular review keeps your system relevant and audit-ready.", options: ["Within the last 12 months","1&ndash;2 years ago","More than 2 years ago","We haven't reviewed it / don't have any"], risk: [0,1,2,3] },
   { q: "Do your staff receive regular food safety training?", sub: "Trained staff are your first line of defence against food safety incidents.", options: ["Yes &mdash; formal, documented training","Basic induction only &mdash; no ongoing training","Informal &mdash; we show people on the job","No food safety training at all"], risk: [0,1,2,3] },
@@ -1641,7 +1641,7 @@ function loadQ() {
   });
   document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
   document.getElementById('btn-next').disabled = answers[current] === undefined;
-  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results →' : 'Next →';
+  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results &#8594;' : 'Next &#8594;';
   buildProgress();
 }
 
