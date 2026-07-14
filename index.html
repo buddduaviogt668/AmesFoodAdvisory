@@ -869,6 +869,7 @@
     <span class="cred-pill">11 Years &mdash; Food Manufacturing</span>
     <span class="cred-pill">TAE Qualified Trainer</span>
     <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">WWC Checked</span>
     <span class="cred-pill">HACCP Specialist</span>
     <span class="cred-pill">Food Industry Training</span>
     <span class="cred-pill">RTO Resource Development</span>
@@ -881,6 +882,7 @@
     <span class="cred-pill">11 Years &mdash; Food Manufacturing</span>
     <span class="cred-pill">TAE Qualified Trainer</span>
     <span class="cred-pill">TAFE NSW Instructor</span>
+    <span class="cred-pill">WWC Checked</span>
     <span class="cred-pill">HACCP Specialist</span>
     <span class="cred-pill">Food Industry Training</span>
     <span class="cred-pill">RTO Resource Development</span>
@@ -1603,12 +1605,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
 const questions = [
-  { q: "What type of food business are you running?", sub: "This helps us identify which regulations apply to your operation.", options: ["Caf&#233;, restaurant or food service","Food manufacturer or producer","Home-based or cottage food business","Food truck or market stall","Catering business","Other / not sure yet"] },
-  { q: "Do you have a written food safety program or HACCP plan?", sub: "A written plan is a legal requirement for many food businesses in NSW.", options: ["Yes, fully documented and current","We have something but it's out of date","We have an informal system but nothing written","No &mdash; we don't have one"], risk: [0,1,2,3] },
-  { q: "When did you last review your food safety documentation?", sub: "Regular review keeps your system relevant and audit-ready.", options: ["Within the last 12 months","1&ndash;2 years ago","More than 2 years ago","We haven't reviewed it / don't have any"], risk: [0,1,2,3] },
-  { q: "Do your staff receive regular food safety training?", sub: "Trained staff are your first line of defence against food safety incidents.", options: ["Yes &mdash; formal, documented training","Basic induction only &mdash; no ongoing training","Informal &mdash; we show people on the job","No food safety training at all"], risk: [0,1,2,3] },
-  { q: "How prepared do you feel for a regulatory inspection?", sub: "Regulatory officers can inspect at any time without prior notice.", options: ["Very prepared &mdash; I'd welcome one today","Reasonably prepared with a few gaps","I'd be worried if one arrived tomorrow","I have no idea what they'd look for"], risk: [0,1,2,3] },
-  { q: "Do you have documented allergen controls in place?", sub: "Allergen management is one of the most scrutinised areas in food safety audits.", options: ["Yes &mdash; allergen register, procedures and staff training","We know our allergens but don't have formal controls","Partially &mdash; some awareness but no documentation","No allergen controls in place"], risk: [0,1,2,3] }
+  { q: "What type of food business are you running?", sub: "This helps us identify which regulations apply to your operation.", options: ["Caf\u00E9, restaurant or food service","Food manufacturer or producer","Home-based or cottage food business","Food truck or market stall","Catering business","Other / not sure yet"] },
+  { q: "Do you have a written food safety program or HACCP plan?", sub: "A written plan is a legal requirement for many food businesses in NSW.", options: ["Yes, fully documented and current","We have something but it's out of date","We have an informal system but nothing written","No \u2014 we don't have one"], risk: [0,1,2,3] },
+  { q: "When did you last review your food safety documentation?", sub: "Regular review keeps your system relevant and audit-ready.", options: ["Within the last 12 months","1\u20132 years ago","More than 2 years ago","We haven't reviewed it / don't have any"], risk: [0,1,2,3] },
+  { q: "Do your staff receive regular food safety training?", sub: "Trained staff are your first line of defence against food safety incidents.", options: ["Yes \u2014 formal, documented training","Basic induction only \u2014 no ongoing training","Informal \u2014 we show people on the job","No food safety training at all"], risk: [0,1,2,3] },
+  { q: "How prepared do you feel for a regulatory inspection?", sub: "Regulatory officers can inspect at any time without prior notice.", options: ["Very prepared \u2014 I'd welcome one today","Reasonably prepared with a few gaps","I'd be worried if one arrived tomorrow","I have no idea what they'd look for"], risk: [0,1,2,3] },
+  { q: "Do you have documented allergen controls in place?", sub: "Allergen management is one of the most scrutinised areas in food safety audits.", options: ["Yes \u2014 allergen register, procedures and staff training","We know our allergens but don't have formal controls","Partially \u2014 some awareness but no documentation","No allergen controls in place"], risk: [0,1,2,3] }
 ];
 
 let current = 0, answers = [], riskTotal = 0;
@@ -1638,7 +1640,7 @@ function loadQ() {
   });
   document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
   document.getElementById('btn-next').disabled = answers[current] === undefined;
-  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results &#8594;' : 'Next &#8594;';
+  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results \u2192' : 'Next \u2192';
   buildProgress();
 }
 
