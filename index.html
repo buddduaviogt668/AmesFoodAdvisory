@@ -1621,7 +1621,7 @@ function buildProgress() {
   p.innerHTML = '';
   questions.forEach((_, i) => {
     const d = document.createElement('div');
-    d.className = 'checker-step' + (i < current &mdash; ' done' : i === current &mdash; ' active' : '');
+    d.className = 'checker-step' + (i < current ? ' done' : i === current ? ' active' : '');
     p.appendChild(d);
   });
 }
@@ -1634,14 +1634,14 @@ function loadQ() {
   opts.innerHTML = '';
   q.options.forEach((o, i) => {
     const b = document.createElement('button');
-    b.className = 'checker-option' + (answers[current] === i &mdash; ' selected' : '');
+    b.className = 'checker-option' + (answers[current] === i ? ' selected' : '');
     b.textContent = o;
     b.onclick = () => selectOption(i);
     opts.appendChild(b);
   });
-  document.getElementById('btn-back').style.visibility = current === 0 &mdash; 'hidden' : 'visible';
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
   document.getElementById('btn-next').disabled = answers[current] === undefined;
-  document.getElementById('btn-next').textContent = current === questions.length - 1 &mdash; 'See my results &#8594;' : 'Next &#8594;';
+  document.getElementById('btn-next').textContent = current === questions.length - 1 ? 'See my results &#8594;' : 'Next &#8594;';
   buildProgress();
 }
 
@@ -1682,7 +1682,7 @@ function showResult() {
     recs = ['Develop a written food safety program or HACCP plan urgently','Implement documented staff food safety training','Establish allergen management controls and documentation','Book a compliance consultation to prioritise actions','Consider the Food Business Start-Up Package for a complete solution'];
   }
   document.getElementById('result-ring').className = 'result-score-ring ' + cls;
-  document.getElementById('result-ring').textContent = riskTotal <= 3 &mdash; 'Low' : riskTotal <= 8 &mdash; 'Mid' : 'High';
+  document.getElementById('result-ring').textContent = riskTotal <= 3 ? 'Low' : riskTotal <= 8 ? 'Mid' : 'High';
   document.getElementById('result-title').textContent = title;
   document.getElementById('result-desc').textContent = desc;
   const recsEl = document.getElementById('result-recs');
