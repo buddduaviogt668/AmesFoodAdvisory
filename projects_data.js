@@ -1,5 +1,15 @@
 module.exports = [
   {
+    "slug": "chew-boy-home-based-wholesale-scaling",
+    "title": "Scaling a Home-Based Cookie Business to Wholesale Success",
+    "client": "Chew Boy",
+    "industry": "Home-Based Catering / Wholesale",
+    "challenge": "A passionate home-based cookie business needed to transition from direct sales to supplying local cafes, requiring a robust food safety program that met both council and commercial wholesale standards.",
+    "solution": "Developed a custom Food Safety Program tailored for home-based production. Focused on allergen management, batch tracking, and wholesale-compliant labeling to ensure professional standards in a boutique setting.",
+    "outcome": "Successfully launched into multiple Sydney cafes with a fully compliant, audit-ready system. Chew Boy is now a recognized wholesale supplier with zero compliance friction.",
+    "tags": ["Home-Based Business", "Wholesale", "Cookie Production", "Standard 3.2.2A"]
+  },
+  {
     "slug": "sydney-cafe-group-standardization",
     "title": "Compliance Standardization for Multi-Site Cafe Group",
     "client": "Artisanal Coffee Group (Sydney)",
@@ -28,15 +38,5 @@ module.exports = [
     "solution": "Deployed within 24 hours to conduct an emergency site audit, rewrite their food safety program, and install a simplified digital temperature logging system.",
     "outcome": "Follow-up inspection passed with zero non-conformances. The restaurant avoided a fine and kept its doors open.",
     "tags": ["Audit Prep", "Emergency Support", "Blacktown"]
-  },
-  {
-    "slug": "rto-resource-upgrade-sydney",
-    "title": "Food Safety Resource Development for National RTO",
-    "client": "Leading Vocational College",
-    "industry": "Education / RTO",
-    "challenge": "The RTO's existing food safety training materials were outdated and didn't reflect the 2024 changes to Standard 3.2.2A.",
-    "solution": "Developed a complete suite of training resources, assessment tools, and SOP templates for SITHFSA005 and SITHFSA006 units.",
-    "outcome": "Resources successfully validated for audit and rolled out to over 500 students annually.",
-    "tags": ["RTO", "Education", "Compliance"]
   }
 ];
