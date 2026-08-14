@@ -186,6 +186,19 @@ projects.forEach(p => {
           <div class="detail-text" style="font-size: 1.2rem; color: var(--navy); font-weight: 500; border-left: 4px solid var(--amber); padding-left: 1.5rem;">${p.outcome}</div>
         </div>
 
+        ${p.deliverables ? `
+        <div class="sidebar-item" style="margin-top: 3rem; background: var(--stone); padding: 2rem; border-radius: 12px;">
+          <div class="detail-label" style="color: var(--navy); border-bottom: 2px solid var(--amber); display: inline-block; margin-bottom: 1.5rem;">Key Deliverables Provided</div>
+          <ul style="list-style: none;">
+            ${p.deliverables.map(d => `
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; font-size: 0.95rem; color: var(--navy-mid);">
+                <span style="color: var(--amber); font-weight: 700;">✓</span> ${d}
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+        ` : ''}
+
         <a href="/recent-projects" style="color: var(--amber); text-decoration: none; font-weight: 600;">← Back to all projects</a>
       </div>
 
