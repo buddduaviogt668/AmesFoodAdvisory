@@ -79,34 +79,75 @@ module.exports = [
   {
     "file": "food-safety-training-sydney.html",
     "slug": "food-safety-training-sydney",
-    "title": "Food Safety Training Sydney | On-Site HACCP Training NSW",
-    "desc": "On-site food safety and HACCP training for teams in Sydney and NSW. Delivered by a TAE-qualified trainer with sessional TAFE lecturing experience.",
-    "kw": "food safety training Sydney, HACCP training NSW, food handler competency, workplace food training",
-    "sname": "Food Safety Training",
-    "sdesc": "Practical, on-site food safety training and HACCP workshops customized for food manufacturers, cafes, restaurants, and corporate providers.",
-    "eyebrow": "Service 02",
-    "h1": "Food Safety &amp; <em>HACCP Training</em>",
-    "sub": "Generic online courses don't change behavior on the line. We deliver hands-on, engaging training built around your actual facility, products, and operational SOPs.",
-    "introText": "All training is designed and delivered by a TAE-qualified corporate trainer and TAFE NSW sessional lecturer, bridging classroom theory with real-world QA experience.",
+    "title": "Corporate Food Safety Training | National Compliance Programs",
+    "desc": "On-site food safety and HACCP training for corporate teams. Delivered by TAE-qualified TAFE NSW lecturers. Scalable compliance training for the food industry.",
+    "kw": "corporate food safety training, national haccp training, food handler competency, workplace food safety culture",
+    "sname": "Corporate Training",
+    "sdesc": "High-impact, on-site food safety training programs designed for corporate food manufacturers, large-scale hospitality, and national distributors.",
+    "eyebrow": "Our Core Passion",
+    "h1": "Food Safety &amp; <em>Corporate Training</em>",
+    "sub": "We don't just 'consult' — we educate. Our mission is to build a culture of food safety excellence within your team through engaging, expert-led training that goes far beyond a check-box exercise.",
+    "introText": "All training is delivered by a TAE-qualified TAFE NSW lecturer with 11+ years of corporate QA experience. We bridge the gap between regulatory requirements and factory-floor reality.",
+    "cta_primary_text": "Download Training Audit Checklist",
+    "cta_primary_url": "/free-resources",
     "includes": [
-      { "icon": "🎓", "title": "Food Handler Competency", "desc": "Hygiene, temperature control, allergen awareness, and cross-contamination prevention." },
-      { "icon": "⚠️", "title": "Allergen Management", "desc": "Specific workshops detailing allergen segregation, cleaning verification, and warning labels." },
-      { "icon": "📈", "title": "Supervisor & HACCP Training", "desc": "Empowering supervisors to monitor CCPs, verify logs, and lead audits on the floor." }
+      { "icon": "🏢", "title": "Corporate Compliance Rollouts", "desc": "Scalable training programs designed for multi-site operations, ensuring consistent safety standards across your entire workforce." },
+      { "icon": "🧠", "title": "Behavioral Safety Training", "desc": "We don't just teach rules; we change behaviors. Our training focuses on the 'why' to ensure staff take ownership of food safety." },
+      { "icon": "📈", "title": "Supervisor & Lead Auditor Prep", "desc": "Empowering your leadership team to manage CCPs, verify logs, and confidently lead external audits." },
+      { "icon": "🔬", "title": "Advanced QA Lab Skills", "desc": "Technical training for quality teams in microbiological testing, sensory analysis, and laboratory best practices." }
     ],
+    "who_title": "Built for Industry Leaders",
     "who": [
-      { "title": "QA & Quality Teams", "desc": "Upskilling junior technicians in laboratory, testing, and documentation standards." },
-      { "title": "Hospitality Staff", "desc": "Direct training for chefs, kitchen hands, and front-of-house to reduce council audit infractions." }
+      { "title": "National Manufacturers", "desc": "Large-scale production facilities requiring standardized training for hundreds of operators across multiple shifts." },
+      { "title": "Multi-Site Hospitality Groups", "desc": "Restaurant groups and hotel chains looking to unify their food safety culture and reduce audit risk." },
+      { "title": "QA & Quality Managers", "desc": "Professionals looking for an external training partner to provide technical depth and fresh perspectives for their teams." }
     ],
     "steps": [
-      { "title": "Curriculum Customization", "desc": "We adapt training slides and materials to incorporate your company's actual logs and SOP names." },
-      { "title": "On-Site Delivery", "desc": "Interactive workshops held in your facility during convenient hours to minimize production downtime." }
+      { "title": "Training Needs Analysis", "desc": "We review your audit history and current floor practices to identify the specific knowledge gaps in your team." },
+      { "title": "Bespoke Content Design", "desc": "We integrate your actual SOPs, facility photos, and internal logs into the training materials for maximum relevance." },
+      { "title": "Dynamic On-Site Delivery", "desc": "Interactive workshops delivered at your facility, including night shifts, to ensure 100% staff coverage." }
     ],
     "faqs": [
-      { "q": "Do you provide certificates of completion?", "a": "Yes, every participant receives a formal certificate of completion outlining the topics covered, which acts as evidence of staff training for your food safety audits." },
-      { "q": "Can you run training across night and morning shifts?", "a": "Yes, we coordinate training schedules to fit shift rotations, ensuring all production staff are covered." }
+      { "q": "Do you provide certificates of completion?", "a": "Yes. Every participant receives a formal certificate, and the company receives a full training matrix for audit evidence." },
+      { "q": "Can you handle training for hundreds of staff?", "a": "Yes. We specialize in large-scale corporate rollouts and can coordinate multi-day training schedules to cover all departments and shifts." }
     ],
     "related": [
-      { "title": "Lab Skills Training", "desc": "Advanced testing techniques for quality teams.", "url": "/lab-skills-training" }
+      { "title": "HACCP Plan Development", "desc": "Build the systems your team will use.", "url": "/haccp-plan-development" },
+      { "title": "Internal Auditing", "desc": "Verify the effectiveness of your training.", "url": "/internal-auditing-services" }
+    ]
+  },
+  {
+    "file": "corporate-training-packages.html",
+    "slug": "corporate-training-packages",
+    "title": "Corporate Training Packages | Food Safety & HACCP for Teams",
+    "desc": "Custom food safety training packages for large companies. National rollout support, training needs analysis, and audit-ready certification for the food industry.",
+    "kw": "corporate food safety packages, group haccp training, national food safety rollout, b2b food training nsw",
+    "sname": "Training Packages",
+    "sdesc": "Strategic training partnerships for food businesses, providing ongoing education, refresher courses, and compliance monitoring for large teams.",
+    "eyebrow": "National Scale",
+    "h1": "Corporate <em>Training Packages</em>",
+    "sub": "Move beyond one-off sessions. Our corporate packages provide a year-round training partnership that builds a world-class food safety culture across your entire organization.",
+    "introText": "We partner with national food brands to deliver consistent, high-level education that satisfies ASQA, FSANZ, and Tier-1 retail audit requirements.",
+    "cta_primary_text": "Request a Training Proposal",
+    "cta_primary_url": "/#contact",
+    "includes": [
+      { "icon": "📋", "title": "Training Needs Analysis", "desc": "A comprehensive audit of your current staff competency levels to identify critical risk areas." },
+      { "icon": "🔄", "title": "Annual Refresher Cycles", "desc": "Automated scheduling of annual food safety and HACCP refreshers to maintain compliance year-after-year." },
+      { "icon": "📊", "title": "Executive Reporting", "desc": "Detailed reporting for senior management on training completion rates, competency scores, and audit readiness." }
+    ],
+    "who": [
+      { "title": "Enterprise Food Manufacturers", "desc": "Companies with 50+ staff requiring structured, ongoing education programs." },
+      { "title": "HR & L&D Managers", "desc": "Looking for a specialized training partner who speaks the language of food science and regulation." }
+    ],
+    "steps": [
+      { "title": "Strategy Session", "desc": "We align our training modules with your company's specific quality goals and upcoming audit calendar." },
+      { "title": "Phased Implementation", "desc": "We roll out training across your sites, starting with high-risk areas or leadership teams." }
+    ],
+    "faqs": [
+      { "q": "Do you offer national coverage?", "a": "While we are based in NSW, we deliver corporate training packages for national clients across Australia, coordinating travel and multi-site delivery." }
+    ],
+    "related": [
+      { "title": "Corporate Training", "desc": "Learn about our on-site delivery.", "url": "/food-safety-training-sydney" }
     ]
   },
   {
