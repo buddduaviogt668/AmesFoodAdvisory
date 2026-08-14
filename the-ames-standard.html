@@ -157,116 +157,40 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li>
-      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/food-safety-training-sydney">Corporate Training</a>
-        <a href="/corporate-training-packages">Training Packages</a>
-        <a href="/food-industry-workers-training">Worker Competency</a>
-        <a href="/lab-skills-training">QA Lab Skills</a>
-        <div class="drop-divider"></div>
-        <a href="/rto-resource-development">RTO Resources</a>
-        <a href="/online-food-safety-courses">Online (2026)</a>
-      </div>
-    </li>
-    <li>
-      <a href="/food-safety-consulting-sydney">Consulting <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/haccp-plan-development">HACCP Development</a>
-        <a href="/food-safety-consulting-sydney">General Consulting</a>
-        <a href="/sop-writing-food-businesses">SOP Writing</a>
-        <a href="/internal-auditing-services">Internal Auditing</a>
-        <div class="drop-divider"></div>
-        <a href="/food-manufacturer-consulting">Manufacturers</a>
-        <a href="/cafe-restaurant-food-safety">Hospitality</a>
-        <a href="/food-business-startup-package">Start-Up Package</a>
-      </div>
-    </li>
-    <li>
-      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/blog/haccp">HACCP Deep-Dive</a>
-        <a href="/blog">All Articles</a>
-        <div class="drop-divider"></div>
-        <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
-        <a href="/free-resources">Free Resources</a>
-        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
-        <div class="drop-divider"></div>
-        <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
-      </div>
-    </li>
-    <li>
-      <a href="/pricing">Pricing</a>
-    </li>
-    <li>
-      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
-      <div class="nav-drop">
-        <a href="/suburb-directory">All Sydney</a>
-        <a href="/food-safety-consultant-surry-hills">CBD</a>
-        <a href="/food-safety-consultant-marrickville">Inner West</a>
-        <a href="/food-safety-consultant-parramatta">Parramatta</a>
-        <a href="/food-safety-consultant-chatswood">North Shore</a>
-      </div>
-    </li>
-    <li><a href="/the-ames-standard">Our Mission</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
-  </ul>
+ <a href="/" class="nav-logo">
+ <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
+ <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
+ </a>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+<ul class="nav-links">
+ <li><a href="/the-ames-standard">Our Mission</a></li>
+ <li><a href="/food-safety-consulting-sydney">Services</a></li>
+ <li><a href="/the-vault">Free Resources</a></li>
+ <li><a href="/blog">Blog</a></li>
+ <li><a href="/contact">Contact</a></li>
+ <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">&#128222; (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+ </ul>
 </nav>
-<button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
-  <span></span><span></span><span></span>
-</button>
-<div class="mob-nav" id="mobNav">
-  <span class="mob-section">Training & Education</span>
-  <a href="/food-safety-training-sydney">Corporate Training</a>
-  <a href="/corporate-training-packages">Training Packages</a>
-  <a href="/food-industry-workers-training">Worker Competency</a>
-  <a href="/lab-skills-training">QA Lab Skills</a>
-  <a href="/rto-resource-development">RTO Resources</a>
-  <a href="/online-food-safety-courses">Online Courses</a>
-  <span class="mob-section">Consulting Services</span>
-  <a href="/haccp-plan-development">HACCP Development</a>
-  <a href="/food-safety-consulting-sydney">General Consulting</a>
-  <a href="/sop-writing-food-businesses">SOP Writing</a>
-  <a href="/internal-auditing-services">Internal Auditing</a>
-  <a href="/food-manufacturer-consulting">Manufacturers</a>
-  <a href="/cafe-restaurant-food-safety">Hospitality</a>
-  <a href="/food-business-startup-package">Start-Up Package</a>
-  <span class="mob-section">Resources</span>
-  <a href="/blog">Blog</a>
-  <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
-  <a href="/free-resources">Free Resources</a>
-  <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
-  <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
-  <span class="mob-section">Company</span>
-  <a href="/pricing">Pricing</a>
-  <a href="/suburb-directory">Locations</a>
-  <a href="/the-ames-standard">Our Mission</a>
-  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book Scoping Call</a>
-</div>
 
 <div class="page-hero">
  <div class="page-hero-inner">
  <div class="page-eyebrow">Our Mission & Pedigree</div>
-    <h1>Raising the National <em>Food Safety Standard</em></h1>
-    <p class="page-hero-sub">Our mission is to empower every food business in Australia—from local cafes to national manufacturers—with the elite education and systems used by multinational corporations.</p>
+ <h1>Bringing the <em>Tier-1 Standard</em> to Local Business</h1>
+ <p class="page-hero-sub">We believe independent cafes and restaurants deserve the same elite food safety systems used by multinational corporations.</p>
  </div>
 </div>
 
 
  <div class="content-area">
-    <h2>Our Passion: Education & Excellence</h2>
-    <p>At the heart of AMES Food Advisory is a relentless passion for <strong>training.</strong> For over 20 years, our Principal Consultant managed Quality Assurance at the absolute highest levels of Australian manufacturing. In those environments, we learned that a food safety program is only as strong as the culture behind it.</p>
-    
-    <p>We believe that education is the most powerful tool in the food industry. While others sell "compliance binders," we build <strong>competent teams.</strong> By combining Tier-1 corporate rigor with professional teaching credentials as a TAFE NSW Lecturer, we are uniquely positioned to raise the bar for food safety nationwide.</p>
-   
-    <p>What started as a local NSW initiative is now scaling into a national vision: to become the premier training and compliance partner for food businesses across Australia.</p>
+ <h2>Why We Started AMES Food Advisory</h2>
+ <p>For over 20 years, our Principal Consultant managed Quality Assurance and Food Safety at the absolute highest levels of Australian manufacturing, including extensive experience in <strong>national food manufacturing</strong>.</p>
+ 
+ <p>In those environments, food safety isn't a "tick-box" exercise; it is a finely tuned, scientifically rigorous system that protects millions of consumers and billions of dollars in brand equity. The systems are bulletproof. The training is continuous. The culture is relentless.</p>
+
+ <p>But when we looked at the local hospitality and independent food manufacturing sector in NSW, we saw a massive gap.</p>
 
  <h2>The Problem with the "Old Guard"</h2>
  <p>Too many independent cafes, bakeries, and restaurants are being let down. They are sold generic, overpriced HACCP binders by consultants who have never managed a high-speed production line. These generic templates sit on a shelf gathering dust until the council inspector arrives, resulting in failed audits, fines, and immense stress for the business owner.</p>
