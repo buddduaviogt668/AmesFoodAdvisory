@@ -149,10 +149,10 @@
     
   }
   nav::-webkit-scrollbar { display: none; }
-  .nav-logo { display: flex; align-items: center; gap: 0.35rem; text-decoration: none; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
+  .nav-logo { display: flex; flex-direction: column; justify-content: center; text-decoration: none; gap: 1px; }
+  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1.1; }
   .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
+  .nav-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.35); font-family: 'Inter', sans-serif; line-height: 1; }
   .nav-links { display: flex; margin-left: auto; justify-content: flex-end; gap: 0.5rem; align-items: center; list-style: none; }
   .nav-links > li { position: relative; }
   .nav-links > li > a {
@@ -876,8 +876,8 @@
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
+    <div class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></div>
+    <div class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</div>
   </a>
   <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
     <span></span><span></span><span></span>
