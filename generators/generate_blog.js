@@ -111,12 +111,24 @@ ${NAV_HTML}
 
 ${bodyContent}
 
-<section style="background:var(--white); padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border-navy);">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <div class="page-eyebrow">Free Resource</div>
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--navy); margin-bottom: 1rem;">NSW Food Business <em>Compliance Checklist</em></h2>
-    <p style="color: var(--ink-soft); margin-bottom: 2rem;">Ensure your business satisfies the NSW Food Act 2003 and Standard 3.2.2A. Download our comprehensive 47-item audit readiness checklist.</p>
-    <a href="/free-compliance-checklist-nsw" class="btn-primary resource-btn">Get the Checklist &rarr;</a>
+<section style="background:var(--white); padding: 5rem 2rem; border-top: 1px solid var(--border-navy);">
+  <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+    <div style="text-align: left;">
+      <div class="page-eyebrow">Urgent Audit Help</div>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--navy); margin-bottom: 1rem; line-height: 1.2;">Council visit <em>coming up?</em></h2>
+      <p style="color: var(--ink-soft); margin-bottom: 2rem; line-height: 1.7;">Don't risk a penalty notice. We specialize in <strong>Fast-Track Audit Prep</strong>. We'll audit your kitchen, fix your documentation gaps, and train your staff to ensure you pass with flying colors.</p>
+      <div style="display: flex; gap: 1rem;">
+        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Audit Fast-Track</a>
+        <a href="/free-compliance-checklist-nsw" class="btn-outline" style="color: var(--navy); border-color: var(--border-navy);">Self-Audit Checklist</a>
+      </div>
+    </div>
+    <div style="background: var(--navy-deep); padding: 2.5rem; border-radius: 12px; color: var(--white); position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; right: 0; padding: 0.75rem; background: var(--amber); color: var(--navy-deep); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; border-radius: 0 0 0 10px;">The Expert Coach</div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem;">Get Tier-1 Advice</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem; line-height: 1.6;">Skip the generic consultants. Get advice from a <strong>TAFE NSW Lecturer</strong> with 20+ years of national manufacturing experience.</p>
+      <div style="font-weight: 600; font-size: 1.1rem; color: var(--amber);">Fixed-Price Guarantee</div>
+      <p style="font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 0.25rem;">No hourly billing surprises. Ever.</p>
+    </div>
   </div>
 </section>
 
