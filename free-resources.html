@@ -194,76 +194,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
 </script>
 </head>
 <body>
-<nav>
- <a href="/" class="nav-logo">
- <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
- </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-<ul class="nav-links">
- <li>
- <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">&#9660;</span></a>
- <div class="nav-drop">
- <a href="/haccp-plan-development">HACCP Plan Development</a>
- <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
- <a href="/food-safety-training-sydney">Staff Training</a>
- <a href="/sop-writing-food-businesses">SOP Writing</a>
- <a href="/internal-auditing-services">Compliance Readiness</a>
- <div class="drop-divider"></div>
- <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
- <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
- <a href="/food-business-startup-package">Start-Up Package</a>
- <div class="drop-divider"></div>
- <a href="/food-truck-food-safety-nsw">Food Trucks</a>
- <a href="/catering-food-safety-nsw">Catering &amp; Events</a>
- <a href="/bakery-food-safety-nsw">Bakeries</a>
- <a href="/aged-care-food-safety-nsw">Aged Care</a>
- <a href="/childcare-food-safety-nsw">Childcare</a>
- </div>
- </li>
- <li>
- <a href="/food-safety-training-sydney">Training <span class="nav-arrow">&#9660;</span></a>
- <div class="nav-drop">
- <a href="/food-safety-training-sydney">Food Safety Training</a>
- <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
- <a href="/food-industry-workers-training">Industry Workers</a>
- <a href="/online-food-safety-courses">Online Courses</a>
- <a href="/lab-skills-training">Lab Skills</a>
- <div class="drop-divider"></div>
- <a href="/rto-resource-development">RTO Resource Development</a>
- </div>
- </li>
- <li>
- <a href="/blog">Blog <span class="nav-arrow">&#9660;</span></a>
- <div class="nav-drop">
- <a href="/blog/haccp">HACCP Deep-Dive</a>
- <a href="/blog">All Articles</a>
- <div class="drop-divider"></div>
- <a href="/free-resources">Free Resources</a>
- <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
- <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
- </div>
- </li>
- <li>
- <a href="/pricing">Pricing</a>
- </li>
- <li>
- <a href="/suburb-directory">Locations <span class="nav-arrow">&#9660;</span></a>
- <div class="nav-drop">
- <a href="/suburb-directory">All Sydney</a>
- <a href="/food-safety-consultant-surry-hills">CBD</a>
- <a href="/food-safety-consultant-marrickville">Inner West</a>
- <a href="/food-safety-consultant-parramatta">Parramatta</a>
- <a href="/food-safety-consultant-chatswood">North Shore</a>
- </div>
- </li>
- <li><a href="/#about">About</a></li>
- <li><a href="/contact">Contact</a></li>
- <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">&#128222; (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
- </ul>
-</nav>
+${NAV_HTML}
 <div class="hero">
  <div class="hero-inner">
  <div class="hero-badge">Free &middot; Instant Access</div>
@@ -310,7 +241,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
  <div class="cta-strip-inner">
  <h2>Found gaps? We can help close them.</h2>
  <p>AMES Food Advisory provides Food Safety Programs, HACCP plans, staff training, and audit preparation for NSW food businesses.</p>
- <a href="https://CALENDLY_URL" target="_blank" rel="noopener" class="cta-btn">Book a Free Consultation &rarr;</a>
+ <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="cta-btn">Book a Free Consultation &rarr;</a>
  </div>
 </div>
 <footer><div class="footer-inner">
@@ -323,12 +254,16 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(212,117,31,0.12);pa
  <div class="footer-links">
  <a href="/#services">Services</a>
  <a href="/suburb-directory">Locations</a>
- <a href="/#about">About</a>
+ <a href="/blog">Blog</a>
  <a href="/#contact">Contact</a>
  <a href="/privacy-policy">Privacy</a>
  <a href="/terms-of-service">Terms</a>
  </div>
 </div></footer>
+
+<script>
+  ${NAV_JS}
+</script>
 <script src="/assets/lead-gate.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 ﻿const fs = require('fs');
 const path = require('path');
+const { NAV_HTML, NAV_JS, NAV_CSS } = require('./templates/nav-master.js');
 
-const OUTPUT_DIR = __dirname; // build directly in the same folder
+const OUTPUT_DIR = __dirname;
 
 const ACCREDITATION_LOGOS_HTML = `
 <!-- ACCREDITATIONS & EXPERIENCE -->
@@ -10,7 +11,6 @@ const ACCREDITATION_LOGOS_HTML = `
     <div class="accred-wrapper" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
       <div class="accred-title" style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); text-align: center;">Accredited Expertise & Past Corporate Compliance Delivery</div>
       <div class="accred-logos-grid" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3rem; opacity: 0.85;">
-        <!-- Placeholder SVGs styled to look premium and corporate -->
         <div class="logo-item" style="display: flex; align-items: center; gap: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--amber);"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           TAFE NSW <span style="font-size:0.7rem; font-family:'Inter', sans-serif; font-weight:400; color:var(--ink-soft); vertical-align:middle; margin-left:2px;">(Sessional Lecturing)</span>
@@ -117,63 +117,8 @@ const SHARED_CSS = `
     line-height: 1.6;
     overflow-x: hidden;
   }
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(28,43,58,0.96);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(232,145,58,0.15);
-    padding: 0 2rem; height: 66px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-logo {
-    display: flex; align-items: center; gap: 0.35rem;
-    text-decoration: none;
-  }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 0.5rem; align-items: center; list-style: none; }
-  .nav-links > li { position: relative; }
-  .nav-links > li > a {
-    text-decoration: none; font-size: 0.82rem; font-weight: 400;
-    color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
-    padding: 0 0.85rem; height: 66px; display: flex; align-items: center; gap: 0.25rem;
-  }
-  .nav-links > li > a:hover { color: var(--white); }
-  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
-  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
-  .nav-drop {
-    position: absolute; top: 66px; left: 0; min-width: 210px;
-    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
-    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
-    padding: 0.5rem 0; opacity: 0; visibility: hidden;
-    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
-  }
-  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
-  .nav-drop a {
-    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
-    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
-  }
-  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
-  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
-  .nav-cta {
-    background: var(--amber) !important; color: var(--navy) !important;
-    padding: 0.45rem 1.1rem !important; border-radius: 5px !important;
-    font-weight: 600 !important; font-size: 0.8rem !important; margin-left: 0.5rem;
-    transition: background 0.2s !important;
-  }
-  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
-  .nav-phone {
-    text-decoration: none; font-size: 0.82rem; font-weight: 400;
-    color: rgba(255,255,255,0.6); letter-spacing: 0.01em;
-    padding: 0 0.85rem; height: 66px; display: flex; align-items: center; gap: 0.25rem;
-    transition: color 0.2s;
-  }
-  .nav-phone:hover { color: var(--white); }
-  .footer-phone { margin: 0.5rem 0; }
-  .footer-phone a { font-size: 0.9rem; color: var(--amber-light); text-decoration: none; font-weight: 500; transition: color 0.15s; }
-  .footer-phone a:hover { color: var(--white); }
-  .footer-phone-divider { color: rgba(255,255,255,0.15); margin: 0 0.5rem; font-size: 0.8rem; }
+  ${NAV_CSS}
+  
   .page-hero {
     background: var(--navy-deep);
     padding: 9rem 2rem 5rem;
@@ -252,7 +197,7 @@ const SHARED_CSS = `
   .cred-pill {
     display: inline-flex; align-items: center; gap: 0.4rem;
     font-size: 0.76rem; font-weight: 600; color: var(--navy-deep);
-    white-space: nowrap; padding: 0 2rem;
+    padding: 0 2rem;
     border-right: 1px solid rgba(28,43,58,0.18);
   }
   .cred-pill::before { content: '◆'; font-size: 0.5rem; }
@@ -303,10 +248,10 @@ const SHARED_CSS = `
   .who-section { background: var(--navy); }
   .who-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 2.5rem; }
   .who-card {
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(232,145,58,0.15);
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(232, 145, 58,0.15);
     border-radius: 10px; padding: 1.5rem; transition: border-color 0.2s;
   }
-  .who-card:hover { border-color: rgba(232,145,58,0.35); }
+  .who-card:hover { border-color: rgba(232, 145, 58,0.35); }
   .who-card-title { font-size: 0.88rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
   .who-card-desc { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6; font-weight: 300; }
 
@@ -327,7 +272,7 @@ const SHARED_CSS = `
   .faq-item.open .faq-a { max-height: 400px; padding-top: 0.85rem; }
 
   .cta-strip { background: var(--navy-deep); padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden; }
-  .cta-strip::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(232,145,58,0.08) 0%, transparent 70%); }
+  .cta-strip::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(232, 145, 58,0.08) 0%, transparent 70%); }
   .cta-strip-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
   .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--white); font-weight: 400; margin-bottom: 1rem; line-height: 1.2; }
   .cta-strip h2 em { font-style: italic; color: var(--amber); }
@@ -347,10 +292,8 @@ const SHARED_CSS = `
 
   footer { background: var(--navy-deep); border-top: 1px solid rgba(232,145,58,0.12); padding: 2.5rem 2rem; }
   .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-  .footer-logo { display: flex; align-items: center; gap: 0.35rem; text-decoration: none; }
-  .footer-logo-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); }
-  .footer-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .footer-logo-tag { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.22); font-family: 'Inter', sans-serif; line-height: 1; }
+  .footer-logo { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); text-decoration: none; }
+  .footer-logo span { color: var(--amber); }
   .footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
   .footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
@@ -361,8 +304,7 @@ const SHARED_CSS = `
   .fade-up-delay-1 { transition-delay: 0.1s; }
   .fade-up-delay-2 { transition-delay: 0.2s; }
 
-  @media(max-width: 768px) {
-    .nav-links { display: none; }
+  @media(max-width: 900px) {
     .includes-grid { grid-template-columns: 1fr; }
     .who-grid { grid-template-columns: 1fr; }
     .related-grid { grid-template-columns: 1fr; }
@@ -372,29 +314,10 @@ const SHARED_CSS = `
 </style>
 `;
 
-const NAV = `
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">HACCP &amp; Consulting</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/internal-auditing-services">Auditing</a></li>
-    <li><a href="/food-business-startup-package">Start-Up Package</a></li>
-    <li><a href="/#services">All Services</a></li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="tel:+61278220109" class="nav-cta">📞 (02) 7822 0109</a></li>
-    <li><a href="/#contact" class="nav-phone">Get in touch</a></li>
-  </ul>
-</nav>
-`;
-
 const CREDS = `
 <div class="creds-bar"><div class="creds-track">
   <span class="cred-pill">11+ Years Food Quality Experience</span>
-  <span class="cred-pill">National Manufacturer QA Background</span>
+  <span class="cred-pill">The Arnott's Group Background</span>
   <span class="cred-pill">TAE-Qualified Trainer</span>
   <span class="cred-pill">TAFE NSW Lecturer</span>
   <span class="cred-pill">HACCP &amp; SQF Specialist</span>
@@ -406,19 +329,12 @@ const CREDS = `
 
 const FOOTER = `
 <footer><div class="footer-inner">
-  <a href="/" class="footer-logo">
-    <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
+  <a href="/" class="footer-logo">AMES <span>Food Advisory</span></a>
   <div class="footer-copy">© 2026 AMES Food Advisory · Sydney, NSW</div>
-  <div class="footer-phone">
-    <a href="tel:+61278220109">📞 (02) 7822 0109</a>
-    <span class="footer-phone-divider">·</span>
-    <a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a>
-  </div>
   <div class="footer-links">
     <a href="/#services">Services</a>
-    <a href="/#about">About</a>
+    <a href="/suburb-directory">Locations</a>
+    <a href="/free-resources">Free Resources</a>
     <a href="/#contact">Contact</a>
   </div>
 </div></footer>
@@ -439,10 +355,11 @@ document.querySelectorAll('.faq-q').forEach(q => {
     if (!was) it.classList.add('open');
   });
 });
+
+${NAV_JS}
 </script>
 `;
 
-// Build function
 function buildPage(p) {
     const faq_schema = {
       "@context": "https://schema.org",
@@ -562,7 +479,7 @@ ${JSON.stringify(faq_schema, null, 2)}
 </script>
 </head>
 <body>
-${NAV}
+${NAV_HTML}
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="breadcrumb"><a href="/">Home</a><span>›</span>${p.sname}</div>
@@ -570,8 +487,8 @@ ${NAV}
     <h1>${p.h1}</h1>
     <p class="page-hero-sub">${p.sub}</p>
     <div class="hero-actions">
-      <a href="/#contact" class="btn-primary">Book a free consultation ↗</a>
-      <a href="/#services" class="btn-outline">All services</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
+      ${p.cta_primary_url ? `<a href="${p.cta_primary_url}" class="btn-outline resource-btn">${p.cta_primary_text || 'Free Resource'}</a>` : `<a href="/#services" class="btn-outline">All services</a>`}
     </div>
   </div>
 </div>
@@ -624,7 +541,7 @@ ${faqsHtml}
     <h2>Need clear, actionable <em>food safety</em> advice?</h2>
     <p>We work directly with your business to construct robust quality structures, training platforms, and audit preparedness tools.</p>
     <div class="cta-strip-actions">
-      <a href="/#contact" class="btn-primary">Arrange a free consultation call ↗</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Arrange a free consultation call ↗</a>
       <a href="tel:+61400000000" class="btn-outline">Speak with a specialist</a>
     </div>
   </div>

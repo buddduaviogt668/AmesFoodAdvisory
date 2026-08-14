@@ -157,23 +157,7 @@
 </head>
 <body>
 
-<nav>
- <a href="/" class="nav-logo">
- <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
- <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
- </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-<ul class="nav-links">
- <li><a href="/the-ames-standard">Our Mission</a></li>
- <li><a href="/food-safety-consulting-sydney">Services</a></li>
- <li><a href="/the-vault">Free Resources</a></li>
- <li><a href="/blog">Blog</a></li>
- <li><a href="/contact">Contact</a></li>
- <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">&#128222; (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
- </ul>
-</nav>
+${NAV_HTML}
 
 <div class="page-hero">
  <div class="page-hero-inner">
@@ -229,13 +213,17 @@
  <div class="footer-copy">&#169; 2026 AMES Food Advisory. Serving all of NSW.</div>
  <div class="footer-phone"><a href="tel:+61278220109">&#128222; (02) 7822 0109</a><span class="footer-phone-divider">&middot;</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
  <div class="footer-links">
- <a href="/pricing">Pricing</a>
+ <a href="/#services">Services</a>
  <a href="/suburb-directory">Locations</a>
- <a href="/the-vault">The Vault</a>
- <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
+ <a href="/free-resources">Free Resources</a>
+ <a href="/#contact">Contact</a>
  </div>
  </div>
 </footer>
+
+<script>
+  ${NAV_JS}
+</script>
 
 </body>
 </html>

@@ -1,17 +1,17 @@
-﻿&#65279;<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What Is HACCP? A Complete Guide for NSW Food Businesses | AMES Food Advisory</title>
-<meta name="description" content="Complete guide to HACCP for NSW food businesses. Learn the seven HACCP principles, who needs a HACCP plan, Standard 3.2.1 requirements, and how to get HACCP-ready for council inspections.">
+<title>Deep Guide: GUIDE 1 | AMES Food Advisory</title>
+<meta name="description" content="Read our deep guide on guide 1 to understand food safety compliance.">
 <meta name="keywords" content="guide 1, food safety deep guide">
 <meta name="robots" content="index, follow">
 <meta name="author" content="AMES Food Advisory">
 <link rel="canonical" href="https://www.amesfoodadvisory.com.au/guides/guide-1">
-<meta property="og:type" content="article">
-<meta property="og:title" content="What Is HACCP? Complete NSW Guide | AMES Food Advisory">
-<meta property="og:description" content="Complete guide to HACCP for NSW food businesses. Learn the seven HACCP principles, who needs a HACCP plan, Standard 3.2.1 requirements, and how to get HACCP-ready for council inspections.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deep Guide: GUIDE 1">
+<meta property="og:description" content="Read our deep guide on guide 1.">
 <meta property="og:url" content="https://www.amesfoodadvisory.com.au/guides/guide-1">
 <meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
 <meta property="og:site_name" content="AMES Food Advisory">
@@ -20,23 +20,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "What Is HACCP? Complete NSW Guide"
-}
-</script>
-<script type="application/ld+json" id="website-schema">
-{
- "@context": "https://schema.org",
- "@type": "WebSite",
- "name": "AMES Food Advisory",
- "url": "https://www.amesfoodadvisory.com.au",
- "potentialAction": {
- "@type": "SearchAction",
- "target": {
- "@type": "EntryPoint",
- "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
- },
- "query-input": "required name=search_term_string"
- }
+  "headline": "Deep Guide: GUIDE 1"
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,27 +57,66 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
+  
+  /* ── NAV ── */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(28,43,58,0.96);
-    backdrop-filter: blur(14px);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(19,30,40,0.97); backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(212,117,31,0.15);
     padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
-    
-    
   }
-  nav::-webkit-scrollbar { display: none; }
-  }
-  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--amber); }
-  .nav-cta { background: var(--amber); color: var(--navy-deep); padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
-  .nav-cta:hover { background: var(--amber-dim); }.nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
+  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
+  .nav-logo-tag { display: none; }
+  .nav-links { display: flex; gap: 0; align-items: center; list-style: none; }
+  .nav-links > li { position: relative; }
+  .nav-links > li > a {
+    text-decoration: none; font-size: 0.82rem; font-weight: 400;
+    color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
+    padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem;
+  }
+  .nav-links > li > a:hover, .nav-links > li:hover > a { color: var(--white); }
+  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+  .nav-drop {
+    position: absolute; top: 58px; left: 0; min-width: 210px;
+    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0; opacity: 0; visibility: hidden;
+    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+  }
+  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-drop a {
+    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+  }
+  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
+  .nav-cta {
+    background: var(--amber) !important; color: var(--navy) !important;
+    padding: 0.45rem 1.1rem !important; border-radius: 5px !important;
+    font-weight: 600 !important; font-size: 0.8rem !important; margin-left: 0.5rem;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
+
+  /* ── HAMBURGER MOBILE MENU ── */
+  .ham-btn{display:none;flex-direction:column;justify-content:space-between;width:26px;height:19px;background:none;border:none;cursor:pointer;padding:0;margin-left:auto;z-index:10001;position:fixed;right:2rem;top:19.5px;}
+  .ham-btn span{display:block;width:100%;height:2px;background:rgba(255,255,255,0.85);border-radius:2px;transition:all 0.25s ease;}
+  .ham-btn.open span:nth-child(1){transform:translateY(8.5px) rotate(45deg);}
+  .ham-btn.open span:nth-child(2){opacity:0;}
+  .ham-btn.open span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg);}
+  .mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(14,22,30,0.98);z-index:9998;overflow-y:auto;padding:58px 0 3rem;}
+  .mob-nav.open{display:block;}
+  .mob-nav a{display:block;padding:0.85rem 1.5rem;color:rgba(255,255,255,0.80);font-size:0.95rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.05);font-family:'Inter',sans-serif;transition:color 0.15s,background 0.15s;}
+  .mob-nav a:hover{color:#E8913A;background:rgba(232,145,58,0.06);}
+  .mob-nav .mob-section{padding:0.55rem 1.5rem 0.25rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.28);font-family:'Inter',sans-serif;margin-top:0.5rem;}
+  .mob-nav .mob-cta{background:#E8913A!important;color:#fff!important;margin:1.2rem 1.5rem 0;border-radius:6px;text-align:center;font-weight:600;border-bottom:none!important;}
+  .mob-nav .mob-cta:hover{background:#d47a25!important;}
+  @media(max-width:900px){.ham-btn{display:flex;}.nav-links{display:none!important;}}
+
   
   .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   
@@ -330,7 +353,7 @@
     font-size: 0.76rem;
     color: rgba(255,255,255,0.28);
   }
-  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links {
+  .footer-links {
     display: flex;
     gap: 1.5rem;
   }
@@ -350,109 +373,7 @@
     h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
     .content-area { padding: 1.5rem; }
   }
-
-/* NAV LOGO FIX */
-.nav-logo { display: flex !important; flex-direction: column !important; gap: 3px !important; text-decoration: none !important; justify-content: center !important; align-items: flex-start !important; }
-.nav-logo-tag { font-size: 0.59rem !important; font-weight: 600 !important; letter-spacing: 0.15em !important; text-transform: uppercase !important; color: rgba(255,255,255,0.30) !important; font-family: 'Inter', sans-serif !important; line-height: 1 !important; margin-top: 1px !important; display: block !important; }
-.nav-logo-name { font-family: 'Playfair Display', serif !important; font-size: 1.1rem !important; font-weight: 700 !important; color: #FFFFFF !important; letter-spacing: 0.01em !important; line-height: 1.1 !important; }
-
-
-/* NAV CTA FIX */
-.nav-cta, .nav-links a { white-space: nowrap !important; }
-
-
-/* PREVENT LOGO WORD WRAPPING */
-.nav-logo-name, .nav-logo-tag { white-space: nowrap !important; flex-shrink: 0 !important; }
-.nav-logo { flex-shrink: 0 !important; }
-.nav-links { flex-shrink: 0 !important; }
-
-/* BREADCRUMB */
-.breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.74rem;color:rgba(255,255,255,0.4);margin-bottom:1.5rem;flex-wrap:wrap;}
-.breadcrumb a{color:rgba(255,255,255,0.4);text-decoration:none;}.breadcrumb a:hover{color:var(--amber);}.breadcrumb span{color:rgba(255,255,255,0.2);}.bc-current{color:rgba(255,255,255,0.7);}
-.series-pill{display:inline-flex;align-items:center;background:rgba(212,117,31,0.15);border:1px solid rgba(212,117,31,0.3);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.72rem;font-weight:600;color:var(--amber);text-decoration:none;margin-bottom:1rem;}
-
-/* CREDS BAR MARQUEE */
-.creds-bar{background:var(--amber);overflow:hidden;}
-.creds-track{display:flex;align-items:center;animation:marquee 32s linear infinite;width:max-content;padding:0.8rem 0;}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-.cred-pill{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.76rem;font-weight:600;color:var(--navy-deep);white-space:nowrap;padding:0 2rem;border-right:1px solid rgba(28,43,58,0.18);}
-.cred-pill::before{content:"\25C6";font-size:0.5rem;}
-
-/* ARTICLE LAYOUT */
-.article-layout{max-width:1100px;margin:0 auto;padding:4rem 2rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
-.article-body{min-width:0;}
-.article-body h2{font-family:"Playfair Display",serif;font-size:1.75rem;font-weight:400;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.2;}
-.article-body h3{font-size:1.1rem;font-weight:600;color:var(--navy);margin:2rem 0 0.75rem;}
-.article-body h4{font-size:0.97rem;font-weight:600;color:var(--navy);margin:1.5rem 0 0.5rem;}
-.article-body p{font-size:0.97rem;color:var(--ink-mid);line-height:1.85;margin-bottom:1.25rem;font-weight:300;}
-.article-body ul,.article-body ol{margin:1rem 0 1.5rem 1.5rem;}
-.article-body li{font-size:0.93rem;color:var(--ink-mid);line-height:1.75;margin-bottom:0.4rem;font-weight:300;}
-.article-body strong{font-weight:600;color:var(--navy);}
-.article-body a{color:var(--amber-dim);text-decoration:underline;text-underline-offset:3px;}
-.article-body a:hover{color:var(--amber);}
-
-/* SIDEBAR */
-.article-sidebar{position:sticky;top:86px;}
-.sidebar-card{background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;margin-bottom:1rem;}
-.sidebar-card-title{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;}
-.sidebar-cta{background:var(--navy);border-radius:10px;padding:1.5rem;text-align:center;}
-.sidebar-cta p{font-size:0.82rem;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:1.1rem;}
-.sidebar-cta .btn-primary{width:100%;justify-content:center;font-size:0.83rem;padding:0.75rem 1rem;}
-.sidebar-links a{display:block;font-size:0.84rem;color:var(--ink-mid);text-decoration:none;padding:0.5rem 0;border-bottom:1px solid var(--stone-dark);transition:color 0.2s;}
-.sidebar-links a:last-child{border-bottom:none;}.sidebar-links a:hover{color:var(--amber);}
-
-/* FAQ ACCORDION */
-section.faq-section{background:var(--stone-mid);padding:4rem 2rem;}
-.faq-inner{max-width:820px;margin:0 auto;}
-.faq-list{margin-top:2rem;}
-.faq-item{border-bottom:1px solid var(--border-navy);padding:1.25rem 0;}
-.faq-item:first-child{border-top:1px solid var(--border-navy);}
-.faq-q{font-size:0.97rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none;}
-.faq-q::after{content:"+";color:var(--amber);font-size:1.3rem;font-weight:300;flex-shrink:0;transition:transform 0.2s;}
-.faq-item.open .faq-q::after{transform:rotate(45deg);}
-.faq-a{font-size:0.88rem;color:var(--ink-soft);line-height:1.75;font-weight:300;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.2s;}
-.faq-item.open .faq-a{max-height:600px;padding-top:0.85rem;}
-.section-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;}
-.section-eyebrow::before{content:"";width:20px;height:2px;background:var(--amber);border-radius:1px;}
-h2.display{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:400;line-height:1.18;color:var(--navy);margin-bottom:1.25rem;}
-h2.display em{font-style:italic;color:var(--amber-dim);}
-
-/* CTA STRIP */
-.cta-strip{background:var(--navy-deep);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden;}
-.cta-strip::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(212,117,31,0.08) 0%,transparent 70%);}
-.cta-strip-inner{position:relative;z-index:1;max-width:600px;margin:0 auto;}
-.cta-strip h2{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3vw,2.4rem);color:var(--white);font-weight:400;margin-bottom:1rem;line-height:1.2;}
-.cta-strip h2 em{font-style:italic;color:var(--amber);}
-.cta-strip p{color:rgba(255,255,255,0.5);font-size:0.95rem;margin-bottom:2rem;font-weight:300;line-height:1.7;}
-.cta-strip-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-
-/* RELATED SECTION */
-.related-section{background:var(--stone);padding:4rem 2rem;}
-.related-inner{max-width:1100px;margin:0 auto;}
-.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;}
-.related-card{background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;text-decoration:none;display:block;transition:border-color 0.2s,box-shadow 0.2s,transform 0.15s;}
-.related-card:hover{border-color:var(--border-amber);box-shadow:0 6px 20px rgba(28,43,58,0.08);transform:translateY(-2px);}
-.related-cat{font-size:0.7rem;font-weight:700;color:var(--amber);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;}
-.related-title{font-size:0.93rem;font-weight:600;color:var(--navy);margin-bottom:0.4rem;line-height:1.35;}
-.related-desc{font-size:0.8rem;color:var(--ink-soft);line-height:1.55;font-weight:300;}
-
-/* RESPONSIVE */
-@media(max-width:1024px){.article-layout{grid-template-columns:1fr;}.article-sidebar{position:static;}}
-@media(max-width:768px){.related-grid{grid-template-columns:1fr;}}
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
-  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
-  @media (max-width: 900px) {
-    .nav-toggle { display: block; }
-    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
-    .nav-links.open { display: flex !important; }
-    .nav-links li { width: 100%; }
-    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
-    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
-    .nav-links .nav-phone { padding-left: 0 !important; }
-    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .nav-toggle.open span:nth-child(2) { opacity: 0; }
-    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  }</style>
+</style>
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
 <script>
@@ -464,159 +385,180 @@ h2.display em{font-style:italic;color:var(--amber-dim);}
 </head>
 <body>
 
+
+<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
     <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
   </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-<ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">Services</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/pricing">Pricing</a></li>
-    <li><a href="/suburb-directory">Locations</a></li>
+  <ul class="nav-links">
+    <li>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/haccp-plan-development">HACCP Plan Development</a>
+        <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+        <a href="/food-safety-training-sydney">Staff Training</a>
+        <a href="/sop-writing-food-businesses">SOP Writing</a>
+        <a href="/internal-auditing-services">Compliance Readiness</a>
+        <div class="drop-divider"></div>
+        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+        <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+        <a href="/food-business-startup-package">Start-Up Package</a>
+      </div>
+    </li>
+    <li>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/food-safety-training-sydney">Food Safety Training</a>
+        <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+        <a href="/food-industry-workers-training">Industry Workers</a>
+        <a href="/online-food-safety-courses">Online Courses</a>
+        <a href="/lab-skills-training">Lab Skills</a>
+        <div class="drop-divider"></div>
+        <a href="/rto-resource-development">RTO Resource Development</a>
+      </div>
+    </li>
+    <li>
+      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/blog/haccp">HACCP Deep-Dive</a>
+        <a href="/blog">All Articles</a>
+        <div class="drop-divider"></div>
+        <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+        <div class="drop-divider"></div>
+        <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+      </div>
+    </li>
+    <li>
+      <a href="/pricing">Pricing</a>
+    </li>
+    <li>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/suburb-directory">All Sydney</a>
+        <a href="/food-safety-consultant-surry-hills">CBD</a>
+        <a href="/food-safety-consultant-marrickville">Inner West</a>
+        <a href="/food-safety-consultant-parramatta">Parramatta</a>
+        <a href="/food-safety-consultant-chatswood">North Shore</a>
+      </div>
+    </li>
     <li><a href="/#about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">&#128222; (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
+<button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
+  <span></span><span></span><span></span>
+</button>
+<div class="mob-nav" id="mobNav">
+  <span class="mob-section">Services</span>
+  <a href="/haccp-plan-development">HACCP Plan Development</a>
+  <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+  <a href="/food-safety-training-sydney">Staff Training</a>
+  <a href="/sop-writing-food-businesses">SOP Writing</a>
+  <a href="/internal-auditing-services">Compliance Readiness</a>
+  <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+  <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+  <a href="/food-business-startup-package">Start-Up Package</a>
+  <span class="mob-section">Training</span>
+  <a href="/food-safety-training-sydney">Food Safety Training</a>
+  <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+  <a href="/food-industry-workers-training">Industry Workers</a>
+  <a href="/online-food-safety-courses">Online Courses</a>
+  <a href="/lab-skills-training">Lab Skills</a>
+  <a href="/rto-resource-development">RTO Resource Development</a>
+  <span class="mob-section">Resources</span>
+  <a href="/blog">Blog</a>
+  <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
+  <a href="/free-resources">Free Resources</a>
+  <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+  <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+  <span class="mob-section">Company</span>
+  <a href="/pricing">Pricing</a>
+  <a href="/suburb-directory">Locations</a>
+  <a href="/#about">About AMES</a>
+  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book Scoping Call</a>
+</div>
+
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    
-        <div class="breadcrumb"><a href="/">Home</a><span>&#8250;</span><a href="/guides">Guides</a><span>&#8250;</span><span class="bc-current">Guide</span></div>
-    <a href="/guides" class="series-pill">&#8592; Industry Guide Series</a>
     <div class="page-eyebrow">DEEP GUIDE</div>
-    <h1>What Is HACCP? <em>Complete NSW Guide</em></h1>
-    <p class="page-hero-sub">HACCP is the internationally recognised system for managing food safety hazards. In NSW it is a legal requirement for most cafes, restaurants, and manufacturers under Standard 3.2.1. This guide explains everything you need to know.</p>
+    <h1>Deep Guide: <em>GUIDE 1</em></h1>
+    <p class="page-hero-sub">Detailed insights and comprehensive analysis to help your food business stay compliant.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation &#8599;</a>
-      <a href="/pricing" class="btn-outline">View pricing</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
+      <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
+    </div>
+  </div>
 </div>
-<div class="creds-bar"><div class="creds-track"><span class="cred-pill">20+ Years Food Quality and QA Experience</span><span class="cred-pill">National Manufacturer Food Safety Experience</span><span class="cred-pill">TAE-Qualified Trainer</span><span class="cred-pill">TAFE NSW Lecturer</span><span class="cred-pill">HACCP and SQF Specialist</span><span class="cred-pill">NSW Food Authority Compliance</span><span class="cred-pill">Food Technology Diploma</span><span class="cred-pill">Serving All of NSW</span><span class="cred-pill">20+ Years Food Quality and QA Experience</span><span class="cred-pill">National Manufacturer Food Safety Experience</span><span class="cred-pill">TAE-Qualified Trainer</span><span class="cred-pill">TAFE NSW Lecturer</span><span class="cred-pill">HACCP and SQF Specialist</span><span class="cred-pill">NSW Food Authority Compliance</span><span class="cred-pill">Food Technology Diploma</span><span class="cred-pill">Serving All of NSW</span></div></div>
+
+<div class="creds-bar"><div class="creds-track">
+  <span class="cred-pill">11+ Years Food Quality Experience</span>
+  <span class="cred-pill">National Manufacturer QA Background</span>
+  <span class="cred-pill">TAE-Qualified Trainer</span>
+  <span class="cred-pill">TAFE NSW Lecturer</span>
+  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
+  <span class="cred-pill">NSW Food Authority Compliance</span>
+  <span class="cred-pill">Food Technology Diploma</span>
+  <span class="cred-pill">Serving All of NSW</span>
+</div></div>
 
 
-<div class="article-layout">
-  <article class="article-body" itemscope itemtype="https://schema.org/Article">
-    <meta itemprop="datePublished" content="2026-01-01">
-    <meta itemprop="dateModified" content="2026-07-01">
-    <meta itemprop="author" content="AMES Food Advisory">
+    <section>
+      <div class="container content-area">
+        <h2>About this Deep Guide</h2>
+        <p>This page provides in-depth information and insights regarding <strong>guide 1</strong> in the context of food safety and compliance in NSW.</p>
+        <p>AMES Food Advisory is dedicated to providing high-quality, actionable knowledge to help businesses navigate HACCP regulations, NSW Food Authority compliance, and operational food safety.</p>
+        <ul>
+          <li>Comprehensive breakdown of standards.</li>
+          <li>Regulatory insights and audit preparation techniques.</li>
+          <li>Real-world applications for cafes, restaurants, and manufacturers.</li>
+        </ul>
+        <h3>Why this matters</h3>
+        <p>Staying informed on the latest food safety practices ensures your business operates safely, protects consumers, and avoids costly penalties from local council or state regulators.</p>
+      </div>
+    </section>
     
-<h2>What Is HACCP? A Complete Guide for NSW Food Businesses</h2>
 
-        <p>If you run a food business in NSW, you have likely heard the term HACCP. But what does it actually mean, and do you need one? HACCP stands for Hazard Analysis Critical Control Point. It is a systematic, science-based approach to identifying, evaluating, and controlling food safety hazards. Unlike a one-off checklist, HACCP is a preventive system designed to stop hazards before they reach the consumer.</p>
-
-        <p>In Australia, HACCP is referenced under <strong>Standard 3.2.1</strong> of the <strong>FSANZ Food Standards Code</strong>, which requires all food businesses to have a food safety program. The NSW Food Authority enforces these requirements across the state, and your local council will check for HACCP-based controls during routine inspections. Whether you run a cafe in Surry Hills, a catering business in Newcastle, or a manufacturing facility in Western Sydney, understanding HACCP is non-negotiable.</p>
-
-        <h3>Who Needs HACCP in NSW?</h3>
-
-        <p>Under the <strong>Food Act 2003 (NSW)</strong> and the <strong>Food Regulation 2015</strong>, all food businesses in NSW that handle, process, or serve food must operate under a documented food safety program that is based on HACCP principles. This includes:</p>
-
-        <ul>
-          <li>Restaurants, cafes, and takeaway shops</li>
-          <li>Caterers and mobile food vendors</li>
-          <li>Childcare centres, aged care facilities, and hospitals</li>
-          <li>Retail bakeries and butchers</li>
-          <li>Supermarkets and grocery stores with deli sections</li>
-          <li>Food manufacturers and processors</li>
-          <li>Wholesale distributors and importers</li>
-        </ul>
-
-        <p>Businesses that only sell whole, uncut fruit and vegetables, or pre-packaged shelf-stable foods, may be exempt. However, if you slice, cook, cool, reheat, or combine ingredients, you fall under the requirement. Check with the <a href="https://www.foodauthority.nsw.gov.au/" target="_blank" rel="noopener">NSW Food Authority</a> if you are unsure about your specific classification.</p>
-
-        <h3>The Seven HACCP Principles</h3>
-
-        <p>The Codex Alimentarius Commission defines seven principles that form the backbone of every HACCP system. Understanding each one is essential for developing a compliant <a href="/food-safety-program-template-guide">food safety program</a>.</p>
-
-        <p><strong>Principle 1: Conduct a Hazard Analysis</strong><br>Identify all biological, chemical, and physical hazards that could occur at each step of your process. For a typical NSW caf&#233;, this might include biological hazards (Salmonella from raw chicken), chemical hazards (cleaning agent residues), and physical hazards (glass fragments from broken jars).</p>
-
-        <p><strong>Principle 2: Determine Critical Control Points (CCPs)</strong><br>A CCP is a step where control is essential to prevent or eliminate a hazard. Cooking raw chicken to 74&#176;C is a CCP. So is cooling cooked rice below 5&#176;C within two hours.</p>
-
-        <p><strong>Principle 3: Establish Critical Limits</strong><br>Each CCP must have a measurable limit. For cooking, the critical limit might be an internal temperature of 74&#176;C for two minutes. For cold storage, it could be 5&#176;C or below.</p>
-
-        <p><strong>Principle 4: Establish Monitoring Procedures</strong><br>You need to know, in real time, whether your CCPs are under control. This means taking and recording temperatures at defined frequencies. A <a href="/sop-writing-food-businesses">written SOP</a> for temperature monitoring ensures consistency across all shifts.</p>
-
-        <p><strong>Principle 5: Establish Corrective Actions</strong><br>When a critical limit is breached, you need a plan. If your cool room hits 8&#176;C, what do you do? Corrective actions might include moving food to a functioning cool room, rejecting the affected batch, or recording the deviation and disposal.</p>
-
-        <p><strong>Principle 6: Establish Verification Procedures</strong><br>Verification confirms your HACCP system is working. This includes reviewing temperature logs, calibrating thermometers, and conducting <a href="/internal-auditing-services">internal audits</a>.</p>
-
-        <p><strong>Principle 7: Establish Record-Keeping and Documentation</strong><br>If it is not documented, it did not happen. Your records must include hazard analyses, CCP monitoring logs, corrective action reports, and verification results. The NSW Food Authority expects to see these records during an inspection.</p>
-
-        <h3>HACCP vs Food Safety Program: What Is the Difference?</h3>
-
-        <p>This is one of the most common questions we hear. A <strong>food safety program</strong> is the documented system that your business uses to control food safety hazards. HACCP is the methodology that underpins it. Think of it this way: your food safety program is the document; HACCP is the science behind it.</p>
-
-        <p>Under <strong>Standard 3.2.1</strong> of the FSANZ Code, your food safety program must be based on HACCP principles, but it does not need to be formally certified to Codex HACCP unless you are supplying major retailers or seeking third-party certification like SQF or BRC. Most small to medium NSW food businesses operate with a HACCP-based food safety program without formal certification, and that is perfectly acceptable under NSW law.</p>
-
-        <p>If you are unsure where to start, our <a href="/haccp-plan-development">HACCP plan development service</a> can help you build a system that meets both regulatory requirements and your operational reality.</p>
-
-        <h3>Standard 3.2.2A and What It Means for Your HACCP System</h3>
-
-        <p>In December 2023, the <strong>Australia New Zealand Food Standards Code</strong> introduced <strong>Standard 3.2.2A</strong>, which mandates additional food safety management tools for certain sectors. If you handle high-risk foods (raw meat, poultry, eggs, dairy, seafood, cooked rice, etc.), you are now required to implement:</p>
-
-        <ul>
-          <li>A documented food safety management system (your HACCP-based program)</li>
-          <li>Evidence of food handler training (such as a <a href="/food-safety-training-sydney">Food Safety Supervisor</a> certification)</li>
-          <li>A documented allergen management process</li>
-        </ul>
-
-        <p>This standard applies to food service, retail, and hospitality businesses in NSW. Your HACCP plan must now explicitly address allergen cross-contact as a hazard  something many older plans overlook. Our <a href="/guides/guide-5.html">Allergen Management Plan Guide</a> covers this in detail.</p>
-
-        <h3>Common HACCP Mistakes We See in NSW Food Businesses</h3>
-
-        <p>Over the years, we have reviewed dozens of food safety programs and conducted countless <a href="/internal-auditing-services">internal audits</a>. Here are the most common gaps we see:</p>
-
-        <ul>
-          <li><strong>Generic, templated programs that do not match the actual business.</strong> A HACCP plan for a bakery is completely different from one for a Thai restaurant. Your plan must reflect your specific menu, equipment, and processes.</li>
-          <li><strong>No flow diagram.</strong> Your food safety program should include a step-by-step flow diagram of how food moves through your business, from receiving to serving.</li>
-          <li><strong>Missing corrective action records.</strong> It is not enough to have a policy. You must demonstrate that you have used it.</li>
-          <li><strong>Uncalibrated thermometers.</strong> Your temperature readings are meaningless if your equipment is inaccurate.</li>
-          <li><strong>No consideration of allergens.</strong> With Standard 3.2.2A now in effect, allergen cross-contact must be treated as a hazard in your analysis.</li>
-        </ul>
-
-        <h3>How to Get HACCP-Ready: A Practical Checklist</h3>
-
-        <p>Ready to build or improve your HACCP system? Here is your action plan:</p>
-
-        <ul>
-          <li>Download our <a href="/free-audit-readiness-checklist">free audit readiness checklist</a> to identify gaps in your current system.</li>
-          <li>Map your food processes from receiving to serving with a flow diagram.</li>
-          <li>Identify all hazards at each step and determine your CCPs.</li>
-          <li>Set critical limits that are measurable and defensible.</li>
-          <li>Write monitoring procedures and create log sheets.</li>
-          <li>Train your team on CCP monitoring and corrective actions.</li>
-          <li>Schedule regular <a href="/internal-auditing-services">internal audits</a> to verify your system.</li>
-          <li>Review and update your plan at least annually, or whenever you change your menu or equipment.</li>
-        </ul>
-<p style="font-size:0.85rem;color:var(--ink-muted);border-top:1px solid var(--border-navy);padding-top:1.5rem;margin-top:1.5rem;"><strong>Related Guides:</strong> <a href="/guides/guide-2.html">NSW Food Safety Laws &amp; Regulations 2026</a> &middot; <a href="/guides/guide-4.html">Food Safety Program Template Guide</a> &middot; <a href="/guides/guide-5.html">Allergen Management Plan Guide</a></p>
-  </article>
-  <aside class="article-sidebar">
-      <div class="sidebar-cta"><p>Need expert food safety support for your NSW business? Fixed-price programs, no hidden costs.</p><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Your Free Scoping Call &#8594;</a></div>
-      <div class="sidebar-card" style="margin-top:1rem;"><div class="sidebar-card-title">Key Services</div><div class="sidebar-links"><a href="/haccp-plan-development">HACCP Plan Development</a><a href="/food-safety-consulting-sydney">Food Safety Consulting</a><a href="/food-safety-training-sydney">Staff Training</a><a href="/internal-auditing-services">Internal Auditing</a><a href="/sop-writing-food-businesses">SOP Writing</a><a href="/food-business-startup-package">Startup Package</a><a href="/pricing">View All Pricing</a></div></div>
-      <div class="sidebar-card"><div class="sidebar-card-title">Free Resources</div><div class="sidebar-links"><a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a><a href="/free-restaurant-sop-template">SOP Templates</a><a href="/free-audit-readiness-checklist">Audit Readiness Guide</a></div></div>
-    </aside>
-<section class="faq-section"><div class="faq-inner"><div class="section-eyebrow">Common questions</div><h2 class="display">Frequently <em>asked questions</em></h2><div class="faq-list"><div class="faq-item open"><div class="faq-q">Do I need a certified HACCP plan for my cafe?</div><div class="faq-a">No. Unless you are seeking third-party certification (SQF, BRC, or GFSI), your food safety program simply needs to be based on HACCP principles. It does not need to be externally certified. The NSW Food Authority will check that your documented program is appropriate for your business and that you are following it.</div></div><div class="faq-item"><div class="faq-q">How often should I review my HACCP plan?</div><div class="faq-a">At minimum, annually. However, you should review your plan whenever you introduce a new menu item, change equipment, renovate your kitchen, or receive a non-compliance notice from your council. A living document is far more valuable than a dusty binder.</div></div><div class="faq-item"><div class="faq-q">What happens if I do not have a HACCP-based food safety program?</div><div class="faq-a">Operating without a compliant food safety program is an offence under the Food Act 2003 (NSW). Penalties can range from improvement notices and fines to closure orders. Your local council environmental health officer will check for your program during routine inspections, and the absence of one will almost certainly result in enforcement action.</div></div></div></div></section>
-<div class="cta-strip"><div class="cta-strip-inner"><h2>Ready to get your food business <em>fully compliant?</em></h2><p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. No corporate gatekeeping. No hidden fees. Built on 20+ years of real manufacturing experience.</p><div class="cta-strip-actions"><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Your Free Scoping Call &#8594;</a><a href="/pricing" class="btn-outline">View Pricing</a></div></div></div>
-<section class="related-section"><div class="related-inner"><div class="section-eyebrow">Keep reading</div><h2 class="display">Related <em>articles &amp; guides</em></h2><div class="related-grid"><a href="/haccp-plan-development" class="related-card"><div class="related-cat">Service</div><div class="related-title">HACCP Plan Development</div><div class="related-desc">Fixed-price HACCP plan from an industry specialist.</div></a><a href="/food-safety-consulting-sydney" class="related-card"><div class="related-cat">Service</div><div class="related-title">Food Safety Consulting Sydney</div><div class="related-desc">End-to-end compliance support. No hidden fees.</div></a><a href="/pricing" class="related-card"><div class="related-cat">Service</div><div class="related-title">View All Pricing</div><div class="related-desc">Fixed-price food safety programs across NSW.</div></a></div></div></section>
 <footer>
   <div class="footer-inner">
     <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
+    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
-    <div class="footer-copy">&#169; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
-    <div class="footer-phone"><a href="tel:+61278220109">&#128222; (02) 7822 0109</a><span class="footer-phone-divider">&middot;</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW. Confidential &amp; ethical food safety consulting.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
       <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
-</div>
+    </div>
+  </div>
 </footer>
 
-<script>(function(){document.querySelectorAll(".faq-q").forEach(function(q){q.addEventListener("click",function(){var it=q.closest(".faq-item");var was=it.classList.contains("open");document.querySelectorAll(".faq-item").forEach(function(i){i.classList.remove("open");});if(!was)it.classList.add("open");});});})();</script>
+<script>
+  
+function toggleMobNav(btn){
+  btn.classList.toggle('open');
+  var nav=document.getElementById('mobNav');
+  nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+document.addEventListener('click',function(e){
+  var nav=document.getElementById('mobNav');
+  var btn=document.querySelector('.ham-btn');
+  if(nav && btn && nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)){
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+  }
+});
+
+</script>
 </body>
 </html>

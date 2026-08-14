@@ -12,6 +12,8 @@ module.exports = [
     "h1": "Food Safety &amp; <em>HACCP Consulting</em>",
     "sub": "A properly built HACCP plan isn't just a compliance document — it's the operating foundation of your food business. AMES Food Advisory develops food safety programs that work in the real world, built by someone who's run them inside Australia's largest food manufacturers.",
     "introText": "Our food safety consulting is completely tailored to your business operations. We build systems that satisfy both regulatory auditors and your staff.",
+    "cta_primary_text": "Download our Free NSW Compliance Checklist",
+    "cta_primary_url": "/free-compliance-checklist-nsw",
     "includes": [
       { "icon": "📋", "title": "HACCP Plan Development", "desc": "Full hazard analysis, CCP identification, critical limits, monitoring procedures, and verification — built for your specific operation and food type." },
       { "icon": "🔍", "title": "Hazard Analysis", "desc": "Biological, chemical, physical, and allergen hazard identification for your specific products, processes, and supply chain." },

@@ -1,10 +1,11 @@
 ﻿const fs = require('fs');
 const path = require('path');
+const { NAV_HTML, NAV_JS, NAV_CSS } = require('../templates/nav-master.js');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
 
 // --- Helper to get base template ---
-function getBaseHTML(title, desc, kw, ogTitle, ogUrl, schemaData, heroEyebrow, heroTitle, heroSub, bodyContent) {
+function getBaseHTML(title, desc, kw, ogTitle, ogDesc, ogUrl, schemaData, heroEyebrow, heroTitle, heroSub, bodyContent) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,16 +49,7 @@ ${JSON.stringify(schemaData, null, 2)}
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background: var(--stone); color: var(--ink); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(28,43,58,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(212,117,31,0.15); padding: 0 2rem; height: 58px; display: flex; align-items: center; justify-content: space-between; }
-  .nav-logo { display: flex; flex-direction: column; gap: 3px; text-decoration: none; justify-content: center; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1.1; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--amber); }
-  .nav-cta { background: var(--amber); color: var(--navy-deep); padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
-  .nav-cta:hover { background: var(--amber-dim); }
+  ${NAV_CSS}
   
   .page-hero { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); color: var(--white); padding: 120px 2rem 60px; margin-top: 58px; position: relative; overflow: hidden; }
   .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; text-align: center; }
@@ -110,21 +102,7 @@ ${JSON.stringify(schemaData, null, 2)}
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">Services</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/pricing">Pricing</a></li>
-    <li><a href="/suburb-directory">Locations</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
-  </ul>
-</nav>
+${NAV_HTML}
 
 <div class="page-hero">
   <div class="page-hero-inner">
@@ -135,6 +113,15 @@ ${JSON.stringify(schemaData, null, 2)}
 </div>
 
 ${bodyContent}
+
+<section style="background:var(--white); padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border-navy);">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <div class="page-eyebrow">Free Resource</div>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--navy); margin-bottom: 1rem;">NSW Food Business <em>Compliance Checklist</em></h2>
+    <p style="color: var(--ink-soft); margin-bottom: 2rem;">Ensure your business satisfies the NSW Food Act 2003 and Standard 3.2.2A. Download our comprehensive 47-item audit readiness checklist.</p>
+    <a href="/free-compliance-checklist-nsw" class="btn-primary resource-btn">Get the Checklist &rarr;</a>
+  </div>
+</section>
 
 <footer>
   <div class="footer-inner">
@@ -152,6 +139,9 @@ ${bodyContent}
   </div>
 </footer>
 
+<script>
+  ${NAV_JS}
+</script>
 </body>
 </html>`;
 }

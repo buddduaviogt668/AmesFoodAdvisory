@@ -1,5 +1,6 @@
 ﻿const fs = require('fs');
 const path = require('path');
+const { NAV_HTML, NAV_JS, NAV_CSS } = require('../templates/nav-master.js');
 
 const OUTPUT_DIR = path.join(__dirname, '..');
 
@@ -60,23 +61,7 @@ ${JSON.stringify(schemaData, null, 2)}
     line-height: 1.6;
     overflow-x: hidden;
   }
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(28,43,58,0.96);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(212,117,31,0.15);
-    padding: 0 2rem; height: 58px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-logo { display: flex; flex-direction: column; gap: 3px; text-decoration: none; justify-content: center; }
-  .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; line-height: 1.1; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--amber); }
-  .nav-cta { background: var(--amber); color: var(--navy-deep); padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
-  .nav-cta:hover { background: var(--amber-dim); }
+  ${NAV_CSS}
   
   .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   
@@ -345,22 +330,7 @@ ${JSON.stringify(schemaData, null, 2)}
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
-    <span class="nav-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">Services</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/pricing">Pricing</a></li>
-    <li><a href="/suburb-directory">Locations</a></li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
-  </ul>
-</nav>
+${NAV_HTML}
 
 <div class="page-hero">
   <div class="page-hero-inner">
@@ -369,7 +339,7 @@ ${JSON.stringify(schemaData, null, 2)}
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
       <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
-      <a href="/pricing" class="btn-outline">View pricing</a>
+      <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
     </div>
   </div>
 </div>
@@ -403,6 +373,9 @@ ${bodyContent}
   </div>
 </footer>
 
+<script>
+  ${NAV_JS}
+</script>
 </body>
 </html>`;
 }

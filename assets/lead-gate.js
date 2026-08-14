@@ -89,8 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('ames_leads', JSON.stringify(leads));
         localStorage.setItem('ames_lead_captured', 'true');
 
-        // Optional: Send to a real backend here if needed
-        console.log('Lead captured:', leadData);
+        // TRIGGER EMAIL (The Fix)
+        const subject = `New Lead: ${leadData.resource}`;
+        const body = `Name: ${leadData.name}%0D%0AEmail: ${leadData.email}%0D%0ABusiness: ${leadData.business}%0D%0AResource: ${leadData.resource}`;
+        window.location.href = `mailto:ames.food.adv@gmail.com?subject=${subject}&body=${body}`;
 
         // Close modal and trigger download/action
         overlay.classList.remove('active');

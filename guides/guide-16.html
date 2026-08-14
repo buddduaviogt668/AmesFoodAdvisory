@@ -1,17 +1,17 @@
-﻿&#65279;<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food Safety for Catering and Events in NSW | AMES Food Advisory</title>
-<meta name="description" content="Complete compliance guide for catering and event food businesses in NSW. Covers temporary food premises, temperature control, transportation, food handling at events, and council permits.">
+<title>Deep Guide: GUIDE 16 | AMES Food Advisory</title>
+<meta name="description" content="Read our deep guide on guide 16 to understand food safety compliance.">
 <meta name="keywords" content="guide 16, food safety deep guide">
 <meta name="robots" content="index, follow">
 <meta name="author" content="AMES Food Advisory">
 <link rel="canonical" href="https://www.amesfoodadvisory.com.au/guides/guide-16">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Food Safety for Catering and Events in NSW | AMES Food Advisory">
-<meta property="og:description" content="Complete compliance guide for catering and event food businesses in NSW. Covers temporary food premises, temperature control, transportation, food handling at events, and council permits.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deep Guide: GUIDE 16">
+<meta property="og:description" content="Read our deep guide on guide 16.">
 <meta property="og:url" content="https://www.amesfoodadvisory.com.au/guides/guide-16">
 <meta property="og:image" content="https://www.amesfoodadvisory.com.au/assets/og-image-default.png">
 <meta property="og:site_name" content="AMES Food Advisory">
@@ -20,23 +20,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Food Safety for Catering and Events in NSW"
-}
-</script>
-<script type="application/ld+json" id="website-schema">
-{
- "@context": "https://schema.org",
- "@type": "WebSite",
- "name": "AMES Food Advisory",
- "url": "https://www.amesfoodadvisory.com.au",
- "potentialAction": {
- "@type": "SearchAction",
- "target": {
- "@type": "EntryPoint",
- "urlTemplate": "https://www.amesfoodadvisory.com.au/search?q={search_term_string}"
- },
- "query-input": "required name=search_term_string"
- }
+  "headline": "Deep Guide: GUIDE 16"
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,27 +57,66 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
+  
+  /* ── NAV ── */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(28,43,58,0.96);
-    backdrop-filter: blur(14px);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(19,30,40,0.97); backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(212,117,31,0.15);
     padding: 0 2rem; height: 58px;
     display: flex; align-items: center; justify-content: space-between;
-    
-    
   }
-  nav::-webkit-scrollbar { display: none; }
-  }
-  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; }
   .nav-logo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
-  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; } .nav-logo-tag{display:none;}
-  .nav-logo-tag { font-size: 0.59rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.30); font-family: 'Inter', sans-serif; line-height: 1; margin-top: 1px; }
-  .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.855rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--amber); }
-  .nav-cta { background: var(--amber); color: var(--navy-deep); padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 600; font-size: 0.8rem; }
-  .nav-cta:hover { background: var(--amber-dim); }.nav-phone{text-decoration:none;font-size:0.82rem;font-weight:400;color:rgba(255,255,255,0.6);letter-spacing:0.01em;padding:0 0.85rem;height:58px;display:flex;align-items:center;gap:0.25rem;transition:color 0.2s;}.nav-phone:hover{color:var(--white);}
+  .nav-logo-adv { color: var(--amber); font-style: italic; font-weight: 400; }
+  .nav-logo-tag { display: none; }
+  .nav-links { display: flex; gap: 0; align-items: center; list-style: none; }
+  .nav-links > li { position: relative; }
+  .nav-links > li > a {
+    text-decoration: none; font-size: 0.82rem; font-weight: 400;
+    color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
+    padding: 0 0.85rem; height: 58px; display: flex; align-items: center; gap: 0.25rem;
+  }
+  .nav-links > li > a:hover, .nav-links > li:hover > a { color: var(--white); }
+  .nav-arrow { font-size: 0.55rem; opacity: 0.5; transition: transform 0.2s; }
+  .nav-links > li:hover > a .nav-arrow { transform: rotate(180deg); opacity: 1; }
+  .nav-drop {
+    position: absolute; top: 58px; left: 0; min-width: 210px;
+    background: rgba(19,30,40,0.98); border: 1px solid rgba(212,117,31,0.15);
+    border-top: 2px solid var(--amber); border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0; opacity: 0; visibility: hidden;
+    transform: translateY(-6px); transition: all 0.18s ease; z-index: 999;
+  }
+  .nav-links > li:hover .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-drop a {
+    display: block; padding: 0.55rem 1.1rem; font-size: 0.8rem;
+    color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s, background 0.15s;
+  }
+  .nav-drop a:hover { color: var(--amber); background: rgba(212,117,31,0.06); }
+  .drop-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.35rem 0; }
+  .nav-cta {
+    background: var(--amber) !important; color: var(--navy) !important;
+    padding: 0.45rem 1.1rem !important; border-radius: 5px !important;
+    font-weight: 600 !important; font-size: 0.8rem !important; margin-left: 0.5rem;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
+
+  /* ── HAMBURGER MOBILE MENU ── */
+  .ham-btn{display:none;flex-direction:column;justify-content:space-between;width:26px;height:19px;background:none;border:none;cursor:pointer;padding:0;margin-left:auto;z-index:10001;position:fixed;right:2rem;top:19.5px;}
+  .ham-btn span{display:block;width:100%;height:2px;background:rgba(255,255,255,0.85);border-radius:2px;transition:all 0.25s ease;}
+  .ham-btn.open span:nth-child(1){transform:translateY(8.5px) rotate(45deg);}
+  .ham-btn.open span:nth-child(2){opacity:0;}
+  .ham-btn.open span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg);}
+  .mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(14,22,30,0.98);z-index:9998;overflow-y:auto;padding:58px 0 3rem;}
+  .mob-nav.open{display:block;}
+  .mob-nav a{display:block;padding:0.85rem 1.5rem;color:rgba(255,255,255,0.80);font-size:0.95rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.05);font-family:'Inter',sans-serif;transition:color 0.15s,background 0.15s;}
+  .mob-nav a:hover{color:#E8913A;background:rgba(232,145,58,0.06);}
+  .mob-nav .mob-section{padding:0.55rem 1.5rem 0.25rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.28);font-family:'Inter',sans-serif;margin-top:0.5rem;}
+  .mob-nav .mob-cta{background:#E8913A!important;color:#fff!important;margin:1.2rem 1.5rem 0;border-radius:6px;text-align:center;font-weight:600;border-bottom:none!important;}
+  .mob-nav .mob-cta:hover{background:#d47a25!important;}
+  @media(max-width:900px){.ham-btn{display:flex;}.nav-links{display:none!important;}}
+
   
   .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   
@@ -305,13 +328,8 @@
   .content-area h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 2rem 0 1rem; color: var(--navy); }
   .content-area h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin: 1.5rem 0 0.8rem; color: var(--navy); }
   .content-area p { margin-bottom: 1.5rem; line-height: 1.7; color: var(--ink-mid); }
-  .content-area ul, .content-area ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--ink-mid); line-height: 1.7; }
+  .content-area ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--ink-mid); line-height: 1.7; }
   .content-area li { margin-bottom: 0.5rem; }
-  .cta-box { background: var(--amber-pale); border: 1px solid var(--border-amber); border-radius: 12px; padding: 2rem; margin: 2.5rem 0; text-align: center; }
-  .cta-box-eyebrow { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber-dim); margin-bottom: 0.6rem; }
-  .cta-box-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--navy); margin: 0 0 0.8rem; }
-  .cta-box p { font-size: 0.9rem; color: var(--ink-soft); max-width: 600px; margin: 0 auto 1.2rem; }
-  .cta-box .btn-primary { display: inline-block; }
 
   footer {
     background: var(--navy-deep);
@@ -335,7 +353,7 @@
     font-size: 0.76rem;
     color: rgba(255,255,255,0.28);
   }
-  .footer-phone{margin:0.5rem 0;}.footer-phone a{font-size:0.9rem;color:var(--amber-light);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-phone a:hover{color:var(--white);}.footer-phone-divider{color:rgba(255,255,255,0.15);margin:0 0.5rem;font-size:0.8rem;}.footer-links {
+  .footer-links {
     display: flex;
     gap: 1.5rem;
   }
@@ -355,109 +373,7 @@
     h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
     .content-area { padding: 1.5rem; }
   }
-
-/* NAV LOGO FIX */
-.nav-logo { display: flex !important; flex-direction: column !important; gap: 3px !important; text-decoration: none !important; justify-content: center !important; align-items: flex-start !important; }
-.nav-logo-tag { font-size: 0.59rem !important; font-weight: 600 !important; letter-spacing: 0.15em !important; text-transform: uppercase !important; color: rgba(255,255,255,0.30) !important; font-family: 'Inter', sans-serif !important; line-height: 1 !important; margin-top: 1px !important; display: block !important; }
-.nav-logo-name { font-family: 'Playfair Display', serif !important; font-size: 1.1rem !important; font-weight: 700 !important; color: #FFFFFF !important; letter-spacing: 0.01em !important; line-height: 1.1 !important; }
-
-
-/* NAV CTA FIX */
-.nav-cta, .nav-links a { white-space: nowrap !important; }
-
-
-/* PREVENT LOGO WORD WRAPPING */
-.nav-logo-name, .nav-logo-tag { white-space: nowrap !important; flex-shrink: 0 !important; }
-.nav-logo { flex-shrink: 0 !important; }
-.nav-links { flex-shrink: 0 !important; }
-
-/* BREADCRUMB */
-.breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.74rem;color:rgba(255,255,255,0.4);margin-bottom:1.5rem;flex-wrap:wrap;}
-.breadcrumb a{color:rgba(255,255,255,0.4);text-decoration:none;}.breadcrumb a:hover{color:var(--amber);}.breadcrumb span{color:rgba(255,255,255,0.2);}.bc-current{color:rgba(255,255,255,0.7);}
-.series-pill{display:inline-flex;align-items:center;background:rgba(212,117,31,0.15);border:1px solid rgba(212,117,31,0.3);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.72rem;font-weight:600;color:var(--amber);text-decoration:none;margin-bottom:1rem;}
-
-/* CREDS BAR MARQUEE */
-.creds-bar{background:var(--amber);overflow:hidden;}
-.creds-track{display:flex;align-items:center;animation:marquee 32s linear infinite;width:max-content;padding:0.8rem 0;}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-.cred-pill{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.76rem;font-weight:600;color:var(--navy-deep);white-space:nowrap;padding:0 2rem;border-right:1px solid rgba(28,43,58,0.18);}
-.cred-pill::before{content:"\25C6";font-size:0.5rem;}
-
-/* ARTICLE LAYOUT */
-.article-layout{max-width:1100px;margin:0 auto;padding:4rem 2rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
-.article-body{min-width:0;}
-.article-body h2{font-family:"Playfair Display",serif;font-size:1.75rem;font-weight:400;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.2;}
-.article-body h3{font-size:1.1rem;font-weight:600;color:var(--navy);margin:2rem 0 0.75rem;}
-.article-body h4{font-size:0.97rem;font-weight:600;color:var(--navy);margin:1.5rem 0 0.5rem;}
-.article-body p{font-size:0.97rem;color:var(--ink-mid);line-height:1.85;margin-bottom:1.25rem;font-weight:300;}
-.article-body ul,.article-body ol{margin:1rem 0 1.5rem 1.5rem;}
-.article-body li{font-size:0.93rem;color:var(--ink-mid);line-height:1.75;margin-bottom:0.4rem;font-weight:300;}
-.article-body strong{font-weight:600;color:var(--navy);}
-.article-body a{color:var(--amber-dim);text-decoration:underline;text-underline-offset:3px;}
-.article-body a:hover{color:var(--amber);}
-
-/* SIDEBAR */
-.article-sidebar{position:sticky;top:86px;}
-.sidebar-card{background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;margin-bottom:1rem;}
-.sidebar-card-title{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;}
-.sidebar-cta{background:var(--navy);border-radius:10px;padding:1.5rem;text-align:center;}
-.sidebar-cta p{font-size:0.82rem;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:1.1rem;}
-.sidebar-cta .btn-primary{width:100%;justify-content:center;font-size:0.83rem;padding:0.75rem 1rem;}
-.sidebar-links a{display:block;font-size:0.84rem;color:var(--ink-mid);text-decoration:none;padding:0.5rem 0;border-bottom:1px solid var(--stone-dark);transition:color 0.2s;}
-.sidebar-links a:last-child{border-bottom:none;}.sidebar-links a:hover{color:var(--amber);}
-
-/* FAQ ACCORDION */
-section.faq-section{background:var(--stone-mid);padding:4rem 2rem;}
-.faq-inner{max-width:820px;margin:0 auto;}
-.faq-list{margin-top:2rem;}
-.faq-item{border-bottom:1px solid var(--border-navy);padding:1.25rem 0;}
-.faq-item:first-child{border-top:1px solid var(--border-navy);}
-.faq-q{font-size:0.97rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none;}
-.faq-q::after{content:"+";color:var(--amber);font-size:1.3rem;font-weight:300;flex-shrink:0;transition:transform 0.2s;}
-.faq-item.open .faq-q::after{transform:rotate(45deg);}
-.faq-a{font-size:0.88rem;color:var(--ink-soft);line-height:1.75;font-weight:300;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.2s;}
-.faq-item.open .faq-a{max-height:600px;padding-top:0.85rem;}
-.section-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;}
-.section-eyebrow::before{content:"";width:20px;height:2px;background:var(--amber);border-radius:1px;}
-h2.display{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:400;line-height:1.18;color:var(--navy);margin-bottom:1.25rem;}
-h2.display em{font-style:italic;color:var(--amber-dim);}
-
-/* CTA STRIP */
-.cta-strip{background:var(--navy-deep);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden;}
-.cta-strip::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(212,117,31,0.08) 0%,transparent 70%);}
-.cta-strip-inner{position:relative;z-index:1;max-width:600px;margin:0 auto;}
-.cta-strip h2{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3vw,2.4rem);color:var(--white);font-weight:400;margin-bottom:1rem;line-height:1.2;}
-.cta-strip h2 em{font-style:italic;color:var(--amber);}
-.cta-strip p{color:rgba(255,255,255,0.5);font-size:0.95rem;margin-bottom:2rem;font-weight:300;line-height:1.7;}
-.cta-strip-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-
-/* RELATED SECTION */
-.related-section{background:var(--stone);padding:4rem 2rem;}
-.related-inner{max-width:1100px;margin:0 auto;}
-.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;}
-.related-card{background:var(--white);border:1px solid var(--border-navy);border-radius:10px;padding:1.5rem;text-decoration:none;display:block;transition:border-color 0.2s,box-shadow 0.2s,transform 0.15s;}
-.related-card:hover{border-color:var(--border-amber);box-shadow:0 6px 20px rgba(28,43,58,0.08);transform:translateY(-2px);}
-.related-cat{font-size:0.7rem;font-weight:700;color:var(--amber);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;}
-.related-title{font-size:0.93rem;font-weight:600;color:var(--navy);margin-bottom:0.4rem;line-height:1.35;}
-.related-desc{font-size:0.8rem;color:var(--ink-soft);line-height:1.55;font-weight:300;}
-
-/* RESPONSIVE */
-@media(max-width:1024px){.article-layout{grid-template-columns:1fr;}.article-sidebar{position:static;}}
-@media(max-width:768px){.related-grid{grid-template-columns:1fr;}}
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
-  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
-  @media (max-width: 900px) {
-    .nav-toggle { display: block; }
-    .nav-links { display: none; position: fixed; top: 58px; left: 0; right: 0; bottom: 0; background: rgba(19,30,40,0.98); flex-direction: column; padding: 2rem 1.5rem; overflow-y: auto; z-index: 999; }
-    .nav-links.open { display: flex !important; }
-    .nav-links li { width: 100%; }
-    .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: normal !important; }
-    .nav-links .nav-cta { margin-left: 0 !important; text-align: center; margin-top: 1rem; }
-    .nav-links .nav-phone { padding-left: 0 !important; }
-    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .nav-toggle.open span:nth-child(2) { opacity: 0; }
-    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  }</style>
+</style>
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
 <script>
@@ -469,158 +385,180 @@ h2.display em{font-style:italic;color:var(--amber-dim);}
 </head>
 <body>
 
+
+<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></span>
     <span class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
   </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-<ul class="nav-links">
-    <li><a href="/food-safety-consulting-sydney">Services</a></li>
-    <li><a href="/food-safety-training-sydney">Training</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/pricing">Pricing</a></li>
-    <li><a href="/suburb-directory">Locations</a></li>
+  <ul class="nav-links">
+    <li>
+      <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/haccp-plan-development">HACCP Plan Development</a>
+        <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+        <a href="/food-safety-training-sydney">Staff Training</a>
+        <a href="/sop-writing-food-businesses">SOP Writing</a>
+        <a href="/internal-auditing-services">Compliance Readiness</a>
+        <div class="drop-divider"></div>
+        <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+        <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+        <a href="/food-business-startup-package">Start-Up Package</a>
+      </div>
+    </li>
+    <li>
+      <a href="/food-safety-training-sydney">Training <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/food-safety-training-sydney">Food Safety Training</a>
+        <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+        <a href="/food-industry-workers-training">Industry Workers</a>
+        <a href="/online-food-safety-courses">Online Courses</a>
+        <a href="/lab-skills-training">Lab Skills</a>
+        <div class="drop-divider"></div>
+        <a href="/rto-resource-development">RTO Resource Development</a>
+      </div>
+    </li>
+    <li>
+      <a href="/blog">Blog <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/blog/haccp">HACCP Deep-Dive</a>
+        <a href="/blog">All Articles</a>
+        <div class="drop-divider"></div>
+        <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+        <div class="drop-divider"></div>
+        <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+      </div>
+    </li>
+    <li>
+      <a href="/pricing">Pricing</a>
+    </li>
+    <li>
+      <a href="/suburb-directory">Locations <span class="nav-arrow">▼</span></a>
+      <div class="nav-drop">
+        <a href="/suburb-directory">All Sydney</a>
+        <a href="/food-safety-consultant-surry-hills">CBD</a>
+        <a href="/food-safety-consultant-marrickville">Inner West</a>
+        <a href="/food-safety-consultant-parramatta">Parramatta</a>
+        <a href="/food-safety-consultant-chatswood">North Shore</a>
+      </div>
+    </li>
     <li><a href="/#about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">&#128222; (02) 7822 0109</a></li><li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
+    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
+<button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
+  <span></span><span></span><span></span>
+</button>
+<div class="mob-nav" id="mobNav">
+  <span class="mob-section">Services</span>
+  <a href="/haccp-plan-development">HACCP Plan Development</a>
+  <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+  <a href="/food-safety-training-sydney">Staff Training</a>
+  <a href="/sop-writing-food-businesses">SOP Writing</a>
+  <a href="/internal-auditing-services">Compliance Readiness</a>
+  <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+  <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+  <a href="/food-business-startup-package">Start-Up Package</a>
+  <span class="mob-section">Training</span>
+  <a href="/food-safety-training-sydney">Food Safety Training</a>
+  <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+  <a href="/food-industry-workers-training">Industry Workers</a>
+  <a href="/online-food-safety-courses">Online Courses</a>
+  <a href="/lab-skills-training">Lab Skills</a>
+  <a href="/rto-resource-development">RTO Resource Development</a>
+  <span class="mob-section">Resources</span>
+  <a href="/blog">Blog</a>
+  <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
+  <a href="/free-resources">Free Resources</a>
+  <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+  <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
+  <span class="mob-section">Company</span>
+  <a href="/pricing">Pricing</a>
+  <a href="/suburb-directory">Locations</a>
+  <a href="/#about">About AMES</a>
+  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book Scoping Call</a>
+</div>
+
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    
-        <div class="breadcrumb"><a href="/">Home</a><span>&#8250;</span><a href="/guides">Guides</a><span>&#8250;</span><span class="bc-current">Guide</span></div>
-    <a href="/guides" class="series-pill">&#8592; Industry Guide Series</a>
     <div class="page-eyebrow">DEEP GUIDE</div>
-    <h1>Food Safety for Catering <em>and Events in NSW</em></h1>
-    <p class="page-hero-sub">Catering and event food businesses face unique food safety challenges from temporary setups to off-site transportation. This guide covers the NSW regulatory requirements for catering operations.</p>
+    <h1>Deep Guide: <em>GUIDE 16</em></h1>
+    <p class="page-hero-sub">Detailed insights and comprehensive analysis to help your food business stay compliant.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation &#8599;</a>
-      <a href="/pricing" class="btn-outline">View pricing</a>
+      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
+      <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
+    </div>
+  </div>
 </div>
-<div class="creds-bar"><div class="creds-track"><span class="cred-pill">20+ Years Food Quality and QA Experience</span><span class="cred-pill">National Manufacturer Food Safety Experience</span><span class="cred-pill">TAE-Qualified Trainer</span><span class="cred-pill">TAFE NSW Lecturer</span><span class="cred-pill">HACCP and SQF Specialist</span><span class="cred-pill">NSW Food Authority Compliance</span><span class="cred-pill">Food Technology Diploma</span><span class="cred-pill">Serving All of NSW</span><span class="cred-pill">20+ Years Food Quality and QA Experience</span><span class="cred-pill">National Manufacturer Food Safety Experience</span><span class="cred-pill">TAE-Qualified Trainer</span><span class="cred-pill">TAFE NSW Lecturer</span><span class="cred-pill">HACCP and SQF Specialist</span><span class="cred-pill">NSW Food Authority Compliance</span><span class="cred-pill">Food Technology Diploma</span><span class="cred-pill">Serving All of NSW</span></div></div>
+
+<div class="creds-bar"><div class="creds-track">
+  <span class="cred-pill">11+ Years Food Quality Experience</span>
+  <span class="cred-pill">National Manufacturer QA Background</span>
+  <span class="cred-pill">TAE-Qualified Trainer</span>
+  <span class="cred-pill">TAFE NSW Lecturer</span>
+  <span class="cred-pill">HACCP &amp; SQF Specialist</span>
+  <span class="cred-pill">NSW Food Authority Compliance</span>
+  <span class="cred-pill">Food Technology Diploma</span>
+  <span class="cred-pill">Serving All of NSW</span>
+</div></div>
 
 
-    <div class="article-layout">
-  <article class="article-body" itemscope itemtype="https://schema.org/Article">
-    <meta itemprop="datePublished" content="2026-01-01">
-    <meta itemprop="dateModified" content="2026-07-01">
-    <meta itemprop="author" content="AMES Food Advisory">
+    <section>
+      <div class="container content-area">
+        <h2>About this Deep Guide</h2>
+        <p>This page provides in-depth information and insights regarding <strong>guide 16</strong> in the context of food safety and compliance in NSW.</p>
+        <p>AMES Food Advisory is dedicated to providing high-quality, actionable knowledge to help businesses navigate HACCP regulations, NSW Food Authority compliance, and operational food safety.</p>
+        <ul>
+          <li>Comprehensive breakdown of standards.</li>
+          <li>Regulatory insights and audit preparation techniques.</li>
+          <li>Real-world applications for cafes, restaurants, and manufacturers.</li>
+        </ul>
+        <h3>Why this matters</h3>
+        <p>Staying informed on the latest food safety practices ensures your business operates safely, protects consumers, and avoids costly penalties from local council or state regulators.</p>
+      </div>
+    </section>
     
-<h2>Food Safety for Catering and Events in NSW: A Complete Compliance Guide</h2>
 
-        <p>Catering for events in New South Wales adds a layer of complexity that fixed-premise hospitality businesses rarely face. You are preparing food in one kitchen, transporting it across town, holding it in temporary structures, and serving hundreds of guests who trust you to keep them safe. The NSW Food Authority and local councils hold caterers and event food businesses to the same core standards as restaurants, but the operational risks multiply when you introduce mobility, weather, and unfamiliar sites.</p>
-
-        <p>Whether you run a mobile food van, a wedding catering company, or a stall at a community festival, understanding the specific food safety obligations tied to <strong>temporary food premises</strong>, <strong>event registration</strong>, <strong>off-site temperature control</strong>, and <strong>safe transportation</strong> is the difference between a successful event and a public health incident.</p>
-
-        <p>This guide walks through every critical requirement under the <em>Food Act 2003 (NSW)</em>, <em>Food Standards Code</em>, and <em>NSW Food Authority guidance</em> so you can operate with confidence.</p>
-
-        <h3>What constitutes a temporary or mobile food premises in NSW?</h3>
-
-        <p>Under the Food Standards Code, a temporary food premises includes any structure that is not a permanent building &mdash; marquees, tents, stalls, pop-up kitchens, mobile vans, and even outdoor cooking stations. The key distinction is that these premises are erected, dismantled, and stored between uses. The NSW Food Authority requires that even temporary setups meet the same fundamental food safety outcomes: cleanable surfaces, protection from contamination, adequate hand-washing facilities, and appropriate temperature control.</p>
-
-        <p>If you operate across multiple local government areas (LGAs), you may need to notify each council separately. Some councils in Greater Sydney require a formal <strong>Notification of Temporary Food Premises</strong> form submitted at least 14 days before the event. It is your responsibility to check the specific requirements of the council where each event is held.</p>
-
-        <p>A well-prepared temporary premises checklist should include:
-          <ul>
-            <li>A food-grade temporary shelter with side walls to block wind-borne contaminants</li>
-            <li>Food-grade tables and equipment that can be effectively cleaned and sanitised on site</li>
-            <li>An approved hand-washing station with warm running water, soap, and paper towels &mdash; not just hand sanitiser</li>
-            <li>An adequate supply of potable water for cleaning and food preparation</li>
-            <li>Waste water containment if no permanent drainage connection is available</li>
-            <li>Temperature monitoring equipment with calibrated probes</li>
-          </ul>
-        </p>
-
-        <h3>Event registration and council notification requirements</h3>
-
-        <p>In NSW, any business that sells food at a temporary event must be registered or notified with the local council where the event occurs. This applies even if you are already registered with your home council for your primary premises. The <em>Food Regulation 2015 (NSW)</em> requires food businesses operating from temporary premises to ensure their registration covers the event location. Some councils class this as a <strong>Category 2</strong> (lower-risk) notification, but depending on the menu &mdash; for example, if you handle raw proteins or serve high-risk foods like cooked rice, seafood, or dairy-based sauces &mdash; you may be assessed as higher risk and need a full food safety program.</p>
-
-        <p>Event organisers often apply for a single "event licence" that covers all vendors, but this does not absolve individual food businesses from meeting their own food safety obligations. At a minimum, you must have a current <strong>Food Safety Supervisor (FSS)</strong> certificate on display &mdash; in NSW, at least one FSS must be on site at all times during operation. The FSS must hold a Statement of Attainment for the relevant food sector (e.g., SITXFSA005 for hospitality).</p>
-
-        <p>Practical tip: contact the council's environmental health officer (EHO) at least 21 days before a major event. Provide a site plan showing your layout, a copy of your proposed menu, and your temperature control plan. Proactive engagement reduces the risk of last-minute refusal to operate.</p>
-
-        <h3>Temperature control at off-site venues: the critical challenge</h3>
-
-        <p>Temperature abuse is the single most common cause of foodborne illness in catering operations. When you prepare food in a central kitchen and serve it miles away, the window between the 5&#176;C and 60&#176;C danger zone expands dramatically. The Food Standards Code (Standard 3.2.2) requires that potentially hazardous food be kept at or below 5&#176;C or at or above 60&#176;C. For caterers, this means every leg of the journey &mdash; from cooking to cooling to transport to holding to service &mdash; must be temperature-monitored and documented.</p>
-
-        <p>Here is the practical approach: do not rely on a single piece of equipment. Use passive insulation (insulated food-grade containers), active temperature maintenance (hot-holding cabinets, refrigerated vans), and multiple probe thermometers. Assign one staff member the role of "temperature officer" for the event &mdash; they log readings at dispatch, arrival, holding, and service. If any reading falls outside the safe zone for more than two hours, the food must be discarded. This is not negotiable under NSW law.</p>
-
-        <p>For cold service: pre-chill containers, transport food below 5&#176;C, and use ice beds or gel packs at the serving point. Never add fresh ice to cold food displays &mdash; use only food-grade ice manufactured from potable water.</p>
-
-        <p>For hot service: pre-heat hot-holding units to at least 65&#176;C before loading. Food must reach 60&#176;C internal temperature within two hours of cooking and stay above 60&#176;C until served. If you cannot guarantee this, reduce the menu to items that can be prepared and served immediately from a cold chain.</p>
-
-        <h3>Safe food transportation for caterers</h3>
-
-        <p>Transportation is the gap where most catering food safety plans break down. The physical movement of food creates risks: temperature fluctuation, physical contamination from shifting containers, cross-contamination from raw to ready-to-eat items, and time delays that push food past safe limits. Standard 3.2.2 of the Food Standards Code requires that food transported off-site must be protected from contamination and maintained at the correct temperature.</p>
-
-        <p>Your transport plan should address:
-          <ul>
-            <li>Separation of raw and cooked foods in sealed, labelled, colour-coded containers</li>
-            <li>Use of refrigerated vehicles or insulated coolers with verified temperature logs</li>
-            <li>Loading sequence that minimises the time food spends outside temperature control</li>
-            <li>Non-slip surfaces and load restraints to prevent container tipping</li>
-            <li>Cleaning and sanitising protocols for transport containers after every use</li>
-            <li>A backup power or ice supply plan in case of vehicle breakdown or delay</li>
-          </ul>
-        </p>
-
-        <p>Document your transportation procedures in a written <a href="/sop-writing-food-businesses">Standard Operating Procedure (SOP)</a>. This becomes the basis of your defence if an audit or incident investigation occurs.</p>
-
-        <h3>Waste management and cleaning at temporary sites</h3>
-
-        <p>Temporary event sites rarely have the permanent drainage and waste infrastructure of a fixed kitchen. NSW regulations require that waste water from hand-washing and cleaning stations be contained and disposed of into a sanitary sewer system &mdash; not onto the ground or into stormwater drains. Grey water tanks must be emptied at an approved disposal point after each event.</p>
-
-        <p>Solid waste, including used single-use gloves, food scraps, and packaging, must be placed in lidded bins that are secured against animals and insects. At outdoor events in regional NSW, this is especially important due to the prevalence of birds, possums, and flies that can transfer pathogens to food-contact surfaces.</p>
-
-        <p>Cleaning chemicals must be food-grade, stored separately from food, and used only when no food preparation is occurring. Sanitising wipes are not a substitute for proper cleaning: all surfaces must be cleaned of visible soil before sanitiser is applied.</p>
-
-        <h3>Allergen management at events</h3>
-
-        <p>Catering events carry a high risk for allergen cross-contact because multiple dishes are often prepared in close proximity in a temporary space. Under the Food Standards Code, the nine declared allergens &mdash; peanuts, tree nuts, milk, eggs, fish, crustaceans, sesame, soy, and gluten-containing grains &mdash; must be declared on menus or at the point of sale. For caterers, this means maintaining an accurate allergen matrix for every dish and training staff on allergen communication.</p>
-
-        <p>A best practice is to designate one section of the temporary kitchen as an "allergen-safe" zone where free-from meals are prepared with separate utensils and cutting boards. At the service point, clearly label each dish with its allergen status. Many NSW councils now expect caterers to provide written allergen information on request &mdash; verbal communication alone is no longer considered sufficient in an audit context.</p>
-
-        <p>For further guidance on developing your allergen management framework, see our <a href="/food-safety-consulting-sydney">food safety consulting services</a> or explore how we build <a href="/haccp-plan-development">HACCP plans</a> tailored to your catering operation.</p>
-
-        <div class="cta-box">
-          <div class="cta-box-eyebrow">NEED EVENT-READY FOOD SAFETY DOCUMENTS?</div>
-          <h3 class="cta-box-title">Book a free 15-minute scoping call</h3>
-          <p>We'll review your catering operation, identify gaps in your temporary premises setup, and recommend a practical compliance pathway &mdash; whether you need a full HACCP plan, SOPs, or event-specific food safety documentation.</p>
-          <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book your free call today &rarr;</a>
-<h3>Training your event catering team</h3>
-
-        <p>Even the best documentation is useless if your staff do not follow it. Every person handling food at an event must have adequate skills and knowledge in food safety under Standard 3.2.2, Division 4. For caterers, this means training that specifically covers temperature control, transport protocols, and temporary premises hygiene. A generic online food safety certificate does not prepare staff for the realities of a muddy festival site or a 40&#176;C summer wedding.</p>
-
-        <p>We deliver customised <a href="/food-safety-training-sydney">food safety training</a> for event catering teams that covers real-world scenarios: what to do when the ice melts, how to handle a power failure in a refrigerated van, and how to clean effectively with limited water supply. Contact us to arrange a session for your team.</p>
-  </article>
-  <aside class="article-sidebar">
-      <div class="sidebar-cta"><p>Need expert food safety support for your NSW business? Fixed-price programs, no hidden costs.</p><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Your Free Scoping Call &#8594;</a></div>
-      <div class="sidebar-card" style="margin-top:1rem;"><div class="sidebar-card-title">Key Services</div><div class="sidebar-links"><a href="/haccp-plan-development">HACCP Plan Development</a><a href="/food-safety-consulting-sydney">Food Safety Consulting</a><a href="/food-safety-training-sydney">Staff Training</a><a href="/internal-auditing-services">Internal Auditing</a><a href="/sop-writing-food-businesses">SOP Writing</a><a href="/food-business-startup-package">Startup Package</a><a href="/pricing">View All Pricing</a></div></div>
-      <div class="sidebar-card"><div class="sidebar-card-title">Free Resources</div><div class="sidebar-links"><a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a><a href="/free-restaurant-sop-template">SOP Templates</a><a href="/free-audit-readiness-checklist">Audit Readiness Guide</a></div></div>
-    </aside>
-<section class="faq-section"><div class="faq-inner"><div class="section-eyebrow">Common questions</div><h2 class="display">Frequently <em>asked questions</em></h2><div class="faq-list"><div class="faq-item open"><div class="faq-q">Do I need a separate food business registration for each event in NSW?</div><div class="faq-a">It depends on the council. Many NSW councils accept a mobile food business registration that covers multiple events within their LGA, but you may need to notify them individually of each event date and location. If you operate across multiple council areas, you must register or notify each council separately. We recommend checking with each council's EHO at least 14 days before each event.</div></div><div class="faq-item"><div class="faq-q">What temperature should I transport hot food at for catering?</div><div class="faq-a">Hot potentially hazardous food must be kept at or above 60&#176;C during transport. Use insulated hot-holding cabinets that are pre-heated to at least 65&#176;C before loading. Record the internal temperature of the food at the point of dispatch and again on arrival. If the temperature drops below 60&#176;C, you have a two-hour window to reheat it to 60&#176;C or above, or discard it.</div></div><div class="faq-item"><div class="faq-q">Can I use hand sanitiser instead of a hand-washing station at a temporary food stall?</div><div class="faq-a">No. The NSW Food Authority requires temporary food premises to have a dedicated hand-washing station with warm running water, soap, and single-use paper towels. Hand sanitiser is not a substitute &mdash; it is ineffective against some pathogens (like <em>Norovirus</em>) and does not remove physical soil. Some councils accept a portable hand-washing unit with a water tank, soap dispenser, and waste water collection, but you must still provide warm water.</div></div></div></div></section>
-<div class="cta-strip"><div class="cta-strip-inner"><h2>Ready to get your food business <em>fully compliant?</em></h2><p>AMES Food Advisory provides fixed-price food safety programs across Sydney and NSW. No corporate gatekeeping. No hidden fees. Built on 20+ years of real manufacturing experience.</p><div class="cta-strip-actions"><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Your Free Scoping Call &#8594;</a><a href="/pricing" class="btn-outline">View Pricing</a></div></div></div>
-<section class="related-section"><div class="related-inner"><div class="section-eyebrow">Keep reading</div><h2 class="display">Related <em>articles &amp; guides</em></h2><div class="related-grid"><a href="/haccp-plan-development" class="related-card"><div class="related-cat">Service</div><div class="related-title">HACCP Plan Development</div><div class="related-desc">Fixed-price HACCP plan from an industry specialist.</div></a><a href="/food-safety-consulting-sydney" class="related-card"><div class="related-cat">Service</div><div class="related-title">Food Safety Consulting Sydney</div><div class="related-desc">End-to-end compliance support. No hidden fees.</div></a><a href="/pricing" class="related-card"><div class="related-cat">Service</div><div class="related-title">View All Pricing</div><div class="related-desc">Fixed-price food safety programs across NSW.</div></a></div></div></section>
 <footer>
   <div class="footer-inner">
     <a href="/" class="footer-logo">
     <span class="footer-logo-name">AMES <span class="footer-logo-adv">Food Advisory</span></span>
-    <span class="footer-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</span>
+    <span class="footer-logo-tag">NSW&nbsp;·&nbsp;HACCP&nbsp;·&nbsp;FOOD CONSULTANTS</span>
   </a>
-    <div class="footer-copy">&#169; 2026 AMES Food Advisory &middot; Sydney, NSW</div>
-    <div class="footer-phone"><a href="tel:+61278220109">&#128222; (02) 7822 0109</a><span class="footer-phone-divider">&middot;</span><a href="mailto:ames.food.adv@gmail.com">ames.food.adv@gmail.com</a></div>
+    <div class="footer-copy">© 2026 AMES Food Advisory. Serving all of NSW. Confidential &amp; ethical food safety consulting.</div>
     <div class="footer-links">
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
       <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
-</div>
+    </div>
+  </div>
 </footer>
 
-<script>(function(){document.querySelectorAll(".faq-q").forEach(function(q){q.addEventListener("click",function(){var it=q.closest(".faq-item");var was=it.classList.contains("open");document.querySelectorAll(".faq-item").forEach(function(i){i.classList.remove("open");});if(!was)it.classList.add("open");});});})();</script>
+<script>
+  
+function toggleMobNav(btn){
+  btn.classList.toggle('open');
+  var nav=document.getElementById('mobNav');
+  nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+document.addEventListener('click',function(e){
+  var nav=document.getElementById('mobNav');
+  var btn=document.querySelector('.ham-btn');
+  if(nav && btn && nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)){
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+  }
+});
+
+</script>
 </body>
 </html>
