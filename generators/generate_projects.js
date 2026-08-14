@@ -108,7 +108,9 @@ const hubContent = `
   <div class="project-grid">
     ${projects.map(p => `
     <a href="/projects/${p.slug}" class="project-card">
-      <div class="project-img">🏛️</div>
+      <div class="project-img">
+        ${p.logo ? `<img src="${p.logo}" alt="${p.client} Logo" style="max-width: 80%; max-height: 80%; object-fit: contain;">` : '🏛️'}
+      </div>
       <div class="project-content">
         <div class="project-industry">${p.industry}</div>
         <div class="project-title">${p.title}</div>
@@ -159,7 +161,10 @@ projects.forEach(p => {
     <div class="container">
       <div class="page-eyebrow">Case Study: ${p.industry}</div>
       <h1>${p.title}</h1>
-      <div class="hero-sub">${p.client}</div>
+      <div class="hero-sub" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: 1rem;">
+        ${p.logo ? `<img src="${p.logo}" alt="${p.client} Logo" style="height: 60px; width: auto; border-radius: 8px; border: 2px solid rgba(255,255,255,0.1);">` : ''}
+        <span>${p.client}</span>
+      </div>
     </div>
   </div>
 
