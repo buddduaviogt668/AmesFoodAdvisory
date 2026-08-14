@@ -296,7 +296,7 @@ seriesList.forEach(series => {
         <li><strong>Expert Guidance:</strong> Relying on a TAFE NSW Lecturer and TAE-Qualified Trainer ensures your staff actually retain what they learn.</li>
       </ul>
 
-      <p>For more detailed strategies on this subject, you can also explore our <a href="/case-studies/case-study-1">recent case studies</a> or read through our <a href="/faq/faq-1">frequently asked questions</a>.</p>
+      <p>For more detailed strategies on this subject, you can also explore our <a href="/recent-projects">recent case studies</a> or read through our <a href="/nsw-food-authority-registration-guide">NSW registration guide</a>.</p>
 
       <div class="cta-box">
         <h3>Need Expert Help?</h3>

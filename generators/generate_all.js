@@ -426,12 +426,12 @@ const suburbs = [
   { name: 'Waterloo', region: 'South Sydney' }, { name: 'Zetland', region: 'South Sydney' }
 ];
 
-const caseStudies = Array.from({length: 20}, (_, i) => 'case-study-' + (i+1));
-const deepGuides = Array.from({length: 25}, (_, i) => 'guide-' + (i+1));
-const faqs = Array.from({length: 25}, (_, i) => 'faq-' + (i+1));
-const comparisons = Array.from({length: 15}, (_, i) => 'compare-' + (i+1));
-const glossary = Array.from({length: 20}, (_, i) => 'glossary-' + (i+1));
-const dataStats = Array.from({length: 15}, (_, i) => 'data-' + (i+1));
+const caseStudies = [];
+const deepGuides = [];
+const faqs = [];
+const comparisons = [];
+const glossary = [];
+const dataStats = [];
 
 const sitemapUrls = [];
 
