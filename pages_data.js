@@ -243,18 +243,20 @@ module.exports = [
   {
     "file": "rto-resource-development.html",
     "slug": "rto-resource-development",
-    "title": "RTO Food Safety Resource Development | Assessment Tools NSW",
-    "desc": "Curriculum, assessments, and learning resources mapped to SIT and FDF training packages. Developed by a TAFE NSW sessional lecturer with corporate QA experience.",
-    "kw": "RTO training resources, food safety assessment tools NSW, sessional lecturer TAFE, FDF SIT resource development",
+    "title": "RTO Food Safety Resources | SITHCCC028, SITXINV006, SITXFSA008 Materials",
+    "desc": "Audit-ready RTO assessment tools and learner guides for SITHCCC028, SITXINV006, SITXFSA008. Developed by TAFE NSW lecturers for compliance with ASQA.",
+    "kw": "SITHCCC028 resources, SITXINV006 resources, SITXFSA008 rto materials, RTO assessment tools NSW, food safety training materials",
     "sname": "RTO Resource Development",
     "sdesc": "Development and mapping of training package materials, learner guides, and practical assessment tools for RTOs delivering food-related qualifications.",
-    "eyebrow": "Service 07",
-    "h1": "RTO Resource <em>Development</em>",
-    "sub": "Training packages demand absolute precision. We write learning materials, mapping documents, and practical assessments that satisfy both ASQA standards and industry realities.",
-    "introText": "All materials are built with direct insight from current TAFE NSW sessional lecturing, combining VET design requirements with extensive corporate QA context.",
+    "eyebrow": "RTO Specialist",
+    "h1": "RTO Food Safety <em>Resource Development</em>",
+    "sub": "We develop high-quality, audit-ready training and assessment materials for Registered Training Organisations (RTOs). All resources are developed by a TAE-qualified TAFE NSW lecturer with deep industry QA experience.",
+    "introText": "Our resources are designed for compliance with ASQA standards and are mapped strictly to current training package requirements. We specialize in high-demand units including SITHCCC028, SITXINV006, and SITXFSA008.",
     "includes": [
-      { "icon": "📚", "title": "Unit Mapping", "desc": "Detailed mapping matrices linking learning tasks and assessments directly to training package performance criteria." },
-      { "icon": "✍️", "title": "Assessment Tool Design", "desc": "Knowledge questions, practical observation checklists, and portfolio guidelines tailored to student capabilities." }
+      { "icon": "📚", "title": "Unit Materials: SITHCCC028", "desc": "Complete learner guides and assessment tools for 'Prepare appetisers and salads'." },
+      { "icon": "📦", "title": "Unit Materials: SITXINV006", "desc": "Audit-ready resources for 'Receive, store and maintain stock' in food environments." },
+      { "icon": "🛡️", "title": "Unit Materials: SITXFSA008", "desc": "Comprehensive tools for 'Develop and implement a food safety program'." },
+      { "icon": "📝", "title": "Custom Assessment Tools", "desc": "Knowledge tests, practical observation checklists, and third-party reports designed for robust evidence collection." }
     ],
     "who": [
       { "title": "Registered Training Organisations", "desc": "Providers requiring audit-ready compliance materials for food processing, retail, or hospitality qualifications." },
@@ -946,6 +948,74 @@ module.exports = [
     ],
     "related": [
       { "title": "HACCP Plan Development", "desc": "Build your HACCP plan.", "url": "/haccp-plan-development" }
+    ]
+  },
+
+  // ── NICHE: SPECIALIST REGISTRATIONS ──
+  {
+    "file": "pet-food-registration-nsw.html",
+    "slug": "pet-food-registration-nsw",
+    "title": "Pet Food Registration NSW | Manufacturing & Compliance Guide",
+    "desc": "How to register a pet food business in NSW. Complete guide to NSW Food Authority requirements, HACCP plans for pet food, and labelling standards.",
+    "kw": "pet food registration NSW, pet food manufacturing license, NSW food authority pet food, haccp for pet food",
+    "sname": "Pet Food Registration",
+    "sdesc": "Specialist consulting for pet food manufacturers in NSW, covering registration, HACCP plan development, and regulatory compliance.",
+    "eyebrow": "Niche Specialist",
+    "h1": "Pet Food <em>Registration NSW</em>",
+    "sub": "Manufacturing pet food in NSW requires specific registration with the NSW Food Authority. We guide you through the licensing process, build your HACCP plan, and ensure your facility meets manufacturing standards.",
+    "introText": "Pet food production is regulated to ensure safety and prevent cross-contamination. We help you navigate the 'Pet Food Safety Scheme' with ease.",
+    "cta_primary_text": "Download Pet Food Compliance Checklist",
+    "cta_primary_url": "/free-compliance-checklist-nsw",
+    "includes": [
+      { "icon": "🐶", "title": "Licensing Support", "desc": "Step-by-step guidance on applying for a pet food manufacturing license with the NSW Food Authority." },
+      { "icon": "🥩", "title": "HACCP for Pet Food", "desc": "Custom food safety programs designed specifically for raw or processed pet food production." },
+      { "icon": "🏷️", "title": "Labelling Compliance", "desc": "Review of pet food labels to ensure they meet Australian standards and regulatory requirements." }
+    ],
+    "who": [
+      { "title": "Raw Pet Food Producers", "desc": "Businesses producing 'BARF' or raw meat diets for pets requiring high-level hygiene controls." },
+      { "title": "Treat Manufacturers", "desc": "Small to medium businesses making dehydrated or baked pet treats for retail." }
+    ],
+    "steps": [
+      { "title": "Scheme Identification", "desc": "We determine if your product falls under the Pet Food Safety Scheme or general food regulations." },
+      { "title": "Facility Review", "desc": "We audit your manufacturing site to ensure it meets the structural requirements for pet food production." }
+    ],
+    "faqs": [
+      { "q": "Do I need a license to sell pet treats in NSW?", "a": "Yes, most pet food manufacturing activities in NSW require a license under the Pet Food Safety Scheme managed by the NSW Food Authority." }
+    ],
+    "related": [
+      { "title": "HACCP Plan Development", "desc": "Build your HACCP plan.", "url": "/haccp-plan-development" }
+    ]
+  },
+  {
+    "file": "novel-food-registration-australia.html",
+    "slug": "novel-food-registration-australia",
+    "title": "Novel Food Registration Australia | FSANZ Compliance Guide",
+    "desc": "Guide to novel food registration in Australia. FSANZ application support, safety assessments, and regulatory strategy for new food ingredients.",
+    "kw": "novel food registration australia, FSANZ novel food application, new food ingredient safety, food regulatory consultant",
+    "sname": "Novel Food Registration",
+    "sdesc": "Strategic advisory and application support for businesses bringing novel food ingredients or products to the Australian market.",
+    "eyebrow": "Regulatory Strategy",
+    "h1": "Novel Food <em>Registration Australia</em>",
+    "sub": "Bringing a new, non-traditional food ingredient to market? We help you navigate the FSANZ Novel Food Committee process, from safety assessments to formal application drafting.",
+    "introText": "Novel foods require a pre-market safety assessment by FSANZ. We provide the technical expertise to build a winning safety case for your innovation.",
+    "includes": [
+      { "icon": "🧪", "title": "Safety Assessments", "desc": "Detailed scientific review of your ingredient to determine if it meets the 'Novel Food' definition." },
+      { "icon": "📄", "title": "FSANZ Application", "desc": "Drafting and management of formal applications to the Advisory Committee on Novel Foods (ACNF)." },
+      { "icon": "⚖️", "title": "Regulatory Strategy", "desc": "Strategic advice on the fastest path to market for innovative food products." }
+    ],
+    "who": [
+      { "title": "Food Tech Startups", "desc": "Companies developing alternative proteins, new extracts, or lab-grown ingredients." },
+      { "title": "Importers", "desc": "Businesses bringing ingredients common overseas but 'non-traditional' in Australia." }
+    ],
+    "steps": [
+      { "title": "Novelty Determination", "desc": "We assess if your ingredient is actually 'novel' or if it can be sold as a traditional food." },
+      { "title": "Evidence Collection", "desc": "Gathering toxicological and consumption data to prove the safety of the ingredient." }
+    ],
+    "faqs": [
+      { "q": "How long does novel food registration take?", "a": "The FSANZ process can take 12-18 months depending on the complexity of the safety assessment." }
+    ],
+    "related": [
+      { "title": "Food Safety Consulting", "desc": "Expert advice for food businesses.", "url": "/food-safety-consulting-sydney" }
     ]
   },
 

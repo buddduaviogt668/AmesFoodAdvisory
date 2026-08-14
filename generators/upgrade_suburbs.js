@@ -340,7 +340,7 @@ ${NAV_HTML}
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
       <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
-      <a href="/pricing" class="btn-outline">View pricing</a>
+      <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
     </div>
   </div>
 </div>
