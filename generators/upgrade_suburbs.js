@@ -5,7 +5,7 @@ const { NAV_HTML, NAV_JS, NAV_CSS } = require('../templates/nav-master.js');
 const OUTPUT_DIR = path.join(__dirname, '..');
 
 // --- Helper to get base template ---
-function getBaseHTML(title, desc, kw, ogTitle, ogDesc, ogUrl, schemaData, heroEyebrow, heroTitle, heroSub, bodyContent) {
+function getBaseHTML(title, desc, kw, ogTitle, ogDesc, ogUrl, schemaData, heroEyebrow, heroTitle, heroSub, bodyContent, heroBadge = '') {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,6 +115,8 @@ ${JSON.stringify(schemaData, null, 2)}
     font-style: italic;
     color: var(--amber);
   }
+  .local-badge { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0 0 1rem; padding: 0.45rem 0.75rem; border: 1px solid rgba(212,117,31,0.55); border-radius: 999px; background: rgba(212,117,31,0.12); color: var(--amber); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .local-badge::before { content: '✓'; font-size: 0.75rem; }
   .page-hero-sub {
     font-size: 1.05rem;
     color: rgba(255,255,255,0.7);
@@ -336,6 +338,7 @@ ${NAV_HTML}
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="page-eyebrow">${heroEyebrow}</div>
+    ${heroBadge ? `<div class="local-badge">${heroBadge}</div>` : ''}
     <h1>${heroTitle}</h1>
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
@@ -488,7 +491,39 @@ suburbs.forEach(sub => {
     "provider": { "@type": "LocalBusiness", "name": "AMES Food Advisory" }
   };
 
+  const isWestern = sub.region === 'Western Sydney';
+  const westernBadge = isWestern ? 'Western Sydney Local Specialist' : '';
+
+  const westernSection = isWestern ? `
+  <section style="background:var(--navy-deep); padding: 3rem 2rem; border-top: 1px solid var(--border-amber); border-bottom: 1px solid var(--border-amber);">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <div class="section-eyebrow" style="color: var(--amber);">Western Sydney Dominance</div>
+          <h2 class="display" style="color: var(--white); font-size: 1.8rem; margin-bottom: 1rem;">Localized Expertise for <em>${sub.name}</em></h2>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.7;">
+            Western Sydney is our home turf. We understand the specific pressures of high-volume food businesses in ${sub.name} and the exact requirements of ${sub.region} councils. Our founder's status as a <strong>TAFE NSW Lecturer</strong> means we don't just provide templates — we provide the authority and training your business needs to lead the market.
+          </p>
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <div style="background: rgba(212,117,31,0.1); border: 1px solid var(--amber); padding: 1.5rem; border-radius: 8px; text-align: center; width: 140px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏫</div>
+            <div style="font-size: 0.65rem; font-weight: 700; color: var(--amber); text-transform: uppercase;">TAFE NSW</div>
+            <div style="font-size: 0.75rem; color: var(--white); margin-top: 0.2rem;">Expert Trainer</div>
+          </div>
+          <div style="background: rgba(212,117,31,0.1); border: 1px solid var(--amber); padding: 1.5rem; border-radius: 8px; text-align: center; width: 140px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📍</div>
+            <div style="font-size: 0.65rem; font-weight: 700; color: var(--amber); text-transform: uppercase;">Local Presence</div>
+            <div style="font-size: 0.75rem; color: var(--white); margin-top: 0.2rem;">${sub.name} Expert</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  ` : '';
+
   const bodyContent = `
+  ${westernSection}
   <section style="background:var(--white);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
@@ -566,19 +601,19 @@ suburbs.forEach(sub => {
           <div class="hub-card-link">Read Article ↗</div>
         </a>
 
-        <a href="/projects/chew-boy-home-based-compliance-setup" class="hub-card">
-          <div class="hub-card-cat">Case Study</div>
-          <div class="hub-card-title">Home-Based Compliance Setup</div>
-          <div class="hub-card-desc">How we helped Chew Boy register with the NSW Food Authority and setup professional batch tracking.</div>
-          <div class="hub-card-link">View Project ↗</div>
-        </a>
+	        <a href="/recent-projects" class="hub-card">
+	          <div class="hub-card-cat">Case Study</div>
+	          <div class="hub-card-title">Home-Based Compliance Setup</div>
+	          <div class="hub-card-desc">How we helped Chew Boy register with the NSW Food Authority and setup professional batch tracking.</div>
+	          <div class="hub-card-link">View Project ↗</div>
+	        </a>
 
-        <a href="/nsw-food-authority-registration-guide" class="hub-card">
-          <div class="hub-card-cat">Compliance Guide</div>
-          <div class="hub-card-title">NSW Registration Checklist</div>
-          <div class="hub-card-desc">The complete 2026 guide to registering your food business in ${sub.name}.</div>
-          <div class="hub-card-link">Read Guide ↗</div>
-        </a>
+	        <a href="/haccp-simplified" class="hub-card">
+	          <div class="hub-card-cat">Growth Hub</div>
+	          <div class="hub-card-title">HACCP Simplified</div>
+	          <div class="hub-card-desc">The fastest way to understand and implement HACCP in your ${sub.name} business.</div>
+	          <div class="hub-card-link">Start Here ↗</div>
+	        </a>
       </div>
     </div>
   </section>
@@ -589,7 +624,8 @@ suburbs.forEach(sub => {
     'Local Compliance Hub: ' + sub.name + ' & ' + sub.region,
     'Food Safety Consultant <em>' + sub.name + '</em>',
     'Serving food businesses in ' + sub.name + ' near ' + sub.landmark + ' to ensure compliant, audit-ready food safety programs aligned to NSW Food Authority standards.',
-    bodyContent
+    bodyContent,
+    westernBadge
   );
 
   fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html);
