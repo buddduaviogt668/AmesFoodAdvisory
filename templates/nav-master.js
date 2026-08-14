@@ -46,6 +46,9 @@ const NAV_HTML = `
       </div>
     </li>
     <li>
+      <a href="/recent-projects">Recent Work</a>
+    </li>
+    <li>
       <a href="/pricing">Pricing</a>
     </li>
     <li>
@@ -89,6 +92,7 @@ const NAV_HTML = `
   <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
   <a href="/food-safety-faq-nsw">Food Safety FAQ</a>
   <span class="mob-section">Company</span>
+  <a href="/recent-projects">Recent Work</a>
   <a href="/pricing">Pricing</a>
   <a href="/suburb-directory">Locations</a>
   <a href="/#about">About AMES</a>
