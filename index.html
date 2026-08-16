@@ -213,7 +213,7 @@
   .ames-assistant-status { display:none; margin-top:.8rem; padding:.65rem .75rem; background:var(--amber-pale); border-left:3px solid var(--amber); color:var(--ink-mid); font-size:.76rem !important; line-height:1.5 !important; }
   body.ames-assistant-open { overflow:hidden; }
   @media (max-width: 900px) { .nav-ai { justify-content:flex-start; border:0; padding-left:0; padding-right:0; } }
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle { display: none; position: fixed; right: 1.25rem; top: 17px; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 10001; }
   .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
 
   /* &#9472;&#9472; HERO &#9472;&#9472; */
@@ -866,7 +866,7 @@
 .nav-logo { flex-shrink: 0 !important; }
 .nav-links { flex-shrink: 0 !important; }
 
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+  .nav-toggle { display: none; position: fixed; right: 1.25rem; top: 17px; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 10001; }
   .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; margin: 5px 0; }
   @media (max-width: 900px) {
     .nav-toggle { display: block; }
@@ -901,7 +901,7 @@
     <div class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></div>
     <div class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</div>
   </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="const isOpen=this.classList.toggle('open');const nav=document.querySelector('.nav-links');nav.classList.toggle('open',isOpen);this.setAttribute('aria-expanded',String(isOpen))">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links">
