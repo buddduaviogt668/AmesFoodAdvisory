@@ -123,6 +123,27 @@
     transition: background 0.2s !important;
   }
   .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
+  /* Talk to AMES: optional, transparent AI entry point preserving existing lead routes. */
+  .nav-ai { display:flex; align-items:center; gap:.35rem; background:transparent; border:1px solid rgba(232,145,58,.42); color:var(--amber-light); border-radius:5px; padding:.4rem .8rem; font-size:.78rem; cursor:pointer; transition:background .2s,color .2s,border-color .2s; white-space:nowrap; }
+  .nav-ai:hover { background:rgba(232,145,58,.12); border-color:var(--amber-light); color:var(--white); }
+  .nav-ai-mark { font-size:.78rem; line-height:1; }
+  .mob-ai { display:block; width:calc(100% - 3rem); margin:1rem 1.5rem 0; padding:.85rem 1rem; color:var(--amber-light); background:transparent; border:1px solid rgba(232,145,58,.42); border-radius:6px; text-align:center; font-size:.95rem; cursor:pointer; }
+  .ames-assistant-backdrop { position:fixed; inset:0; z-index:2000; display:none; align-items:center; justify-content:center; padding:1.25rem; background:rgba(9,17,27,.74); backdrop-filter:blur(7px); }
+  .ames-assistant-backdrop.is-open { display:flex; }
+  .ames-assistant-dialog { width:min(100%,470px); position:relative; background:var(--stone); color:var(--ink); border-top:3px solid var(--amber); border-radius:8px; box-shadow:0 24px 90px rgba(0,0,0,.4); padding:2rem; }
+  .ames-assistant-close { position:absolute; top:.85rem; right:.9rem; border:0; background:transparent; color:var(--ink-soft); font-size:1.4rem; line-height:1; cursor:pointer; }
+  .ames-assistant-kicker { color:var(--amber-dim); font-size:.68rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; margin-bottom:.7rem; }
+  .ames-assistant-dialog h2 { font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(1.85rem,5vw,2.5rem); line-height:1.1; margin-bottom:.8rem; color:var(--navy-deep); }
+  .ames-assistant-dialog h2 em { color:var(--amber-dim); }
+  .ames-assistant-dialog p { color:var(--ink-mid); font-size:.9rem; line-height:1.65; }
+  .ames-assistant-disclosure { display:flex; align-items:flex-start; gap:.6rem; background:var(--amber-pale); border-left:3px solid var(--amber); padding:.75rem .85rem; margin:1rem 0 1.2rem; font-size:.78rem !important; }
+  .ames-assistant-actions { display:grid; gap:.6rem; margin-top:1.2rem; }
+  .ames-assistant-actions a,.ames-assistant-actions button { display:flex; align-items:center; justify-content:center; gap:.45rem; min-height:2.7rem; border-radius:5px; padding:.7rem 1rem; font-size:.83rem; font-weight:600; text-decoration:none; cursor:pointer; }
+  .ames-assistant-primary { background:var(--amber); color:var(--navy-deep); border:1px solid var(--amber); }
+  .ames-assistant-secondary { background:transparent; color:var(--navy); border:1px solid var(--border-navy); }
+  .ames-assistant-secondary:hover { background:rgba(28,43,58,.06); }
+  .ames-assistant-note { display:block; text-align:center; color:var(--amber-dim); margin-top:1rem; font-size:.76rem; text-decoration:none; }
+  body.ames-assistant-open { overflow:hidden; }
 
   /* ── HAMBURGER MOBILE MENU ── */
   .ham-btn{display:none;flex-direction:column;justify-content:space-between;width:26px;height:19px;background:none;border:none;cursor:pointer;padding:0;margin-left:auto;z-index:10001;position:fixed;right:2rem;top:19.5px;}
@@ -426,6 +447,7 @@
       </div>
     </li>
     <li><a href="/#about">About</a></li>
+    <li><button type="button" class="nav-ai" onclick="openAmesAssistant()" aria-haspopup="dialog"><span class="nav-ai-mark" aria-hidden="true">◉</span> Talk to AMES</button></li>
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
@@ -461,7 +483,24 @@
   <a href="/pricing">Pricing</a>
   <a href="/suburb-directory">Locations</a>
   <a href="/#about">About AMES</a>
+  <button type="button" class="mob-ai" onclick="openAmesAssistant()" aria-haspopup="dialog">◉&nbsp; Talk to AMES</button>
   <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book Scoping Call</a>
+</div>
+<div class="ames-assistant-backdrop" id="ames-assistant" role="presentation" onclick="closeAmesAssistant(event)">
+  <section class="ames-assistant-dialog" role="dialog" aria-modal="true" aria-labelledby="ames-assistant-title" onclick="event.stopPropagation()">
+    <button type="button" class="ames-assistant-close" aria-label="Close Talk to AMES assistant" onclick="closeAmesAssistant()">&times;</button>
+    <div class="ames-assistant-kicker">AMES AI enquiry assistant</div>
+    <h2 id="ames-assistant-title">A clearer place<br><em>to start.</em></h2>
+    <p>I’m AMES Food Advisory’s AI enquiry assistant. I can help gather a few details about your business and point you to the right next step.</p>
+    <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during a free 20-minute scoping call.</span></p>
+    <div class="ames-assistant-actions">
+      <button type="button" class="ames-assistant-primary" onclick="startAmesVoice()">Start a voice chat &#127908;</button>
+      <a class="ames-assistant-secondary" href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book the free 20-minute call &#8599;</a>
+      <a class="ames-assistant-secondary" href="/contact">Send an enquiry &#8599;</a>
+      <a class="ames-assistant-secondary" href="tel:+61278220109">Call AMES on (02) 7822 0109</a>
+    </div>
+    <a class="ames-assistant-note" href="mailto:ames.food.adv@gmail.com">Prefer email? ames.food.adv@gmail.com</a>
+  </section>
 </div>
 
 <div class="page-hero">
@@ -722,6 +761,25 @@ document.addEventListener('click',function(e){
     document.body.style.overflow='';
   }
 });
+function openAmesAssistant(){
+  var panel=document.getElementById('ames-assistant');
+  if(!panel) return;
+  panel.classList.add('is-open');
+  document.body.classList.add('ames-assistant-open');
+  var close=panel.querySelector('.ames-assistant-close');
+  if(close) close.focus();
+}
+function closeAmesAssistant(event){
+  if(event && event.target!==event.currentTarget) return;
+  var panel=document.getElementById('ames-assistant');
+  if(!panel) return;
+  panel.classList.remove('is-open');
+  document.body.classList.remove('ames-assistant-open');
+}
+function startAmesVoice(){
+  alert('The voice assistant is ready to connect. Please use the booking, enquiry, phone, or email options while the voice provider is being connected.');
+}
+document.addEventListener('keydown',function(event){ if(event.key==='Escape') closeAmesAssistant(); });
 
 </script>
 
