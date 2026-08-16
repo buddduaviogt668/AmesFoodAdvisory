@@ -8,3 +8,9 @@
 - [ ] Connect the real voice-agent provider endpoint when available; until then, the button displays transparent fallback guidance.
 - [x] Test the desktop homepage flow and confirm the generated service pages contain one assistant dialog each.
 - [ ] Test the mobile menu and assistant flow on a physical device before publishing.
+
+## Reported issue
+
+- [ ] Reproduce the reported “not working” behavior on the published page and local repository.
+- [ ] Determine whether the failure is the button, assistant dialog, or missing live voice-provider connection.
+- [ ] Apply the smallest safe fix and retest phone, Calendly, and Formspree routes.
