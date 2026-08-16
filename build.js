@@ -201,6 +201,12 @@ const SHARED_CSS = `
     border-right: 1px solid rgba(28,43,58,0.18);
   }
   .cred-pill::before { content: '◆'; font-size: 0.5rem; }
+  @media (max-width: 600px) {
+    html, body { max-width: 100%; overflow-x: clip; }
+    .creds-track { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; padding: .75rem 1rem; animation: none !important; transform: none !important; }
+    .cred-pill { min-width: 0; justify-content: center; text-align: center; white-space: normal; padding: .25rem .35rem; border-right: 0; font-size: .62rem; line-height: 1.25; }
+    .cred-pill:nth-child(n+7) { display: none; }
+  }
 
   section { padding: 5rem 2rem; }
   .container { max-width: 1100px; margin: 0 auto; width: 100%; }

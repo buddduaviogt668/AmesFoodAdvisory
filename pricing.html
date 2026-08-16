@@ -343,7 +343,12 @@
    .funnel-stage { padding: 1.25rem; }
    .retainer-box { padding: 1.5rem; }
    .cta-strip { padding-left: 1.25rem; padding-right: 1.25rem; }
-   .cta-strip .btn-primary { max-width: 100%; white-space: normal; }
+   .cta-strip .btn-primary { display: inline-block; max-width: 100%; white-space: normal; }
+   div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+   div[style*="grid-template-columns:180px 1fr"] { grid-template-columns: 1fr !important; }
+   .booking-cta-actions { flex-direction: column; width: 100%; }
+   .booking-cta-actions > * { max-width: 100%; }
+   .booking-cta-actions .btn-primary { width: 100%; }
   }
  </style>
  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
