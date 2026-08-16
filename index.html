@@ -887,7 +887,7 @@
     .hero-slide { inset: 0; }
     .hero-orb { display: none; }
     .hero-grain { inset: 0 !important; }
-    .home-mob-nav { display: none; position: fixed; inset: 0; z-index: 9998; overflow-y: auto; background: rgba(14,22,30,.98); padding: 72px 0 2rem; }
+    .home-mob-nav { display: none; position: fixed !important; inset: 0 !important; width: 100vw; height: 100vh; z-index: 9998; overflow-y: auto; background: rgba(14,22,30,.98); padding: 72px 0 2rem; }
     .home-mob-nav.open { display: block; }
     .home-mob-nav a { display: block; padding: .85rem 1.5rem; color: rgba(255,255,255,.82); font-size: .95rem; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.06); }
     .home-mob-nav a:hover { color: var(--amber-light); background: rgba(212,117,31,.08); }
@@ -1017,6 +1017,8 @@
   </ul>
 </nav>
 <script>
+var homeMobNav=document.getElementById('homeMobNav');
+if(homeMobNav && homeMobNav.parentElement && homeMobNav.parentElement.tagName==='NAV') document.body.appendChild(homeMobNav);
 function toggleHomeMobNav(btn){
   var nav=document.getElementById('homeMobNav');
   if(!nav) return;
