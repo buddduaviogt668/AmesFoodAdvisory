@@ -344,8 +344,10 @@
    .retainer-box { padding: 1.5rem; }
    .cta-strip { padding-left: 1.25rem; padding-right: 1.25rem; }
    .cta-strip .btn-primary { display: inline-block; max-width: 100%; white-space: normal; }
-   div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+   .section-inner > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
    div[style*="grid-template-columns:180px 1fr"] { grid-template-columns: 1fr !important; }
+   #coming-soon-form { flex-direction: column; width: 100%; }
+   #coming-soon-form .btn-primary { width: 100%; white-space: normal !important; }
    .booking-cta-actions { flex-direction: column; width: 100%; }
    .booking-cta-actions > * { max-width: 100%; }
    .booking-cta-actions .btn-primary { width: 100%; }
