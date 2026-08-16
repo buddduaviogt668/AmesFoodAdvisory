@@ -887,10 +887,16 @@
     .hero-slide { inset: 0; }
     .hero-orb { display: none; }
     .hero-grain { inset: 0 !important; }
-    .creds-bar { width: 100%; overflow: hidden; }
-    .creds-track { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; padding: .75rem 1rem; animation: none !important; transform: none !important; }
-    .cred-pill { min-width: 0; justify-content: center; text-align: center; white-space: normal; padding: .25rem .35rem; border-right: 0; font-size: .62rem; line-height: 1.25; }
-    .cred-pill:nth-child(n+7) { display: none; }
+    .home-mob-nav { display: none; position: fixed; inset: 0; z-index: 9998; overflow-y: auto; background: rgba(14,22,30,.98); padding: 72px 0 2rem; }
+    .home-mob-nav.open { display: block; }
+    .home-mob-nav a { display: block; padding: .85rem 1.5rem; color: rgba(255,255,255,.82); font-size: .95rem; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .home-mob-nav a:hover { color: var(--amber-light); background: rgba(212,117,31,.08); }
+    .home-mob-section { display: block; padding: .6rem 1.5rem .25rem; margin-top: .55rem; color: rgba(255,255,255,.3); font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .home-mob-nav .home-mob-cta { margin: 1rem 1.5rem 0; border: 0; border-radius: 6px; text-align: center; background: var(--amber); color: var(--navy-deep); font-weight: 700; }
+    .creds-bar { width: 100%; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .creds-track { width: max-content; display: flex; gap: 0; padding: .75rem 0; animation: none !important; transform: none !important; }
+    .cred-pill { min-width: max-content; scroll-snap-align: start; white-space: nowrap; padding: .25rem 1rem; border-right: 1px solid rgba(28,43,58,.18); font-size: .68rem; line-height: 1.25; }
+    .creds-bar { scroll-snap-type: x proximity; }
     .nav-logo { max-width: calc(100vw - 88px); }
     .nav-logo-name { font-size: .98rem !important; }
     .nav-logo-tag { font-size: .48rem !important; letter-spacing: .1em !important; }
@@ -917,9 +923,40 @@
     <div class="nav-logo-name">AMES <span class="nav-logo-adv">Food Advisory</span></div>
     <div class="nav-logo-tag">NSW&nbsp;&middot;&nbsp;HACCP&nbsp;&middot;&nbsp;FOOD CONSULTANTS</div>
   </a>
-  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="const isOpen=this.classList.toggle('open');const nav=document.querySelector('.nav-links');nav.classList.toggle('open',isOpen);this.setAttribute('aria-expanded',String(isOpen))">
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleHomeMobNav(this)">
     <span></span><span></span><span></span>
   </button>
+  <div class="home-mob-nav" id="homeMobNav" aria-hidden="true">
+    <span class="home-mob-section">Services</span>
+    <a href="/haccp-plan-development">HACCP Plan Development</a>
+    <a href="/food-safety-consulting-sydney">Food Safety Consulting</a>
+    <a href="/food-safety-training-sydney">Staff Training</a>
+    <a href="/sop-writing-food-businesses">SOP Writing</a>
+    <a href="/internal-auditing-services">Compliance Readiness</a>
+    <a href="/food-manufacturer-consulting">Manufacturer Consulting</a>
+    <a href="/cafe-restaurant-food-safety">Cafe &amp; Restaurant</a>
+    <a href="/food-business-startup-package">Start-Up Package</a>
+    <span class="home-mob-section">Training</span>
+    <a href="/food-safety-training-sydney">Food Safety Training</a>
+    <a href="/food-safety-supervisor-requirements-nsw">FSS Certification</a>
+    <a href="/food-industry-workers-training">Industry Workers</a>
+    <a href="/online-food-safety-courses">Online Courses</a>
+    <a href="/lab-skills-training">Lab Skills</a>
+    <a href="/rto-resource-development">RTO Resource Development</a>
+    <span class="home-mob-section">Resources</span>
+    <a href="/blog">Blog</a>
+    <a href="/nsw-food-authority-registration-guide">Registration Guide</a>
+    <a href="/haccp-simplified">HACCP Simplified</a>
+    <a href="/free-resources">Free Resources</a>
+    <a href="/free-compliance-checklist-nsw">NSW Compliance Checklist</a>
+    <span class="home-mob-section">Company</span>
+    <a href="/recent-projects">Recent Work</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/suburb-directory">Locations</a>
+    <a href="/#about">About</a>
+    <a href="tel:+61278220109" class="home-mob-cta">&#128222; (02) 7822 0109</a>
+    <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="home-mob-cta">Book a Call</a>
+  </div>
   <ul class="nav-links">
     <li>
       <a href="/food-safety-consulting-sydney">Services <span class="nav-arrow">&#9660;</span></a>
@@ -979,6 +1016,26 @@
     <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
   </ul>
 </nav>
+<script>
+function toggleHomeMobNav(btn){
+  var nav=document.getElementById('homeMobNav');
+  if(!nav) return;
+  var open=nav.classList.toggle('open');
+  btn.classList.toggle('open',open);
+  btn.setAttribute('aria-expanded',String(open));
+  nav.setAttribute('aria-hidden',String(!open));
+  document.body.style.overflow=open?'hidden':'';
+}
+document.querySelectorAll('#homeMobNav a').forEach(function(link){
+  link.addEventListener('click',function(){
+    var nav=document.getElementById('homeMobNav');
+    var btn=document.querySelector('.nav-toggle');
+    if(nav) nav.classList.remove('open');
+    if(btn){btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+    document.body.style.overflow='';
+  });
+});
+</script>
 
 <!-- HERO -->
 <section class="hero" id="home">
