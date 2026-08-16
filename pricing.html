@@ -412,9 +412,11 @@
  <li><a href="/contact">Contact</a></li>
  <li><a href="tel:+61278220109" class="nav-cta">&#128222; (02) 7822 0109</a></li>
  <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-phone">Book Call</a></li>
- </ul>
+  </ul>
 </nav>
-
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+ <span></span><span></span><span></span>
+</button>
 <section class="page-hero">
  <div class="page-hero-inner">
  <p class="eyebrow">Transparent pricing</p>
@@ -880,6 +882,20 @@ document.getElementById('coming-soon-form').addEventListener('submit', function(
 </div></footer>
 
 <script>
+ const pricingNavToggle = document.querySelector('.nav-toggle');
+ const pricingNavLinks = document.querySelector('.nav-links');
+ if (pricingNavToggle && pricingNavLinks) {
+  pricingNavToggle.addEventListener('click', () => {
+   const isOpen = pricingNavToggle.classList.toggle('open');
+   pricingNavLinks.classList.toggle('open', isOpen);
+   pricingNavToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  pricingNavLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+   pricingNavToggle.classList.remove('open');
+   pricingNavLinks.classList.remove('open');
+   pricingNavToggle.setAttribute('aria-expanded', 'false');
+  }));
+ }
  document.querySelectorAll('.faq-q').forEach(q => {
  q.addEventListener('click', () => {
  q.closest('.faq-item').classList.toggle('open');
