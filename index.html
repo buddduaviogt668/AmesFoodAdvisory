@@ -879,7 +879,20 @@
     .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  }</style>
+  }
+  /* Mobile resilience: keep decorative animation inside the viewport and prevent horizontal page expansion. */
+  @media (max-width: 900px) {
+    html, body { max-width: 100%; overflow-x: clip; }
+    section, .hero-grid, .intro-grid, .package-grid, .about-grid, .contact-grid { min-width: 0; }
+    .hero-slide { inset: 0; }
+    .hero-orb { display: none; }
+    .hero-grain { inset: 0 !important; }
+    .creds-bar { width: 100%; overflow: hidden; }
+    .nav-logo { max-width: calc(100vw - 88px); }
+    .nav-logo-name { font-size: .98rem !important; }
+    .nav-logo-tag { font-size: .48rem !important; letter-spacing: .1em !important; }
+  }
+  </style>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
