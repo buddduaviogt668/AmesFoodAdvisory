@@ -15,5 +15,23 @@ module.exports = [
     ],
     "outcome": "Successfully registered and compliant food business. Chew Boy now operates with professional-grade batch traceability and a documentation suite that meets all NSW food safety requirements for wholesale distribution.",
     "tags": ["NSW Food Authority", "Home-Based Business", "Traceability", "FPAR"]
+  },
+  {
+    "slug": "mss-food-manufacturer-compliance-taree",
+    "title": "Full Food Manufacturer Compliance — MSS Inc.",
+    "client": "Manning Support Services Inc.",
+    "logo": "/assets/clients/mss-logo.png",
+    "industry": "Food Manufacturer Compliance · Taree",
+    "challenge": "Placeholder project entry for a full food manufacturer compliance engagement with Manning Support Services Inc. in Taree.",
+    "solution": "AMES Food Advisory is supporting MSS with a practical compliance program tailored to its food manufacturing operations.",
+    "deliverables": [
+      "Food manufacturer compliance review",
+      "Food safety documentation and program support",
+      "Practical controls and records review",
+      "Project outcomes to be published"
+    ],
+    "outcome": "Project awarded. Scope and outcomes will be published as the engagement progresses.",
+    "tags": ["Food Manufacturing", "Full Compliance", "Taree NSW"],
+    "placeholder": true
   }
 ];
