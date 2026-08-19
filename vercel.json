@@ -49,6 +49,31 @@
       "source": "/guides/guide-23",
       "destination": "/blog/haccp/haccp-record-keeping-what-to-keep",
       "permanent": true
+    },
+    {
+      "source": "/guides/guide-3",
+      "destination": "/haccp-simplified",
+      "permanent": true
+    },
+    {
+      "source": "/guides/guide-9",
+      "destination": "/free-resources",
+      "permanent": true
+    },
+    {
+      "source": "/guides/guide-10",
+      "destination": "/free-resources",
+      "permanent": true
+    },
+    {
+      "source": "/faq/faq-4",
+      "destination": "/food-safety-faq-nsw",
+      "permanent": true
+    },
+    {
+      "source": "/faq/faq-10",
+      "destination": "/food-safety-faq-nsw",
+      "permanent": true
     }
   ]
 }
