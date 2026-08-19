@@ -34,6 +34,21 @@
       "source": "/blog/haccp",
       "destination": "/blog/haccp/what-is-haccp-nsw",
       "permanent": false
+    },
+    {
+      "source": "/faq/faq-13",
+      "destination": "/food-safety-faq-nsw",
+      "permanent": true
+    },
+    {
+      "source": "/guides/guide-7",
+      "destination": "/how-to-prepare-for-council-food-safety-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/guides/guide-23",
+      "destination": "/blog/haccp/haccp-record-keeping-what-to-keep",
+      "permanent": true
     }
   ]
 }
