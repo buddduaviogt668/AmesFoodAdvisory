@@ -265,7 +265,7 @@ const hubContent = `
         <div class="view-btn">View Case Study ↗</div>
       </div>
     </a>
-    `).join('')}
+    `).join('').trim()}
   </div>
 </div>
 
