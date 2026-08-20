@@ -264,8 +264,7 @@ const hubContent = `
         <p class="project-summary">${p.challenge.substring(0, 110)}...</p>
         <div class="view-btn">View Case Study ↗</div>
       </div>
-    </a>
-    `).join('').trim()}
+    </a>`).join('').trim()}
   </div>
 </div>
 
