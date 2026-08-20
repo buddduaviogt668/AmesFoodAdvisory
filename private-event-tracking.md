@@ -36,3 +36,18 @@ The conversion rollout adds page-specific events to distinguish commercial inten
 | `startup_package_click` | Start-Up Package pricing CTA |
 
 These events should be reviewed alongside `calendly_click`, `phone_click`, `form_submission`, `generate_lead`, and any eventual booked-job data. The purpose is to see which high-impression pages create meaningful commercial actions rather than relying on impressions alone.
+
+## Training and manufacturer-compliance priority events
+
+The priority-funnel rollout adds these page-specific events:
+
+| Event | Purpose |
+|---|---|
+| `training_consultation_click` | Calendly click from the main food safety training page |
+| `worker_training_click` | Calendly click from the food industry worker training page |
+| `manufacturer_consultation_click` | Calendly click from the manufacturer compliance page |
+| `haccp_consultation_click` | Calendly click from the HACCP development page |
+| `training_priority_click` | Homepage click into the training pathway |
+| `manufacturer_priority_click` | Homepage click into the manufacturer-compliance pathway |
+
+Calendly is the primary conversion action for these pages. Phone clicks remain tracked as a secondary contact method, but should not be treated as the principal success metric for the priority offers.
