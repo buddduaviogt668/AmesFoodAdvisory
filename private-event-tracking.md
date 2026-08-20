@@ -22,3 +22,17 @@ All 316 HTML pages now contain the existing GA4 property and exactly one shared 
 In Google Analytics, open **Admin → Data display → Events** and mark `calendly_click`, `phone_click`, `email_click`, `stripe_click`, `form_submission`, and `generate_lead` as key events. Use **Reports → Engagement → Events** and compare event names by **Page path and screen class**.
 
 The public homepage form currently posts to `https://formspree.io/f/YOUR_FORM_ID`. The tracking records a successful `generate_lead` only when that endpoint returns a successful response, so the form endpoint should be replaced with the live Formspree endpoint before relying on form-lead counts.
+
+## High-impression page-specific events
+
+The conversion rollout adds page-specific events to distinguish commercial intent from general browsing:
+
+| Event | Page or intent |
+|---|---|
+| `registration_pathway_click` | NSW Food Authority registration pathway CTA |
+| `audit_review_click` | Pre-inspection review CTA |
+| `program_scope_click` | Fixed-price Food Safety Program scope CTA |
+| `local_consultation_click` | Blacktown and Parramatta local consultation CTAs |
+| `startup_package_click` | Start-Up Package pricing CTA |
+
+These events should be reviewed alongside `calendly_click`, `phone_click`, `form_submission`, `generate_lead`, and any eventual booked-job data. The purpose is to see which high-impression pages create meaningful commercial actions rather than relying on impressions alone.

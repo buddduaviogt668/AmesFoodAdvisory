@@ -20,6 +20,8 @@
 
   function classifyLink(link) {
     var href = (link.getAttribute('href') || '').toLowerCase();
+    var customEvent = link.getAttribute('data-ames-event');
+    if (customEvent) return { name: customEvent, type: 'page_specific' };
     if (href.indexOf('stripe.com') !== -1) return { name: 'stripe_click', type: 'payment' };
     if (legacyClickTracking) return null;
     if (href.indexOf('calendly.com') !== -1) return { name: 'calendly_click', type: 'booking' };
