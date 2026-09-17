@@ -130,12 +130,14 @@ const SHARED_CSS = `
     font-size: 1.15rem; font-weight: 700;
     color: var(--white);
     text-decoration: none; letter-spacing: 0.01em;
+    white-space: nowrap; flex-shrink: 0;
   }
   .nav-logo span { color: var(--amber); }
   .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
   .nav-links a {
     text-decoration: none; font-size: 0.855rem; font-weight: 400;
     color: rgba(255,255,255,0.6); letter-spacing: 0.01em; transition: color 0.2s;
+    white-space: nowrap;
   }
   .nav-links a:hover { color: var(--white); }
   .nav-cta {
@@ -145,6 +147,7 @@ const SHARED_CSS = `
     border-radius: 6px !important;
     font-weight: 600 !important;
     transition: background 0.2s !important;
+    white-space: nowrap !important;
   }
   .nav-cta:hover { background: var(--amber-light) !important; color: var(--navy) !important; }
   
