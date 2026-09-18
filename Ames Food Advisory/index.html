@@ -584,6 +584,48 @@
 .nav-logo-name, .nav-logo-tag { white-space: nowrap !important; flex-shrink: 0 !important; }
 .nav-logo { flex-shrink: 0 !important; }
 
+/* ── COMPLETED WORK ── */
+.work-section { padding: 5rem 2rem; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 0; }
+.work-card {
+  background: var(--stone);
+  border: 1px solid var(--border-navy);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex; flex-direction: column; gap: 0.9rem;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.work-card:hover { border-color: var(--border-amber); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(28,43,58,0.08); }
+.work-card-header { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.work-card-tag {
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--amber-dim); background: var(--amber-pale);
+  border: 1px solid var(--border-amber); border-radius: 4px; padding: 0.2rem 0.55rem;
+}
+.work-card-status {
+  font-size: 0.68rem; font-weight: 600; color: #2d7a4f;
+  background: #e8f5ee; border: 1px solid #b6ddc6; border-radius: 4px; padding: 0.2rem 0.55rem;
+}
+.work-card-client {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 700; color: var(--navy); line-height: 1.2;
+}
+.work-card-location { font-size: 0.77rem; color: var(--ink-soft); font-weight: 300; margin-top: -0.3rem; }
+.work-card-title { font-size: 0.93rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
+.work-card-body p { font-size: 0.83rem; color: var(--ink-soft); line-height: 1.65; font-weight: 300; }
+.work-card-details {
+  border-top: 1px solid var(--border-navy);
+  padding-top: 0.9rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1rem;
+  margin-top: auto;
+}
+.work-detail-item { display: flex; flex-direction: column; gap: 0.15rem; }
+.work-detail-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-muted); }
+.work-detail-val { font-size: 0.8rem; font-weight: 500; color: var(--navy); }
+@media (max-width: 900px) {
+  .work-grid { grid-template-columns: 1fr; }
+}
+
 </style>
 </head>
 <body>
@@ -594,7 +636,7 @@
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#process">How It Works</a></li>
-    <li><a href="#package">Start-Up Package</a></li>
+    <li><a href="projects.html">Projects</a></li>
     <li><a href="#resources">Free Resources</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact" class="nav-cta">Get in touch</a></li>
@@ -961,6 +1003,43 @@
         <div class="sector-name">Home-Based Producers</div>
         <div class="sector-desc">Cottage food legislation guidance, product registration and food safety program setup.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLETED WORK -->
+<section class="work-section" id="projects" style="background:var(--white);">
+  <div class="container">
+    <div class="section-eyebrow">Completed work</div>
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:3rem;">
+      <h2 class="display" style="margin-bottom:0;">Real engagements. <em>Real results.</em></h2>
+      <a href="projects.html" style="font-size:0.84rem; font-weight:500; color:var(--amber); text-decoration:none; white-space:nowrap; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">View all projects →</a>
+    </div>
+    <div class="work-grid">
+
+      <!-- BOMBERRY -->
+      <div class="work-card fade-up">
+        <div class="work-card-header">
+          <div class="work-card-tag">On-site Training</div>
+          <div class="work-card-status">✓ Completed</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <img src="bomberry-logo.png" alt="Bomberry logo" style="width:44px; height:44px; border-radius:6px; object-fit:contain; background:#fff; border:1px solid var(--border-navy);">
+          <div class="work-card-client">Bomberry</div>
+        </div>
+        <div class="work-card-location">📍 Silverwater, NSW</div>
+        <div class="work-card-title">In-House Food Safety Training — 3-Hour Program</div>
+        <div class="work-card-body">
+          <p>Delivered a structured 3-hour food safety training program across two production shifts for a total of 20 participants (10 per shift). Each session ran 1.5 hours face-to-face at shift commencement, ensuring no production disruption.</p>
+        </div>
+        <div class="work-card-details">
+          <div class="work-detail-item"><span class="work-detail-label">Format</span><span class="work-detail-val">Face-to-face · 2 shifts</span></div>
+          <div class="work-detail-item"><span class="work-detail-label">Participants</span><span class="work-detail-val">20 total</span></div>
+          <div class="work-detail-item"><span class="work-detail-label">Duration</span><span class="work-detail-val">1.5 hrs × 2 sessions</span></div>
+          <div class="work-detail-item"><span class="work-detail-label">Outcome</span><span class="work-detail-val">Certificates issued</span></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
