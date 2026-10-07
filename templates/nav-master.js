@@ -65,7 +65,7 @@ const NAV_HTML = `
     </li>
     <li><a href="/#about">About</a></li>
     <li><button type="button" class="nav-ai" onclick="openAmesAssistant()" aria-haspopup="dialog"><span class="nav-ai-mark" aria-hidden="true">◉</span> Talk to AMES</button></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
 <button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
@@ -101,7 +101,7 @@ const NAV_HTML = `
   <a href="/suburb-directory">Locations</a>
   <a href="/#about">About AMES</a>
   <button type="button" class="mob-ai" onclick="openAmesAssistant()" aria-haspopup="dialog">◉&nbsp; Talk to AMES</button>
-  <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="mob-cta">Book Scoping Call</a>
+  <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="mob-cta">Book Compliance Scoping</a>
 </div>
 <div class="ames-assistant-backdrop" id="ames-assistant" role="presentation" onclick="closeAmesAssistant(event)">
   <section class="ames-assistant-dialog" role="dialog" aria-modal="true" aria-labelledby="ames-assistant-title" onclick="event.stopPropagation()">
@@ -109,10 +109,10 @@ const NAV_HTML = `
     <div class="ames-assistant-kicker">AMES AI enquiry assistant</div>
     <h2 id="ames-assistant-title">A clearer place<br><em>to start.</em></h2>
     <p>I’m AMES Food Advisory’s AI enquiry assistant. I can help gather a few details about your business and point you to the right next step.</p>
-    <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during a free 20-minute scoping call.</span></p>
+    <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during the $295 + GST Compliance Scoping Session.</span></p>
     <div class="ames-assistant-actions">
       <button type="button" class="ames-assistant-primary" onclick="startAmesVoice()">Start a voice chat &#127908;</button>
-      <a class="ames-assistant-secondary" href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book the free 20-minute call &#8599;</a>
+      <a class="ames-assistant-secondary" href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
       <a class="ames-assistant-secondary" href="/contact">Send an enquiry &#8599;</a>
       <a class="ames-assistant-secondary" href="tel:+61278220109">Call AMES on (02) 7822 0109</a>
     </div>
@@ -157,7 +157,7 @@ function closeAmesAssistant(event){
 }
 function startAmesVoice(){
   var status=document.getElementById('ames-voice-status');
-  if(status) status.textContent='Voice chat is not connected yet. Please book the free 20-minute call, send an enquiry, or call AMES directly.';
+  if(status) status.textContent='Voice chat is not connected yet. Please book the $295 + GST Compliance Scoping Session, send an enquiry, or call AMES directly.';
 }
 document.addEventListener('keydown',function(event){ if(event.key==='Escape') closeAmesAssistant(); });
 `;

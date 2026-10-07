@@ -355,7 +355,7 @@ projects.forEach(p => {
           </div>
           <hr style="border: none; border-top: 1px solid var(--border-navy); margin: 2rem 0;">
           <p style="font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 1.5rem; line-height: 1.5;">Need similar results for your business?</p>
-          <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; text-decoration: none;">Book Scoping Call</a>
+          <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; text-decoration: none;">Book the $295 + GST scoping session &#8599;</a>
         </div>
       </div>
     </div>

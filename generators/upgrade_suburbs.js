@@ -342,7 +342,7 @@ ${NAV_HTML}
     <h1>${heroTitle}</h1>
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary">Book the $295 + GST scoping session &#8599;</a>
       <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
     </div>
   </div>
@@ -372,7 +372,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>
@@ -559,7 +559,7 @@ suburbs.forEach(sub => {
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--white);">Founder-Led Support</h3>
             <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 1rem;">TAFE NSW Lecturer | 20+ Years QA</p>
             <p style="font-style: italic; font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">"I bring Tier-1 corporate standards directly to ${sub.name} food businesses. No generic templates, just practical results."</p>
-            <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary" style="font-size: 0.8rem; padding: 0.7rem 1.25rem;">Book a Scoping Call</a>
+            <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary" style="font-size: 0.8rem; padding: 0.7rem 1.25rem;">Book the $295 + GST scoping session</a>
           </div>
         </div>
       </div>

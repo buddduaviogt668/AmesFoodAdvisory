@@ -134,7 +134,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>
@@ -201,7 +201,7 @@ councils.forEach(council => {
     <div class="cta-box">
       <h3>Book a Preparation Audit Today</h3>
       <p>Let's make sure your next ${council} inspection goes perfectly. We'll identify the gaps and fix them.</p>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book a Free Scoping Call ↗</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
   `;
@@ -264,7 +264,7 @@ industries.forEach(ind => {
     <div class="cta-box">
       <h3>Need Help with Your Compliance?</h3>
       <p>Whether you are launching a new venture in the ${ind} space or upgrading an existing operation, we can streamline your compliance.</p>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Discuss Your Needs Today ↗</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
   `;

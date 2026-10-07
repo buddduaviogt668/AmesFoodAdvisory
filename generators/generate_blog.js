@@ -118,7 +118,7 @@ ${bodyContent}
       <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--navy); margin-bottom: 1rem; line-height: 1.2;">Council visit <em>coming up?</em></h2>
       <p style="color: var(--ink-soft); margin-bottom: 2rem; line-height: 1.7;">Don't risk a penalty notice. We specialize in <strong>Fast-Track Audit Prep</strong>. We'll audit your kitchen, fix your documentation gaps, and train your staff to ensure you pass with flying colors.</p>
       <div style="display: flex; gap: 1rem;">
-        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book Audit Fast-Track</a>
+        <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary">Book the $295 + GST scoping session &#8599;</a>
         <a href="/free-compliance-checklist-nsw" class="btn-outline" style="color: var(--navy); border-color: var(--border-navy);">Self-Audit Checklist</a>
       </div>
     </div>
@@ -143,7 +143,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>
@@ -304,7 +304,7 @@ seriesList.forEach(series => {
         <a href="${series.serviceLink}" class="btn-primary">Learn More About Our Services ↗</a>
       </div>
       
-      <p><em>Ready to secure your business? <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book a free 15-minute scoping call</a> with our experts today.</em></p>
+      <p><em>Ready to secure your business? <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST Compliance Scoping Session</a> with our experts today.</em></p>
     </div>
     `;
 

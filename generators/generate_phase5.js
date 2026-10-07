@@ -126,7 +126,7 @@ ${JSON.stringify(schemaData, null, 2)}
     <li><a href="/the-vault">Free Resources</a></li>
     <li><a href="/blog">Blog</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
 
@@ -151,7 +151,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/the-vault">The Vault</a>
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book Call</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>
@@ -194,7 +194,7 @@ const pages = [
       <p>If you are ready to elevate your business to the Tier-1 standard, we are ready to help.</p>
 
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" class="btn-primary" target="_blank" rel="noopener">Book Your Free Scoping Call Today ↗</a>
+        <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
       </div>
     </div>
     `
@@ -292,7 +292,7 @@ const pages = [
 
       <h2 style="margin-top: 3rem;">Failing the Checklist?</h2>
       <p>If you answered "No" to any of the questions above, you are at risk of a council fine or a warning notice. AMES Food Advisory provides mock audits and compliance coaching to fix these gaps permanently.</p>
-      <p><a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener">Book a Mock Audit with our Principal Consultant ↗</a></p>
+      <p><a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST Compliance Scoping Session &#8599;</a></p>
     </div>
     `
   },

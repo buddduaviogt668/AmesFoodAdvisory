@@ -393,7 +393,7 @@
     <div class="ames-assistant-kicker">AMES AI enquiry assistant</div>
     <h2 id="ames-assistant-title">A clearer place<br><em>to start.</em></h2>
     <p>I’m AMES Food Advisory’s AI enquiry assistant. I can help gather a few details about your business and point you to the right next step.</p>
-    <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during a free 20-minute scoping call.</span></p>
+    <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during the $295 + GST Compliance Scoping Session.</span></p>
     <div class="ames-assistant-actions">
       <button type="button" class="ames-assistant-primary" onclick="startAmesVoice()">Start a voice chat &#127908;</button>
       <a class="ames-assistant-secondary" href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">What Are My Options? &rarr; &#8599;</a>
@@ -522,7 +522,7 @@ function closeAmesAssistant(event){
 }
 function startAmesVoice(){
   var status=document.getElementById('ames-voice-status');
-  if(status) status.textContent='Voice chat is not connected yet. Please book the free 20-minute call, send an enquiry, or call AMES directly.';
+  if(status) status.textContent='Voice chat is not connected yet. Please book the $295 + GST Compliance Scoping Session, send an enquiry, or call AMES directly.';
 }
 document.addEventListener('keydown',function(event){ if(event.key==='Escape') closeAmesAssistant(); });
 </script>

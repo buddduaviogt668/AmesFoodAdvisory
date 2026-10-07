@@ -493,8 +493,8 @@ ${NAV_HTML}
     <h1>${p.h1}</h1>
     <p class="page-hero-sub">${p.sub}</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Book a free consultation ↗</a>
-      ${p.cta_primary_url ? `<a href="${p.cta_primary_url}" class="btn-outline resource-btn">${p.cta_primary_text || 'Free Resource'}</a>` : `<a href="/#services" class="btn-outline">All services</a>`}
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary">Book the $295 + GST scoping session &#8599;</a>
+      ${p.cta_primary_url ? `<a href="${p.cta_primary_url}" class="btn-outline resource-btn">${p.cta_primary_text || 'Fixed-price packages'}</a>` : `<a href="/pricing" class="btn-outline">See fixed-price packages</a>`}
     </div>
   </div>
 </div>
@@ -547,7 +547,7 @@ ${faqsHtml}
     <h2>Need clear, actionable <em>food safety</em> advice?</h2>
     <p>We work directly with your business to construct robust quality structures, training platforms, and audit preparedness tools.</p>
     <div class="cta-strip-actions">
-      <a href="https://calendly.com/ames-food-adv/scoping-call-15-mins" target="_blank" rel="noopener" class="btn-primary">Arrange a free consultation call ↗</a>
+      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary">Arrange the $295 + GST scoping session &#8599;</a>
       <a href="tel:+61400000000" class="btn-outline">Speak with a specialist</a>
     </div>
   </div>
