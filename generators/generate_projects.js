@@ -207,6 +207,13 @@ function getBaseHTML(title, desc, extraCSS = '') {
 
   ${extraCSS}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-WE0FLYZLBP");
+</script>
 </head>
 <body>
 ${NAV_HTML}
@@ -281,6 +288,7 @@ const hubContent = `
 </footer>
 
 <script>${NAV_JS}</script>
+<script defer src="/ames-event-tracking.js"></script>
 </body>
 </html>
 `;
@@ -374,6 +382,7 @@ projects.forEach(p => {
   </footer>
 
   <script>${NAV_JS}</script>
+  <script defer src="/ames-event-tracking.js"></script>
   </body>
   </html>
   `;

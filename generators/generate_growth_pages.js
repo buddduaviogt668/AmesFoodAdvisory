@@ -77,11 +77,19 @@ ${NAV_CSS}
 .section{padding:5rem 0}.section-light{background:var(--white)}.section-dark{background:var(--navy-deep);color:var(--white)}.section-eyebrow{display:flex;align-items:center;gap:.55rem;font-size:.72rem;color:var(--amber);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.75rem}.section-eyebrow::before{content:'';width:24px;height:2px;background:var(--amber)}.display{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.15;color:var(--navy);margin-bottom:1rem}.display em{color:var(--amber-dim);font-style:italic}.lead{max-width:700px;color:var(--ink-soft);font-size:1.05rem;line-height:1.8}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.5rem}.card{background:var(--white);border:1px solid var(--border-navy);border-radius:12px;padding:2rem}.section-dark .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)}.card h3{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--navy);margin-bottom:.65rem;line-height:1.25}.section-dark .card h3{color:var(--white)}.card p{font-size:.92rem;color:var(--ink-soft);line-height:1.7}.section-dark .card p{color:rgba(255,255,255,.6)}.number{font-family:'Playfair Display',serif;font-size:2rem;color:var(--amber);margin-bottom:.5rem}.checklist{list-style:none;display:grid;gap:.8rem;margin-top:1.5rem}.checklist li{display:flex;gap:.7rem;align-items:flex-start;color:var(--ink-mid);font-size:.95rem}.checklist li::before{content:'✓';color:var(--amber);font-weight:700}.section-dark .checklist li{color:rgba(255,255,255,.72)}.callout{background:var(--amber-pale);border-left:4px solid var(--amber);border-radius:0 10px 10px 0;padding:1.6rem 1.8rem;margin-top:2.5rem}.callout strong{color:var(--navy)}.cta{background:var(--navy-deep);padding:4rem 2rem;text-align:center}.cta h2{font-family:'Playfair Display',serif;color:var(--white);font-weight:400;font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:.8rem}.cta p{max-width:650px;margin:0 auto 1.7rem;color:rgba(255,255,255,.58)}.sources{font-size:.82rem;color:var(--ink-soft);line-height:1.7;margin-top:2rem}.sources a{color:var(--amber-dim)}footer{background:var(--navy-deep);border-top:1px solid var(--border-amber);padding:3.5rem 2rem;color:var(--white)}.footer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}.footer-logo{font-family:'Playfair Display',serif;color:var(--white);text-decoration:none;font-size:1.15rem;font-weight:700}.footer-logo span{color:var(--amber);font-style:italic;font-weight:400}.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}.footer-links a{color:rgba(255,255,255,.46);text-decoration:none;font-size:.82rem}.footer-links a:hover{color:var(--amber)}
 @media(max-width:850px){.grid-3,.grid-2{grid-template-columns:1fr}.section{padding:3.5rem 0}.hero{padding:8rem 1.25rem 4rem}.container{padding:0 1.25rem}.footer-inner{align-items:flex-start;flex-direction:column}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WE0FLYZLBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-WE0FLYZLBP");
+</script>
 </head>
 <body>
 ${NAV_HTML}
 ${body}
 <script>${NAV_JS}</script>
+<script defer src="/ames-event-tracking.js"></script>
 </body>
 </html>`;
 }

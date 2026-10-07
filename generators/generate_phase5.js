@@ -156,6 +156,7 @@ ${bodyContent}
   </div>
 </footer>
 
+<script defer src="/ames-event-tracking.js"></script>
 </body>
 </html>`;
 }
