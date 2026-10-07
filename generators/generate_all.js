@@ -338,7 +338,7 @@ ${NAV_HTML}
     <h1>${heroTitle}</h1>
     <p class="page-hero-sub">${heroSub}</p>
     <div class="hero-actions">
-      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener" class="btn-primary">Book the $295 + GST scoping session &#8599;</a>
+      <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener" class="btn-primary">Book the $295 + GST scoping session &#8599;</a>
       <a href="/free-compliance-checklist-nsw" class="btn-outline resource-btn">Free Compliance Checklist</a>
     </div>
   </div>
@@ -368,7 +368,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
-      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
+      <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>

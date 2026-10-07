@@ -134,7 +134,7 @@ ${bodyContent}
       <a href="/pricing">Pricing</a>
       <a href="/suburb-directory">Locations</a>
       <a href="/free-resources">Free Resources</a>
-      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
+      <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
 </footer>
@@ -201,7 +201,7 @@ councils.forEach(council => {
     <div class="cta-box">
       <h3>Book a Preparation Audit Today</h3>
       <p>Let's make sure your next ${council} inspection goes perfectly. We'll identify the gaps and fix them.</p>
-      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
+      <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
   `;
@@ -264,7 +264,7 @@ industries.forEach(ind => {
     <div class="cta-box">
       <h3>Need Help with Your Compliance?</h3>
       <p>Whether you are launching a new venture in the ${ind} space or upgrading an existing operation, we can streamline your compliance.</p>
-      <a href="https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
+      <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" class="btn-primary" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
     </div>
   </div>
   `;
