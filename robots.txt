@@ -1,7 +1,16 @@
 User-agent: *
 Allow: /
-Disallow: /free-compliance-checklist-nsw
-Disallow: /free-restaurant-sop-template
-Disallow: /free-audit-readiness-checklist
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
 
 Sitemap: https://www.amesfoodadvisory.com.au/sitemap.xml
