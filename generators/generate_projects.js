@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const projects = require('../projects_data.js');
 const { NAV_HTML, NAV_JS, NAV_CSS } = require('../templates/nav-master.js');
@@ -363,7 +363,7 @@ projects.forEach(p => {
           </div>
           <hr style="border: none; border-top: 1px solid var(--border-navy); margin: 2rem 0;">
           <p style="font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 1.5rem; line-height: 1.5;">Need similar results for your business?</p>
-          <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; text-decoration: none;">Book the $295 + GST scoping session &#8599;</a>
+          <a href="https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; text-decoration: none;">Book the $295 + GST scoping session &#8599;</a>
         </div>
       </div>
     </div>

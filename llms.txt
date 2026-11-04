@@ -1,4 +1,4 @@
-# AMES Food Advisory
+﻿# AMES Food Advisory
 
 > Food safety consulting, HACCP planning, training, auditing, and compliance readiness for food businesses across Sydney and NSW, Australia.
 
@@ -12,7 +12,7 @@ The standard entry point for all new clients is the **Compliance Scoping Session
 
 This is a structured 45-minute working session (phone or on-site) where AMES assesses your current compliance position, identifies exactly what your business needs, and delivers a written follow-up summary with a clear scope of work and fixed-price quote. The $295 + GST scoping fee is credited back in full if you proceed with any AMES service.
 
-**Book the Compliance Scoping Session:** https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04
+**Book the Compliance Scoping Session:** https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06
 
 There is no free consultation, no Calendly link, and no obligation beyond the session itself. The scoping session is designed to give you a clear, honest answer on what your business needs — even if that answer is that you don't need AMES.
 
@@ -81,13 +81,13 @@ Available at: [/guides/](/guides/)
 
 ## Pricing
 
-- [Pricing](/pricing): Fixed-price food safety consulting packages. All engagements begin with the $295 + GST Compliance Scoping Session, credited back in full on proceeding. Book at: https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04
+- [Pricing](/pricing): Fixed-price food safety consulting packages. All engagements begin with the $295 + GST Compliance Scoping Session, credited back in full on proceeding. Book at: https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06
 
 ## Contact
 
 - Phone: (02) 7822 0109
 - Email: ames.food.adv@gmail.com
-- Book the Compliance Scoping Session ($295 + GST, 100% credited back): https://buy.stripe.com/fZu5kC0vL5zRahn7EagIo04
+- Book the Compliance Scoping Session ($295 + GST, 100% credited back): https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06
 
 ## About
 

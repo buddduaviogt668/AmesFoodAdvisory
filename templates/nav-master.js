@@ -1,4 +1,4 @@
-const NAV_HTML = `
+﻿const NAV_HTML = `
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
@@ -65,7 +65,7 @@ const NAV_HTML = `
     </li>
     <li><a href="/#about">About</a></li>
     
-    <li><a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
+    <li><a href="https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06" target="_blank" rel="noopener" class="nav-cta">Book Call</a></li>
   </ul>
 </nav>
 <button class="ham-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobNav(this)">
@@ -101,7 +101,7 @@ const NAV_HTML = `
   <a href="/suburb-directory">Locations</a>
   <a href="/#about">About AMES</a>
   
-  <a href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener" class="mob-cta">Book Compliance Scoping</a>
+  <a href="https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06" target="_blank" rel="noopener" class="mob-cta">Book Compliance Scoping</a>
 </div>
 <div class="ames-assistant-backdrop" id="ames-assistant" role="presentation" onclick="closeAmesAssistant(event)">
   <section class="ames-assistant-dialog" role="dialog" aria-modal="true" aria-labelledby="ames-assistant-title" onclick="event.stopPropagation()">
@@ -112,7 +112,7 @@ const NAV_HTML = `
     <p class="ames-assistant-disclosure"><span aria-hidden="true">&#10003;</span><span>I’m an AI assistant, not a food-safety consultant. For detailed advice, you can speak with the AMES team during the $295 + GST Compliance Scoping Session.</span></p>
     <div class="ames-assistant-actions">
       <button type="button" class="ames-assistant-primary" onclick="startAmesVoice()">Start a voice chat &#127908;</button>
-      <a class="ames-assistant-secondary" href="https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
+      <a class="ames-assistant-secondary" href="https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06" target="_blank" rel="noopener">Book the $295 + GST scoping session &#8599;</a>
       <a class="ames-assistant-secondary" href="/contact">Send an enquiry &#8599;</a>
       <a class="ames-assistant-secondary" href="tel:+61278220109">Call AMES on (02) 7822 0109</a>
     </div>

@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   'use strict';
   if (window.__amesEventTrackingLoaded) return;
   window.__amesEventTrackingLoaded = true;
@@ -71,7 +71,7 @@
   if (window.__amesBookingPopupLoaded) return;
   window.__amesBookingPopupLoaded = true;
 
-  var STRIPE_LINK = 'https://buy.stripe.com/3cIcN492hbYf89f6A6gIo05';
+  var STRIPE_LINK = 'https://buy.stripe.com/28EaEW3HXd2j89faQmgIo06';
   var WEEK_MS = 7 * 24 * 60 * 60 * 1000;
   var DELAY_MS = 8000;
   var SEEN_KEY = 'ames_booking_popup_seen';
